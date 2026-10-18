@@ -449,8 +449,7 @@
       "alt": "Página 34 del catálogo Ágata Beauty: Atenea",
       "brand": "Atenea",
       "products": [
-        "atenea-034-1",
-        "atenea-034-2"
+        "atenea-034-1"
       ]
     },
     {
@@ -485,7 +484,8 @@
       "alt": "Página 37 del catálogo Ágata Beauty: Atenea",
       "brand": "Atenea",
       "products": [
-        "atenea-037-1"
+        "atenea-037-1",
+        "atenea-037-2"
       ]
     },
     {
@@ -496,8 +496,7 @@
       "alt": "Página 38 del catálogo Ágata Beauty: Atenea",
       "brand": "Atenea",
       "products": [
-        "atenea-038-1",
-        "atenea-038-2"
+        "atenea-038-1"
       ]
     },
     {
@@ -508,7 +507,8 @@
       "alt": "Página 39 del catálogo Ágata Beauty: Atenea",
       "brand": "Atenea",
       "products": [
-        "atenea-039-1"
+        "atenea-039-1",
+        "atenea-039-2"
       ]
     },
     {
@@ -519,8 +519,7 @@
       "alt": "Página 40 del catálogo Ágata Beauty: Atenea",
       "brand": "Atenea",
       "products": [
-        "atenea-040-1",
-        "atenea-040-2"
+        "atenea-040-1"
       ]
     },
     {
@@ -540,11 +539,11 @@
       "image": "assets/catalog/pagina-042.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 42 del catálogo Ágata Beauty: Prosa",
-      "brand": "Prosa",
+      "alt": "Página 42 del catálogo Ágata Beauty: Atenea",
+      "brand": "Atenea",
       "products": [
-        "prosa-042-1",
-        "prosa-042-2"
+        "atenea-042-1",
+        "atenea-042-2"
       ]
     },
     {
@@ -603,7 +602,8 @@
       "alt": "Página 47 del catálogo Ágata Beauty: Prosa",
       "brand": "Prosa",
       "products": [
-        "prosa-047-1"
+        "prosa-047-1",
+        "prosa-047-2"
       ]
     },
     {
@@ -611,11 +611,11 @@
       "image": "assets/catalog/pagina-048.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 48 del catálogo Ágata Beauty: Samy",
-      "brand": "Samy",
+      "alt": "Página 48 del catálogo Ágata Beauty: Prosa",
+      "brand": "Prosa",
       "products": [
-        "samy-048-1",
-        "samy-048-2"
+        "prosa-048-1",
+        "prosa-048-2"
       ]
     },
     {
@@ -683,10 +683,11 @@
       "image": "assets/catalog/pagina-054.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 54 del catálogo Ágata Beauty: Lula",
-      "brand": "Lula",
+      "alt": "Página 54 del catálogo Ágata Beauty: Samy",
+      "brand": "Samy",
       "products": [
-        "lula-054-1"
+        "samy-054-1",
+        "samy-054-2"
       ]
     },
     {
@@ -697,8 +698,7 @@
       "alt": "Página 55 del catálogo Ágata Beauty: Lula",
       "brand": "Lula",
       "products": [
-        "lula-055-1",
-        "lula-055-2"
+        "lula-055-1"
       ]
     },
     {
@@ -745,7 +745,8 @@
       "alt": "Página 59 del catálogo Ágata Beauty: Lula",
       "brand": "Lula",
       "products": [
-        "lula-059-1"
+        "lula-059-1",
+        "lula-059-2"
       ]
     },
     {
@@ -756,8 +757,7 @@
       "alt": "Página 60 del catálogo Ágata Beauty: Lula",
       "brand": "Lula",
       "products": [
-        "lula-060-1",
-        "lula-060-2"
+        "lula-060-1"
       ]
     },
     {
@@ -765,10 +765,11 @@
       "image": "assets/catalog/pagina-061.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 61 del catálogo Ágata Beauty: Raquel",
-      "brand": "Raquel",
+      "alt": "Página 61 del catálogo Ágata Beauty: Lula",
+      "brand": "Lula",
       "products": [
-        "raquel-061-1"
+        "lula-061-1",
+        "lula-061-2"
       ]
     },
     {
@@ -776,11 +777,10 @@
       "image": "assets/catalog/pagina-062.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 62 del catálogo Ágata Beauty: OG",
-      "brand": "OG",
+      "alt": "Página 62 del catálogo Ágata Beauty: Raquel",
+      "brand": "Raquel",
       "products": [
-        "og-062-1",
-        "og-062-2"
+        "raquel-062-1"
       ]
     },
     {
@@ -812,11 +812,11 @@
       "image": "assets/catalog/pagina-065.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 65 del catálogo Ágata Beauty: Schwarzkopf",
-      "brand": "Schwarzkopf",
+      "alt": "Página 65 del catálogo Ágata Beauty: OG",
+      "brand": "OG",
       "products": [
-        "schwarzkopf-065-1",
-        "schwarzkopf-065-2"
+        "og-065-1",
+        "og-065-2"
       ]
     },
     {
@@ -824,11 +824,11 @@
       "image": "assets/catalog/pagina-066.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 66 del catálogo Ágata Beauty: Tocobo",
-      "brand": "Tocobo",
+      "alt": "Página 66 del catálogo Ágata Beauty: Schwarzkopf",
+      "brand": "Schwarzkopf",
       "products": [
-        "tocobo-066-1",
-        "tocobo-066-2"
+        "schwarzkopf-066-1",
+        "schwarzkopf-066-2"
       ]
     },
     {
@@ -836,11 +836,11 @@
       "image": "assets/catalog/pagina-067.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 67 del catálogo Ágata Beauty: Skin 1004",
-      "brand": "Skin 1004",
+      "alt": "Página 67 del catálogo Ágata Beauty: Tocobo",
+      "brand": "Tocobo",
       "products": [
-        "skin-1004-067-1",
-        "skin-1004-067-2"
+        "tocobo-067-1",
+        "tocobo-067-2"
       ]
     },
     {
@@ -848,11 +848,11 @@
       "image": "assets/catalog/pagina-068.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 68 del catálogo Ágata Beauty: Bioaqua",
-      "brand": "Bioaqua",
+      "alt": "Página 68 del catálogo Ágata Beauty: Skin 1004",
+      "brand": "Skin 1004",
       "products": [
-        "bioaqua-068-1",
-        "bioaqua-068-2"
+        "skin-1004-068-1",
+        "skin-1004-068-2"
       ]
     },
     {
@@ -887,7 +887,8 @@
       "alt": "Página 71 del catálogo Ágata Beauty: Bioaqua",
       "brand": "Bioaqua",
       "products": [
-        "bioaqua-071-1"
+        "bioaqua-071-1",
+        "bioaqua-071-2"
       ]
     },
     {
@@ -898,8 +899,7 @@
       "alt": "Página 72 del catálogo Ágata Beauty: Bioaqua",
       "brand": "Bioaqua",
       "products": [
-        "bioaqua-072-1",
-        "bioaqua-072-2"
+        "bioaqua-072-1"
       ]
     },
     {
@@ -991,11 +991,11 @@
       "image": "assets/catalog/pagina-080.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 80 del catálogo Ágata Beauty: Garnier",
-      "brand": "Garnier",
+      "alt": "Página 80 del catálogo Ágata Beauty: Bioaqua",
+      "brand": "Bioaqua",
       "products": [
-        "garnier-080-1",
-        "garnier-080-2"
+        "bioaqua-080-1",
+        "bioaqua-080-2"
       ]
     },
     {
@@ -1015,11 +1015,11 @@
       "image": "assets/catalog/pagina-082.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 82 del catálogo Ágata Beauty: Milagros",
-      "brand": "Milagros",
+      "alt": "Página 82 del catálogo Ágata Beauty: Garnier",
+      "brand": "Garnier",
       "products": [
-        "milagros-082-1",
-        "milagros-082-2"
+        "garnier-082-1",
+        "garnier-082-2"
       ]
     },
     {
@@ -1126,7 +1126,8 @@
       "alt": "Página 91 del catálogo Ágata Beauty: Milagros",
       "brand": "Milagros",
       "products": [
-        "milagros-091-1"
+        "milagros-091-1",
+        "milagros-091-2"
       ]
     },
     {
@@ -1134,11 +1135,10 @@
       "image": "assets/catalog/pagina-092.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 92 del catálogo Ágata Beauty: Lehit",
-      "brand": "Lehit",
+      "alt": "Página 92 del catálogo Ágata Beauty: Milagros",
+      "brand": "Milagros",
       "products": [
-        "lehit-092-1",
-        "lehit-092-2"
+        "milagros-092-1"
       ]
     },
     {
@@ -1146,11 +1146,11 @@
       "image": "assets/catalog/pagina-093.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 93 del catálogo Ágata Beauty: Lehit",
-      "brand": "Lehit",
+      "alt": "Página 93 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "lehit-093-1",
-        "lehit-093-2"
+        "anyeluz-093-1",
+        "anyeluz-093-2"
       ]
     },
     {
@@ -1158,11 +1158,11 @@
       "image": "assets/catalog/pagina-094.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 94 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 94 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-094-1",
-        "leche-pal-pelo-094-2"
+        "anyeluz-094-1",
+        "anyeluz-094-2"
       ]
     },
     {
@@ -1170,11 +1170,11 @@
       "image": "assets/catalog/pagina-095.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 95 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 95 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-095-1",
-        "leche-pal-pelo-095-2"
+        "anyeluz-095-1",
+        "anyeluz-095-2"
       ]
     },
     {
@@ -1182,11 +1182,11 @@
       "image": "assets/catalog/pagina-096.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 96 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 96 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-096-1",
-        "leche-pal-pelo-096-2"
+        "anyeluz-096-1",
+        "anyeluz-096-2"
       ]
     },
     {
@@ -1194,11 +1194,11 @@
       "image": "assets/catalog/pagina-097.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 97 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 97 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-097-1",
-        "leche-pal-pelo-097-2"
+        "anyeluz-097-1",
+        "anyeluz-097-2"
       ]
     },
     {
@@ -1206,11 +1206,11 @@
       "image": "assets/catalog/pagina-098.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 98 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 98 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-098-1",
-        "leche-pal-pelo-098-2"
+        "anyeluz-098-1",
+        "anyeluz-098-2"
       ]
     },
     {
@@ -1218,11 +1218,11 @@
       "image": "assets/catalog/pagina-099.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 99 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 99 del catálogo Ágata Beauty: Anyeluz",
+      "brand": "Anyeluz",
       "products": [
-        "leche-pal-pelo-099-1",
-        "leche-pal-pelo-099-2"
+        "anyeluz-099-1",
+        "anyeluz-099-2"
       ]
     },
     {
@@ -1230,11 +1230,11 @@
       "image": "assets/catalog/pagina-100.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 100 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 100 del catálogo Ágata Beauty: Lehit",
+      "brand": "Lehit",
       "products": [
-        "leche-pal-pelo-100-1",
-        "leche-pal-pelo-100-2"
+        "lehit-100-1",
+        "lehit-100-2"
       ]
     },
     {
@@ -1242,11 +1242,11 @@
       "image": "assets/catalog/pagina-101.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 101 del catálogo Ágata Beauty: Leche pal pelo",
-      "brand": "Leche pal pelo",
+      "alt": "Página 101 del catálogo Ágata Beauty: Lehit",
+      "brand": "Lehit",
       "products": [
-        "leche-pal-pelo-101-1",
-        "leche-pal-pelo-101-2"
+        "lehit-101-1",
+        "lehit-101-2"
       ]
     },
     {
@@ -1290,11 +1290,11 @@
       "image": "assets/catalog/pagina-105.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 105 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 105 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-105-1",
-        "ole-105-2"
+        "leche-pal-pelo-105-1",
+        "leche-pal-pelo-105-2"
       ]
     },
     {
@@ -1302,11 +1302,11 @@
       "image": "assets/catalog/pagina-106.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 106 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 106 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-106-1",
-        "ole-106-2"
+        "leche-pal-pelo-106-1",
+        "leche-pal-pelo-106-2"
       ]
     },
     {
@@ -1314,11 +1314,11 @@
       "image": "assets/catalog/pagina-107.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 107 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 107 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-107-1",
-        "ole-107-2"
+        "leche-pal-pelo-107-1",
+        "leche-pal-pelo-107-2"
       ]
     },
     {
@@ -1326,11 +1326,11 @@
       "image": "assets/catalog/pagina-108.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 108 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 108 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-108-1",
-        "ole-108-2"
+        "leche-pal-pelo-108-1",
+        "leche-pal-pelo-108-2"
       ]
     },
     {
@@ -1338,11 +1338,11 @@
       "image": "assets/catalog/pagina-109.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 109 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 109 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-109-1",
-        "ole-109-2"
+        "leche-pal-pelo-109-1",
+        "leche-pal-pelo-109-2"
       ]
     },
     {
@@ -1350,11 +1350,11 @@
       "image": "assets/catalog/pagina-110.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 110 del catálogo Ágata Beauty: Olé",
-      "brand": "Olé",
+      "alt": "Página 110 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "ole-110-1",
-        "ole-110-2"
+        "leche-pal-pelo-110-1",
+        "leche-pal-pelo-110-2"
       ]
     },
     {
@@ -1362,11 +1362,11 @@
       "image": "assets/catalog/pagina-111.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 111 del catálogo Ágata Beauty: Nude",
-      "brand": "Nude",
+      "alt": "Página 111 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "nude-111-1",
-        "nude-111-2"
+        "leche-pal-pelo-111-1",
+        "leche-pal-pelo-111-2"
       ]
     },
     {
@@ -1374,11 +1374,11 @@
       "image": "assets/catalog/pagina-112.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 112 del catálogo Ágata Beauty: Nivea",
-      "brand": "Nivea",
+      "alt": "Página 112 del catálogo Ágata Beauty: Leche pal pelo",
+      "brand": "Leche pal pelo",
       "products": [
-        "nivea-112-1",
-        "nivea-112-2"
+        "leche-pal-pelo-112-1",
+        "leche-pal-pelo-112-2"
       ]
     },
     {
@@ -1386,11 +1386,11 @@
       "image": "assets/catalog/pagina-113.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 113 del catálogo Ágata Beauty: Nivea",
-      "brand": "Nivea",
+      "alt": "Página 113 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "nivea-113-1",
-        "nivea-113-2"
+        "ole-113-1",
+        "ole-113-2"
       ]
     },
     {
@@ -1398,11 +1398,11 @@
       "image": "assets/catalog/pagina-114.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 114 del catálogo Ágata Beauty: Nivea",
-      "brand": "Nivea",
+      "alt": "Página 114 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "nivea-114-1",
-        "nivea-114-2"
+        "ole-114-1",
+        "ole-114-2"
       ]
     },
     {
@@ -1410,11 +1410,11 @@
       "image": "assets/catalog/pagina-115.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 115 del catálogo Ágata Beauty: Nivea",
-      "brand": "Nivea",
+      "alt": "Página 115 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "nivea-115-1",
-        "nivea-115-2"
+        "ole-115-1",
+        "ole-115-2"
       ]
     },
     {
@@ -1422,10 +1422,11 @@
       "image": "assets/catalog/pagina-116.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 116 del catálogo Ágata Beauty: Nivea",
-      "brand": "Nivea",
+      "alt": "Página 116 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "nivea-116-1"
+        "ole-116-1",
+        "ole-116-2"
       ]
     },
     {
@@ -1433,10 +1434,11 @@
       "image": "assets/catalog/pagina-117.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 117 del catálogo Ágata Beauty: Chap Stick",
-      "brand": "Chap Stick",
+      "alt": "Página 117 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "chap-stick-117-1"
+        "ole-117-1",
+        "ole-117-2"
       ]
     },
     {
@@ -1444,11 +1446,11 @@
       "image": "assets/catalog/pagina-118.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 118 del catálogo Ágata Beauty: Fantiluna",
-      "brand": "Fantiluna",
+      "alt": "Página 118 del catálogo Ágata Beauty: Olé",
+      "brand": "Olé",
       "products": [
-        "fantiluna-118-1",
-        "fantiluna-118-2"
+        "ole-118-1",
+        "ole-118-2"
       ]
     },
     {
@@ -1456,11 +1458,11 @@
       "image": "assets/catalog/pagina-119.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 119 del catálogo Ágata Beauty: Fantiluna",
-      "brand": "Fantiluna",
+      "alt": "Página 119 del catálogo Ágata Beauty: Nude",
+      "brand": "Nude",
       "products": [
-        "fantiluna-119-1",
-        "fantiluna-119-2"
+        "nude-119-1",
+        "nude-119-2"
       ]
     },
     {
@@ -1468,11 +1470,153 @@
       "image": "assets/catalog/pagina-120.webp",
       "width": 900,
       "height": 1273,
-      "alt": "Página 120 del catálogo Ágata Beauty: Fantiluna",
+      "alt": "Página 120 del catálogo Ágata Beauty: Johnson's",
+      "brand": "Johnson's",
+      "products": [
+        "johnsons-120-1",
+        "johnsons-120-2"
+      ]
+    },
+    {
+      "number": 121,
+      "image": "assets/catalog/pagina-121.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 121 del catálogo Ágata Beauty: Johnson's",
+      "brand": "Johnson's",
+      "products": [
+        "johnsons-121-1",
+        "johnsons-121-2"
+      ]
+    },
+    {
+      "number": 122,
+      "image": "assets/catalog/pagina-122.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 122 del catálogo Ágata Beauty: Johnson's",
+      "brand": "Johnson's",
+      "products": [
+        "johnsons-122-1",
+        "johnsons-122-2"
+      ]
+    },
+    {
+      "number": 123,
+      "image": "assets/catalog/pagina-123.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 123 del catálogo Ágata Beauty: Johnson's",
+      "brand": "Johnson's",
+      "products": [
+        "johnsons-123-1",
+        "johnsons-123-2"
+      ]
+    },
+    {
+      "number": 124,
+      "image": "assets/catalog/pagina-124.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 124 del catálogo Ágata Beauty: Nivea",
+      "brand": "Nivea",
+      "products": [
+        "nivea-124-1",
+        "nivea-124-2"
+      ]
+    },
+    {
+      "number": 125,
+      "image": "assets/catalog/pagina-125.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 125 del catálogo Ágata Beauty: Nivea",
+      "brand": "Nivea",
+      "products": [
+        "nivea-125-1",
+        "nivea-125-2"
+      ]
+    },
+    {
+      "number": 126,
+      "image": "assets/catalog/pagina-126.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 126 del catálogo Ágata Beauty: Nivea",
+      "brand": "Nivea",
+      "products": [
+        "nivea-126-1",
+        "nivea-126-2"
+      ]
+    },
+    {
+      "number": 127,
+      "image": "assets/catalog/pagina-127.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 127 del catálogo Ágata Beauty: Nivea",
+      "brand": "Nivea",
+      "products": [
+        "nivea-127-1",
+        "nivea-127-2"
+      ]
+    },
+    {
+      "number": 128,
+      "image": "assets/catalog/pagina-128.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 128 del catálogo Ágata Beauty: Nivea",
+      "brand": "Nivea",
+      "products": [
+        "nivea-128-1"
+      ]
+    },
+    {
+      "number": 129,
+      "image": "assets/catalog/pagina-129.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 129 del catálogo Ágata Beauty: Chap Stick",
+      "brand": "Chap Stick",
+      "products": [
+        "chap-stick-129-1"
+      ]
+    },
+    {
+      "number": 130,
+      "image": "assets/catalog/pagina-130.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 130 del catálogo Ágata Beauty: Fantiluna",
       "brand": "Fantiluna",
       "products": [
-        "fantiluna-120-1",
-        "fantiluna-120-2"
+        "fantiluna-130-1",
+        "fantiluna-130-2"
+      ]
+    },
+    {
+      "number": 131,
+      "image": "assets/catalog/pagina-131.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 131 del catálogo Ágata Beauty: Fantiluna",
+      "brand": "Fantiluna",
+      "products": [
+        "fantiluna-131-1",
+        "fantiluna-131-2"
+      ]
+    },
+    {
+      "number": 132,
+      "image": "assets/catalog/pagina-132.webp",
+      "width": 900,
+      "height": 1273,
+      "alt": "Página 132 del catálogo Ágata Beauty: Fantiluna",
+      "brand": "Fantiluna",
+      "products": [
+        "fantiluna-132-1",
+        "fantiluna-132-2"
       ]
     }
   ],
@@ -1488,11 +1632,12 @@
       "imageWidth": 315,
       "imageHeight": 315,
       "imageAlt": "Base Glow Filter de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 3",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-003-1-variantes.webp",
-          "width": 390,
-          "height": 171,
+          "width": 555,
+          "height": 242,
           "alt": "Base Glow Filter: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1523,6 +1668,7 @@
       "imageWidth": 315,
       "imageHeight": 315,
       "imageAlt": "Polvos Translúcidos de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 3",
       "page": 3
     },
     {
@@ -1536,11 +1682,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Paleta Light Set de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 4",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-004-1-variantes.webp",
-          "width": 607,
-          "height": 268,
+          "width": 720,
+          "height": 318,
           "alt": "Paleta Light Set: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1557,11 +1704,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Rubor líquido radiante Glow Filter de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 4",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-004-2-variantes.webp",
-          "width": 400,
-          "height": 308,
+          "width": 664,
+          "height": 511,
           "alt": "Rubor líquido radiante Glow Filter: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1578,11 +1726,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bronzer Drops Light de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 5",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-005-1-variantes.webp",
-          "width": 296,
-          "height": 264,
+          "width": 514,
+          "height": 458,
           "alt": "Bronzer Drops Light: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1599,11 +1748,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bronzer luminoso en polvo + brocha Hello beach de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 5",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-005-2-variantes.webp",
-          "width": 324,
-          "height": 242,
+          "width": 626,
+          "height": 467,
           "alt": "Bronzer luminoso en polvo + brocha Hello beach: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1620,11 +1770,12 @@
       "imageWidth": 297,
       "imageHeight": 297,
       "imageAlt": "Paleta Harmony x6 de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 6",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-006-1-variantes.webp",
-          "width": 325,
-          "height": 234,
+          "width": 636,
+          "height": 458,
           "alt": "Paleta Harmony x6: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1641,6 +1792,7 @@
       "imageWidth": 291,
       "imageHeight": 291,
       "imageAlt": "Brow Wax Ultra Fijador de cejas de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 6",
       "page": 6
     },
     {
@@ -1654,11 +1806,12 @@
       "imageWidth": 303,
       "imageHeight": 303,
       "imageAlt": "Lápiz delineador de labios de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 7",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-007-1-variantes.webp",
-          "width": 398,
-          "height": 157,
+          "width": 720,
+          "height": 283,
           "alt": "Lápiz delineador de labios: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1675,6 +1828,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Hidratante de Labios Lippie Balm de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 7",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-007-2-variantes.webp",
@@ -1714,6 +1868,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Fijador de maquillaje Dixy Fix de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 8",
       "page": 8
     },
     {
@@ -1728,6 +1883,7 @@
       "imageWidth": 339,
       "imageHeight": 339,
       "imageAlt": "Set de Borlas de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 9",
       "page": 9
     },
     {
@@ -1738,9 +1894,10 @@
       "section": "Herramientas",
       "price": 54000,
       "image": "assets/images/productos/montoc-009-2.webp",
-      "imageWidth": 345,
-      "imageHeight": 345,
+      "imageWidth": 429,
+      "imageHeight": 429,
       "imageAlt": "Kit de brochas de maquillaje Fluffy x 10 de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 9",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-009-2-variantes.webp",
@@ -1762,6 +1919,7 @@
       "imageWidth": 315,
       "imageHeight": 315,
       "imageAlt": "Esponja mini para difuminar maquillaje de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 10",
       "page": 10
     },
     {
@@ -1778,11 +1936,12 @@
       "imageWidth": 330,
       "imageHeight": 330,
       "imageAlt": "Brocha mini viajera de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 10",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-010-2-variantes.webp",
-          "width": 401,
-          "height": 215,
+          "width": 720,
+          "height": 385,
           "alt": "Brocha mini viajera: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1799,11 +1958,12 @@
       "imageWidth": 327,
       "imageHeight": 327,
       "imageAlt": "Base líquida 2 en 1 My foundation de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 11",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-011-1-variantes.webp",
-          "width": 288,
-          "height": 203,
+          "width": 648,
+          "height": 458,
           "alt": "Base líquida 2 en 1 My foundation: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1830,11 +1990,12 @@
       "imageWidth": 318,
       "imageHeight": 318,
       "imageAlt": "Corrector My concealer de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 11",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-011-2-variantes.webp",
-          "width": 500,
-          "height": 181,
+          "width": 720,
+          "height": 260,
           "alt": "Corrector My concealer: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1857,6 +2018,7 @@
       "imageWidth": 294,
       "imageHeight": 294,
       "imageAlt": "Polvos sueltos de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 12",
       "page": 12
     },
     {
@@ -1880,6 +2042,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Polvos sueltos 4 tonos de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 12",
       "page": 12
     },
     {
@@ -1893,6 +2056,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Rubor en barra Cherry Blossom de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 13",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-013-1-variantes.webp",
@@ -1914,11 +2078,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Trío de Rubores de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 13",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-013-2-variantes.webp",
-          "width": 302,
-          "height": 245,
+          "width": 558,
+          "height": 452,
           "alt": "Trío de Rubores: tonos y presentaciones según el catálogo"
         }
       ],
@@ -1931,16 +2096,20 @@
       "category": "Rostro",
       "section": "Rostro",
       "price": 28500,
+      "image": "assets/images/productos/bloomshell-014-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Contorno en barra Bloom define de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 14",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-014-1-variantes.webp",
-          "width": 361,
-          "height": 225,
+          "width": 720,
+          "height": 448,
           "alt": "Contorno en barra Bloom define: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 14,
-      "imagePending": true
+      "page": 14
     },
     {
       "id": "bloomshell-014-2",
@@ -1953,6 +2122,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Iluminador Bloom Dazlee de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 14",
       "page": 14
     },
     {
@@ -1976,6 +2146,7 @@
       "imageWidth": 330,
       "imageHeight": 330,
       "imageAlt": "Laminador de cejas de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 15",
       "page": 15
     },
     {
@@ -1989,6 +2160,7 @@
       "imageWidth": 300,
       "imageHeight": 300,
       "imageAlt": "Paleta de sombras Bloom Vibes de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 15",
       "page": 15
     },
     {
@@ -2002,6 +2174,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Llavero Mimosa Tinta + Gloss de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 16",
       "page": 16
     },
     {
@@ -2015,6 +2188,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Brillo labial - Bombón de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 16",
       "page": 16
     },
     {
@@ -2028,6 +2202,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Papel matificante Bloom powder paper de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 17",
       "page": 17
     },
     {
@@ -2041,6 +2216,7 @@
       "imageWidth": 312,
       "imageHeight": 312,
       "imageAlt": "Papel matificante Bloom Oil Stop de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 17",
       "page": 17
     },
     {
@@ -2064,6 +2240,7 @@
       "imageWidth": 300,
       "imageHeight": 300,
       "imageAlt": "Fijador de maquillaje Bloom Fix de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 18",
       "page": 18
     },
     {
@@ -2077,6 +2254,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bloom Termo de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 19",
       "page": 19
     },
     {
@@ -2090,6 +2268,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bloom porta cosméticos de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 19",
       "page": 19
     },
     {
@@ -2101,9 +2280,10 @@
       "price": 105000,
       "description": "Son cuatro esenciales de maquillaje\nUn rubor 2 en 1\nUn gloss luminoso e hidratante\nUn polvo suelto rosado con malla y borla\nUna paleta de sombras con un iluminador rosado",
       "image": "assets/images/productos/bloomshell-020-1.webp",
-      "imageWidth": 336,
-      "imageHeight": 336,
+      "imageWidth": 372,
+      "imageHeight": 372,
       "imageAlt": "Kit Kiss Love de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 20",
       "page": 20
     },
     {
@@ -2117,6 +2297,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Beauty Blender Xl de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 21",
       "page": 21
     },
     {
@@ -2131,6 +2312,7 @@
       "imageWidth": 318,
       "imageHeight": 318,
       "imageAlt": "Bloom Blender Bliss de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 21",
       "page": 21
     },
     {
@@ -2153,6 +2335,7 @@
       "imageWidth": 261,
       "imageHeight": 261,
       "imageAlt": "Gel hidratante con aloe vera de Girly, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 22",
       "page": 22
     },
     {
@@ -2162,14 +2345,15 @@
       "category": "Labios",
       "price": 21000,
       "image": "assets/images/productos/girly-022-2.webp",
-      "imageWidth": 262,
-      "imageHeight": 262,
+      "imageWidth": 582,
+      "imageHeight": 582,
       "imageAlt": "Girly TINT Labios y mejillas de Girly, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 22",
       "gallery": [
         {
           "src": "assets/images/productos/girly-022-2-variantes.webp",
-          "width": 383,
-          "height": 157,
+          "width": 709,
+          "height": 383,
           "alt": "Girly TINT Labios y mejillas: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2195,6 +2379,7 @@
       "imageWidth": 265,
       "imageHeight": 265,
       "imageAlt": "Polvo suelto de Girly, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 22",
       "page": 22
     },
     {
@@ -2207,6 +2392,7 @@
       "imageWidth": 287,
       "imageHeight": 287,
       "imageAlt": "Pestañina Sky High Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 23",
       "page": 23
     },
     {
@@ -2216,9 +2402,10 @@
       "category": "Ojos y cejas",
       "price": 37000,
       "image": "assets/images/productos/maybelline-023-2.webp",
-      "imageWidth": 266,
-      "imageHeight": 266,
+      "imageWidth": 582,
+      "imageHeight": 582,
       "imageAlt": "Pestañina Colossal Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 23",
       "page": 23
     },
     {
@@ -2231,6 +2418,7 @@
       "imageWidth": 261,
       "imageHeight": 261,
       "imageAlt": "Pestañina Surreal Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 23",
       "page": 23
     },
     {
@@ -2244,11 +2432,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "2 en 1: base y corrector de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 24",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-024-1-variantes.webp",
-          "width": 630,
-          "height": 244,
+          "width": 720,
+          "height": 279,
           "alt": "2 en 1: base y corrector: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2265,11 +2454,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Loose powder Polvos sueltos de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 24",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-024-2-variantes.webp",
-          "width": 589,
-          "height": 243,
+          "width": 720,
+          "height": 296,
           "alt": "Loose powder Polvos sueltos: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2286,11 +2476,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Serum Flyshy Blushy de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 25",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-025-1-variantes.webp",
-          "width": 504,
-          "height": 211,
+          "width": 720,
+          "height": 300,
           "alt": "Serum Flyshy Blushy: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2307,11 +2498,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Rubor líquido Bonita de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 25",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-025-2-variantes.webp",
-          "width": 386,
-          "height": 167,
+          "width": 641,
+          "height": 276,
           "alt": "Rubor líquido Bonita: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2328,11 +2520,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Rubor en polvo Bonita de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 26",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-026-1-variantes.webp",
-          "width": 357,
-          "height": 207,
+          "width": 720,
+          "height": 418,
           "alt": "Rubor en polvo Bonita: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2346,14 +2539,15 @@
       "section": "Labios",
       "price": 19500,
       "image": "assets/images/productos/ani-k-027-1.webp",
-      "imageWidth": 327,
-      "imageHeight": 327,
+      "imageWidth": 360,
+      "imageHeight": 360,
       "imageAlt": "Lip Gloss de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 27",
       "gallery": [
         {
           "src": "assets/images/productos/ani-k-027-1-variantes.webp",
-          "width": 402,
-          "height": 237,
+          "width": 720,
+          "height": 425,
           "alt": "Lip Gloss: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2369,6 +2563,7 @@
       "imageWidth": 287,
       "imageHeight": 287,
       "imageAlt": "Delineador radiante Tono negro de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 28",
       "page": 28
     },
     {
@@ -2378,9 +2573,10 @@
       "category": "Ojos y cejas",
       "price": 22000,
       "image": "assets/images/productos/ani-k-028-2.webp",
-      "imageWidth": 293,
-      "imageHeight": 293,
+      "imageWidth": 582,
+      "imageHeight": 582,
       "imageAlt": "Pestañina eternal lash de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 28",
       "page": 28
     },
     {
@@ -2393,6 +2589,7 @@
       "imageWidth": 264,
       "imageHeight": 264,
       "imageAlt": "Pestañina Brown Paradise - A prueba de agua de Ani-k, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 28",
       "page": 28
     },
     {
@@ -2423,6 +2620,7 @@
       "imageWidth": 319,
       "imageHeight": 319,
       "imageAlt": "Polvos sueltos - 4 tonos de Majikal, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 29",
       "page": 29
     },
     {
@@ -2432,14 +2630,15 @@
       "category": "Labios",
       "price": 17500,
       "image": "assets/images/productos/majikal-029-2.webp",
-      "imageWidth": 308,
-      "imageHeight": 308,
+      "imageWidth": 583,
+      "imageHeight": 583,
       "imageAlt": "Magic Pen de Majikal, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 29",
       "gallery": [
         {
           "src": "assets/images/productos/majikal-029-2-variantes.webp",
           "width": 265,
-          "height": 112,
+          "height": 130,
           "alt": "Magic Pen: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2455,11 +2654,12 @@
       "imageWidth": 260,
       "imageHeight": 260,
       "imageAlt": "Shiny Lip Oil de Majikal, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 29",
       "gallery": [
         {
           "src": "assets/images/productos/majikal-029-3-variantes.webp",
-          "width": 336,
-          "height": 170,
+          "width": 652,
+          "height": 406,
           "alt": "Shiny Lip Oil: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2486,11 +2686,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Base de maquillaje 1ST Scene de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 30",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-030-1-variantes.webp",
-          "width": 500,
-          "height": 150,
+          "width": 720,
+          "height": 216,
           "alt": "Base de maquillaje 1ST Scene: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2507,14 +2708,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Serum Tinted 1ST Scene de Atenea, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/atenea-030-2-variantes.webp",
-          "width": 292,
-          "height": 191,
-          "alt": "Serum Tinted 1ST Scene: tonos y presentaciones según el catálogo"
-        }
-      ],
+      "imageSource": "Catálogo de Canva (PDF), página 30",
       "page": 30
     },
     {
@@ -2528,6 +2722,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Polvo en gel matificante Matterpowder de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 31",
       "page": 31
     },
     {
@@ -2551,6 +2746,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Polvo suelto- Banana 1ST Scene de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 31",
       "page": 31
     },
     {
@@ -2564,11 +2760,12 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Rubor compacto 1ST Scene de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 32",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-032-1-variantes.webp",
-          "width": 494,
-          "height": 182,
+          "width": 720,
+          "height": 265,
           "alt": "Rubor compacto 1ST Scene: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2585,6 +2782,7 @@
       "imageWidth": 303,
       "imageHeight": 303,
       "imageAlt": "Rubor cremoso en barra de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 32",
       "page": 32
     },
     {
@@ -2598,6 +2796,7 @@
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bronzer cremoso en barra de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 33",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-033-1-variantes.webp",
@@ -2619,11 +2818,12 @@
       "imageWidth": 345,
       "imageHeight": 345,
       "imageAlt": "Iluminador efecto húmedo Sublime de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 33",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-033-2-variantes.webp",
-          "width": 432,
-          "height": 187,
+          "width": 720,
+          "height": 310,
           "alt": "Iluminador efecto húmedo Sublime: tonos y presentaciones según el catálogo"
         }
       ],
@@ -2631,155 +2831,178 @@
     },
     {
       "id": "atenea-034-1",
+      "name": "Paleta de sombras multiusos Moccalush",
+      "brand": "Atenea",
+      "category": "Ojos y cejas",
+      "section": "Multiusos",
+      "price": 140500,
+      "image": "assets/images/productos/atenea-034-1.webp",
+      "imageWidth": 381,
+      "imageHeight": 381,
+      "imageAlt": "Paleta de sombras multiusos Moccalush de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 34",
+      "page": 34
+    },
+    {
+      "id": "atenea-035-1",
       "name": "Paleta de sombras 18 tonos - Art Deco",
       "brand": "Atenea",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 55000,
-      "image": "assets/images/productos/atenea-034-1.webp",
+      "image": "assets/images/productos/atenea-035-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Paleta de sombras 18 tonos - Art Deco de Atenea, fotografía del catálogo",
-      "page": 34
+      "imageSource": "Catálogo de Canva (PDF), página 35",
+      "page": 35
     },
     {
-      "id": "atenea-034-2",
+      "id": "atenea-035-2",
       "name": "Paleta de sombras Majestic",
       "brand": "Atenea",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 89000,
-      "image": "assets/images/productos/atenea-034-2.webp",
+      "image": "assets/images/productos/atenea-035-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Paleta de sombras Majestic de Atenea, fotografía del catálogo",
-      "page": 34
+      "imageSource": "Catálogo de Canva (PDF), página 35",
+      "page": 35
     },
     {
-      "id": "atenea-035-1",
+      "id": "atenea-036-1",
       "name": "Paleta de sombras 12 tonos - 1ST SCENE",
       "brand": "Atenea",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 60000,
-      "image": "assets/images/productos/atenea-035-1.webp",
+      "image": "assets/images/productos/atenea-036-1.webp",
       "imageWidth": 318,
       "imageHeight": 318,
       "imageAlt": "Paleta de sombras 12 tonos - 1ST SCENE de Atenea, fotografía del catálogo",
-      "page": 35
+      "imageSource": "Catálogo de Canva (PDF), página 36",
+      "page": 36
     },
     {
-      "id": "atenea-035-2",
+      "id": "atenea-036-2",
       "name": "Paleta de sombras 12 tonos - Rose sublime",
       "brand": "Atenea",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 50000,
-      "image": "assets/images/productos/atenea-035-2.webp",
+      "image": "assets/images/productos/atenea-036-2.webp",
       "imageWidth": 345,
       "imageHeight": 345,
       "imageAlt": "Paleta de sombras 12 tonos - Rose sublime de Atenea, fotografía del catálogo",
-      "page": 35
+      "imageSource": "Catálogo de Canva (PDF), página 36",
+      "page": 36
     },
     {
-      "id": "atenea-036-1",
+      "id": "atenea-037-1",
       "name": "Pigmento Soft Touch",
       "brand": "Atenea",
       "category": "Ojos y cejas",
       "section": "Ojos y cejas",
       "price": 19000,
-      "image": "assets/images/productos/atenea-036-1.webp",
+      "image": "assets/images/productos/atenea-037-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Pigmento Soft Touch de Atenea, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/atenea-036-1-variantes.webp",
-          "width": 500,
-          "height": 166,
-          "alt": "Pigmento Soft Touch: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 36
-    },
-    {
-      "id": "atenea-036-2",
-      "name": "Gel fijador de cejas",
-      "brand": "Atenea",
-      "category": "Ojos y cejas",
-      "section": "Ojos y cejas",
-      "price": 24000,
-      "image": "assets/images/productos/atenea-036-2.webp",
-      "imageWidth": 291,
-      "imageHeight": 291,
-      "imageAlt": "Gel fijador de cejas de Atenea, fotografía del catálogo",
-      "page": 36
-    },
-    {
-      "id": "atenea-037-1",
-      "name": "Delineador de cejas",
-      "brand": "Atenea",
-      "category": "Ojos y cejas",
-      "section": "Cejas",
-      "price": 24500,
-      "image": "assets/images/productos/atenea-037-1.webp",
-      "imageWidth": 321,
-      "imageHeight": 321,
-      "imageAlt": "Delineador de cejas de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 37",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-037-1-variantes.webp",
-          "width": 528,
-          "height": 186,
-          "alt": "Delineador de cejas: tonos y presentaciones según el catálogo"
+          "width": 720,
+          "height": 239,
+          "alt": "Pigmento Soft Touch: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 37
     },
     {
-      "id": "atenea-038-1",
-      "name": "Lápiz delineador Color pencil",
+      "id": "atenea-037-2",
+      "name": "Gel fijador de cejas",
       "brand": "Atenea",
-      "category": "Labios",
-      "section": "Labios",
-      "price": 12000,
+      "category": "Ojos y cejas",
+      "section": "Ojos y cejas",
+      "price": 24000,
+      "image": "assets/images/productos/atenea-037-2.webp",
+      "imageWidth": 291,
+      "imageHeight": 291,
+      "imageAlt": "Gel fijador de cejas de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 37",
+      "page": 37
+    },
+    {
+      "id": "atenea-038-1",
+      "name": "Delineador de cejas",
+      "brand": "Atenea",
+      "category": "Ojos y cejas",
+      "section": "Cejas",
+      "price": 24500,
       "image": "assets/images/productos/atenea-038-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Lápiz delineador Color pencil de Atenea, fotografía del catálogo",
+      "imageWidth": 321,
+      "imageHeight": 321,
+      "imageAlt": "Delineador de cejas de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 38",
       "gallery": [
         {
           "src": "assets/images/productos/atenea-038-1-variantes.webp",
-          "width": 499,
-          "height": 200,
-          "alt": "Lápiz delineador Color pencil: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 38
-    },
-    {
-      "id": "atenea-038-2",
-      "name": "Lip Balm Mask",
-      "brand": "Atenea",
-      "category": "Labios",
-      "section": "Labios",
-      "price": 33000,
-      "image": "assets/images/productos/atenea-038-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Lip Balm Mask de Atenea, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/atenea-038-2-variantes.webp",
-          "width": 591,
-          "height": 233,
-          "alt": "Lip Balm Mask: tonos y presentaciones según el catálogo"
+          "width": 720,
+          "height": 254,
+          "alt": "Delineador de cejas: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 38
     },
     {
       "id": "atenea-039-1",
+      "name": "Lápiz delineador Color pencil",
+      "brand": "Atenea",
+      "category": "Labios",
+      "section": "Labios",
+      "price": 12000,
+      "image": "assets/images/productos/atenea-039-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Lápiz delineador Color pencil de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 39",
+      "gallery": [
+        {
+          "src": "assets/images/productos/atenea-039-1-variantes.webp",
+          "width": 720,
+          "height": 289,
+          "alt": "Lápiz delineador Color pencil: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 39
+    },
+    {
+      "id": "atenea-039-2",
+      "name": "Lip Balm Mask",
+      "brand": "Atenea",
+      "category": "Labios",
+      "section": "Labios",
+      "price": 33000,
+      "image": "assets/images/productos/atenea-039-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Lip Balm Mask de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 39",
+      "gallery": [
+        {
+          "src": "assets/images/productos/atenea-039-2-variantes.webp",
+          "width": 720,
+          "height": 284,
+          "alt": "Lip Balm Mask: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 39
+    },
+    {
+      "id": "atenea-040-1",
       "name": "Primer Gummy",
       "brand": "Atenea",
       "category": "Preparación y fijación",
@@ -2795,132 +3018,114 @@
           "price": 42500
         }
       ],
-      "image": "assets/images/productos/atenea-039-1.webp",
+      "image": "assets/images/productos/atenea-040-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Primer Gummy de Atenea, fotografía del catálogo",
-      "page": 39
+      "imageSource": "Catálogo de Canva (PDF), página 40",
+      "page": 40
     },
     {
-      "id": "atenea-040-1",
+      "id": "atenea-041-1",
       "name": "Brocha duo Base y productos en crema",
       "brand": "Atenea",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 30500,
-      "image": "assets/images/productos/atenea-040-1.webp",
+      "image": "assets/images/productos/atenea-041-1.webp",
       "imageWidth": 294,
       "imageHeight": 294,
       "imageAlt": "Brocha duo Base y productos en crema de Atenea, fotografía del catálogo",
-      "page": 40
+      "imageSource": "Catálogo de Canva (PDF), página 41",
+      "page": 41
     },
     {
-      "id": "atenea-040-2",
+      "id": "atenea-041-2",
       "name": "Beauty sponge",
       "brand": "Atenea",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 16000,
-      "image": "assets/images/productos/atenea-040-2.webp",
+      "image": "assets/images/productos/atenea-041-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Beauty sponge de Atenea, fotografía del catálogo",
-      "page": 40
+      "imageSource": "Catálogo de Canva (PDF), página 41",
+      "page": 41
     },
     {
-      "id": "atenea-041-1",
+      "id": "atenea-042-1",
       "name": "Encrespador Focus",
       "brand": "Atenea",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 9500,
-      "image": "assets/images/productos/atenea-041-1.webp",
+      "image": "assets/images/productos/atenea-042-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Encrespador Focus de Atenea, fotografía del catálogo",
-      "page": 41
+      "imageSource": "Catálogo de Canva (PDF), página 42",
+      "page": 42
     },
     {
-      "id": "atenea-041-2",
+      "id": "atenea-042-2",
       "name": "Mini beauty sponge trio",
       "brand": "Atenea",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 10000,
-      "image": "assets/images/productos/atenea-041-2.webp",
+      "image": "assets/images/productos/atenea-042-2.webp",
       "imageWidth": 318,
       "imageHeight": 318,
       "imageAlt": "Mini beauty sponge trio de Atenea, fotografía del catálogo",
-      "page": 41
+      "imageSource": "Catálogo de Canva (PDF), página 42",
+      "page": 42
     },
     {
-      "id": "prosa-042-1",
+      "id": "prosa-043-1",
       "name": "Pestañina Profesional Silicon",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 21500,
-      "image": "assets/images/productos/prosa-042-1.webp",
+      "image": "assets/images/productos/prosa-043-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Pestañina Profesional Silicon de Prosa, fotografía del catálogo",
-      "page": 42
+      "imageSource": "Catálogo de Canva (PDF), página 43",
+      "page": 43
     },
     {
-      "id": "prosa-042-2",
+      "id": "prosa-043-2",
       "name": "Pestañina Maxivolumen",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 21500,
-      "image": "assets/images/productos/prosa-042-2.webp",
+      "image": "assets/images/productos/prosa-043-2.webp",
       "imageWidth": 321,
       "imageHeight": 321,
       "imageAlt": "Pestañina Maxivolumen de Prosa, fotografía del catálogo",
-      "page": 42
+      "imageSource": "Catálogo de Canva (PDF), página 43",
+      "page": 43
     },
     {
-      "id": "prosa-043-1",
+      "id": "prosa-044-1",
       "name": "Pestañina Microfibra",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 21500,
-      "image": "assets/images/productos/prosa-043-1.webp",
+      "image": "assets/images/productos/prosa-044-1.webp",
       "imageWidth": 297,
       "imageHeight": 297,
       "imageAlt": "Pestañina Microfibra de Prosa, fotografía del catálogo",
-      "page": 43
-    },
-    {
-      "id": "prosa-043-2",
-      "name": "Pestañina Maxivolumen Silicon",
-      "brand": "Prosa",
-      "category": "Ojos y cejas",
-      "section": "Ojos",
-      "price": 21500,
-      "image": "assets/images/productos/prosa-043-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Pestañina Maxivolumen Silicon de Prosa, fotografía del catálogo",
-      "page": 43
-    },
-    {
-      "id": "prosa-044-1",
-      "name": "Pestañina Profesional Silicon - Café",
-      "brand": "Prosa",
-      "category": "Ojos y cejas",
-      "section": "Ojos",
-      "price": 21500,
-      "image": "assets/images/productos/prosa-044-1.webp",
-      "imageWidth": 303,
-      "imageHeight": 303,
-      "imageAlt": "Pestañina Profesional Silicon - Café de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 44",
       "page": 44
     },
     {
       "id": "prosa-044-2",
-      "name": "Pestañina Sensual Love",
+      "name": "Pestañina Maxivolumen Silicon",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
@@ -2928,25 +3133,27 @@
       "image": "assets/images/productos/prosa-044-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Pestañina Sensual Love de Prosa, fotografía del catálogo",
+      "imageAlt": "Pestañina Maxivolumen Silicon de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 44",
       "page": 44
     },
     {
       "id": "prosa-045-1",
-      "name": "Pestañina con aceite de mamey",
+      "name": "Pestañina Profesional Silicon - Café",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 21500,
       "image": "assets/images/productos/prosa-045-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Pestañina con aceite de mamey de Prosa, fotografía del catálogo",
+      "imageWidth": 303,
+      "imageHeight": 303,
+      "imageAlt": "Pestañina Profesional Silicon - Café de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 45",
       "page": 45
     },
     {
       "id": "prosa-045-2",
-      "name": "Pestañina con aceite de aguacate",
+      "name": "Pestañina Sensual Love",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
@@ -2954,12 +3161,13 @@
       "image": "assets/images/productos/prosa-045-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Pestañina con aceite de aguacate de Prosa, fotografía del catálogo",
+      "imageAlt": "Pestañina Sensual Love de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 45",
       "page": 45
     },
     {
       "id": "prosa-046-1",
-      "name": "Pestañina red passion",
+      "name": "Pestañina con aceite de mamey",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
@@ -2967,12 +3175,13 @@
       "image": "assets/images/productos/prosa-046-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Pestañina red passion de Prosa, fotografía del catálogo",
+      "imageAlt": "Pestañina con aceite de mamey de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 46",
       "page": 46
     },
     {
       "id": "prosa-046-2",
-      "name": "Aceite para pestañas",
+      "name": "Pestañina con aceite de aguacate",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
@@ -2980,24 +3189,68 @@
       "image": "assets/images/productos/prosa-046-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Aceite para pestañas de Prosa, fotografía del catálogo",
+      "imageAlt": "Pestañina con aceite de aguacate de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 46",
       "page": 46
     },
     {
       "id": "prosa-047-1",
+      "name": "Pestañina red passion",
+      "brand": "Prosa",
+      "category": "Ojos y cejas",
+      "section": "Ojos",
+      "price": 21500,
+      "image": "assets/images/productos/prosa-047-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Pestañina red passion de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 47",
+      "page": 47
+    },
+    {
+      "id": "prosa-047-2",
+      "name": "Aceite para pestañas",
+      "brand": "Prosa",
+      "category": "Ojos y cejas",
+      "section": "Ojos",
+      "price": 22000,
+      "image": "assets/images/productos/prosa-047-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Aceite para pestañas de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 47",
+      "page": 47
+    },
+    {
+      "id": "prosa-048-1",
+      "name": "Pestañina maxivolumen Borgoña",
+      "brand": "Prosa",
+      "category": "Ojos y cejas",
+      "section": "Ojos",
+      "price": 21500,
+      "image": "assets/images/productos/prosa-048-1.webp",
+      "imageWidth": 312,
+      "imageHeight": 312,
+      "imageAlt": "Pestañina maxivolumen Borgoña de Prosa, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 48",
+      "page": 48
+    },
+    {
+      "id": "prosa-048-2",
       "name": "Tratamiento en máscara para pestañas y cejas",
       "brand": "Prosa",
       "category": "Ojos y cejas",
       "section": "Ojos",
-      "price": 20500,
-      "image": "assets/images/productos/prosa-047-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
+      "price": 21000,
+      "image": "assets/images/productos/prosa-048-2.webp",
+      "imageWidth": 596,
+      "imageHeight": 596,
       "imageAlt": "Tratamiento en máscara para pestañas y cejas de Prosa, fotografía del catálogo",
-      "page": 47
+      "imageSource": "Catálogo de Canva (PDF), página 48",
+      "page": 48
     },
     {
-      "id": "samy-048-1",
+      "id": "samy-049-1",
       "name": "Polvo suelto",
       "brand": "Samy",
       "category": "Rostro",
@@ -3013,148 +3266,155 @@
           "price": 24000
         }
       ],
-      "image": "assets/images/productos/samy-048-1.webp",
+      "image": "assets/images/productos/samy-049-1.webp",
       "imageWidth": 348,
       "imageHeight": 348,
       "imageAlt": "Polvo suelto de Samy, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/samy-048-1-variantes.webp",
-          "width": 241,
-          "height": 161,
-          "alt": "Polvo suelto: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 48
-    },
-    {
-      "id": "samy-048-2",
-      "name": "Rubor en barra Velvet Glam",
-      "brand": "Samy",
-      "category": "Rostro",
-      "section": "Rostro",
-      "price": 16000,
-      "image": "assets/images/productos/samy-048-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Rubor en barra Velvet Glam de Samy, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/samy-048-2-variantes.webp",
-          "width": 629,
-          "height": 257,
-          "alt": "Rubor en barra Velvet Glam: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 48
-    },
-    {
-      "id": "samy-049-1",
-      "name": "Rubor Compacto Velvet Glam Samy",
-      "brand": "Samy",
-      "category": "Rostro",
-      "section": "Rostro",
-      "price": 25000,
-      "image": "assets/images/productos/samy-049-1.webp",
-      "imageWidth": 291,
-      "imageHeight": 291,
-      "imageAlt": "Rubor Compacto Velvet Glam Samy de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 49",
       "gallery": [
         {
           "src": "assets/images/productos/samy-049-1-variantes.webp",
-          "width": 720,
-          "height": 231,
-          "alt": "Rubor Compacto Velvet Glam Samy: tonos y presentaciones según el catálogo"
+          "width": 399,
+          "height": 266,
+          "alt": "Polvo suelto: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 49
     },
     {
       "id": "samy-049-2",
-      "name": "Rubor 2 en 1 Sunset Glam Samy",
+      "name": "Rubor en barra Velvet Glam",
       "brand": "Samy",
       "category": "Rostro",
       "section": "Rostro",
-      "price": 28000,
+      "price": 16000,
       "image": "assets/images/productos/samy-049-2.webp",
-      "imageWidth": 291,
-      "imageHeight": 291,
-      "imageAlt": "Rubor 2 en 1 Sunset Glam Samy de Samy, fotografía del catálogo",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Rubor en barra Velvet Glam de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 49",
       "gallery": [
         {
           "src": "assets/images/productos/samy-049-2-variantes.webp",
-          "width": 345,
-          "height": 173,
-          "alt": "Rubor 2 en 1 Sunset Glam Samy: tonos y presentaciones según el catálogo"
+          "width": 720,
+          "height": 294,
+          "alt": "Rubor en barra Velvet Glam: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 49
     },
     {
       "id": "samy-050-1",
-      "name": "Tinta en crema Lip Blush",
+      "name": "Rubor Compacto Velvet Glam Samy",
       "brand": "Samy",
       "category": "Rostro",
       "section": "Rostro",
-      "price": 21500,
+      "price": 25000,
       "image": "assets/images/productos/samy-050-1.webp",
-      "imageWidth": 294,
-      "imageHeight": 294,
-      "imageAlt": "Tinta en crema Lip Blush de Samy, fotografía del catálogo",
+      "imageWidth": 291,
+      "imageHeight": 291,
+      "imageAlt": "Rubor Compacto Velvet Glam Samy de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 50",
       "gallery": [
         {
           "src": "assets/images/productos/samy-050-1-variantes.webp",
-          "width": 361,
-          "height": 171,
-          "alt": "Tinta en crema Lip Blush: tonos y presentaciones según el catálogo"
+          "width": 720,
+          "height": 231,
+          "alt": "Rubor Compacto Velvet Glam Samy: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 50
     },
     {
       "id": "samy-050-2",
-      "name": "Contorno en barra Velvet Glam",
+      "name": "Rubor 2 en 1 Sunset Glam Samy",
       "brand": "Samy",
       "category": "Rostro",
       "section": "Rostro",
-      "price": 16000,
+      "price": 28000,
       "image": "assets/images/productos/samy-050-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Contorno en barra Velvet Glam de Samy, fotografía del catálogo",
+      "imageWidth": 291,
+      "imageHeight": 291,
+      "imageAlt": "Rubor 2 en 1 Sunset Glam Samy de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 50",
       "gallery": [
         {
           "src": "assets/images/productos/samy-050-2-variantes.webp",
-          "width": 720,
-          "height": 290,
-          "alt": "Contorno en barra Velvet Glam: tonos y presentaciones según el catálogo"
+          "width": 573,
+          "height": 286,
+          "alt": "Rubor 2 en 1 Sunset Glam Samy: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 50
     },
     {
       "id": "samy-051-1",
-      "name": "Betún de cejas",
+      "name": "Tinta en crema Lip Blush",
       "brand": "Samy",
-      "category": "Ojos y cejas",
-      "section": "Cejas",
-      "price": 10500,
+      "category": "Rostro",
+      "section": "Rostro",
+      "price": 21500,
       "image": "assets/images/productos/samy-051-1.webp",
-      "imageWidth": 297,
-      "imageHeight": 297,
-      "imageAlt": "Betún de cejas de Samy, fotografía del catálogo",
+      "imageWidth": 294,
+      "imageHeight": 294,
+      "imageAlt": "Tinta en crema Lip Blush de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 51",
       "gallery": [
         {
           "src": "assets/images/productos/samy-051-1-variantes.webp",
-          "width": 434,
-          "height": 199,
-          "alt": "Betún de cejas: tonos y presentaciones según el catálogo"
+          "width": 400,
+          "height": 190,
+          "alt": "Tinta en crema Lip Blush: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 51
     },
     {
       "id": "samy-051-2",
+      "name": "Contorno en barra Velvet Glam",
+      "brand": "Samy",
+      "category": "Rostro",
+      "section": "Rostro",
+      "price": 16000,
+      "image": "assets/images/productos/samy-051-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Contorno en barra Velvet Glam de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 51",
+      "gallery": [
+        {
+          "src": "assets/images/productos/samy-051-2-variantes.webp",
+          "width": 720,
+          "height": 290,
+          "alt": "Contorno en barra Velvet Glam: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 51
+    },
+    {
+      "id": "samy-052-1",
+      "name": "Betún de cejas",
+      "brand": "Samy",
+      "category": "Ojos y cejas",
+      "section": "Cejas",
+      "price": 10500,
+      "image": "assets/images/productos/samy-052-1.webp",
+      "imageWidth": 297,
+      "imageHeight": 297,
+      "imageAlt": "Betún de cejas de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 52",
+      "gallery": [
+        {
+          "src": "assets/images/productos/samy-052-1-variantes.webp",
+          "width": 720,
+          "height": 331,
+          "alt": "Betún de cejas: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 52
+    },
+    {
+      "id": "samy-052-2",
       "name": "Kit para cejas",
       "brand": "Samy",
       "category": "Ojos y cejas",
@@ -3163,411 +3423,435 @@
       "details": {
         "Opciones": "BRUNETTE, BLONDE"
       },
-      "image": "assets/images/productos/samy-051-2.webp",
-      "imageWidth": 330,
-      "imageHeight": 330,
-      "imageAlt": "Kit para cejas de Samy, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/samy-051-2-variantes.webp",
-          "width": 671,
-          "height": 260,
-          "alt": "Kit para cejas: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 51
-    },
-    {
-      "id": "samy-052-1",
-      "name": "Paleta de sombras x3",
-      "brand": "Samy",
-      "category": "Ojos y cejas",
-      "section": "Ojos",
-      "price": 12500,
-      "image": "assets/images/productos/samy-052-1.webp",
-      "imageWidth": 327,
-      "imageHeight": 327,
-      "imageAlt": "Paleta de sombras x3 de Samy, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/samy-052-1-variantes.webp",
-          "width": 389,
-          "height": 301,
-          "alt": "Paleta de sombras x3: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 52
-    },
-    {
-      "id": "samy-052-2",
-      "name": "Paleta de sombras x9",
-      "brand": "Samy",
-      "category": "Ojos y cejas",
-      "section": "Ojos",
-      "price": 26000,
       "image": "assets/images/productos/samy-052-2.webp",
       "imageWidth": 330,
       "imageHeight": 330,
-      "imageAlt": "Paleta de sombras x9 de Samy, fotografía del catálogo",
+      "imageAlt": "Kit para cejas de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 52",
       "gallery": [
         {
           "src": "assets/images/productos/samy-052-2-variantes.webp",
           "width": 720,
-          "height": 426,
-          "alt": "Paleta de sombras x9: tonos y presentaciones según el catálogo"
+          "height": 279,
+          "alt": "Kit para cejas: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 52
     },
     {
       "id": "samy-053-1",
+      "name": "Paleta de sombras x3",
+      "brand": "Samy",
+      "category": "Ojos y cejas",
+      "section": "Ojos",
+      "price": 12500,
+      "image": "assets/images/productos/samy-053-1.webp",
+      "imageWidth": 327,
+      "imageHeight": 327,
+      "imageAlt": "Paleta de sombras x3 de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 53",
+      "gallery": [
+        {
+          "src": "assets/images/productos/samy-053-1-variantes.webp",
+          "width": 720,
+          "height": 386,
+          "alt": "Paleta de sombras x3: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 53
+    },
+    {
+      "id": "samy-053-2",
+      "name": "Paleta de sombras x9",
+      "brand": "Samy",
+      "category": "Ojos y cejas",
+      "section": "Ojos",
+      "price": 26000,
+      "image": "assets/images/productos/samy-053-2.webp",
+      "imageWidth": 366,
+      "imageHeight": 366,
+      "imageAlt": "Paleta de sombras x9 de Samy, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 53",
+      "gallery": [
+        {
+          "src": "assets/images/productos/samy-053-2-variantes.webp",
+          "width": 720,
+          "height": 425,
+          "alt": "Paleta de sombras x9: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 53
+    },
+    {
+      "id": "samy-054-1",
       "name": "Esponja de maquillaje",
       "brand": "Samy",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 13000,
-      "image": "assets/images/productos/samy-053-1.webp",
+      "image": "assets/images/productos/samy-054-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Esponja de maquillaje de Samy, fotografía del catálogo",
-      "page": 53
+      "imageSource": "Catálogo de Canva (PDF), página 54",
+      "page": 54
     },
     {
-      "id": "samy-053-2",
+      "id": "samy-054-2",
       "name": "Brocha retráctil",
       "brand": "Samy",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 25500,
-      "image": "assets/images/productos/samy-053-2.webp",
+      "image": "assets/images/productos/samy-054-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Brocha retráctil de Samy, fotografía del catálogo",
-      "page": 53
+      "imageSource": "Catálogo de Canva (PDF), página 54",
+      "page": 54
     },
     {
-      "id": "lula-054-1",
+      "id": "lula-055-1",
       "name": "Lápiz delineador de ojos",
       "brand": "Lula",
       "category": "Ojos y cejas",
       "section": "Ojos",
       "price": 10000,
-      "image": "assets/images/productos/lula-054-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Lápiz delineador de ojos de Lula, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/lula-054-1-variantes.webp",
-          "width": 314,
-          "height": 202,
-          "alt": "Lápiz delineador de ojos: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 54
-    },
-    {
-      "id": "lula-055-1",
-      "name": "Aceite para labios con charm",
-      "brand": "Lula",
-      "category": "Labios",
-      "section": "Labios",
-      "price": 18000,
       "image": "assets/images/productos/lula-055-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Aceite para labios con charm de Lula, fotografía del catálogo",
+      "imageAlt": "Lápiz delineador de ojos de Lula, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 55",
       "gallery": [
         {
           "src": "assets/images/productos/lula-055-1-variantes.webp",
-          "width": 436,
-          "height": 236,
-          "alt": "Aceite para labios con charm: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 55
-    },
-    {
-      "id": "lula-055-2",
-      "name": "Bálsamo de labios",
-      "brand": "Lula",
-      "category": "Labios",
-      "section": "Labios",
-      "price": 12000,
-      "image": "assets/images/productos/lula-055-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Bálsamo de labios de Lula, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/lula-055-2-variantes.webp",
-          "width": 502,
-          "height": 272,
-          "alt": "Bálsamo de labios: tonos y presentaciones según el catálogo"
+          "width": 447,
+          "height": 288,
+          "alt": "Lápiz delineador de ojos: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 55
     },
     {
       "id": "lula-056-1",
+      "name": "Aceite para labios con charm",
+      "brand": "Lula",
+      "category": "Labios",
+      "section": "Labios",
+      "price": 18000,
+      "image": "assets/images/productos/lula-056-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Aceite para labios con charm de Lula, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 56",
+      "gallery": [
+        {
+          "src": "assets/images/productos/lula-056-1-variantes.webp",
+          "width": 720,
+          "height": 389,
+          "alt": "Aceite para labios con charm: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 56
+    },
+    {
+      "id": "lula-056-2",
+      "name": "Bálsamo de labios",
+      "brand": "Lula",
+      "category": "Labios",
+      "section": "Labios",
+      "price": 12000,
+      "image": "assets/images/productos/lula-056-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Bálsamo de labios de Lula, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 56",
+      "gallery": [
+        {
+          "src": "assets/images/productos/lula-056-2-variantes.webp",
+          "width": 720,
+          "height": 391,
+          "alt": "Bálsamo de labios: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 56
+    },
+    {
+      "id": "lula-057-1",
       "name": "Bálsamo desmaquillante",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 18000,
-      "image": "assets/images/productos/lula-056-1.webp",
+      "image": "assets/images/productos/lula-057-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bálsamo desmaquillante de Lula, fotografía del catálogo",
-      "page": 56
+      "imageSource": "Catálogo de Canva (PDF), página 57",
+      "page": 57
     },
     {
-      "id": "lula-056-2",
+      "id": "lula-057-2",
       "name": "Contorno de ojos Aloe Vera",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 18500,
-      "image": "assets/images/productos/lula-056-2.webp",
+      "image": "assets/images/productos/lula-057-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Contorno de ojos Aloe Vera de Lula, fotografía del catálogo",
-      "page": 56
+      "imageSource": "Catálogo de Canva (PDF), página 57",
+      "page": 57
     },
     {
-      "id": "lula-057-1",
+      "id": "lula-058-1",
       "name": "Toallas húmedas desmaquillantes",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 10000,
-      "image": "assets/images/productos/lula-057-1.webp",
+      "image": "assets/images/productos/lula-058-1.webp",
       "imageWidth": 330,
       "imageHeight": 330,
       "imageAlt": "Toallas húmedas desmaquillantes de Lula, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 58",
       "gallery": [
         {
-          "src": "assets/images/productos/lula-057-1-variantes.webp",
+          "src": "assets/images/productos/lula-058-1-variantes.webp",
           "width": 720,
-          "height": 260,
+          "height": 261,
           "alt": "Toallas húmedas desmaquillantes: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 57
+      "page": 58
     },
     {
-      "id": "lula-057-2",
+      "id": "lula-058-2",
       "name": "Parches de puntos negros x 8 Unidades",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 12500,
-      "image": "assets/images/productos/lula-057-2.webp",
+      "image": "assets/images/productos/lula-058-2.webp",
       "imageWidth": 324,
       "imageHeight": 324,
       "imageAlt": "Parches de puntos negros x 8 Unidades de Lula, fotografía del catálogo",
-      "page": 57
+      "imageSource": "Catálogo de Canva (PDF), página 58",
+      "page": 58
     },
     {
-      "id": "lula-058-1",
+      "id": "lula-059-1",
       "name": "Hidratante facial de noche con ceramidas",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 27500,
-      "image": "assets/images/productos/lula-058-1.webp",
+      "image": "assets/images/productos/lula-059-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Hidratante facial de noche con ceramidas de Lula, fotografía del catálogo",
-      "page": 58
+      "imageSource": "Catálogo de Canva (PDF), página 59",
+      "page": 59
     },
     {
-      "id": "lula-058-2",
+      "id": "lula-059-2",
       "name": "Hidratante facial de día con ceramidas",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 23500,
-      "image": "assets/images/productos/lula-058-2.webp",
+      "image": "assets/images/productos/lula-059-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Hidratante facial de día con ceramidas de Lula, fotografía del catálogo",
-      "page": 58
+      "imageSource": "Catálogo de Canva (PDF), página 59",
+      "page": 59
     },
     {
-      "id": "lula-059-1",
+      "id": "lula-060-1",
       "name": "Tónico de Rosas",
       "brand": "Lula",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 23500,
-      "image": "assets/images/productos/lula-059-1.webp",
+      "image": "assets/images/productos/lula-060-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tónico de Rosas de Lula, fotografía del catálogo",
-      "page": 59
+      "imageSource": "Catálogo de Canva (PDF), página 60",
+      "page": 60
     },
     {
-      "id": "lula-060-1",
+      "id": "lula-061-1",
       "name": "Kit de brochas Marshmallow X 13pcs",
       "brand": "Lula",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 95500,
       "description": "✨ Para el rostro: Brochas para base (como kabuki plana), polvos, rubor, contorno e iluminador (incluyendo mofetas o brochas de doble fibra para productos en crema y polvo).\n✨Para los ojos y detalles: Pinceles difuminadores en varios tamaños, brocha plana para sombras o corrector, y pincel diagonal para cejas o delineados.",
-      "image": "assets/images/productos/lula-060-1.webp",
-      "imageWidth": 357,
-      "imageHeight": 357,
+      "image": "assets/images/productos/lula-061-1.webp",
+      "imageWidth": 396,
+      "imageHeight": 396,
       "imageAlt": "Kit de brochas Marshmallow X 13pcs de Lula, fotografía del catálogo",
-      "page": 60
+      "imageSource": "Catálogo de Canva (PDF), página 61",
+      "page": 61
     },
     {
-      "id": "lula-060-2",
+      "id": "lula-061-2",
       "name": "Kit de brochas Uva X 14pcs",
       "brand": "Lula",
       "category": "Brochas, accesorios y kits",
       "section": "Accesorios",
       "price": 118500,
       "description": "✨ Rostro – Brochas para base, corrector, rubor, contorno, iluminador y polvos compactos o sueltos.\n✨ Ojos – Pinceles para aplicar, difuminar y delinear sombras con precisión.\n✨ Cejas y labios – Herramientas especializadas para definir, perfilar y perfeccionar el maquillaje.",
-      "image": "assets/images/productos/lula-060-2.webp",
+      "image": "assets/images/productos/lula-061-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit de brochas Uva X 14pcs de Lula, fotografía del catálogo",
-      "page": 60
+      "imageSource": "Catálogo de Canva (PDF), página 61",
+      "page": 61
     },
     {
-      "id": "raquel-061-1",
+      "id": "raquel-062-1",
       "name": "Polvo suelto traslúcido mate minerals con avena y trigo",
       "brand": "Raquel",
       "category": "Rostro",
       "section": "Rostro",
       "price": 18500,
-      "image": "assets/images/productos/raquel-061-1.webp",
+      "image": "assets/images/productos/raquel-062-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Polvo suelto traslúcido mate minerals con avena y trigo de Raquel, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 62",
       "gallery": [
         {
-          "src": "assets/images/productos/raquel-061-1-variantes.webp",
-          "width": 501,
-          "height": 320,
+          "src": "assets/images/productos/raquel-062-1-variantes.webp",
+          "width": 720,
+          "height": 458,
           "alt": "Polvo suelto traslúcido mate minerals con avena y trigo: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 61
-    },
-    {
-      "id": "og-062-1",
-      "name": "Base Aqua smooth",
-      "brand": "OG",
-      "category": "Rostro",
-      "section": "Rostro",
-      "price": 38500,
-      "image": "assets/images/productos/og-062-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Base Aqua smooth de OG, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/og-062-1-variantes.webp",
-          "width": 432,
-          "height": 202,
-          "alt": "Base Aqua smooth: tonos y presentaciones según el catálogo"
-        }
-      ],
-      "page": 62
-    },
-    {
-      "id": "og-062-2",
-      "name": "Base Stay matte",
-      "brand": "OG",
-      "category": "Rostro",
-      "section": "Rostro",
-      "price": 45500,
-      "image": "assets/images/productos/og-062-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Base Stay matte de OG, fotografía del catálogo",
-      "gallery": [
-        {
-          "src": "assets/images/productos/og-062-2-variantes.webp",
-          "width": 446,
-          "height": 200,
-          "alt": "Base Stay matte: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 62
     },
     {
       "id": "og-063-1",
-      "name": "Rubor mineralizado Daily",
+      "name": "Base Aqua smooth",
       "brand": "OG",
       "category": "Rostro",
       "section": "Rostro",
-      "price": 39500,
+      "price": 38500,
       "image": "assets/images/productos/og-063-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Rubor mineralizado Daily de OG, fotografía del catálogo",
+      "imageAlt": "Base Aqua smooth de OG, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 63",
       "gallery": [
         {
           "src": "assets/images/productos/og-063-1-variantes.webp",
-          "width": 401,
-          "height": 156,
-          "alt": "Rubor mineralizado Daily: tonos y presentaciones según el catálogo"
+          "width": 720,
+          "height": 336,
+          "alt": "Base Aqua smooth: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 63
     },
     {
       "id": "og-063-2",
-      "name": "Rubor matte Daily",
+      "name": "Base Stay matte",
       "brand": "OG",
       "category": "Rostro",
       "section": "Rostro",
-      "price": 39500,
+      "price": 45500,
       "image": "assets/images/productos/og-063-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Rubor matte Daily de OG, fotografía del catálogo",
+      "imageAlt": "Base Stay matte de OG, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 63",
       "gallery": [
         {
           "src": "assets/images/productos/og-063-2-variantes.webp",
-          "width": 454,
-          "height": 176,
-          "alt": "Rubor matte Daily: tonos y presentaciones según el catálogo"
+          "width": 555,
+          "height": 249,
+          "alt": "Base Stay matte: tonos y presentaciones según el catálogo"
         }
       ],
       "page": 63
     },
     {
       "id": "og-064-1",
+      "name": "Rubor mineralizado Daily",
+      "brand": "OG",
+      "category": "Rostro",
+      "section": "Rostro",
+      "price": 39500,
+      "image": "assets/images/productos/og-064-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Rubor mineralizado Daily de OG, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 64",
+      "gallery": [
+        {
+          "src": "assets/images/productos/og-064-1-variantes.webp",
+          "width": 666,
+          "height": 258,
+          "alt": "Rubor mineralizado Daily: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 64
+    },
+    {
+      "id": "og-064-2",
+      "name": "Rubor matte Daily",
+      "brand": "OG",
+      "category": "Rostro",
+      "section": "Rostro",
+      "price": 39500,
+      "image": "assets/images/productos/og-064-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Rubor matte Daily de OG, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 64",
+      "gallery": [
+        {
+          "src": "assets/images/productos/og-064-2-variantes.webp",
+          "width": 566,
+          "height": 218,
+          "alt": "Rubor matte Daily: tonos y presentaciones según el catálogo"
+        }
+      ],
+      "page": 64
+    },
+    {
+      "id": "og-065-1",
       "name": "Gloss and lip Dreamy",
       "brand": "OG",
       "category": "Labios",
       "section": "Labios",
       "price": 41500,
-      "image": "assets/images/productos/og-064-1.webp",
+      "image": "assets/images/productos/og-065-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Gloss and lip Dreamy de OG, fotografía del catálogo",
-      "page": 64
+      "imageSource": "Catálogo de Canva (PDF), página 65",
+      "page": 65
     },
     {
-      "id": "og-064-2",
+      "id": "og-065-2",
       "name": "Brillo labial Yess Queen",
       "brand": "OG",
       "category": "Labios",
       "section": "Labios",
       "price": 31500,
-      "image": "assets/images/productos/og-064-2.webp",
+      "image": "assets/images/productos/og-065-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Brillo labial Yess Queen de OG, fotografía del catálogo",
-      "page": 64
+      "imageSource": "Catálogo de Canva (PDF), página 65",
+      "page": 65
     },
     {
-      "id": "schwarzkopf-065-1",
+      "id": "schwarzkopf-066-1",
       "name": "Gel fijador Glued Got2b amarillo",
       "brand": "Schwarzkopf",
       "category": "Cuidado capilar",
@@ -3579,14 +3863,15 @@
           "price": 23500
         }
       ],
-      "image": "assets/images/productos/schwarzkopf-065-1.webp",
+      "image": "assets/images/productos/schwarzkopf-066-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Gel fijador Glued Got2b amarillo de Schwarzkopf, fotografía del catálogo",
-      "page": 65
+      "imageSource": "Catálogo de Canva (PDF), página 66",
+      "page": 66
     },
     {
-      "id": "schwarzkopf-065-2",
+      "id": "schwarzkopf-066-2",
       "name": "Gel para cejas Got2b amarillo",
       "brand": "Schwarzkopf",
       "category": "Ojos y cejas",
@@ -3598,14 +3883,15 @@
           "price": 62500
         }
       ],
-      "image": "assets/images/productos/schwarzkopf-065-2.webp",
+      "image": "assets/images/productos/schwarzkopf-066-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Gel para cejas Got2b amarillo de Schwarzkopf, fotografía del catálogo",
-      "page": 65
+      "imageSource": "Catálogo de Canva (PDF), página 66",
+      "page": 66
     },
     {
-      "id": "tocobo-066-1",
+      "id": "tocobo-067-1",
       "name": "Bloqueador en barra Cotton Soft SPF50",
       "brand": "Tocobo",
       "category": "Cuidado facial",
@@ -3621,217 +3907,205 @@
           "price": 50500
         }
       ],
-      "image": "assets/images/productos/tocobo-066-1.webp",
+      "image": "assets/images/productos/tocobo-067-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Bloqueador en barra Cotton Soft SPF50 de Tocobo, fotografía del catálogo",
-      "page": 66
+      "imageSource": "Catálogo de Canva (PDF), página 67",
+      "page": 67
     },
     {
-      "id": "tocobo-066-2",
+      "id": "tocobo-067-2",
       "name": "Dúo de limpieza",
       "brand": "Tocobo",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 133500,
-      "image": "assets/images/productos/tocobo-066-2.webp",
+      "image": "assets/images/productos/tocobo-067-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Dúo de limpieza de Tocobo, fotografía del catálogo",
-      "page": 66
+      "imageSource": "Catálogo de Canva (PDF), página 67",
+      "page": 67
     },
     {
-      "id": "skin-1004-067-1",
+      "id": "skin-1004-068-1",
       "name": "Madagascar Centella Ampoule Foam Limpiador 125 ml",
       "brand": "Skin 1004",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 79500,
-      "image": "assets/images/productos/skin-1004-067-1.webp",
+      "image": "assets/images/productos/skin-1004-068-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Madagascar Centella Ampoule Foam Limpiador 125 ml de Skin 1004, fotografía del catálogo",
-      "page": 67
+      "imageSource": "Catálogo de Canva (PDF), página 68",
+      "page": 68
     },
     {
-      "id": "skin-1004-067-2",
+      "id": "skin-1004-068-2",
       "name": "Centella Poremizing Deep Cleansing Foam Limpiador 125 ml",
       "brand": "Skin 1004",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 76500,
-      "image": "assets/images/productos/skin-1004-067-2.webp",
+      "image": "assets/images/productos/skin-1004-068-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Centella Poremizing Deep Cleansing Foam Limpiador 125 ml de Skin 1004, fotografía del catálogo",
-      "page": 67
+      "imageSource": "Catálogo de Canva (PDF), página 68",
+      "page": 68
     },
     {
-      "id": "bioaqua-068-1",
+      "id": "bioaqua-069-1",
       "name": "Kit facial de rosas",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador, tónico, emulsión/loción, suero, crema hidratante y mascarilla.\nNecesidad: Hidratación.",
-      "image": "assets/images/productos/bioaqua-068-1.webp",
+      "image": "assets/images/productos/bioaqua-069-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit facial de rosas de Bioaqua, fotografía del catálogo",
-      "page": 68
+      "imageSource": "Catálogo de Canva (PDF), página 69",
+      "page": 69
     },
     {
-      "id": "bioaqua-068-2",
+      "id": "bioaqua-069-2",
       "name": "Kit facial de arroz",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador, tónico, sérum, loción, crema hidratante y contorno de ojos.\nNecesidad: Hidratación y anti - edad.",
-      "image": "assets/images/productos/bioaqua-068-2.webp",
+      "image": "assets/images/productos/bioaqua-069-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit facial de arroz de Bioaqua, fotografía del catálogo",
-      "page": 68
+      "imageSource": "Catálogo de Canva (PDF), página 69",
+      "page": 69
     },
     {
-      "id": "bioaqua-069-1",
+      "id": "bioaqua-070-1",
       "name": "Kit facial de centella asiática",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador facial, tónico, sérum, loción, crema hidratante y contorno de ojos.\nNecesidad: Acné",
-      "image": "assets/images/productos/bioaqua-069-1.webp",
+      "image": "assets/images/productos/bioaqua-070-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit facial de centella asiática de Bioaqua, fotografía del catálogo",
-      "page": 69
+      "imageSource": "Catálogo de Canva (PDF), página 70",
+      "page": 70
     },
     {
-      "id": "bioaqua-069-2",
+      "id": "bioaqua-070-2",
       "name": "Kit facial de ácido salicílico",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador, sérum, crema hidratante, mascarilla en velo y gel.\nNecesidad: Acné y manchas",
-      "image": "assets/images/productos/bioaqua-069-2.webp",
+      "image": "assets/images/productos/bioaqua-070-2.webp",
       "imageWidth": 300,
       "imageHeight": 300,
       "imageAlt": "Kit facial de ácido salicílico de Bioaqua, fotografía del catálogo",
-      "page": 69
+      "imageSource": "Catálogo de Canva (PDF), página 70",
+      "page": 70
     },
     {
-      "id": "bioaqua-070-1",
+      "id": "bioaqua-071-1",
       "name": "Kit facial con retinol",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador facial, tónico, sérum, loción, crema hidratante y contorno de ojos.\nNecesidad: arrugas, poros y manchas",
-      "image": "assets/images/productos/bioaqua-070-1.webp",
+      "image": "assets/images/productos/bioaqua-071-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit facial con retinol de Bioaqua, fotografía del catálogo",
-      "page": 70
+      "imageSource": "Catálogo de Canva (PDF), página 71",
+      "page": 71
     },
     {
-      "id": "bioaqua-070-2",
+      "id": "bioaqua-071-2",
       "name": "Kit facial de ácido hialurónico",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 37500,
       "description": "Incluye: limpiador facial, tónico, sérum, loción, crema hidratante y contorno de ojos.\nNecesidad: Hidratación",
-      "image": "assets/images/productos/bioaqua-070-2.webp",
+      "image": "assets/images/productos/bioaqua-071-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Kit facial de ácido hialurónico de Bioaqua, fotografía del catálogo",
-      "page": 70
+      "imageSource": "Catálogo de Canva (PDF), página 71",
+      "page": 71
     },
     {
-      "id": "bioaqua-071-1",
+      "id": "bioaqua-072-1",
       "name": "Mascarilla facial en velo",
       "brand": "Bioaqua",
       "category": "Rostro",
       "section": "Rostro",
       "price": 2500,
       "description": "Ácido salicílico: Limpia los poros a profundidad y previene el acné o los puntos negros.\nRosas y ácido hialurónico: Brindan hidratación profunda, calman la piel y aportan luminosidad.\nArroz: Ayuda a suavizar, iluminar y unificar el tono del rostro.\nVitamina C: Combina un gran poder antioxidante con la capacidad de desvanecer manchas.\nVitamina C y colágeno: Aportan firmeza, elasticidad y un efecto antienvejecimiento.\nRetinol: Acelera la renovación celular, combate arrugas y mejora la textura de la piel",
-      "image": "assets/images/productos/bioaqua-071-1.webp",
+      "image": "assets/images/productos/bioaqua-072-1.webp",
       "imageWidth": 360,
       "imageHeight": 360,
       "imageAlt": "Mascarilla facial en velo de Bioaqua, fotografía del catálogo",
-      "page": 71
+      "imageSource": "Catálogo de Canva (PDF), página 72",
+      "page": 72
     },
     {
-      "id": "bioaqua-072-1",
+      "id": "bioaqua-073-1",
       "name": "Jabón facial - ácido salicílico",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 10500,
-      "image": "assets/images/productos/bioaqua-072-1.webp",
+      "image": "assets/images/productos/bioaqua-073-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Jabón facial - ácido salicílico de Bioaqua, fotografía del catálogo",
-      "page": 72
+      "imageSource": "Catálogo de Canva (PDF), página 73",
+      "page": 73
     },
     {
-      "id": "bioaqua-072-2",
+      "id": "bioaqua-073-2",
       "name": "Espuma limpiadora de arroz",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 11500,
-      "image": "assets/images/productos/bioaqua-072-2.webp",
+      "image": "assets/images/productos/bioaqua-073-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Espuma limpiadora de arroz de Bioaqua, fotografía del catálogo",
-      "page": 72
+      "imageSource": "Catálogo de Canva (PDF), página 73",
+      "page": 73
     },
     {
-      "id": "bioaqua-073-1",
+      "id": "bioaqua-074-1",
       "name": "Tónico de vitamina C",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 9500,
-      "image": "assets/images/productos/bioaqua-073-1.webp",
+      "image": "assets/images/productos/bioaqua-074-1.webp",
       "imageWidth": 297,
       "imageHeight": 297,
       "imageAlt": "Tónico de vitamina C de Bioaqua, fotografía del catálogo",
-      "page": 73
-    },
-    {
-      "id": "bioaqua-073-2",
-      "name": "Tónico de centella asiática",
-      "brand": "Bioaqua",
-      "category": "Cuidado facial",
-      "section": "Cuidado facial",
-      "price": 9500,
-      "image": "assets/images/productos/bioaqua-073-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Tónico de centella asiática de Bioaqua, fotografía del catálogo",
-      "page": 73
-    },
-    {
-      "id": "bioaqua-074-1",
-      "name": "Tónico de arroz",
-      "brand": "Bioaqua",
-      "category": "Cuidado facial",
-      "section": "Cuidado facial",
-      "price": 9500,
-      "image": "assets/images/productos/bioaqua-074-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Tónico de arroz de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 74",
       "page": 74
     },
     {
       "id": "bioaqua-074-2",
-      "name": "Tónico de ácido hialurónico",
+      "name": "Tónico de centella asiática",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
@@ -3839,38 +4113,41 @@
       "image": "assets/images/productos/bioaqua-074-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Tónico de ácido hialurónico de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Tónico de centella asiática de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 74",
       "page": 74
     },
     {
       "id": "bioaqua-075-1",
-      "name": "Serum de vitamina C",
+      "name": "Tónico de arroz",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
-      "price": 12500,
+      "price": 9500,
       "image": "assets/images/productos/bioaqua-075-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Serum de vitamina C de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Tónico de arroz de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 75",
       "page": 75
     },
     {
       "id": "bioaqua-075-2",
-      "name": "Serum de centella asiática",
+      "name": "Tónico de ácido hialurónico",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
-      "price": 12500,
+      "price": 9500,
       "image": "assets/images/productos/bioaqua-075-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Serum de centella asiática de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Tónico de ácido hialurónico de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 75",
       "page": 75
     },
     {
       "id": "bioaqua-076-1",
-      "name": "Esencia de arroz",
+      "name": "Serum de vitamina C",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
@@ -3878,90 +4155,97 @@
       "image": "assets/images/productos/bioaqua-076-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Esencia de arroz de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Serum de vitamina C de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 76",
       "page": 76
     },
     {
       "id": "bioaqua-076-2",
+      "name": "Serum de centella asiática",
+      "brand": "Bioaqua",
+      "category": "Cuidado facial",
+      "section": "Cuidado facial",
+      "price": 12500,
+      "image": "assets/images/productos/bioaqua-076-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Serum de centella asiática de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 76",
+      "page": 76
+    },
+    {
+      "id": "bioaqua-077-1",
+      "name": "Esencia de arroz",
+      "brand": "Bioaqua",
+      "category": "Cuidado facial",
+      "section": "Cuidado facial",
+      "price": 12500,
+      "image": "assets/images/productos/bioaqua-077-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Esencia de arroz de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 77",
+      "page": 77
+    },
+    {
+      "id": "bioaqua-077-2",
       "name": "Serum de ácido hialurónico",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 10500,
-      "image": "assets/images/productos/bioaqua-076-2.webp",
+      "image": "assets/images/productos/bioaqua-077-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Serum de ácido hialurónico de Bioaqua, fotografía del catálogo",
-      "page": 76
+      "imageSource": "Catálogo de Canva (PDF), página 77",
+      "page": 77
     },
     {
-      "id": "bioaqua-077-1",
+      "id": "bioaqua-078-1",
       "name": "Serum de retinol",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 10500,
-      "image": "assets/images/productos/bioaqua-077-1.webp",
+      "image": "assets/images/productos/bioaqua-078-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Serum de retinol de Bioaqua, fotografía del catálogo",
-      "page": 77
+      "imageSource": "Catálogo de Canva (PDF), página 78",
+      "page": 78
     },
     {
-      "id": "bioaqua-077-2",
+      "id": "bioaqua-078-2",
       "name": "Serum pure skin",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 12500,
-      "image": "assets/images/productos/bioaqua-077-2.webp",
+      "image": "assets/images/productos/bioaqua-078-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Serum pure skin de Bioaqua, fotografía del catálogo",
-      "page": 77
+      "imageSource": "Catálogo de Canva (PDF), página 78",
+      "page": 78
     },
     {
-      "id": "bioaqua-078-1",
+      "id": "bioaqua-079-1",
       "name": "Crema hidratante con vitamina C",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 12500,
-      "image": "assets/images/productos/bioaqua-078-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Crema hidratante con vitamina C de Bioaqua, fotografía del catálogo",
-      "page": 78
-    },
-    {
-      "id": "bioaqua-078-2",
-      "name": "Crema hidratante con centella asiática",
-      "brand": "Bioaqua",
-      "category": "Cuidado facial",
-      "section": "Cuidado facial",
-      "price": 15500,
-      "image": "assets/images/productos/bioaqua-078-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Crema hidratante con centella asiática de Bioaqua, fotografía del catálogo",
-      "page": 78
-    },
-    {
-      "id": "bioaqua-079-1",
-      "name": "Crema hidratante de arroz",
-      "brand": "Bioaqua",
-      "category": "Cuidado facial",
-      "section": "Cuidado facial",
-      "price": 15500,
       "image": "assets/images/productos/bioaqua-079-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Crema hidratante de arroz de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Crema hidratante con vitamina C de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 79",
       "page": 79
     },
     {
       "id": "bioaqua-079-2",
-      "name": "Crema hidratante con ácido hialurónico",
+      "name": "Crema hidratante con centella asiática",
       "brand": "Bioaqua",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
@@ -3969,124 +4253,131 @@
       "image": "assets/images/productos/bioaqua-079-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Crema hidratante con ácido hialurónico de Bioaqua, fotografía del catálogo",
+      "imageAlt": "Crema hidratante con centella asiática de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 79",
       "page": 79
     },
     {
-      "id": "garnier-080-1",
+      "id": "bioaqua-080-1",
+      "name": "Crema hidratante de arroz",
+      "brand": "Bioaqua",
+      "category": "Cuidado facial",
+      "section": "Cuidado facial",
+      "price": 15500,
+      "image": "assets/images/productos/bioaqua-080-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Crema hidratante de arroz de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 80",
+      "page": 80
+    },
+    {
+      "id": "bioaqua-080-2",
+      "name": "Crema hidratante con ácido hialurónico",
+      "brand": "Bioaqua",
+      "category": "Cuidado facial",
+      "section": "Cuidado facial",
+      "price": 15500,
+      "image": "assets/images/productos/bioaqua-080-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Crema hidratante con ácido hialurónico de Bioaqua, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 80",
+      "page": 80
+    },
+    {
+      "id": "garnier-081-1",
       "name": "Agua micelar todo en 1 Rosada x 400 ml",
       "brand": "Garnier",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 29000,
       "presentation": "400 ml",
-      "image": "assets/images/productos/garnier-080-1.webp",
+      "image": "assets/images/productos/garnier-081-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Agua micelar todo en 1 Rosada x 400 ml de Garnier, fotografía del catálogo",
-      "page": 80
+      "imageSource": "Catálogo de Canva (PDF), página 81",
+      "page": 81
     },
     {
-      "id": "garnier-080-2",
+      "id": "garnier-081-2",
       "name": "Agua micelar todo en 1 Rosada x 100 ml",
       "brand": "Garnier",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/garnier-080-2.webp",
+      "image": "assets/images/productos/garnier-081-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Agua micelar todo en 1 Rosada x 100 ml de Garnier, fotografía del catálogo",
-      "page": 80
+      "imageSource": "Catálogo de Canva (PDF), página 81",
+      "page": 81
     },
     {
-      "id": "garnier-081-1",
+      "id": "garnier-082-1",
       "name": "Agua micelar pure active x 400 ml",
       "brand": "Garnier",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 35000,
       "presentation": "400 ml",
-      "image": "assets/images/productos/garnier-081-1.webp",
+      "image": "assets/images/productos/garnier-082-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Agua micelar pure active x 400 ml de Garnier, fotografía del catálogo",
-      "page": 81
+      "imageSource": "Catálogo de Canva (PDF), página 82",
+      "page": 82
     },
     {
-      "id": "garnier-081-2",
+      "id": "garnier-082-2",
       "name": "Agua micelar con vitamina C x 400 ml",
       "brand": "Garnier",
       "category": "Cuidado facial",
       "section": "Cuidado facial",
       "price": 36000,
       "presentation": "400 ml",
-      "image": "assets/images/productos/garnier-081-2.webp",
+      "image": "assets/images/productos/garnier-082-2.webp",
       "imageWidth": 312,
       "imageHeight": 312,
       "imageAlt": "Agua micelar con vitamina C x 400 ml de Garnier, fotografía del catálogo",
-      "page": 81
+      "imageSource": "Catálogo de Canva (PDF), página 82",
+      "page": 82
     },
     {
-      "id": "milagros-082-1",
+      "id": "milagros-083-1",
       "name": "Shampoo herbal x 500 ml (con romero y jengibre)",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/milagros-082-1.webp",
+      "image": "assets/images/productos/milagros-083-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Shampoo herbal x 500 ml (con romero y jengibre) de Milagros, fotografía del catálogo",
-      "page": 82
+      "imageSource": "Catálogo de Canva (PDF), página 83",
+      "page": 83
     },
     {
-      "id": "milagros-082-2",
+      "id": "milagros-083-2",
       "name": "Shampoo con cebolla x450 ml (con péptidos)",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 38500,
       "presentation": "450 ml",
-      "image": "assets/images/productos/milagros-082-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo con cebolla x450 ml (con péptidos) de Milagros, fotografía del catálogo",
-      "page": 82
-    },
-    {
-      "id": "milagros-083-1",
-      "name": "Shampoo magia x 450 ml (ácido hialurónico)",
-      "brand": "Milagros",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 35500,
-      "presentation": "450 ml",
-      "image": "assets/images/productos/milagros-083-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo magia x 450 ml (ácido hialurónico) de Milagros, fotografía del catálogo",
-      "page": 83
-    },
-    {
-      "id": "milagros-083-2",
-      "name": "Shampoo anticaspa x 450 ml",
-      "brand": "Milagros",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 35500,
-      "presentation": "450 ml",
       "image": "assets/images/productos/milagros-083-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Shampoo anticaspa x 450 ml de Milagros, fotografía del catálogo",
+      "imageAlt": "Shampoo con cebolla x450 ml (con péptidos) de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 83",
       "page": 83
     },
     {
       "id": "milagros-084-1",
-      "name": "Acondicionador ultra nutritivo x 450 ml",
+      "name": "Shampoo magia x 450 ml (ácido hialurónico)",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
@@ -4095,12 +4386,13 @@
       "image": "assets/images/productos/milagros-084-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Acondicionador ultra nutritivo x 450 ml de Milagros, fotografía del catálogo",
+      "imageAlt": "Shampoo magia x 450 ml (ácido hialurónico) de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 84",
       "page": 84
     },
     {
       "id": "milagros-084-2",
-      "name": "Acondicionador milagro herbal x 450 ml",
+      "name": "Shampoo anticaspa x 450 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
@@ -4109,68 +4401,73 @@
       "image": "assets/images/productos/milagros-084-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Acondicionador milagro herbal x 450 ml de Milagros, fotografía del catálogo",
+      "imageAlt": "Shampoo anticaspa x 450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 84",
       "page": 84
     },
     {
       "id": "milagros-085-1",
+      "name": "Acondicionador ultra nutritivo x 450 ml",
+      "brand": "Milagros",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 35500,
+      "presentation": "450 ml",
+      "image": "assets/images/productos/milagros-085-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Acondicionador ultra nutritivo x 450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 85",
+      "page": 85
+    },
+    {
+      "id": "milagros-085-2",
+      "name": "Acondicionador milagro herbal x 450 ml",
+      "brand": "Milagros",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 35500,
+      "presentation": "450 ml",
+      "image": "assets/images/productos/milagros-085-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Acondicionador milagro herbal x 450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 85",
+      "page": 85
+    },
+    {
+      "id": "milagros-086-1",
       "name": "Acondicionador ultra nutritivo x100 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/milagros-085-1.webp",
+      "image": "assets/images/productos/milagros-086-1.webp",
       "imageWidth": 312,
       "imageHeight": 312,
       "imageAlt": "Acondicionador ultra nutritivo x100 ml de Milagros, fotografía del catálogo",
-      "page": 85
+      "imageSource": "Catálogo de Canva (PDF), página 86",
+      "page": 86
     },
     {
-      "id": "milagros-085-2",
+      "id": "milagros-086-2",
       "name": "Acondicionador milagro herbal x100 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/milagros-085-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Acondicionador milagro herbal x100 ml de Milagros, fotografía del catálogo",
-      "page": 85
-    },
-    {
-      "id": "milagros-086-1",
-      "name": "Tratamiento Emergencia Capilar x450 ml",
-      "brand": "Milagros",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 35500,
-      "presentation": "450 ml",
-      "image": "assets/images/productos/milagros-086-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Tratamiento Emergencia Capilar x450 ml de Milagros, fotografía del catálogo",
-      "page": 86
-    },
-    {
-      "id": "milagros-086-2",
-      "name": "Tratamiento nutrición y crecimiento x 450 ml",
-      "brand": "Milagros",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 35500,
-      "presentation": "450 ml",
       "image": "assets/images/productos/milagros-086-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Tratamiento nutrición y crecimiento x 450 ml de Milagros, fotografía del catálogo",
+      "imageAlt": "Acondicionador milagro herbal x100 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 86",
       "page": 86
     },
     {
       "id": "milagros-087-1",
-      "name": "Tratamiento capilar a base de frutas x450 ml",
+      "name": "Tratamiento Emergencia Capilar x450 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
@@ -4179,108 +4476,146 @@
       "image": "assets/images/productos/milagros-087-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Tratamiento capilar a base de frutas x450 ml de Milagros, fotografía del catálogo",
+      "imageAlt": "Tratamiento Emergencia Capilar x450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 87",
       "page": 87
     },
     {
       "id": "milagros-087-2",
+      "name": "Tratamiento nutrición y crecimiento x 450 ml",
+      "brand": "Milagros",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 35500,
+      "presentation": "450 ml",
+      "image": "assets/images/productos/milagros-087-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Tratamiento nutrición y crecimiento x 450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 87",
+      "page": 87
+    },
+    {
+      "id": "milagros-088-1",
+      "name": "Tratamiento capilar a base de frutas x450 ml",
+      "brand": "Milagros",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 35500,
+      "presentation": "450 ml",
+      "image": "assets/images/productos/milagros-088-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Tratamiento capilar a base de frutas x450 ml de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 88",
+      "page": 88
+    },
+    {
+      "id": "milagros-088-2",
       "name": "Doypack tratamiento capilar a base de frutas x100 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 12500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/milagros-087-2.webp",
+      "image": "assets/images/productos/milagros-088-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Doypack tratamiento capilar a base de frutas x100 ml de Milagros, fotografía del catálogo",
-      "page": 87
+      "imageSource": "Catálogo de Canva (PDF), página 88",
+      "page": 88
     },
     {
-      "id": "milagros-088-1",
+      "id": "milagros-089-1",
       "name": "Doypack bio - repolarizador capilar x100 gr",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 12500,
       "presentation": "100 gr",
-      "image": "assets/images/productos/milagros-088-1.webp",
+      "image": "assets/images/productos/milagros-089-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Doypack bio - repolarizador capilar x100 gr de Milagros, fotografía del catálogo",
-      "page": 88
+      "imageSource": "Catálogo de Canva (PDF), página 89",
+      "page": 89
     },
     {
-      "id": "milagros-088-2",
+      "id": "milagros-089-2",
       "name": "Doypack tratamiento emergencia capilar x100 gr",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 12500,
       "presentation": "100 gr",
-      "image": "assets/images/productos/milagros-088-2.webp",
+      "image": "assets/images/productos/milagros-089-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Doypack tratamiento emergencia capilar x100 gr de Milagros, fotografía del catálogo",
-      "page": 88
+      "imageSource": "Catálogo de Canva (PDF), página 89",
+      "page": 89
     },
     {
-      "id": "milagros-089-1",
+      "id": "milagros-090-1",
       "name": "Tratamiento bio - repolarizador capilar x100 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/milagros-089-1.webp",
+      "image": "assets/images/productos/milagros-090-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tratamiento bio - repolarizador capilar x100 ml de Milagros, fotografía del catálogo",
-      "page": 89
+      "imageSource": "Catálogo de Canva (PDF), página 90",
+      "page": 90
     },
     {
-      "id": "milagros-089-2",
+      "id": "milagros-090-2",
       "name": "Tratamiento a base de frutas x100 ml",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/milagros-089-2.webp",
+      "image": "assets/images/productos/milagros-090-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tratamiento a base de frutas x100 ml de Milagros, fotografía del catálogo",
-      "page": 89
+      "imageSource": "Catálogo de Canva (PDF), página 90",
+      "page": 90
     },
     {
-      "id": "milagros-090-1",
+      "id": "milagros-091-1",
       "name": "Gotas Mágicas Capilares",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 29500,
       "description": "Estimulan el crecimiento, fortalecen los folículos y ayudan a reducir la caída, mejorando la densidad capilar. Además, controlan la caspa y regulan el exceso de sebo, dejando el cuero cabelludo equilibrado y el cabello más fuerte y saludable.",
-      "image": "assets/images/productos/milagros-090-1.webp",
+      "image": "assets/images/productos/milagros-091-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Gotas Mágicas Capilares de Milagros, fotografía del catálogo",
-      "page": 90
+      "imageSource": "Catálogo de Canva (PDF), página 91",
+      "page": 91
     },
     {
-      "id": "milagros-090-2",
+      "id": "milagros-091-2",
       "name": "Tónico revitalizante capilar milagro herbal (tónico con romero)",
       "brand": "Milagros",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 47500,
-      "image": "assets/images/productos/milagros-090-2.webp",
+      "image": "assets/images/productos/milagros-091-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tónico revitalizante capilar milagro herbal (tónico con romero) de Milagros, fotografía del catálogo",
-      "page": 90
+      "imageSource": "Catálogo de Canva (PDF), página 91",
+      "page": 91
     },
     {
-      "id": "milagros-091-1",
+      "id": "milagros-092-1",
       "name": "Perfume capilar y corporal",
       "brand": "Milagros",
       "category": "Cuidado capilar",
@@ -4289,303 +4624,290 @@
       "details": {
         "Aromas": "Irresistible, Majestuosa, Martina, Sublime, Balí"
       },
-      "image": "assets/images/productos/milagros-091-1.webp",
+      "image": "assets/images/productos/milagros-092-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Perfume capilar y corporal de Milagros, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 92",
       "gallery": [
         {
-          "src": "assets/images/productos/milagros-091-1-variantes.webp",
-          "width": 429,
-          "height": 193,
+          "src": "assets/images/productos/milagros-092-1-variantes.webp",
+          "width": 714,
+          "height": 321,
           "alt": "Perfume capilar y corporal: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 91
+      "page": 92
     },
     {
-      "id": "lehit-092-1",
+      "id": "anyeluz-093-1",
+      "name": "Shampoo de cebolla x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 42000,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-093-1.webp",
+      "imageWidth": 452,
+      "imageHeight": 452,
+      "imageAlt": "Shampoo de cebolla x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 93",
+      "page": 93
+    },
+    {
+      "id": "anyeluz-093-2",
+      "name": "Acondicionador de cebolla x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 37500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-093-2.webp",
+      "imageWidth": 446,
+      "imageHeight": 446,
+      "imageAlt": "Acondicionador de cebolla x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 93",
+      "page": 93
+    },
+    {
+      "id": "anyeluz-094-1",
+      "name": "Shampoo con romero x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 42000,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-094-1.webp",
+      "imageWidth": 408,
+      "imageHeight": 408,
+      "imageAlt": "Shampoo con romero x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 94",
+      "page": 94
+    },
+    {
+      "id": "anyeluz-094-2",
+      "name": "Acondicionador con romero x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 37500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-094-2.webp",
+      "imageWidth": 423,
+      "imageHeight": 423,
+      "imageAlt": "Acondicionador con romero x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 94",
+      "page": 94
+    },
+    {
+      "id": "anyeluz-095-1",
+      "name": "Shampoo con ginseng x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 39500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-095-1.webp",
+      "imageWidth": 429,
+      "imageHeight": 429,
+      "imageAlt": "Shampoo con ginseng x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 95",
+      "page": 95
+    },
+    {
+      "id": "anyeluz-095-2",
+      "name": "Acondicionador con ginseng x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 37500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-095-2.webp",
+      "imageWidth": 405,
+      "imageHeight": 405,
+      "imageAlt": "Acondicionador con ginseng x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 95",
+      "page": 95
+    },
+    {
+      "id": "anyeluz-096-1",
+      "name": "Shampoo con aloe vera x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 37500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-096-1.webp",
+      "imageWidth": 381,
+      "imageHeight": 381,
+      "imageAlt": "Shampoo con aloe vera x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 96",
+      "page": 96
+    },
+    {
+      "id": "anyeluz-096-2",
+      "name": "Acondicionador con argán y aloe vera x 500 ml",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 37500,
+      "presentation": "500 ml",
+      "image": "assets/images/productos/anyeluz-096-2.webp",
+      "imageWidth": 396,
+      "imageHeight": 396,
+      "imageAlt": "Acondicionador con argán y aloe vera x 500 ml de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 96",
+      "page": 96
+    },
+    {
+      "id": "anyeluz-097-1",
+      "name": "Shampoo liso en casa x 800 ml - línea profesional",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 75000,
+      "presentation": "800 ml",
+      "image": "assets/images/productos/anyeluz-097-1.webp",
+      "imageWidth": 390,
+      "imageHeight": 390,
+      "imageAlt": "Shampoo liso en casa x 800 ml - línea profesional de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 97",
+      "page": 97
+    },
+    {
+      "id": "anyeluz-097-2",
+      "name": "Acondicionador liso en casa x 800 ml - línea profesional",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 75000,
+      "presentation": "800 ml",
+      "image": "assets/images/productos/anyeluz-097-2.webp",
+      "imageWidth": 440,
+      "imageHeight": 440,
+      "imageAlt": "Acondicionador liso en casa x 800 ml - línea profesional de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 97",
+      "page": 97
+    },
+    {
+      "id": "anyeluz-098-1",
+      "name": "Tratamiento liso en casa - línea profesional",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 65000,
+      "image": "assets/images/productos/anyeluz-098-1.webp",
+      "imageWidth": 405,
+      "imageHeight": 405,
+      "imageAlt": "Tratamiento liso en casa - línea profesional de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 98",
+      "page": 98
+    },
+    {
+      "id": "anyeluz-098-2",
+      "name": "Tratamiento reparación, restauración y brillo - línea profesional",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 94000,
+      "image": "assets/images/productos/anyeluz-098-2.webp",
+      "imageWidth": 324,
+      "imageHeight": 324,
+      "imageAlt": "Tratamiento reparación, restauración y brillo - línea profesional de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 98",
+      "page": 98
+    },
+    {
+      "id": "anyeluz-099-1",
+      "name": "Tratamiento capilar de crecimiento",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 42500,
+      "image": "assets/images/productos/anyeluz-099-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Tratamiento capilar de crecimiento de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 99",
+      "page": 99
+    },
+    {
+      "id": "anyeluz-099-2",
+      "name": "Tratamiento con romero y bioelixir",
+      "brand": "Anyeluz",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 40500,
+      "image": "assets/images/productos/anyeluz-099-2.webp",
+      "imageWidth": 372,
+      "imageHeight": 372,
+      "imageAlt": "Tratamiento con romero y bioelixir de Anyeluz, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 99",
+      "page": 99
+    },
+    {
+      "id": "lehit-100-1",
       "name": "Tratamiento aceite de aguacate x30 gr",
       "brand": "Lehit",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-092-1.webp",
+      "image": "assets/images/productos/lehit-100-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tratamiento aceite de aguacate x30 gr de Lehit, fotografía del catálogo",
-      "page": 92
+      "imageSource": "Catálogo de Canva (PDF), página 100",
+      "page": 100
     },
     {
-      "id": "lehit-092-2",
+      "id": "lehit-100-2",
       "name": "Tratamiento complejo biológico con queratina x30gr",
       "brand": "Lehit",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-092-2.webp",
+      "image": "assets/images/productos/lehit-100-2.webp",
       "imageWidth": 339,
       "imageHeight": 339,
       "imageAlt": "Tratamiento complejo biológico con queratina x30gr de Lehit, fotografía del catálogo",
-      "page": 92
+      "imageSource": "Catálogo de Canva (PDF), página 100",
+      "page": 100
     },
     {
-      "id": "lehit-093-1",
+      "id": "lehit-101-1",
       "name": "Tratamiento cebolla y jengibre x30 gr",
       "brand": "Lehit",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-093-1.webp",
+      "image": "assets/images/productos/lehit-101-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tratamiento cebolla y jengibre x30 gr de Lehit, fotografía del catálogo",
-      "page": 93
+      "imageSource": "Catálogo de Canva (PDF), página 101",
+      "page": 101
     },
     {
-      "id": "lehit-093-2",
+      "id": "lehit-101-2",
       "name": "Tratamiento capullo de gusano de seda x30gr",
       "brand": "Lehit",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-093-2.webp",
-      "imageWidth": 351,
-      "imageHeight": 351,
+      "image": "assets/images/productos/lehit-101-2.webp",
+      "imageWidth": 390,
+      "imageHeight": 390,
       "imageAlt": "Tratamiento capullo de gusano de seda x30gr de Lehit, fotografía del catálogo",
-      "page": 93
-    },
-    {
-      "id": "leche-pal-pelo-094-1",
-      "name": "Shampoo tradicional x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-094-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo tradicional x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 94
-    },
-    {
-      "id": "leche-pal-pelo-094-2",
-      "name": "Shampoo Protección Plus x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-094-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo Protección Plus x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 94
-    },
-    {
-      "id": "leche-pal-pelo-095-1",
-      "name": "Shampoo especializado x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-095-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo especializado x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 95
-    },
-    {
-      "id": "leche-pal-pelo-095-2",
-      "name": "Shampoo nutritivo para niños x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-095-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo nutritivo para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 95
-    },
-    {
-      "id": "leche-pal-pelo-096-1",
-      "name": "Shampoo + Acondicionador para niños x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-096-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo + Acondicionador para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 96
-    },
-    {
-      "id": "leche-pal-pelo-096-2",
-      "name": "Shampoo hidratante rizos para niños x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 38500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-096-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Shampoo hidratante rizos para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 96
-    },
-    {
-      "id": "leche-pal-pelo-097-1",
-      "name": "Acondicionador para niños x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-097-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Acondicionador para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 97
-    },
-    {
-      "id": "leche-pal-pelo-097-2",
-      "name": "Acondicionador Co-wash rizos y afro x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 39500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-097-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Acondicionador Co-wash rizos y afro x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 97
-    },
-    {
-      "id": "leche-pal-pelo-098-1",
-      "name": "Mascarilla nutritiva rizos y ondas x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-098-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Mascarilla nutritiva rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 98
-    },
-    {
-      "id": "leche-pal-pelo-098-2",
-      "name": "Mascarilla hidrosellante x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-098-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Mascarilla hidrosellante x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 98
-    },
-    {
-      "id": "leche-pal-pelo-099-1",
-      "name": "Mascarilla Regenerador Intenso 7 Oleos x 800 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 50500,
-      "presentation": "800 ml",
-      "image": "assets/images/productos/leche-pal-pelo-099-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Mascarilla Regenerador Intenso 7 Oleos x 800 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 99
-    },
-    {
-      "id": "leche-pal-pelo-099-2",
-      "name": "Mascarilla WOW x 800 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 92000,
-      "presentation": "800 ml",
-      "image": "assets/images/productos/leche-pal-pelo-099-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Mascarilla WOW x 800 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 99
-    },
-    {
-      "id": "leche-pal-pelo-100-1",
-      "name": "Mascarilla Regenerador Intenso 7 Oleos x 40 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 4500,
-      "presentation": "40 ml",
-      "image": "assets/images/productos/leche-pal-pelo-100-1.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Mascarilla Regenerador Intenso 7 Oleos x 40 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 100
-    },
-    {
-      "id": "leche-pal-pelo-100-2",
-      "name": "Mascarilla WOW x 40 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 8000,
-      "presentation": "40 ml",
-      "image": "assets/images/productos/leche-pal-pelo-100-2.webp",
-      "imageWidth": 327,
-      "imageHeight": 327,
-      "imageAlt": "Mascarilla WOW x 40 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 100
-    },
-    {
-      "id": "leche-pal-pelo-101-1",
-      "name": "Termoprotector líquido X 250 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 28500,
-      "presentation": "250 ml",
-      "image": "assets/images/productos/leche-pal-pelo-101-1.webp",
-      "imageWidth": 309,
-      "imageHeight": 309,
-      "imageAlt": "Termoprotector líquido X 250 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 101
-    },
-    {
-      "id": "leche-pal-pelo-101-2",
-      "name": "Termoprotector tradicional x 440 ml",
-      "brand": "Leche pal pelo",
-      "category": "Cuidado capilar",
-      "section": "Cuidado capilar",
-      "price": 33500,
-      "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-101-2.webp",
-      "imageWidth": 288,
-      "imageHeight": 288,
-      "imageAlt": "Termoprotector tradicional x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 101",
       "page": 101
     },
     {
       "id": "leche-pal-pelo-102-1",
-      "name": "Termoprotector protección plus x 440 ml",
+      "name": "Shampoo tradicional x 440 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
@@ -4594,12 +4916,13 @@
       "image": "assets/images/productos/leche-pal-pelo-102-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Termoprotector protección plus x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageAlt": "Shampoo tradicional x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 102",
       "page": 102
     },
     {
       "id": "leche-pal-pelo-102-2",
-      "name": "Termoprotector rizos y ondas x 440 ml",
+      "name": "Shampoo Protección Plus x 440 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
@@ -4608,256 +4931,731 @@
       "image": "assets/images/productos/leche-pal-pelo-102-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
-      "imageAlt": "Termoprotector rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageAlt": "Shampoo Protección Plus x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 102",
       "page": 102
     },
     {
       "id": "leche-pal-pelo-103-1",
+      "name": "Shampoo especializado x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-103-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo especializado x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 103",
+      "page": 103
+    },
+    {
+      "id": "leche-pal-pelo-103-2",
+      "name": "Shampoo nutritivo para niños x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-103-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo nutritivo para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 103",
+      "page": 103
+    },
+    {
+      "id": "leche-pal-pelo-104-1",
+      "name": "Shampoo + Acondicionador para niños x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-104-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo + Acondicionador para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 104",
+      "page": 104
+    },
+    {
+      "id": "leche-pal-pelo-104-2",
+      "name": "Shampoo hidratante rizos para niños x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 38500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-104-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo hidratante rizos para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 104",
+      "page": 104
+    },
+    {
+      "id": "leche-pal-pelo-105-1",
+      "name": "Acondicionador para niños x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-105-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Acondicionador para niños x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 105",
+      "page": 105
+    },
+    {
+      "id": "leche-pal-pelo-105-2",
+      "name": "Acondicionador Co-wash rizos y afro x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 39500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-105-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Acondicionador Co-wash rizos y afro x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 105",
+      "page": 105
+    },
+    {
+      "id": "leche-pal-pelo-106-1",
+      "name": "Mascarilla nutritiva rizos y ondas x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-106-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Mascarilla nutritiva rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 106",
+      "page": 106
+    },
+    {
+      "id": "leche-pal-pelo-106-2",
+      "name": "Mascarilla hidrosellante x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-106-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Mascarilla hidrosellante x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 106",
+      "page": 106
+    },
+    {
+      "id": "leche-pal-pelo-107-1",
+      "name": "Mascarilla Regenerador Intenso 7 Oleos x 800 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 50500,
+      "presentation": "800 ml",
+      "image": "assets/images/productos/leche-pal-pelo-107-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Mascarilla Regenerador Intenso 7 Oleos x 800 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 107",
+      "page": 107
+    },
+    {
+      "id": "leche-pal-pelo-107-2",
+      "name": "Mascarilla WOW x 800 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 92000,
+      "presentation": "800 ml",
+      "image": "assets/images/productos/leche-pal-pelo-107-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Mascarilla WOW x 800 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 107",
+      "page": 107
+    },
+    {
+      "id": "leche-pal-pelo-108-1",
+      "name": "Mascarilla Regenerador Intenso 7 Oleos x 40 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 4500,
+      "presentation": "40 ml",
+      "image": "assets/images/productos/leche-pal-pelo-108-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Mascarilla Regenerador Intenso 7 Oleos x 40 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 108",
+      "page": 108
+    },
+    {
+      "id": "leche-pal-pelo-108-2",
+      "name": "Mascarilla WOW x 40 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 8000,
+      "presentation": "40 ml",
+      "image": "assets/images/productos/leche-pal-pelo-108-2.webp",
+      "imageWidth": 360,
+      "imageHeight": 360,
+      "imageAlt": "Mascarilla WOW x 40 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 108",
+      "page": 108
+    },
+    {
+      "id": "leche-pal-pelo-109-1",
+      "name": "Termoprotector líquido X 250 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 28500,
+      "presentation": "250 ml",
+      "image": "assets/images/productos/leche-pal-pelo-109-1.webp",
+      "imageWidth": 309,
+      "imageHeight": 309,
+      "imageAlt": "Termoprotector líquido X 250 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 109",
+      "page": 109
+    },
+    {
+      "id": "leche-pal-pelo-109-2",
+      "name": "Termoprotector tradicional x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-109-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Termoprotector tradicional x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 109",
+      "page": 109
+    },
+    {
+      "id": "leche-pal-pelo-110-1",
+      "name": "Termoprotector protección plus x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-110-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Termoprotector protección plus x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 110",
+      "page": 110
+    },
+    {
+      "id": "leche-pal-pelo-110-2",
+      "name": "Termoprotector rizos y ondas x 440 ml",
+      "brand": "Leche pal pelo",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 33500,
+      "presentation": "440 ml",
+      "image": "assets/images/productos/leche-pal-pelo-110-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Termoprotector rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 110",
+      "page": 110
+    },
+    {
+      "id": "leche-pal-pelo-111-1",
       "name": "Gelatina slime definidora x 600 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 45500,
       "presentation": "600 ml",
-      "image": "assets/images/productos/leche-pal-pelo-103-1.webp",
+      "image": "assets/images/productos/leche-pal-pelo-111-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Gelatina slime definidora x 600 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 103
+      "imageSource": "Catálogo de Canva (PDF), página 111",
+      "page": 111
     },
     {
-      "id": "leche-pal-pelo-103-2",
+      "id": "leche-pal-pelo-111-2",
       "name": "Definidor de rizos y ondas x 440 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 40000,
       "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-103-2.webp",
+      "image": "assets/images/productos/leche-pal-pelo-111-2.webp",
       "imageWidth": 291,
       "imageHeight": 291,
       "imageAlt": "Definidor de rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 103
+      "imageSource": "Catálogo de Canva (PDF), página 111",
+      "page": 111
     },
     {
-      "id": "leche-pal-pelo-104-1",
+      "id": "leche-pal-pelo-112-1",
       "name": "Tratamiento capilar reconstructor instantáneo x 30 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 3500,
       "presentation": "30 ml",
-      "image": "assets/images/productos/leche-pal-pelo-104-1.webp",
+      "image": "assets/images/productos/leche-pal-pelo-112-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Tratamiento capilar reconstructor instantáneo x 30 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 104
+      "imageSource": "Catálogo de Canva (PDF), página 112",
+      "page": 112
     },
     {
-      "id": "leche-pal-pelo-104-2",
+      "id": "leche-pal-pelo-112-2",
       "name": "Termoprotector tradicional x 30 ml",
       "brand": "Leche pal pelo",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 4500,
       "presentation": "30 ml",
-      "image": "assets/images/productos/leche-pal-pelo-104-2.webp",
+      "image": "assets/images/productos/leche-pal-pelo-112-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Termoprotector tradicional x 30 ml de Leche pal pelo, fotografía del catálogo",
-      "page": 104
+      "imageSource": "Catálogo de Canva (PDF), página 112",
+      "page": 112
     },
     {
-      "id": "ole-105-1",
+      "id": "ole-113-1",
       "name": "Shampoo protección y reparación x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 37500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-105-1.webp",
+      "image": "assets/images/productos/ole-113-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Shampoo protección y reparación x 500 ml de Olé, fotografía del catálogo",
-      "page": 105
+      "imageSource": "Catálogo de Canva (PDF), página 113",
+      "page": 113
     },
     {
-      "id": "ole-105-2",
+      "id": "ole-113-2",
       "name": "Shampoo hidratación y nutrición x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 37500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-105-2.webp",
+      "image": "assets/images/productos/ole-113-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Shampoo hidratación y nutrición x 500 ml de Olé, fotografía del catálogo",
-      "page": 105
+      "imageSource": "Catálogo de Canva (PDF), página 113",
+      "page": 113
     },
     {
-      "id": "ole-106-1",
+      "id": "ole-114-1",
       "name": "Shampoo control grasa x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 37500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-106-1.webp",
+      "image": "assets/images/productos/ole-114-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Shampoo control grasa x 500 ml de Olé, fotografía del catálogo",
-      "page": 106
+      "imageSource": "Catálogo de Canva (PDF), página 114",
+      "page": 114
     },
     {
-      "id": "ole-106-2",
+      "id": "ole-114-2",
       "name": "Shampoo fortalecimiento y crecimiento x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 37500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-106-2.webp",
+      "image": "assets/images/productos/ole-114-2.webp",
       "imageWidth": 300,
       "imageHeight": 300,
       "imageAlt": "Shampoo fortalecimiento y crecimiento x 500 ml de Olé, fotografía del catálogo",
-      "page": 106
+      "imageSource": "Catálogo de Canva (PDF), página 114",
+      "page": 114
     },
     {
-      "id": "ole-107-1",
+      "id": "ole-115-1",
       "name": "Shampoo + Acondicionador control frizz x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 37500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-107-1.webp",
+      "image": "assets/images/productos/ole-115-1.webp",
       "imageWidth": 303,
       "imageHeight": 303,
       "imageAlt": "Shampoo + Acondicionador control frizz x 500 ml de Olé, fotografía del catálogo",
-      "page": 107
+      "imageSource": "Catálogo de Canva (PDF), página 115",
+      "page": 115
     },
     {
-      "id": "ole-107-2",
+      "id": "ole-115-2",
       "name": "Acondicionador hidratación y crecimiento x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-107-2.webp",
+      "image": "assets/images/productos/ole-115-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Acondicionador hidratación y crecimiento x 500 ml de Olé, fotografía del catálogo",
-      "page": 107
+      "imageSource": "Catálogo de Canva (PDF), página 115",
+      "page": 115
     },
     {
-      "id": "ole-108-1",
+      "id": "ole-116-1",
       "name": "Acondicionador hidratación y suavidad x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-108-1.webp",
+      "image": "assets/images/productos/ole-116-1.webp",
       "imageWidth": 306,
       "imageHeight": 306,
       "imageAlt": "Acondicionador hidratación y suavidad x 500 ml de Olé, fotografía del catálogo",
-      "page": 108
+      "imageSource": "Catálogo de Canva (PDF), página 116",
+      "page": 116
     },
     {
-      "id": "ole-108-2",
+      "id": "ole-116-2",
       "name": "Acondicionador protección long lasting x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-108-2.webp",
+      "image": "assets/images/productos/ole-116-2.webp",
       "imageWidth": 312,
       "imageHeight": 312,
       "imageAlt": "Acondicionador protección long lasting x 500 ml de Olé, fotografía del catálogo",
-      "page": 108
+      "imageSource": "Catálogo de Canva (PDF), página 116",
+      "page": 116
     },
     {
-      "id": "ole-109-1",
+      "id": "ole-117-1",
       "name": "Acondicionador purificante anti-grasa x 500 ml",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
       "presentation": "500 ml",
-      "image": "assets/images/productos/ole-109-1.webp",
+      "image": "assets/images/productos/ole-117-1.webp",
       "imageWidth": 357,
       "imageHeight": 357,
       "imageAlt": "Acondicionador purificante anti-grasa x 500 ml de Olé, fotografía del catálogo",
-      "page": 109
+      "imageSource": "Catálogo de Canva (PDF), página 117",
+      "page": 117
     },
     {
-      "id": "ole-109-2",
+      "id": "ole-117-2",
       "name": "Termoprotector desenredante",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 41500,
-      "image": "assets/images/productos/ole-109-2.webp",
+      "image": "assets/images/productos/ole-117-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Termoprotector desenredante de Olé, fotografía del catálogo",
-      "page": 109
+      "imageSource": "Catálogo de Canva (PDF), página 117",
+      "page": 117
     },
     {
-      "id": "ole-110-1",
+      "id": "ole-118-1",
       "name": "Óleo capilar de uchuva Hidratante de puntas",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 32000,
-      "image": "assets/images/productos/ole-110-1.webp",
+      "image": "assets/images/productos/ole-118-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Óleo capilar de uchuva Hidratante de puntas de Olé, fotografía del catálogo",
-      "page": 110
+      "imageSource": "Catálogo de Canva (PDF), página 118",
+      "page": 118
     },
     {
-      "id": "ole-110-2",
+      "id": "ole-118-2",
       "name": "Spray antihumedad - antifrizz",
       "brand": "Olé",
       "category": "Cuidado capilar",
       "section": "Cuidado capilar",
       "price": 35500,
-      "image": "assets/images/productos/ole-110-2.webp",
+      "image": "assets/images/productos/ole-118-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Spray antihumedad - antifrizz de Olé, fotografía del catálogo",
-      "page": 110
+      "imageSource": "Catálogo de Canva (PDF), página 118",
+      "page": 118
     },
     {
-      "id": "nude-111-1",
+      "id": "nude-119-1",
       "name": "Protector solar Spf30 40 ml",
       "brand": "Nude",
       "category": "Cuidado facial",
       "price": 20000,
-      "image": "assets/images/productos/nude-111-1.webp",
+      "image": "assets/images/productos/nude-119-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Protector solar Spf30 40 ml de Nude, fotografía del catálogo",
-      "page": 111
+      "imageSource": "Catálogo de Canva (PDF), página 119",
+      "page": 119
     },
     {
-      "id": "nude-111-2",
+      "id": "nude-119-2",
       "name": "Autobronceador Doypack 200ml",
       "brand": "Nude",
       "category": "Cuidado corporal",
       "price": 36000,
-      "image": "assets/images/productos/nude-111-2.webp",
+      "image": "assets/images/productos/nude-119-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Autobronceador Doypack 200ml de Nude, fotografía del catálogo",
-      "page": 111
+      "imageSource": "Catálogo de Canva (PDF), página 119",
+      "page": 119
     },
     {
-      "id": "nivea-112-1",
+      "id": "johnsons-120-1",
+      "name": "Shampoo baby - Cabello oscuro",
+      "brand": "Johnson's",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 19500,
+      "variants": [
+        {
+          "label": "200 ml",
+          "price": 19500
+        },
+        {
+          "label": "400 ml",
+          "price": 27500
+        },
+        {
+          "label": "750 ml",
+          "price": 35000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-120-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo baby - Cabello oscuro de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 120",
+      "page": 120
+    },
+    {
+      "id": "johnsons-120-2",
+      "name": "Shampoo baby - Cabello claro",
+      "brand": "Johnson's",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 13000,
+      "variants": [
+        {
+          "label": "100 ml",
+          "price": 13000
+        },
+        {
+          "label": "200 ml",
+          "price": 19500
+        },
+        {
+          "label": "400 ml",
+          "price": 27500
+        },
+        {
+          "label": "750 ml",
+          "price": 35000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-120-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo baby - Cabello claro de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 120",
+      "page": 120
+    },
+    {
+      "id": "johnsons-121-1",
+      "name": "Shampoo - Fuerza y vitamina",
+      "brand": "Johnson's",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 19500,
+      "variants": [
+        {
+          "label": "200 ml",
+          "price": 19500
+        },
+        {
+          "label": "400 ml",
+          "price": 27500
+        },
+        {
+          "label": "750 ml",
+          "price": 35000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-121-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo - Fuerza y vitamina de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 121",
+      "page": 121
+    },
+    {
+      "id": "johnsons-121-2",
+      "name": "Shampoo baby - amarillo",
+      "brand": "Johnson's",
+      "category": "Cuidado capilar",
+      "section": "Cuidado capilar",
+      "price": 13000,
+      "variants": [
+        {
+          "label": "100 ml",
+          "price": 13000
+        },
+        {
+          "label": "200 ml",
+          "price": 19500
+        },
+        {
+          "label": "400 ml",
+          "price": 27500
+        },
+        {
+          "label": "750 ml",
+          "price": 35000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-121-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Shampoo baby - amarillo de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 121",
+      "page": 121
+    },
+    {
+      "id": "johnsons-122-1",
+      "name": "Baño líquido - Avena",
+      "brand": "Johnson's",
+      "category": "Cuidado corporal",
+      "section": "Cuidado corporal",
+      "price": 33000,
+      "variants": [
+        {
+          "label": "400 ml",
+          "price": 33000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-122-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Baño líquido - Avena de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 122",
+      "page": 122
+    },
+    {
+      "id": "johnsons-122-2",
+      "name": "Baño líquido - Antes de dormir",
+      "brand": "Johnson's",
+      "category": "Cuidado corporal",
+      "section": "Cuidado corporal",
+      "price": 33000,
+      "variants": [
+        {
+          "label": "400 ml",
+          "price": 33000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-122-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Baño líquido - Antes de dormir de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 122",
+      "page": 122
+    },
+    {
+      "id": "johnsons-123-1",
+      "name": "Crema líquida baby",
+      "brand": "Johnson's",
+      "category": "Cuidado corporal",
+      "section": "Cuidado corporal",
+      "price": 12500,
+      "variants": [
+        {
+          "label": "100 ml",
+          "price": 12500
+        },
+        {
+          "label": "200 ml",
+          "price": 20500
+        },
+        {
+          "label": "400 ml",
+          "price": 33000
+        },
+        {
+          "label": "800 ml",
+          "price": 45000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-123-1.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Crema líquida baby de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 123",
+      "page": 123
+    },
+    {
+      "id": "johnsons-123-2",
+      "name": "Crema líquida - Avena",
+      "brand": "Johnson's",
+      "category": "Cuidado corporal",
+      "section": "Cuidado corporal",
+      "price": 20500,
+      "variants": [
+        {
+          "label": "200 ml",
+          "price": 20500
+        },
+        {
+          "label": "400 ml",
+          "price": 33000
+        }
+      ],
+      "image": "assets/images/productos/johnsons-123-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Crema líquida - Avena de Johnson's, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 123",
+      "page": 123
+    },
+    {
+      "id": "nivea-124-1",
       "name": "Crema hidratante",
       "brand": "Nivea",
       "category": "Cuidado corporal",
@@ -4876,237 +5674,252 @@
           "price": 34000
         }
       ],
-      "image": "assets/images/productos/nivea-112-1.webp",
+      "image": "assets/images/productos/nivea-124-1.webp",
       "imageWidth": 306,
       "imageHeight": 306,
       "imageAlt": "Crema hidratante de Nivea, fotografía del catálogo",
-      "page": 112
+      "imageSource": "Catálogo de Canva (PDF), página 124",
+      "page": 124
     },
     {
-      "id": "nivea-112-2",
+      "id": "nivea-124-2",
       "name": "Crema corporal Nivea reafirmante Q10 + vitamina C x 1000 Ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 64000,
       "presentation": "1000 ml",
-      "image": "assets/images/productos/nivea-112-2.webp",
+      "image": "assets/images/productos/nivea-124-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Crema corporal Nivea reafirmante Q10 + vitamina C x 1000 Ml de Nivea, fotografía del catálogo",
-      "page": 112
+      "imageSource": "Catálogo de Canva (PDF), página 124",
+      "page": 124
     },
     {
-      "id": "nivea-113-1",
+      "id": "nivea-125-1",
       "name": "Crema Nivea Corporal Reafirmante Q10 Creatina x 400 ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 42500,
       "presentation": "400 ml",
-      "image": "assets/images/productos/nivea-113-1.webp",
+      "image": "assets/images/productos/nivea-125-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Crema Nivea Corporal Reafirmante Q10 Creatina x 400 ml de Nivea, fotografía del catálogo",
-      "page": 113
+      "imageSource": "Catálogo de Canva (PDF), página 125",
+      "page": 125
     },
     {
-      "id": "nivea-113-2",
+      "id": "nivea-125-2",
       "name": "Crema corporal Nivea milk nutritiva - Piel Seca x 400 ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 35000,
       "presentation": "400 ml",
-      "image": "assets/images/productos/nivea-113-2.webp",
+      "image": "assets/images/productos/nivea-125-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Crema corporal Nivea milk nutritiva - Piel Seca x 400 ml de Nivea, fotografía del catálogo",
-      "page": 113
+      "imageSource": "Catálogo de Canva (PDF), página 125",
+      "page": 125
     },
     {
-      "id": "nivea-114-1",
+      "id": "nivea-126-1",
       "name": "Desodorante aclarado natural Classic Touch x 50ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 13000,
       "presentation": "50 ml",
-      "image": "assets/images/productos/nivea-114-1.webp",
+      "image": "assets/images/productos/nivea-126-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Desodorante aclarado natural Classic Touch x 50ml de Nivea, fotografía del catálogo",
-      "page": 114
+      "imageSource": "Catálogo de Canva (PDF), página 126",
+      "page": 126
     },
     {
-      "id": "nivea-114-2",
+      "id": "nivea-126-2",
       "name": "Desodorante tono natural mujer satín spray x 150 ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 24500,
       "presentation": "150 ml",
-      "image": "assets/images/productos/nivea-114-2.webp",
+      "image": "assets/images/productos/nivea-126-2.webp",
       "imageWidth": 306,
       "imageHeight": 306,
       "imageAlt": "Desodorante tono natural mujer satín spray x 150 ml de Nivea, fotografía del catálogo",
-      "page": 114
+      "imageSource": "Catálogo de Canva (PDF), página 126",
+      "page": 126
     },
     {
-      "id": "nivea-115-1",
+      "id": "nivea-127-1",
       "name": "Desodorante men Invisible Black & White x 50ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 15000,
       "presentation": "50 ml",
-      "image": "assets/images/productos/nivea-115-1.webp",
+      "image": "assets/images/productos/nivea-127-1.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Desodorante men Invisible Black & White x 50ml de Nivea, fotografía del catálogo",
-      "page": 115
+      "imageSource": "Catálogo de Canva (PDF), página 127",
+      "page": 127
     },
     {
-      "id": "nivea-115-2",
+      "id": "nivea-127-2",
       "name": "Desodorante dama Invisible Black & White x 50ml",
       "brand": "Nivea",
       "category": "Cuidado corporal",
       "price": 15000,
       "presentation": "50 ml",
-      "image": "assets/images/productos/nivea-115-2.webp",
+      "image": "assets/images/productos/nivea-127-2.webp",
       "imageWidth": 327,
       "imageHeight": 327,
       "imageAlt": "Desodorante dama Invisible Black & White x 50ml de Nivea, fotografía del catálogo",
-      "page": 115
+      "imageSource": "Catálogo de Canva (PDF), página 127",
+      "page": 127
     },
     {
-      "id": "nivea-116-1",
+      "id": "nivea-128-1",
       "name": "Lip care - 24 horas de humectación",
       "brand": "Nivea",
       "category": "Labios",
       "section": "Labios",
       "price": 20000,
-      "image": "assets/images/productos/nivea-116-1.webp",
+      "image": "assets/images/productos/nivea-128-1.webp",
       "imageWidth": 345,
       "imageHeight": 345,
       "imageAlt": "Lip care - 24 horas de humectación de Nivea, fotografía del catálogo",
-      "page": 116
+      "imageSource": "Catálogo de Canva (PDF), página 128",
+      "page": 128
     },
     {
-      "id": "chap-stick-117-1",
+      "id": "chap-stick-129-1",
       "name": "Protector labial",
       "brand": "Chap Stick",
       "category": "Labios",
       "section": "Labios",
       "price": 15500,
       "description": "Fresa, cereza, menta y medicado",
-      "image": "assets/images/productos/chap-stick-117-1.webp",
+      "image": "assets/images/productos/chap-stick-129-1.webp",
       "imageWidth": 333,
       "imageHeight": 333,
       "imageAlt": "Protector labial de Chap Stick, fotografía del catálogo",
-      "page": 117
+      "imageSource": "Catálogo de Canva (PDF), página 129",
+      "page": 129
     },
     {
-      "id": "fantiluna-118-1",
+      "id": "fantiluna-130-1",
       "name": "Mantequilla corporal x 220 ml",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
       "price": 24000,
       "presentation": "220 ml",
-      "image": "assets/images/productos/fantiluna-118-1.webp",
+      "image": "assets/images/productos/fantiluna-130-1.webp",
       "imageWidth": 345,
       "imageHeight": 345,
       "imageAlt": "Mantequilla corporal x 220 ml de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 130",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-118-1-variantes.webp",
-          "width": 616,
-          "height": 291,
+          "src": "assets/images/productos/fantiluna-130-1-variantes.webp",
+          "width": 720,
+          "height": 340,
           "alt": "Mantequilla corporal x 220 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 118
+      "page": 130
     },
     {
-      "id": "fantiluna-118-2",
+      "id": "fantiluna-130-2",
       "name": "Exfoliante corporal x 220ml",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
       "price": 23000,
       "presentation": "220 ml",
-      "image": "assets/images/productos/fantiluna-118-2.webp",
+      "image": "assets/images/productos/fantiluna-130-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Exfoliante corporal x 220ml de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 130",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-118-2-variantes.webp",
-          "width": 433,
-          "height": 249,
+          "src": "assets/images/productos/fantiluna-130-2-variantes.webp",
+          "width": 720,
+          "height": 415,
           "alt": "Exfoliante corporal x 220ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 118
+      "page": 130
     },
     {
-      "id": "fantiluna-119-1",
+      "id": "fantiluna-131-1",
       "name": "Splash corporal x 250 ml",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
       "price": 24000,
       "presentation": "250 ml",
-      "image": "assets/images/productos/fantiluna-119-1.webp",
-      "imageWidth": 357,
-      "imageHeight": 357,
+      "image": "assets/images/productos/fantiluna-131-1.webp",
+      "imageWidth": 443,
+      "imageHeight": 443,
       "imageAlt": "Splash corporal x 250 ml de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 131",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-119-1-variantes.webp",
-          "width": 447,
-          "height": 191,
+          "src": "assets/images/productos/fantiluna-131-1-variantes.webp",
+          "width": 554,
+          "height": 236,
           "alt": "Splash corporal x 250 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 119
+      "page": 131
     },
     {
-      "id": "fantiluna-119-2",
+      "id": "fantiluna-131-2",
       "name": "Splash corporal x 105 ml",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
       "price": 15500,
       "presentation": "105 ml",
-      "image": "assets/images/productos/fantiluna-119-2.webp",
-      "imageWidth": 339,
-      "imageHeight": 339,
+      "image": "assets/images/productos/fantiluna-131-2.webp",
+      "imageWidth": 375,
+      "imageHeight": 375,
       "imageAlt": "Splash corporal x 105 ml de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 131",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-119-2-variantes.webp",
-          "width": 389,
-          "height": 178,
+          "src": "assets/images/productos/fantiluna-131-2-variantes.webp",
+          "width": 554,
+          "height": 254,
           "alt": "Splash corporal x 105 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 119
+      "page": 131
     },
     {
-      "id": "fantiluna-120-1",
+      "id": "fantiluna-132-1",
       "name": "Iluminador corporal x 160 ml",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
       "price": 24000,
       "presentation": "160 ml",
-      "image": "assets/images/productos/fantiluna-120-1.webp",
+      "image": "assets/images/productos/fantiluna-132-1.webp",
       "imageWidth": 300,
       "imageHeight": 300,
       "imageAlt": "Iluminador corporal x 160 ml de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 132",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-120-1-variantes.webp",
-          "width": 290,
-          "height": 205,
+          "src": "assets/images/productos/fantiluna-132-1-variantes.webp",
+          "width": 577,
+          "height": 406,
           "alt": "Iluminador corporal x 160 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 120
+      "page": 132
     },
     {
-      "id": "fantiluna-120-2",
+      "id": "fantiluna-132-2",
       "name": "Crema corporal",
       "brand": "Fantiluna",
       "category": "Cuidado corporal",
@@ -5121,19 +5934,20 @@
           "price": 24000
         }
       ],
-      "image": "assets/images/productos/fantiluna-120-2.webp",
+      "image": "assets/images/productos/fantiluna-132-2.webp",
       "imageWidth": 288,
       "imageHeight": 288,
       "imageAlt": "Crema corporal de Fantiluna, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 132",
       "gallery": [
         {
-          "src": "assets/images/productos/fantiluna-120-2-variantes.webp",
-          "width": 390,
-          "height": 142,
+          "src": "assets/images/productos/fantiluna-132-2-variantes.webp",
+          "width": 554,
+          "height": 202,
           "alt": "Crema corporal: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 120
+      "page": 132
     }
   ]
 }

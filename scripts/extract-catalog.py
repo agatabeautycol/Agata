@@ -30,6 +30,11 @@ PDF = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'catalogo-original' / '
 OUT_DATA = ROOT / 'data' / 'products.json'
 OUT_PRODUCTS = ROOT / 'assets' / 'images' / 'productos'
 OUT_PAGES = ROOT / 'assets' / 'catalog'
+OUT_MD = ROOT / 'docs' / 'PRODUCTOS.md'
+# Fotos originales en alta resolución (preparadas a mano: recorte, lienzo cuadrado y WebP, sin IA).
+# Si existe assets/images/productos-hd/{id}.webp se usa en vez del recorte del PDF; su origen
+# (URL o archivo) se anota en assets/images/productos-hd/fuentes.json: {"id": "origen"}.
+HD_DIR = ROOT / 'assets' / 'images' / 'productos-hd'
 
 # Las piezas del diseño se reconocen por su forma en la página (no por sus píxeles, que cambian
 # según la calidad con la que se exporte el PDF desde Canva).
@@ -93,6 +98,7 @@ CATEGORY_MAP = {
 # Productos cuya página no indica sección (o cuya sección mezcla tipos): categoría asignada por
 # "Marca|Nombre" (el nombre ya corregido), para que no dependa del número de página.
 CATEGORY_BY_PRODUCT = {
+    'Atenea|Paleta de sombras multiusos Moccalush': 'Ojos y cejas',   # sección "Multiusos"; confirmado por Ágata Beauty
     'Girly|Gel hidratante con aloe vera': 'Cuidado facial',
     'Girly|Girly TINT Labios y mejillas': 'Labios',
     'Girly|Polvo suelto': 'Rostro',
@@ -129,6 +135,7 @@ def fix_text(text):
 
 
 def slug(text):
+    text = re.sub(r"['’´]", '', text)    # "Johnson's" -> "johnsons"
     text = unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode()
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
@@ -226,6 +233,7 @@ def native_dpi(images, rect, decor):
     """Resolución real (px por pulgada) de las fotos colocadas dentro de rect."""
     dpis = [im['width'] / (im['bbox'][2] - im['bbox'][0]) * 72 for im in images
             if im['xref'] and (im['width'], im['height']) not in decor
+            and not (is_ring(im) or is_frame(im) or is_divider(im))
             and inside(center(im['bbox']), rect) and im['bbox'][2] > im['bbox'][0]]
     return round(min(MAX_DPI, max([MIN_DPI] + dpis)))
 
@@ -254,6 +262,15 @@ def save_webp(img, path, width):
 
 
 _DECOR = None
+_HD_SOURCES = None
+
+
+def hd_sources():
+    global _HD_SOURCES
+    if _HD_SOURCES is None:
+        f = HD_DIR / 'fuentes.json'
+        _HD_SOURCES = json.loads(f.read_text()) if f.exists() else {}
+    return _HD_SOURCES
 
 
 def _size(im):
@@ -398,14 +415,22 @@ def main():
             if labels:
                 product['details'] = {LABEL_TITLES.get(pno, 'Etiquetas'): ', '.join(labels)}
 
+            hd = HD_DIR / f'{pid}.webp'
             if pid in PHOTO_PENDING:
                 product['imagePending'] = True
+            elif hd.exists():
+                with Image.open(hd) as im:
+                    product['imageWidth'], product['imageHeight'] = im.size
+                product['image'] = f'assets/images/productos-hd/{pid}.webp'
+                product['imageAlt'] = f'{name} de {brand}'
+                product['imageSource'] = hd_sources().get(pid, '[INFORMACIÓN PENDIENTE]')
             elif ring:
                 img = circle_crop(page, ring, native_dpi(images, ring, decor_sizes(doc)))
                 iw, ih = save_webp(img, OUT_PRODUCTS / f'{pid}.webp', img.width)
                 product['image'] = f'assets/images/productos/{pid}.webp'
                 product['imageWidth'], product['imageHeight'] = iw, ih
                 product['imageAlt'] = f'{name} de {brand}, fotografía del catálogo'
+                product['imageSource'] = f'Catálogo de Canva (PDF), página {pno}'
 
                 # Fotos de tonos / variantes: imágenes de la tarjeta fuera del círculo.
                 extra = [pymupdf.Rect(im['bbox']) & pymupdf.Rect(fb) for im in images
@@ -437,7 +462,31 @@ def main():
     data['pages'] = pages
     data['products'] = products
     OUT_DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    write_products_md(products)
     print(f'\n{len(products)} productos, {len(pages)} páginas -> {OUT_DATA.relative_to(ROOT)}')
+
+
+def money(value):
+    return '$' + f'{value:,}'.replace(',', '.')
+
+
+def write_products_md(products):
+    """Tabla de productos para revisar el catálogo sin abrir el JSON (docs/PRODUCTOS.md)."""
+    rows = []
+    for p in products:
+        price = ' · '.join(f"{v['label']}: {money(v['price'])}" for v in p['variants']) if p.get('variants') \
+            else money(p['price']) if 'price' in p else '[INFORMACIÓN PENDIENTE]'
+        image = f"`{Path(p['image']).name}`" if p.get('image') else 'Foto pendiente'
+        rows.append(f"| `{p['id']}` | {p['name']} | {p['brand']} | {p.get('category', '[INFORMACIÓN PENDIENTE]')} "
+                    f"| — | {price} | {image} | {p['page']} |")
+    OUT_MD.write_text(
+        '# Productos del catálogo Ágata Beauty 2026\n\n'
+        f'{len(products)} productos extraídos del catálogo de Canva. Este archivo lo genera '
+        '`scripts/extract-catalog.py` a partir de `data/products.json`: no lo edites a mano.\n\n'
+        'Referencia: el catálogo no incluye códigos de referencia `[INFORMACIÓN PENDIENTE]`.\n\n'
+        '| ID | Producto | Marca | Categoría | Referencia | Precio | Imagen | Pág. |\n'
+        '| -- | -------- | ----- | --------- | ---------- | ------ | ------ | ---: |\n'
+        + '\n'.join(rows) + '\n')
 
 
 if __name__ == '__main__':
