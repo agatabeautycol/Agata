@@ -64,6 +64,14 @@ TEXT_FIXES = {
     'Acne': 'Acné',
     'mascara para': 'máscara para',
     'retractil': 'retráctil',
+    'liquido': 'líquido',          # Johnson's, p. 122 (catálogo de 133 páginas)
+    'liquida': 'líquida',          # Johnson's, p. 123
+}
+
+# Nombres de marca corregidos a pedido de Ágata Beauty (el título de la página se escribe distinto en Canva).
+BRAND_FIXES = {
+    'johnson´s': "Johnson's",
+    'Johnson’s': "Johnson's",
 }
 
 # Categorías unificadas (pedido de Ágata Beauty): el catálogo repite secciones con nombres distintos
@@ -76,6 +84,7 @@ CATEGORY_MAP = {
     'Accesorios': 'Brochas, accesorios y kits', 'Herramientas': 'Brochas, accesorios y kits', 'Kit': 'Brochas, accesorios y kits',
     'Cuidado facial': 'Cuidado facial',
     'Cuidado capilar': 'Cuidado capilar',
+    'Cuidado corporal': 'Cuidado corporal',
 }
 # Productos cuya página no indica sección (o cuya sección mezcla tipos): categoría asignada por producto.
 CATEGORY_BY_ID = {
@@ -85,11 +94,11 @@ CATEGORY_BY_ID = {
     'maybelline-023-1': 'Ojos y cejas', 'maybelline-023-2': 'Ojos y cejas', 'maybelline-023-3': 'Ojos y cejas',
     'ani-k-028-1': 'Ojos y cejas', 'ani-k-028-2': 'Ojos y cejas', 'ani-k-028-3': 'Ojos y cejas',
     'majikal-029-1': 'Rostro',                  # Polvos sueltos
-    'majikal-029-2': 'Labios',                  # Magic Pen (por confirmar)
+    'majikal-029-2': 'Labios',                  # Magic Pen (confirmado por Ágata Beauty)
     'majikal-029-3': 'Labios',                  # Shiny Lip Oil
     'schwarzkopf-065-1': 'Cuidado capilar',     # Gel fijador para el cabello
     'schwarzkopf-065-2': 'Ojos y cejas',        # Gel para cejas
-    'nude-111-1': 'Cuidado facial',             # Protector solar (por confirmar)
+    'nude-111-1': 'Cuidado facial',             # Protector solar (confirmado por Ágata Beauty)
     'nude-111-2': 'Cuidado corporal',           # Autobronceador
     'nivea-112-1': 'Cuidado corporal', 'nivea-112-2': 'Cuidado corporal',
     'nivea-113-1': 'Cuidado corporal', 'nivea-113-2': 'Cuidado corporal',
@@ -106,9 +115,7 @@ def categorize(pid, section):
 
 
 # Productos cuya foto en el catálogo es de otro producto: se muestran como "foto pendiente".
-PHOTO_PENDING = {
-    'bloomshell-014-1',   # "Contorno en barra Bloom define" lleva la foto de "Rubor en barra Cherry Blossom" (p. 13)
-}
+PHOTO_PENDING = set()   # "Contorno en barra Bloom define" (p. 14) ya tiene su foto correcta en Canva
 
 
 def fix_text(text):
@@ -313,6 +320,7 @@ def main():
             continue
         spans = page_spans(page)
         brand = next((clean(s['t']) for s in spans if s['f'].startswith('TheSeasons')), None)
+        brand = BRAND_FIXES.get(brand, brand)
         section = clean(' '.join(s['t'] for s in sorted(spans, key=lambda s: s['b'][0])
                                  if s['f'] == 'Mont-Bold' and s['c'] == '764b36')) or None
         if section:
