@@ -31,10 +31,12 @@ OUT_DATA = ROOT / 'data' / 'products.json'
 OUT_PRODUCTS = ROOT / 'assets' / 'images' / 'productos'
 OUT_PAGES = ROOT / 'assets' / 'catalog'
 
-FRAME_SIZES = {(522, 930), (447, 797), (521, 930), (671, 1196)}
-RING_SIDES = {259, 260, 263, 264, 287}
+# Las piezas del diseño se reconocen por su forma en la página (no por sus píxeles, que cambian
+# según la calidad con la que se exporte el PDF desde Canva).
+FRAME_RATIO = 0.561                # marco de cada tarjeta: rectángulo redondeado (lado corto / lado largo), vertical u horizontal
+DIVIDER_RATIO = 6.5                # línea con estrella bajo el nombre (ancho / alto)
 INFO_PAGES = {1, 2}                # portada y proceso de compra: sin productos, pero se muestran en la vista catálogo
-SKIP_PAGES = {121}                 # contraportada vacía
+SKIP_PAGES = {133}                 # contraportada vacía
 # Las fotos se recortan a su resolución nativa dentro del PDF (sin ampliar ni reducir dos veces).
 MIN_DPI, MAX_DPI = 96, 300
 RING_INNER = 0.92                  # el anillo cobrizo ocupa el 6,4 % exterior del radio (+ margen para su borde suavizado); la web lo dibuja en CSS
@@ -43,7 +45,7 @@ PAGE_WIDTH = 900
 
 # Etiquetas escritas sobre la foto (color #592510). El catálogo no les pone título;
 # este es el rótulo con el que se muestran en la ficha.
-LABEL_TITLES = {10: 'Indicada para', 51: 'Opciones', 91: 'Aromas'}
+LABEL_TITLES = {10: 'Indicada para', 52: 'Opciones', 92: 'Aromas'}
 
 # Correcciones manuales verificadas contra las páginas renderizadas.
 OVERRIDES = {}
@@ -69,9 +71,11 @@ TEXT_FIXES = {
 }
 
 # Nombres de marca corregidos a pedido de Ágata Beauty (el título de la página se escribe distinto en Canva).
+# En Canva el título está en mayúsculas y en las pp. 121-123 el apóstrofo es otra letra ("JOHNSON´S"),
+# por eso el primer texto del título llega como "JOHNSON".
 BRAND_FIXES = {
-    'johnson´s': "Johnson's",
-    'Johnson’s': "Johnson's",
+    'JOHNSON': "Johnson's",
+    'JOHNSON’S': "Johnson's",
 }
 
 # Categorías unificadas (pedido de Ágata Beauty): el catálogo repite secciones con nombres distintos
@@ -86,32 +90,32 @@ CATEGORY_MAP = {
     'Cuidado capilar': 'Cuidado capilar',
     'Cuidado corporal': 'Cuidado corporal',
 }
-# Productos cuya página no indica sección (o cuya sección mezcla tipos): categoría asignada por producto.
-CATEGORY_BY_ID = {
-    'girly-022-1': 'Cuidado facial',            # Gel hidratante con aloe vera
-    'girly-022-2': 'Labios',                    # Girly TINT labios y mejillas
-    'girly-022-3': 'Rostro',                    # Polvo suelto
-    'maybelline-023-1': 'Ojos y cejas', 'maybelline-023-2': 'Ojos y cejas', 'maybelline-023-3': 'Ojos y cejas',
-    'ani-k-028-1': 'Ojos y cejas', 'ani-k-028-2': 'Ojos y cejas', 'ani-k-028-3': 'Ojos y cejas',
-    'majikal-029-1': 'Rostro',                  # Polvos sueltos
-    'majikal-029-2': 'Labios',                  # Magic Pen (confirmado por Ágata Beauty)
-    'majikal-029-3': 'Labios',                  # Shiny Lip Oil
-    'schwarzkopf-065-1': 'Cuidado capilar',     # Gel fijador para el cabello
-    'schwarzkopf-065-2': 'Ojos y cejas',        # Gel para cejas
-    'nude-111-1': 'Cuidado facial',             # Protector solar (confirmado por Ágata Beauty)
-    'nude-111-2': 'Cuidado corporal',           # Autobronceador
-    'nivea-112-1': 'Cuidado corporal', 'nivea-112-2': 'Cuidado corporal',
-    'nivea-113-1': 'Cuidado corporal', 'nivea-113-2': 'Cuidado corporal',
-    'nivea-114-1': 'Cuidado corporal', 'nivea-114-2': 'Cuidado corporal',
-    'nivea-115-1': 'Cuidado corporal', 'nivea-115-2': 'Cuidado corporal',
-    'fantiluna-118-1': 'Cuidado corporal', 'fantiluna-118-2': 'Cuidado corporal',
-    'fantiluna-119-1': 'Cuidado corporal', 'fantiluna-119-2': 'Cuidado corporal',
-    'fantiluna-120-1': 'Cuidado corporal', 'fantiluna-120-2': 'Cuidado corporal',
+# Productos cuya página no indica sección (o cuya sección mezcla tipos): categoría asignada por
+# "Marca|Nombre" (el nombre ya corregido), para que no dependa del número de página.
+CATEGORY_BY_PRODUCT = {
+    'Girly|Gel hidratante con aloe vera': 'Cuidado facial',
+    'Girly|Girly TINT Labios y mejillas': 'Labios',
+    'Girly|Polvo suelto': 'Rostro',
+    'Majikal|Polvos sueltos - 4 tonos': 'Rostro',
+    'Majikal|Magic Pen': 'Labios',                          # confirmado por Ágata Beauty
+    'Majikal|Shiny Lip Oil': 'Labios',
+    'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'Cuidado capilar',
+    'Schwarzkopf|Gel para cejas Got2b amarillo': 'Ojos y cejas',
+    'Nude|Protector solar Spf30 40 ml': 'Cuidado facial',   # confirmado por Ágata Beauty
+    'Nude|Autobronceador Doypack 200ml': 'Cuidado corporal',
+}
+# Marcas cuyas páginas no tienen sección y cuyos productos son todos del mismo tipo.
+CATEGORY_BY_BRAND = {
+    'Maybelline': 'Ojos y cejas',     # pestañinas
+    'Nivea': 'Cuidado corporal',      # cremas y desodorantes (el Lip care sí trae la sección "labios")
+    'Fantiluna': 'Cuidado corporal',
+    'Ani-k': 'Ojos y cejas',          # solo la página de pestañinas y delineador no trae sección
 }
 
 
-def categorize(pid, section):
-    return CATEGORY_BY_ID.get(pid) or CATEGORY_MAP.get(section or '')
+def categorize(brand, name, section):
+    return (CATEGORY_BY_PRODUCT.get(f'{brand}|{name}') or CATEGORY_MAP.get(section or '')
+            or CATEGORY_BY_BRAND.get(brand))
 
 
 # Productos cuya foto en el catálogo es de otro producto: se muestran como "foto pendiente".
@@ -252,6 +256,29 @@ def save_webp(img, path, width):
 _DECOR = None
 
 
+def _size(im):
+    b = im['bbox']
+    return b[2] - b[0], b[3] - b[1]
+
+
+def is_frame(im):
+    w, h = _size(im)
+    return max(w, h) > 400 and min(w, h) > 0 and abs(min(w, h) / max(w, h) - FRAME_RATIO) < 0.01
+
+
+def is_divider(im):
+    w, h = _size(im)
+    return 150 < w < 260 and h > 0 and abs(w / h - DIVIDER_RATIO) < 0.3
+
+
+def is_ring(im):
+    """Anillo cobrizo: imagen cuadrada de 150-235 pt que Canva exporta a ~300 ppp (las fotos de producto
+    tienen su propia resolución, casi siempre menor)."""
+    w, h = _size(im)
+    return (im['width'] == im['height'] and abs(w - h) < 1 and 150 < w < 235
+            and 295 <= im['width'] / w * 72 <= 305)
+
+
 def decor_sizes(doc):
     """Tamaños de imagen que se repiten en casi todas las páginas (fondo, trazos, estrellas, marcos,
     anillos, discos, divisores): son decoración, no fotos de producto."""
@@ -262,9 +289,8 @@ def decor_sizes(doc):
             for im in p.get_image_info():
                 key = (im['width'], im['height'])
                 counts[key] = counts.get(key, 0) + 1
-        _DECOR = {k for k, v in counts.items() if v >= 100} | FRAME_SIZES | {(r, r) for r in RING_SIDES} | {
-            (392, 360), (391, 360), (363, 52), (336, 52), (303, 43), (628, 22),
-            (1450, 724), (1326, 792), (1501, 699), (1434, 732), (1208, 1712)}
+        _DECOR = {k for k, v in counts.items() if v >= 100} | {
+            (744, 1328), (415, 739), (1450, 724), (1326, 792), (1501, 699), (1434, 732), (1208, 1712)}
     return _DECOR
 
 
@@ -285,8 +311,7 @@ def gallery_bounds(union, frame, spans, images):
     para no repetir textos de la tarjeta. Las etiquetas escritas sobre las fotos (#592510) se conservan."""
     cy = (union.y0 + union.y1) / 2
     obstacles = [s['b'] for s in spans if s['c'] != '592510']
-    obstacles += [im['bbox'] for im in images if (im['width'], im['height']) in {(336, 52), (363, 52), (303, 43)}
-                  and inside(center(im['bbox']), frame)]
+    obstacles += [im['bbox'] for im in images if is_divider(im) and inside(center(im['bbox']), frame)]
     above = [b[3] for b in obstacles if b[3] <= cy and b[2] > union.x0 and b[0] < union.x1]
     below = [b[1] for b in obstacles if b[1] >= cy and b[2] > union.x0 and b[0] < union.x1]
     top = max([union.y0] + [y + 2 for y in above])
@@ -329,7 +354,7 @@ def main():
         images = page.get_image_info(xrefs=True)
         frames = []
         for im in images:
-            if (im['width'], im['height']) in FRAME_SIZES:
+            if is_frame(im):
                 bb = tuple(round(v) for v in im['bbox'])
                 if bb not in frames:
                     frames.append(bb)
@@ -347,15 +372,14 @@ def main():
 
             # Anillo: imagen cuadrada del tamaño del círculo; si hay varias, la primera (arriba / izquierda).
             rings = [im for im in images
-                     if im['width'] == im['height'] and im['width'] in RING_SIDES
-                     and inside(center(im['bbox']), fb)]
+                     if is_ring(im) and inside(center(im['bbox']), fb)]
             wide = (fb[2] - fb[0]) > (fb[3] - fb[1])
             rings.sort(key=lambda im: center(im['bbox'])[0] if wide else center(im['bbox'])[1])
             ring = pymupdf.Rect(rings[0]['bbox']) if rings else None
 
             name = fix_text(name)
             product = dict(id=pid, name=name, brand=brand)
-            category = categorize(pid, section)
+            category = categorize(brand, name, section)
             if category:
                 product['category'] = category
             if section:
