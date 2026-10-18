@@ -2,7 +2,7 @@
 
 Versión web del **Catálogo 2026 de Ágata Beauty** (*Makeup • Skincare • Selfcare*), diseñado originalmente en Canva. Conserva la identidad del catálogo (fotografías, textos, precios, colores, tipografías del logo, el círculo con anillo cobrizo y los adornos de línea) y permite **buscar, filtrar por marca y categoría y consultar cada producto sin pasar página por página**.
 
-- **225 productos** de **25 marcas**, extraídos del PDF original de 121 páginas.
+- **249 productos** de **27 marcas**, extraídos del diseño de Canva de 133 páginas.
 - Vista productos (búsqueda) y **vista catálogo** (las páginas originales, con índice por marca).
 - Botón **"Comprar / Solicitar producto"** que abre WhatsApp (3135496268) con el nombre del producto, siguiendo el proceso de compra del catálogo.
 
@@ -37,20 +37,21 @@ js/state.js                 Estado en la URL (atrás del navegador y enlaces com
 js/ui.js                    Tarjetas, detalle, vista catálogo, proceso de compra, contacto
 data/products.json          ÚNICA fuente de datos: marca, contacto, proceso de compra, páginas y productos
 assets/images/productos/    Foto de cada producto (círculo del catálogo) + fotos de tonos/variantes
+assets/images/productos-hd/ Fotos originales en alta resolución (reemplazan al recorte del PDF)
 assets/catalog/             Páginas originales del catálogo (vista catálogo)
 assets/images/decor/        Fondo y adornos de línea extraídos del catálogo
 assets/icons/               Favicon e íconos de Instagram / WhatsApp del catálogo
-catalogo-original/          Lugar del PDF de Canva (no se sube: pesa ~160 MB)
+catalogo-original/          Lugar del PDF de Canva (no se sube: pesa ~345 MB)
 scripts/extract-catalog.py  Genera productos, fotos y páginas a partir del PDF
 scripts/optimize-images.mjs Convierte fotos sueltas a WebP (para productos agregados a mano)
-docs/                       Auditoría del catálogo y tabla de productos
+docs/                       Auditoría, tabla de productos (generada) e instrucciones para las fotos
 ```
 
 ## Actualizar el catálogo cuando cambie el PDF
 
 Si el catálogo se sigue editando en Canva, lo más fácil es regenerarlo todo:
 
-1. Exportar desde Canva: **Compartir → Descargar → PDF para impresión** (conserva las fotos en alta resolución; el "PDF estándar" las reduce a ~90 dpi y en la web se ven borrosas).
+1. Exportar desde Canva: **Compartir → Descargar → PDF para impresión** (la mayor calidad; el "PDF estándar" reduce las fotos). Ojo: ninguna exportación mejora una foto que ya se subió pequeña a Canva; para eso están las fotos de `assets/images/productos-hd/`.
 2. Guardarlo como `catalogo-original/catalogo.pdf`.
 3. Ejecutar:
 
@@ -59,7 +60,7 @@ Si el catálogo se sigue editando en Canva, lo más fácil es regenerarlo todo:
    npm run catalog
    ```
 
-El script lee cada página (marca, sección, nombre, precios y descripciones según la tipografía del catálogo), recorta la foto de cada producto dentro del círculo a su resolución original (el anillo cobrizo lo dibuja la web en CSS, nítido a cualquier tamaño) y exporta las páginas. Conserva el bloque `brand` de `products.json` y reemplaza `pages` y `products`. Revisa el resumen que imprime y la página en el navegador antes de publicar.
+El script lee cada página (marca, sección, nombre, precios y descripciones según la tipografía del catálogo), recorta la foto de cada producto dentro del círculo a su resolución original (el anillo cobrizo lo dibuja la web en CSS, nítido a cualquier tamaño) y exporta las páginas. Conserva el bloque `brand` de `products.json`, reemplaza `pages` y `products` y regenera `docs/PRODUCTOS.md`. Si existe `assets/images/productos-hd/{id}.webp`, usa esa foto (y su origen, anotado en `assets/images/productos-hd/fuentes.json`) en vez del recorte del PDF. Revisa el resumen que imprime y la página en el navegador antes de publicar.
 
 > El script depende del diseño actual (marco de tarjeta, círculo, tipografías). Si cambia la plantilla de Canva, puede necesitar ajustes.
 
@@ -90,6 +91,7 @@ También se puede editar `data/products.json` directamente, sin tocar HTML ni Ja
   "imageWidth": 315,
   "imageHeight": 315,
   "imageAlt": "Descripción de la foto",
+  "imageSource": "De dónde salió la foto (catálogo de Canva, URL de la marca, archivo original)",
   "gallery": [{ "src": "assets/images/productos/montoc-003-2-variantes.webp", "width": 720, "height": 400, "alt": "…" }],
   "page": 3
 }
@@ -98,9 +100,9 @@ También se puede editar `data/products.json` directamente, sin tocar HTML ni Ja
 Reglas:
 
 - **Solo `id` y `name` son obligatorios.** Los demás campos se escriben únicamente si el dato existe en el catálogo. Un campo ausente no se muestra; **no inventes datos**.
-- `id` debe ser único y no cambiar (se usa en los enlaces: `?producto=montoc-003-2`).
+- `id` debe ser único (`marca-página-posición`; se usa en los enlaces: `?producto=montoc-003-2`). Si se agregan páginas en Canva, los `id` de las páginas siguientes cambian al regenerar.
 - `price` es un número sin puntos ni símbolo y sirve para ordenar. Si hay `variants` (tamaños, tonos…), `price` es el menor y la tarjeta muestra la lista completa.
-- **Marcas y categorías se generan automáticamente** a partir de `brand` y `category`, en el orden en que aparecen en el catálogo. Al regenerar desde el PDF, la categoría sale de `CATEGORY_MAP` / `CATEGORY_BY_ID` en el script (la sección original queda en `section`).
+- **Marcas y categorías se generan automáticamente** a partir de `brand` y `category`, en el orden en que aparecen en el catálogo. Al regenerar desde el PDF, la categoría sale de `CATEGORY_MAP`, `CATEGORY_BY_PRODUCT` y `CATEGORY_BY_BRAND` en el script (la sección original queda en `section`). Las erratas corregidas están en `TEXT_FIXES` y `BRAND_FIXES`.
 - `offer` marca el producto como oferta. El menú "Ofertas" solo aparece si existe al menos uno (el catálogo 2026 no tiene ofertas).
 - `page` enlaza el producto con su página en la vista catálogo (botón "Ver en el catálogo original").
 - Para fotos nuevas: `npm run images -- carpeta-con-fotos assets/images/productos` (solo redimensiona y comprime; no altera el producto).
@@ -118,7 +120,7 @@ Tipografías: el logo usa **Cormorant Garamond** y **Dancing Script**, las misma
 ## Funcionalidades
 
 - Búsqueda instantánea por nombre, marca, categoría, presentación, descripción, variantes y etiquetas. No distingue tildes ni mayúsculas, y con varias palabras exige todas ("shampoo niños").
-- Filtros por **categoría** (8 categorías unificadas) y por **marca** (25), con contador. Cada contador tiene en cuenta los demás filtros.
+- Filtros por **categoría** (8 categorías unificadas) y por **marca** (27), con contador. Cada contador tiene en cuenta los demás filtros.
 - Productos **agrupados por marca** (como en el catálogo), **por categoría** o sin agrupar.
 - Orden: catálogo, nombre A-Z / Z-A, precio menor/mayor.
 - Contador "Mostrando X de Y productos" y estado sin resultados con "Limpiar búsqueda".

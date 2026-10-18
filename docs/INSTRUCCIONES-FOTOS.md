@@ -6,7 +6,7 @@ No necesitas saber programar: **Claude Code hace la parte técnica**. Tú solo c
 - Catálogo web (lo que ven los clientes): **https://agatabeautycol.github.io/Agata/**
 - Repositorio en GitHub (donde vive el catálogo): **https://github.com/agatabeautycol/Agata**
 - Rama de trabajo (no la cambies): **`main`**
-- Lista de los 225 productos con su código: **[docs/PRODUCTOS.md](PRODUCTOS.md)**
+- Lista de los 249 productos con su código: **[docs/PRODUCTOS.md](PRODUCTOS.md)**
 
 ### ¿Por qué hay que cambiar las fotos?
 
@@ -101,13 +101,13 @@ si algo no está claro antes de decidir por tu cuenta.
 - Trabaja y sube cambios SOLO a esa rama. No crees otras ramas, no cambies su nombre ni el del repositorio,
   no reescribas el historial (nada de force-push) y no abras pull requests.
 - Lee primero: README.md, docs/AUDITORIA.md, docs/PRODUCTOS.md, data/products.json y scripts/extract-catalog.py.
-- data/products.json es la única fuente de datos (225 productos, 25 marcas). Cada producto tiene un `id`
-  estable (p. ej. `montoc-003-1`) que NO debe cambiar.
+- data/products.json es la única fuente de datos (249 productos, 27 marcas). Cada producto tiene un `id`
+  (p. ej. `montoc-003-1` = marca, página y posición) que NO debes cambiar a mano.
 - Las fotos actuales están en assets/images/productos/{id}.webp: son recortes circulares del PDF de Canva,
-  de baja resolución (~200–300 px). El anillo cobrizo alrededor de la foto lo dibuja el CSS
+  de baja resolución (~200–400 px). El anillo cobrizo alrededor de la foto lo dibuja el CSS
   (.card-media / .detail-media), no la imagen.
 - scripts/extract-catalog.py regenera productos, fotos y páginas desde el PDF; las correcciones manuales
-  viven en TEXT_FIXES, CATEGORY_MAP, CATEGORY_BY_ID y PHOTO_PENDING.
+  viven en TEXT_FIXES, BRAND_FIXES, CATEGORY_MAP, CATEGORY_BY_PRODUCT, CATEGORY_BY_BRAND y PHOTO_PENDING.
 
 ## Objetivo
 Reemplazar las fotos de producto por versiones originales de buena calidad (mínimo 800 px de lado),
@@ -145,12 +145,9 @@ C. Enlaces de páginas de marcas/tiendas que pegue al final de este mensaje. Si 
 3. En data/products.json, para ese producto: `image` = "assets/images/productos-hd/{id}.webp",
    `imageWidth`/`imageHeight` con el tamaño real, elimina `imageSmall` si existe, y agrega
    `imageSource` con la URL o el nombre del archivo de origen. Conserva `imageAlt`.
-4. Producto bloomshell-014-1 ("Contorno en barra Bloom define"): hoy tiene `imagePending: true` porque
-   en Canva tenía la foto de otro producto. Si consigues su foto correcta, quita `imagePending` y
-   también saca ese id de PHOTO_PENDING en scripts/extract-catalog.py.
-5. Haz que scripts/extract-catalog.py respete las fotos nuevas: si existe
-   assets/images/productos-hd/{id}.webp, debe usar esa foto (y su imageSource) en vez del recorte del PDF.
-   Documenta este comportamiento en el README.
+4. scripts/extract-catalog.py ya respeta las fotos nuevas: si existe assets/images/productos-hd/{id}.webp
+   la usa en vez del recorte del PDF. Anota el origen de cada foto en
+   assets/images/productos-hd/fuentes.json ({"id": "URL o archivo de origen"}).
 
 ## Verificación antes de subir
 1. Sirve el sitio localmente (python3 -m http.server 8080) y revísalo con Playwright/Chromium en
@@ -158,7 +155,7 @@ C. Enlaces de páginas de marcas/tiendas que pegue al final de este mensaje. Si 
    dentro del círculo sin cortar el producto, que no haya scroll horizontal y que la búsqueda, los filtros
    de categoría y marca, la agrupación y el detalle sigan funcionando.
 2. Muéstrame capturas de antes y después de al menos 6 productos de marcas distintas.
-3. Comprueba que data/products.json sigue siendo JSON válido y que los 225 productos siguen ahí.
+3. Comprueba que data/products.json sigue siendo JSON válido y que los 249 productos siguen ahí.
 
 ## Subir los cambios (git)
 1. Haz commits pequeños y claros en español (por ejemplo, uno por marca), solo en la rama
@@ -175,7 +172,6 @@ C. Enlaces de páginas de marcas/tiendas que pegue al final de este mensaje. Si 
 - Recuérdame abrir https://agatabeautycol.github.io/Agata/ en 2 minutos para ver el resultado.
 
 ## Pendientes que puedes preguntarme al final (no bloquean el trabajo)
-- Categoría de "Majikal Magic Pen" (hoy en Labios) y de "Nude Protector solar" (hoy en Cuidado facial).
 - Confirmar que el WhatsApp 3135496268 es de Colombia (+57).
 
 Enlaces de páginas de las marcas (si los tengo; si no, ignora esta parte):
