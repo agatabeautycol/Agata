@@ -57,6 +57,16 @@ SHADE_PAGES = {
     'Ani-k|Rubor líquido Bonita': 'https://anikmakeup.com/products/rubor-liquido-bonita',
     'Ani-k|Rubor en polvo Bonita': 'https://anikmakeup.com/products/rubor-bonita',
     'Ani-k|Lip Gloss': 'https://anikmakeup.com/products/gloss-bonita',
+    'Majikal|Magic Pen': 'https://www.majikalbeauty.com/products/magic-pen',
+    'Majikal|Shiny Lip Oil': 'https://www.majikalbeauty.com/products/lip-oil',
+    'Atenea|Base de maquillaje 1ST Scene': 'https://ateneaprofesional.com/products/mini-base-liquida-1st-scene',
+    'Atenea|Rubor compacto 1ST Scene': 'https://ateneaprofesional.com/products/rubores-individuales-1st-scene',
+    'Atenea|Bronzer cremoso en barra': 'https://ateneaprofesional.com/products/bronzer-cremoso',
+    'Atenea|Iluminador efecto húmedo Sublime': 'https://ateneaprofesional.com/products/iluminador-efecto-humedo-sublime',
+    'Atenea|Pigmento Soft Touch': 'https://ateneaprofesional.com/products/sombra-cremosa-individual',
+    'Atenea|Delineador de cejas': 'https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene',
+    'Atenea|Lápiz delineador Color pencil': 'https://ateneaprofesional.com/products/lapiz-delineador',
+    'Atenea|Lip Balm Mask': 'https://ateneaprofesional.com/products/lip-balm-mask',
 }
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
