@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ágata Beauty | Catálogo 2026 de maquillaje, skincare y selfcare</title>
+  <meta name="description" content="Catálogo digital de Ágata Beauty: busca y filtra productos de maquillaje, cuidado facial, cuidado capilar y corporal por marca y categoría. Belleza que nace del amor.">
+  <meta name="theme-color" content="#fcf3ec">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ágata Beauty">
+  <meta property="og:title" content="Ágata Beauty | Catálogo 2026">
+  <meta property="og:description" content="Makeup • Skincare • Selfcare. Busca, filtra y consulta todos los productos del catálogo.">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:url" content="https://agatabeautycol.github.io/Agata/">
+  <meta property="og:image" content="https://agatabeautycol.github.io/Agata/assets/og-portada.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="1273">
+  <meta property="og:image:alt" content="Portada del catálogo Ágata Beauty 2026: Makeup, Skincare, Selfcare">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://agatabeautycol.github.io/Agata/">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Cormorant Garamond y Dancing Script son las fuentes del logo original. Poppins aparece en el
+       catálogo y reemplaza a Garet / Mont / Codec Pro (licencias comerciales de Canva). -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ágata Beauty, inicio">
+        <span class="wordmark wordmark-sm" aria-hidden="true"><span class="wm-main">ÁGATA</span><span class="wm-script">beauty</span></span>
+      </a>
+
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#categorias">Categorías</a></li>
+          <li><a href="#marcas">Marcas</a></li>
+          <li data-nav-offers hidden><a href="#catalogo" data-offers-link>Ofertas</a></li>
+          <li><a href="#como-comprar">Cómo comprar</a></li>
+          <li data-nav-contact hidden><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="icon-btn search-jump" type="button" aria-label="Buscar productos" data-focus-search>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portada: réplica de la página 1 del catálogo -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-deco hero-deco-strokes" src="assets/images/decor/trazos-sup-izq.webp" alt="" width="372" height="407">
+      <img class="hero-deco hero-deco-lipstick" src="assets/images/decor/labial.webp" alt="" width="186" height="322">
+      <img class="hero-deco hero-deco-brush" src="assets/images/decor/brocha.webp" alt="" width="233" height="407">
+      <img class="hero-deco hero-deco-strokes-br" src="assets/images/decor/trazos-inf-der.webp" alt="" width="256" height="193">
+      <img class="hero-deco hero-deco-star s1" src="assets/images/decor/estrella.webp" alt="" width="71" height="65">
+      <img class="hero-deco hero-deco-star s2" src="assets/images/decor/estrella.webp" alt="" width="71" height="65">
+
+      <div class="container hero-inner">
+        <h1 id="hero-title" class="wordmark wordmark-lg">
+          <span class="wm-main">ÁGATA</span><span class="wm-script">beauty</span>
+          <span class="visually-hidden"> — Catálogo digital</span>
+        </h1>
+        <p class="hero-claim" data-brand-claim>Makeup • Skincare • Selfcare</p>
+        <p class="hero-edition" data-brand-edition>Catálogo 2026</p>
+        <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+        <ul class="hero-contact" data-hero-contact></ul>
+        <p class="hero-tagline" data-brand-tagline>Belleza que nace del amor</p>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="catalog-title" class="brand-title">Catálogo</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
+
+        <div class="view-switch" role="group" aria-label="Modo de visualización">
+          <button type="button" class="chip" data-view="productos" aria-pressed="true">Vista productos</button>
+          <button type="button" class="chip" data-view="catalogo" aria-pressed="false">Vista catálogo</button>
+        </div>
+
+        <!-- Vista productos (búsqueda) -->
+        <div data-panel="productos">
+          <form class="toolbar" role="search" data-search-form>
+            <label class="search-field">
+              <span class="visually-hidden">Buscar productos</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input type="search" name="q" placeholder="Buscar productos, marcas…" autocomplete="off" data-search-input>
+            </label>
+
+            <label class="select-field">
+              <span class="visually-hidden">Agrupar productos</span>
+              <select name="agrupar" data-group-select>
+                <option value="marca">Agrupar por marca</option>
+                <option value="categoria">Agrupar por categoría</option>
+                <option value="no">Sin agrupar</option>
+              </select>
+            </label>
+
+            <label class="select-field">
+              <span class="visually-hidden">Ordenar por</span>
+              <select name="orden" data-sort-select>
+                <option value="">Orden del catálogo</option>
+                <option value="name-asc">Nombre A-Z</option>
+                <option value="name-desc">Nombre Z-A</option>
+                <option value="price-asc" data-needs-price>Precio: menor a mayor</option>
+                <option value="price-desc" data-needs-price>Precio: mayor a menor</option>
+              </select>
+            </label>
+          </form>
+
+          <nav class="filter-row categories" id="categorias" aria-labelledby="categorias-title">
+            <h3 class="filter-title" id="categorias-title">Categorías</h3>
+            <div class="chip-row" data-categories></div>
+          </nav>
+
+          <nav class="filter-row brands" id="marcas" aria-labelledby="marcas-title">
+            <h3 class="filter-title" id="marcas-title">Marcas</h3>
+            <div class="chip-row" data-brands></div>
+          </nav>
+
+          <p class="result-count" aria-live="polite" data-result-count></p>
+
+          <div class="product-groups" data-product-grid></div>
+
+          <div class="empty-state" data-empty hidden>
+            <p>No encontramos productos que coincidan con tu búsqueda.</p>
+            <p class="empty-hint">¿No encuentras lo que buscas? ¡Pregúntanos! Podemos cotizarlo especialmente para ti, sujeto a disponibilidad.</p>
+            <button type="button" class="btn btn-secondary" data-clear>Limpiar búsqueda</button>
+          </div>
+
+          <div class="empty-state" data-pending hidden>
+            <p><strong>Catálogo en preparación.</strong></p>
+            <p>Los productos se cargan desde <code>data/products.json</code>. <span class="pending-tag">[INFORMACIÓN PENDIENTE]</span></p>
+          </div>
+        </div>
+
+        <!-- Vista catálogo (páginas originales) -->
+        <div data-panel="catalogo" hidden>
+          <nav class="page-index" aria-label="Ir a una marca del catálogo">
+            <p class="page-index-label">Ir a:</p>
+            <div class="chip-row" data-page-index></div>
+          </nav>
+          <ol class="catalog-pages" data-catalog-pages></ol>
+          <div class="empty-state" data-pages-pending hidden>
+            <p>Las páginas del catálogo original aún no se han exportado. <span class="pending-tag">[INFORMACIÓN PENDIENTE]</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to" id="como-comprar" aria-labelledby="how-title" hidden>
+      <div class="container">
+        <div class="section-head">
+          <h2 id="how-title" class="brand-title" data-process-title>Proceso de compra</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
+        <ol class="steps" data-process-steps></ol>
+        <p class="notice" data-process-notice></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title" hidden>
+      <div class="container">
+        <div class="section-head">
+          <h2 id="contact-title" class="brand-title">Contacto</h2>
+          <span class="divider" aria-hidden="true"></span>
+        </div>
+        <ul class="contact-list" data-contact-list></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="wordmark wordmark-sm" aria-hidden="true"><span class="wm-main">ÁGATA</span><span class="wm-script">beauty</span></p>
+      <p data-footer-tagline>Belleza que nace del amor</p>
+      <p>&copy; <span data-year></span> <span data-brand-name>Ágata Beauty</span></p>
+    </div>
+  </footer>
+
+  <!-- Detalle de producto -->
+  <dialog class="product-dialog" aria-labelledby="detail-name" data-dialog>
+    <div class="dialog-inner">
+      <button type="button" class="btn btn-link back-btn" data-close>← Volver al catálogo</button>
+      <article class="detail" data-detail></article>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="container">Este catálogo necesita JavaScript para buscar y filtrar productos.</p>
+  </noscript>
+</body>
+</html>

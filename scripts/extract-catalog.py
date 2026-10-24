@@ -1,0 +1,497 @@
+#!/usr/bin/env python3
+"""
+Genera data/products.json y las imágenes del sitio a partir del PDF exportado de Canva.
+
+    pip install pymupdf pillow
+    python3 scripts/extract-catalog.py ruta/al/catalogo.pdf
+
+Qué hace:
+  1. Lee el texto de cada página con su posición y tipografía:
+       TheSeasons-Bd             -> marca (título de la página)
+       Mont-Bold #764b36         -> sección / categoría
+       Garet-Bold                -> nombre del producto y precios
+       Garet-Regular             -> descripciones y etiquetas de variantes
+  2. Usa el marco decorativo de cada tarjeta para agrupar texto e imágenes por producto.
+  3. Recorta la foto del producto exactamente como aparece en el catálogo (círculo con
+     el anillo cobrizo), sin alterarla, y las fotos de tonos/variantes que la acompañan.
+  4. Exporta cada página completa para la "Vista catálogo".
+
+No inventa información: los textos se copian tal cual. Las correcciones manuales
+están en OVERRIDES y documentadas en docs/AUDITORIA.md.
+"""
+import io, json, re, sys, unicodedata
+from pathlib import Path
+
+import pymupdf
+from PIL import Image, ImageDraw
+
+ROOT = Path(__file__).resolve().parent.parent
+PDF = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'catalogo-original' / 'catalogo.pdf'
+OUT_DATA = ROOT / 'data' / 'products.json'
+OUT_PRODUCTS = ROOT / 'assets' / 'images' / 'productos'
+OUT_PAGES = ROOT / 'assets' / 'catalog'
+OUT_MD = ROOT / 'docs' / 'PRODUCTOS.md'
+# Fotos originales en alta resolución (preparadas a mano: recorte, lienzo cuadrado y WebP, sin IA).
+# Si existe assets/images/productos-hd/{id}.webp se usa en vez del recorte del PDF; su origen
+# (URL o archivo) se anota en assets/images/productos-hd/fuentes.json: {"id": "origen"}.
+HD_DIR = ROOT / 'assets' / 'images' / 'productos-hd'
+
+# Las piezas del diseño se reconocen por su forma en la página (no por sus píxeles, que cambian
+# según la calidad con la que se exporte el PDF desde Canva).
+FRAME_RATIO = 0.561                # marco de cada tarjeta: rectángulo redondeado (lado corto / lado largo), vertical u horizontal
+DIVIDER_RATIO = 6.5                # línea con estrella bajo el nombre (ancho / alto)
+INFO_PAGES = {1, 2}                # portada y proceso de compra: sin productos, pero se muestran en la vista catálogo
+SKIP_PAGES = {133}                 # contraportada vacía
+# Las fotos se recortan a su resolución nativa dentro del PDF (sin ampliar ni reducir dos veces).
+MIN_DPI, MAX_DPI = 96, 300
+RING_INNER = 0.92                  # el anillo cobrizo ocupa el 6,4 % exterior del radio (+ margen para su borde suavizado); la web lo dibuja en CSS
+GALLERY_WIDTH = 720
+PAGE_WIDTH = 900
+
+# Etiquetas escritas sobre la foto (color #592510). El catálogo no les pone título;
+# este es el rótulo con el que se muestran en la ficha.
+LABEL_TITLES = {10: 'Indicada para', 52: 'Opciones', 92: 'Aromas'}
+
+# Correcciones manuales verificadas contra las páginas renderizadas.
+OVERRIDES = {}
+
+# Erratas del catálogo original corregidas a pedido de Ágata Beauty (ver docs/AUDITORIA.md).
+# Se aplican a nombres y descripciones; las palabras se comparan completas.
+TEXT_FIXES = {
+    'gengibre': 'jengibre',
+    'Mantaquilla corportal': 'Mantequilla corporal',
+    'podwer': 'powder',
+    'Definir de rizos': 'Definidor de rizos',
+    'biologico': 'biológico',
+    'asiatica': 'asiática',
+    'salicilico': 'salicílico',
+    'Trio de': 'Trío de',
+    'cosmeticos': 'cosméticos',
+    'Bombon': 'Bombón',
+    'Acne': 'Acné',
+    'mascara para': 'máscara para',
+    'retractil': 'retráctil',
+    'liquido': 'líquido',          # Johnson's, p. 122 (catálogo de 133 páginas)
+    'liquida': 'líquida',          # Johnson's, p. 123
+}
+
+# Nombres de marca corregidos a pedido de Ágata Beauty (el título de la página se escribe distinto en Canva).
+# En Canva el título está en mayúsculas y en las pp. 121-123 el apóstrofo es otra letra ("JOHNSON´S"),
+# por eso el primer texto del título llega como "JOHNSON".
+BRAND_FIXES = {
+    'JOHNSON': "Johnson's",
+    'JOHNSON’S': "Johnson's",
+}
+
+# Categorías unificadas (pedido de Ágata Beauty): el catálogo repite secciones con nombres distintos
+# ("Ojos", "Cejas", "Cejas y ojos", "Ojos y cejas"…). La sección original se conserva en "section".
+CATEGORY_MAP = {
+    'Rostro': 'Rostro',
+    'Ojos': 'Ojos y cejas', 'Cejas': 'Ojos y cejas', 'Cejas y ojos': 'Ojos y cejas', 'Ojos y cejas': 'Ojos y cejas',
+    'Labios': 'Labios',
+    'Primer': 'Preparación y fijación', 'Fijación': 'Preparación y fijación', 'Papel matificante': 'Preparación y fijación',
+    'Accesorios': 'Brochas, accesorios y kits', 'Herramientas': 'Brochas, accesorios y kits', 'Kit': 'Brochas, accesorios y kits',
+    'Cuidado facial': 'Cuidado facial',
+    'Cuidado capilar': 'Cuidado capilar',
+    'Cuidado corporal': 'Cuidado corporal',
+}
+# Productos cuya página no indica sección (o cuya sección mezcla tipos): categoría asignada por
+# "Marca|Nombre" (el nombre ya corregido), para que no dependa del número de página.
+CATEGORY_BY_PRODUCT = {
+    'Atenea|Paleta de sombras multiusos Moccalush': 'Ojos y cejas',   # sección "Multiusos"; confirmado por Ágata Beauty
+    'Bioaqua|Mascarilla facial en velo': 'Cuidado facial',            # sección "Rostro"; confirmado por Ágata Beauty
+    'Girly|Gel hidratante con aloe vera': 'Cuidado facial',
+    'Girly|Girly TINT Labios y mejillas': 'Labios',
+    'Girly|Polvo suelto': 'Rostro',
+    'Majikal|Polvos sueltos - 4 tonos': 'Rostro',
+    'Majikal|Magic Pen': 'Labios',                          # confirmado por Ágata Beauty
+    'Majikal|Shiny Lip Oil': 'Labios',
+    'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'Cuidado capilar',
+    'Schwarzkopf|Gel para cejas Got2b amarillo': 'Ojos y cejas',
+    'Nude|Protector solar Spf30 40 ml': 'Cuidado facial',   # confirmado por Ágata Beauty
+    'Nude|Autobronceador Doypack 200ml': 'Cuidado corporal',
+}
+# Marcas cuyas páginas no tienen sección y cuyos productos son todos del mismo tipo.
+CATEGORY_BY_BRAND = {
+    'Maybelline': 'Ojos y cejas',     # pestañinas
+    'Nivea': 'Cuidado corporal',      # cremas y desodorantes (el Lip care sí trae la sección "labios")
+    'Fantiluna': 'Cuidado corporal',
+    'Ani-k': 'Ojos y cejas',          # solo la página de pestañinas y delineador no trae sección
+}
+
+
+def categorize(brand, name, section):
+    return (CATEGORY_BY_PRODUCT.get(f'{brand}|{name}') or CATEGORY_MAP.get(section or '')
+            or CATEGORY_BY_BRAND.get(brand))
+
+
+# Productos cuya foto en el catálogo es de otro producto: se muestran como "foto pendiente".
+PHOTO_PENDING = set()   # "Contorno en barra Bloom define" (p. 14) ya tiene su foto correcta en Canva
+
+
+def fix_text(text):
+    for wrong, right in TEXT_FIXES.items():
+        text = re.sub(rf'(?<!\w){re.escape(wrong)}(?!\w)', right, text)
+    return text
+
+
+def slug(text):
+    text = re.sub(r"['’´]", '', text)    # "Johnson's" -> "johnsons"
+    text = unicodedata.normalize('NFD', text).encode('ascii', 'ignore').decode()
+    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
+
+
+def center(b):
+    return ((b[0] + b[2]) / 2, (b[1] + b[3]) / 2)
+
+
+def inside(pt, b, m=2):
+    return b[0] - m <= pt[0] <= b[2] + m and b[1] - m <= pt[1] <= b[3] + m
+
+
+def parse_price(text):
+    m = re.search(r'\$\s*([\d.]+)', text)
+    return int(m.group(1).replace('.', '')) if m else None
+
+
+def clean(text):
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def join_lines(lines):
+    out = ''
+    for line in lines:
+        line = clean(line)
+        if not out:
+            out = line
+        elif out.endswith('-') and not out.endswith(' -'):
+            out += line          # "Co-" + "wash" -> "Co-wash"
+        else:
+            out += ' ' + line
+    return clean(out)
+
+
+def page_spans(page):
+    spans, seen = [], set()
+    for block in page.get_text('dict')['blocks']:
+        for line in block.get('lines', []):
+            for s in line['spans']:
+                if not s['text'].strip():
+                    continue
+                key = (s['text'], round(s['bbox'][0]), round(s['bbox'][1]))
+                if key in seen:      # Canva duplica los títulos
+                    continue
+                seen.add(key)
+                spans.append(dict(t=s['text'], b=s['bbox'], f=s['font'], c='%06x' % s['color']))
+    return spans
+
+
+def group_lines(spans, tol=6):
+    lines = []
+    for s in sorted(spans, key=lambda s: (s['b'][1], s['b'][0])):
+        if lines and abs(lines[-1][0]['b'][1] - s['b'][1]) <= tol:
+            lines[-1].append(s)
+        else:
+            lines.append([s])
+    return [sorted(l, key=lambda s: s['b'][0]) for l in lines]
+
+
+def parse_card(spans):
+    """Convierte los textos de una tarjeta en nombre, variantes de precio, descripción y etiquetas."""
+    labels = [clean(s['t']) for s in sorted(spans, key=lambda s: s['b'][0]) if s['c'] == '592510']
+    text_spans = [s for s in spans if s['c'] != '592510']
+    lines = group_lines(text_spans)
+
+    name_lines, desc_lines, prices = [], [], []
+    pending_label = []     # líneas Regular que pueden continuar en la etiqueta de un precio
+    name_done = False
+    for line in lines:
+        text = clean(''.join(s['t'] for s in line))
+        bold_only = all(s['f'].startswith('Garet-Bold') for s in line)
+        has_price = '$' in text
+        if not name_done and bold_only and not has_price:
+            name_lines.append(text)
+            continue
+        name_done = True
+        if has_price:
+            label = clean(text.split('$')[0]).rstrip(':').strip()
+            if pending_label and (label or text.lstrip().startswith(':')):
+                label = clean(' '.join(pending_label + [label])).rstrip(':').strip()
+                pending_label = []
+            elif pending_label:
+                desc_lines.extend(pending_label)
+                pending_label = []
+            prices.append(dict(label=label, price=parse_price(text)))
+        else:
+            if pending_label:
+                desc_lines.extend(pending_label)
+            pending_label = [text]
+    desc_lines.extend(pending_label)
+    return join_lines(name_lines), prices, desc_lines, labels
+
+
+def native_dpi(images, rect, decor):
+    """Resolución real (px por pulgada) de las fotos colocadas dentro de rect."""
+    dpis = [im['width'] / (im['bbox'][2] - im['bbox'][0]) * 72 for im in images
+            if im['xref'] and (im['width'], im['height']) not in decor
+            and not (is_ring(im) or is_frame(im) or is_divider(im))
+            and inside(center(im['bbox']), rect) and im['bbox'][2] > im['bbox'][0]]
+    return round(min(MAX_DPI, max([MIN_DPI] + dpis)))
+
+
+def circle_crop(page, rect, dpi):
+    """Disco interior del círculo (foto + fondo beige), sin el anillo: la web dibuja el anillo
+    en vector para que se vea nítido a cualquier tamaño."""
+    pix = page.get_pixmap(clip=rect, dpi=dpi)
+    img = Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGBA')
+    side = min(img.size)
+    img = img.crop((0, 0, side, side))
+    inset = side * (1 - RING_INNER) / 2
+    big = side * 4
+    mask = Image.new('L', (big, big), 0)
+    ImageDraw.Draw(mask).ellipse((inset * 4, inset * 4, big - 1 - inset * 4, big - 1 - inset * 4), fill=255)
+    img.putalpha(mask.resize((side, side), Image.LANCZOS))
+    return img
+
+
+def save_webp(img, path, width):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if img.width > width:
+        img = img.resize((width, round(img.height * width / img.width)), Image.LANCZOS)
+    img.save(path, 'WEBP', quality=92, method=6)   # calidad alta: las fotos de origen ya vienen comprimidas
+    return img.size
+
+
+_DECOR = None
+_HD_SOURCES = None
+
+
+def hd_sources():
+    global _HD_SOURCES
+    if _HD_SOURCES is None:
+        f = HD_DIR / 'fuentes.json'
+        _HD_SOURCES = json.loads(f.read_text()) if f.exists() else {}
+    return _HD_SOURCES
+
+
+def _size(im):
+    b = im['bbox']
+    return b[2] - b[0], b[3] - b[1]
+
+
+def is_frame(im):
+    w, h = _size(im)
+    return max(w, h) > 400 and min(w, h) > 0 and abs(min(w, h) / max(w, h) - FRAME_RATIO) < 0.01
+
+
+def is_divider(im):
+    w, h = _size(im)
+    return 150 < w < 260 and h > 0 and abs(w / h - DIVIDER_RATIO) < 0.3
+
+
+def is_ring(im):
+    """Anillo cobrizo: imagen cuadrada de 150-235 pt que Canva exporta a ~300 ppp (las fotos de producto
+    tienen su propia resolución, casi siempre menor)."""
+    w, h = _size(im)
+    return (im['width'] == im['height'] and abs(w - h) < 1 and 150 < w < 235
+            and 295 <= im['width'] / w * 72 <= 305)
+
+
+def decor_sizes(doc):
+    """Tamaños de imagen que se repiten en casi todas las páginas (fondo, trazos, estrellas, marcos,
+    anillos, discos, divisores): son decoración, no fotos de producto."""
+    global _DECOR
+    if _DECOR is None:
+        counts = {}
+        for p in doc:
+            for im in p.get_image_info():
+                key = (im['width'], im['height'])
+                counts[key] = counts.get(key, 0) + 1
+        _DECOR = {k for k, v in counts.items() if v >= 100} | {
+            (744, 1328), (415, 739), (1450, 724), (1326, 792), (1501, 699), (1434, 732), (1208, 1712)}
+    return _DECOR
+
+
+def join_description(lines):
+    """Une las líneas cortadas por el diseño y conserva las listas: una línea nueva empieza
+    cuando arranca con mayúscula, número o viñeta."""
+    out = []
+    for line in (clean(l) for l in lines):
+        if out and not re.match(r'^[A-ZÁÉÍÓÚÑ0-9✨•\-–]', line):
+            out[-1] += ' ' + line
+        else:
+            out.append(line)
+    return '\n'.join(out)
+
+
+def gallery_bounds(union, frame, spans, images):
+    """Limita el recorte de tonos/variantes al espacio entre el nombre (y su divisor) y el precio,
+    para no repetir textos de la tarjeta. Las etiquetas escritas sobre las fotos (#592510) se conservan."""
+    cy = (union.y0 + union.y1) / 2
+    obstacles = [s['b'] for s in spans if s['c'] != '592510']
+    obstacles += [im['bbox'] for im in images if is_divider(im) and inside(center(im['bbox']), frame)]
+    above = [b[3] for b in obstacles if b[3] <= cy and b[2] > union.x0 and b[0] < union.x1]
+    below = [b[1] for b in obstacles if b[1] >= cy and b[2] > union.x0 and b[0] < union.x1]
+    top = max([union.y0] + [y + 2 for y in above])
+    bottom = min([union.y1] + [y - 2 for y in below])
+    return pymupdf.Rect(max(union.x0, frame[0] + 4), top, min(union.x1, frame[2] - 4), bottom)
+
+
+def save_page(page, pno, brand, page_ids, pages):
+    """Exporta la página completa para la vista catálogo."""
+    pix = page.get_pixmap(dpi=150)
+    pimg = Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB')
+    pw, ph = save_webp(pimg, OUT_PAGES / f'pagina-{pno:03d}.webp', PAGE_WIDTH)
+    if pno == 1:   # imagen para compartir el enlace (WhatsApp y algunas redes no muestran WebP)
+        og = pimg.resize((PAGE_WIDTH, round(pimg.height * PAGE_WIDTH / pimg.width)), Image.LANCZOS)
+        og.save(ROOT / 'assets' / 'og-portada.jpg', 'JPEG', quality=85, optimize=True, progressive=True)
+    pages.append(dict(number=pno, image=f'assets/catalog/pagina-{pno:03d}.webp', width=pw, height=ph,
+                      alt=f'Página {pno} del catálogo Ágata Beauty' + (f': {brand}' if brand else ''),
+                      **({'brand': brand} if brand else {}), products=page_ids))
+
+
+def main():
+    doc = pymupdf.open(PDF)
+    products, pages = [], []
+    for folder in (OUT_PRODUCTS, OUT_PAGES):   # se regeneran completas: sin archivos huérfanos
+        folder.mkdir(parents=True, exist_ok=True)
+        for old in folder.glob('*.webp'):
+            old.unlink()
+
+    for pno, page in enumerate(doc, start=1):
+        if pno in SKIP_PAGES:
+            continue
+        if pno in INFO_PAGES:
+            save_page(page, pno, None, [], pages)
+            continue
+        spans = page_spans(page)
+        brand = next((clean(s['t']) for s in spans if s['f'].startswith('TheSeasons')), None)
+        brand = BRAND_FIXES.get(brand, brand)
+        section = clean(' '.join(s['t'] for s in sorted(spans, key=lambda s: s['b'][0])
+                                 if s['f'] == 'Mont-Bold' and s['c'] == '764b36')) or None
+        if section:
+            section = section[0].upper() + section[1:]   # "labios" -> "Labios" (mismo nombre, otra mayúscula)
+
+        images = page.get_image_info(xrefs=True)
+        frames = []
+        for im in images:
+            if is_frame(im):
+                bb = tuple(round(v) for v in im['bbox'])
+                if bb not in frames:
+                    frames.append(bb)
+        frames.sort(key=lambda b: (round(b[1] / 100), b[0]))
+
+        page_ids = []
+        for idx, fb in enumerate(frames, start=1):
+            fspans = [s for s in spans if inside(center(s['b']), fb)
+                      and not s['f'].startswith('TheSeasons')
+                      and not (s['f'] == 'Mont-Bold' and s['c'] == '764b36')]
+            name, prices, desc, labels = parse_card(fspans)
+            if not name:
+                continue
+            pid = f'{slug(brand)}-{pno:03d}-{idx}'
+
+            # Anillo: imagen cuadrada del tamaño del círculo; si hay varias, la primera (arriba / izquierda).
+            rings = [im for im in images
+                     if is_ring(im) and inside(center(im['bbox']), fb)]
+            wide = (fb[2] - fb[0]) > (fb[3] - fb[1])
+            rings.sort(key=lambda im: center(im['bbox'])[0] if wide else center(im['bbox'])[1])
+            ring = pymupdf.Rect(rings[0]['bbox']) if rings else None
+
+            name = fix_text(name)
+            product = dict(id=pid, name=name, brand=brand)
+            category = categorize(brand, name, section)
+            if category:
+                product['category'] = category
+            if section:
+                product['section'] = section
+            valid = [p for p in prices if p['price'] is not None]
+            if len(valid) == 1 and not valid[0]['label']:
+                product['price'] = valid[0]['price']
+            elif valid:
+                product['price'] = min(p['price'] for p in valid)
+                product['variants'] = [dict(label=p['label'], price=p['price']) for p in valid]
+            m = re.search(r'\bx\s?(\d+(?:[.,]\d+)?)\s?(ml|gr|g|Ml)\b', name, re.I)
+            if m:
+                product['presentation'] = f"{m.group(1)} {m.group(2).lower()}"
+            if desc:
+                product['description'] = fix_text(join_description(desc))
+            if labels:
+                product['details'] = {LABEL_TITLES.get(pno, 'Etiquetas'): ', '.join(labels)}
+
+            hd = HD_DIR / f'{pid}.webp'
+            if pid in PHOTO_PENDING:
+                product['imagePending'] = True
+            elif hd.exists():
+                with Image.open(hd) as im:
+                    product['imageWidth'], product['imageHeight'] = im.size
+                product['image'] = f'assets/images/productos-hd/{pid}.webp'
+                product['imageAlt'] = f'{name} de {brand}'
+                product['imageSource'] = hd_sources().get(pid, '[INFORMACIÓN PENDIENTE]')
+            elif ring:
+                img = circle_crop(page, ring, native_dpi(images, ring, decor_sizes(doc)))
+                iw, ih = save_webp(img, OUT_PRODUCTS / f'{pid}.webp', img.width)
+                product['image'] = f'assets/images/productos/{pid}.webp'
+                product['imageWidth'], product['imageHeight'] = iw, ih
+                product['imageAlt'] = f'{name} de {brand}, fotografía del catálogo'
+                product['imageSource'] = f'Catálogo de Canva (PDF), página {pno}'
+
+                # Fotos de tonos / variantes: imágenes de la tarjeta fuera del círculo.
+                extra = [pymupdf.Rect(im['bbox']) & pymupdf.Rect(fb) for im in images
+                         if im['xref'] and inside(center(im['bbox']), fb)
+                         and (im['width'], im['height']) not in decor_sizes(doc)
+                         and not inside(center(im['bbox']), ring)
+                         and im['width'] > 100 and im['height'] > 100]
+                extra = [r for r in extra if not r.is_empty and r.width > 20 and r.height > 20]
+                if extra:
+                    union = extra[0]
+                    for r in extra[1:]:
+                        union |= r
+                    union = gallery_bounds(union, fb, fspans, images)
+                if extra and union.height > 30:
+                    pix = page.get_pixmap(clip=union, dpi=native_dpi(images, union, decor_sizes(doc)))
+                    g = Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB')
+                    gw, gh = save_webp(g, OUT_PRODUCTS / f'{pid}-variantes.webp', GALLERY_WIDTH)
+                    product['gallery'] = [dict(src=f'assets/images/productos/{pid}-variantes.webp', width=gw, height=gh,
+                                               alt=f'{name}: tonos y presentaciones según el catálogo')]
+            product['page'] = pno
+            product.update(OVERRIDES.get(pid, {}))
+            products.append(product)
+            page_ids.append(pid)
+
+        save_page(page, pno, brand, page_ids, pages)
+        print(f'p{pno:3d} {brand!s:16} {section!s:18} {len(page_ids)} producto(s)')
+
+    data = json.loads(OUT_DATA.read_text()) if OUT_DATA.exists() else {}
+    data['pages'] = pages
+    data['products'] = products
+    OUT_DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    write_products_md(products)
+    print(f'\n{len(products)} productos, {len(pages)} páginas -> {OUT_DATA.relative_to(ROOT)}')
+
+
+def money(value):
+    return '$' + f'{value:,}'.replace(',', '.')
+
+
+def write_products_md(products):
+    """Tabla de productos para revisar el catálogo sin abrir el JSON (docs/PRODUCTOS.md)."""
+    rows = []
+    for p in products:
+        price = ' · '.join(f"{v['label']}: {money(v['price'])}" for v in p['variants']) if p.get('variants') \
+            else money(p['price']) if 'price' in p else '[INFORMACIÓN PENDIENTE]'
+        image = f"`{Path(p['image']).name}`" if p.get('image') else 'Foto pendiente'
+        rows.append(f"| `{p['id']}` | {p['name']} | {p['brand']} | {p.get('category', '[INFORMACIÓN PENDIENTE]')} "
+                    f"| — | {price} | {image} | {p['page']} |")
+    OUT_MD.write_text(
+        '# Productos del catálogo Ágata Beauty 2026\n\n'
+        f'{len(products)} productos extraídos del catálogo de Canva. Este archivo lo genera '
+        '`scripts/extract-catalog.py` a partir de `data/products.json`: no lo edites a mano.\n\n'
+        'Referencia: el catálogo no incluye códigos de referencia `[INFORMACIÓN PENDIENTE]`.\n\n'
+        '| ID | Producto | Marca | Categoría | Referencia | Precio | Imagen | Pág. |\n'
+        '| -- | -------- | ----- | --------- | ---------- | ------ | ------ | ---: |\n'
+        + '\n'.join(rows) + '\n')
+
+
+if __name__ == '__main__':
+    main()
