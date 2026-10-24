@@ -240,7 +240,11 @@ function shadePicker(product, onChange) {
   });
   return el('section', { class: 'detail-shades', 'aria-labelledby': 'shades-title' }, [
     el('h3', { id: 'shades-title', class: 'shades-title', text: `${shadeWord(product, product.shades.length)} (${product.shades.length})` }),
-    el('div', { class: 'shade-list', role: 'radiogroup', 'aria-labelledby': 'shades-title' }, buttons),
+    el('div', {
+      class: buttons.every((b) => b.classList.contains('shade-text')) ? 'shade-list shade-list-text' : 'shade-list',
+      role: 'radiogroup',
+      'aria-labelledby': 'shades-title',
+    }, buttons),
     chosen,
     product.shadesSource ? el('p', { class: 'shade-source' }, [`${shadeWord(product, 2)} según la `, el('a', { href: product.shadesSource, target: '_blank', rel: 'noopener', text: 'página oficial de la marca' }), '.']) : null,
   ]);
