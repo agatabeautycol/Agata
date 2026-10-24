@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data' / 'products.json'
 OUT = ROOT / 'assets' / 'images' / 'tonos'
 SWATCH = 240          # px del lado de la foto de cada tono (se muestra a 60 px; 240 cubre pantallas 4x)
+LARGE = 800           # foto grande que reemplaza a la principal al elegir el tono (nunca se amplía)
 
 # Página oficial de cada producto, por "Marca|Nombre" (como en data/products.json).
 # Enlaces entregados por Ágata Beauty.
@@ -380,18 +381,23 @@ def shades_for(product, url):
         shade = {'name': name}
         if src:
             src = urljoin(url, src)
-            pic = square(Image.open(io.BytesIO(get(src))))
-            pic = pic.resize((SWATCH, SWATCH), Image.LANCZOS) if pic.width > SWATCH else pic
+            full = square(Image.open(io.BytesIO(get(src))))
             path = OUT / product['id'] / f'{slug(name)}.webp'
             path.parent.mkdir(parents=True, exist_ok=True)
+            pic = full.resize((SWATCH, SWATCH), Image.LANCZOS) if full.width > SWATCH else full
             pic.save(path, 'WEBP', quality=90, method=6)
-            shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height, imageSource=src)
+            big = full.resize((LARGE, LARGE), Image.LANCZOS) if full.width > LARGE else full
+            big_path = path.with_name(f'{slug(name)}-grande.webp')
+            big.save(big_path, 'WEBP', quality=88, method=6)
+            shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height,
+                         imageLarge=str(big_path.relative_to(ROOT)), imageLargeWidth=big.width, imageLargeHeight=big.height,
+                         imageSource=src)
         shades.append(shade)
     # Una misma foto para todos los tonos no ayuda a elegir: se muestran solo los nombres.
     sources = [s.get('imageSource') for s in shades]
     if len(shades) > 1 and len(set(sources)) == 1 and sources[0]:
         for s in shades:
-            for k in ('image', 'imageWidth', 'imageHeight', 'imageSource'):
+            for k in ('image', 'imageWidth', 'imageHeight', 'imageLarge', 'imageLargeWidth', 'imageLargeHeight', 'imageSource'):
                 s.pop(k, None)
     # Si todos los tonos llevan número ("Pink 01", "02 Tropical bronze"), se ordenan por ese número.
     nums = [re.search(r'\d+(?:\.\d+)?', s['name']) for s in shades]
@@ -422,7 +428,7 @@ def main():
         fixes = {k.lower(): v for k, v in SHADE_NAME_FIXES.get(key, {}).items()}
         product['shades'] = [{**s, 'name': fixes.get(s['name'].lower(), s['name'])} for s in shades]
         product['shadesLabel'] = url.get('label') if isinstance(url, dict) and url.get('label') else option_label(note)
-        used = {s.get('image') for s in product['shades']}
+        used = {s.get(k) for s in product['shades'] for k in ('image', 'imageLarge')}
         for old in (OUT / product['id']).glob('*.webp'):     # fotos de tonos que ya no existen
             if str(old.relative_to(ROOT)) not in used:
                 old.unlink()

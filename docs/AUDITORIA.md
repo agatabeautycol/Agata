@@ -554,7 +554,7 @@ Se corrigen **en la web** (`TEXT_FIXES` y `BRAND_FIXES` en `scripts/extract-cata
 
 ## Tonos con nombre y foto (desde la página oficial)
 
-La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) con el nombre y la foto de la página oficial de la marca; el elegido se agrega al mensaje de WhatsApp. Decisión de Ágata Beauty: se muestran **todos** los tonos de la página oficial (con el aviso de confirmar disponibilidad). Los enlaces y los ajustes de nombres están en `scripts/fetch-shades.py` (`SHADE_PAGES`, `SHADE_NAME_FIXES`).
+La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) con el nombre y la foto de la página oficial de la marca; al elegir uno, su foto se ve en grande en el círculo de la foto principal y se agrega al mensaje de WhatsApp. Decisión de Ágata Beauty: se muestran **todos** los tonos de la página oficial (con el aviso de confirmar disponibilidad). Los enlaces y los ajustes de nombres están en `scripts/fetch-shades.py` (`SHADE_PAGES`, `SHADE_NAME_FIXES`).
 
 **Total: 58 productos de 12 marcas, con 312 tonos, colores, sabores, estilos o aromas.**
 

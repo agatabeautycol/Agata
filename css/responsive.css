@@ -34,7 +34,7 @@
   .hero-deco-strokes-br { width: 240px; }
 
   .detail { grid-template-columns: 1fr 1fr; align-items: start; }
-  .detail-media { position: sticky; top: var(--space-12); }
+  .detail-figure { position: sticky; top: var(--space-12); }
   .page-index .chip-row { flex-wrap: wrap; overflow: visible; }
 }
 

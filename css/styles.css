@@ -323,7 +323,9 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .dialog-inner { padding: var(--space-4); }
 .back-btn { position: sticky; top: 0; z-index: 1; background: var(--color-bg); width: 100%; justify-content: flex-start; margin-bottom: var(--space-2); }
 .detail { display: grid; gap: var(--space-6); }
+.detail-figure { scroll-margin-top: 4rem; margin: 0; display: grid; gap: var(--space-2); justify-items: center; align-content: start; }
 .detail-media { width: 100%; max-width: 320px; aspect-ratio: 1; margin-inline: auto; }
+.detail-media-caption { min-height: 1.25em; font-size: 0.9rem; font-weight: 600; color: var(--color-section); text-align: center; }
 .detail-info { display: grid; gap: var(--space-3); align-content: start; }
 .detail-brand { font-size: 2.1rem; line-height: 1; }
 .detail-title { font-size: 1.45rem; font-weight: 600; }
