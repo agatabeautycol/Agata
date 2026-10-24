@@ -357,6 +357,12 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .shade:hover .shade-swatch { transform: scale(1.05); }
 .shade[aria-checked="true"] .shade-swatch { outline: 3px solid var(--color-primary); outline-offset: 2px; }
 .shade[aria-checked="true"] .shade-name { font-weight: 700; }
+.shade-text {
+  align-self: start; padding: 0.5rem 0.75rem; border: 1px solid var(--color-line); border-radius: var(--radius-chip);
+  background: var(--color-surface);
+}
+.shade-text .shade-name { font-size: 0.8rem; }
+.shade-text[aria-checked="true"] { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-primary-contrast); }
 .shade-chosen { margin: 0; font-size: 0.875rem; color: var(--color-text-muted); }
 .shade-source { margin: 0; font-size: 0.75rem; color: var(--color-text-muted); }
 .shade-source a { color: var(--color-brown); }

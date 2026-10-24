@@ -214,6 +214,9 @@ def shades_for(product, url):
         # Solo formato: espacios dobles, "tono " repetido al inicio, guion tras el número y mayúscula inicial.
         name = re.sub(r'^tono\s+', '', re.sub(r'\s+', ' ', raw_name or '').strip(), flags=re.I)
         name = re.sub(r'^(\d+(?:\.\d+)?)\s*-\s*', r'\1 ', name)          # "00-Anne" -> "00 Anne"
+        name = name.split(':')[0].strip()                                 # "Latte: café medio cálido" -> "Latte"
+        if name.isupper() and not re.search(r'\d', name):                 # "PORCELAIN" -> "Porcelain"
+            name = name.capitalize()
 
         name = re.sub(r'^([^A-Za-zÁÉÍÓÚÑáéíóúñ]*)([a-záéíóúñ])', lambda m: m.group(1) + m.group(2).upper(), name)
         if not name or name in seen:
@@ -229,6 +232,12 @@ def shades_for(product, url):
             pic.save(path, 'WEBP', quality=90, method=6)
             shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height, imageSource=src)
         shades.append(shade)
+    # Una misma foto para todos los tonos no ayuda a elegir: se muestran solo los nombres.
+    sources = [s.get('imageSource') for s in shades]
+    if len(shades) > 1 and len(set(sources)) == 1 and sources[0]:
+        for s in shades:
+            for k in ('image', 'imageWidth', 'imageHeight', 'imageSource'):
+                s.pop(k, None)
     # Si todos los tonos llevan número ("Pink 01", "02 Tropical bronze"), se ordenan por ese número.
     nums = [re.search(r'\d+(?:\.\d+)?', s['name']) for s in shades]
     if shades and all(nums):

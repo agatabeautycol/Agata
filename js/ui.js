@@ -220,11 +220,13 @@ function shadePicker(product, onChange) {
   const hint = `Elige un ${word} para incluirlo en tu pedido.`;
   const chosen = el('p', { class: 'shade-chosen', 'aria-live': 'polite', text: hint });
   const buttons = product.shades.map((shade) => {
+    const color = /^#[0-9a-f]{3,8}$/i.test(shade.color ?? '') ? shade.color : null;
+    // Sin foto ni color (o con la misma foto para todos los tonos): solo el nombre, en un botón.
     const swatch = shade.image
       ? el('img', { src: shade.image, alt: '', width: shade.imageWidth ?? 96, height: shade.imageHeight ?? 96, loading: 'lazy', decoding: 'async' })
-      : el('span', { class: 'shade-color', style: /^#[0-9a-f]{3,8}$/i.test(shade.color ?? '') ? `background:${shade.color}` : null });
-    const button = el('button', { type: 'button', class: 'shade', role: 'radio', 'aria-checked': 'false' }, [
-      el('span', { class: 'shade-swatch' }, [swatch]),
+      : color ? el('span', { class: 'shade-color', style: `background:${color}` }) : null;
+    const button = el('button', { type: 'button', class: swatch ? 'shade' : 'shade shade-text', role: 'radio', 'aria-checked': 'false' }, [
+      swatch ? el('span', { class: 'shade-swatch' }, [swatch]) : null,
       el('span', { class: 'shade-name', text: shade.name }),
     ]);
     button.addEventListener('click', () => {

@@ -1862,18 +1862,10 @@
       "page": 5,
       "shades": [
         {
-          "name": "01 Golden sun",
-          "image": "assets/images/tonos/montoc-005-1/01-golden-sun.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
+          "name": "01 Golden sun"
         },
         {
-          "name": "02 Tropical bronze",
-          "image": "assets/images/tonos/montoc-005-1/02-tropical-bronze.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
+          "name": "02 Tropical bronze"
         }
       ],
       "shadesSource": "https://montoccosmetictools.com/products/bronzer-drops-light-set-bronceador-liquido-profesional",
@@ -2763,25 +2755,13 @@
       "page": 14,
       "shades": [
         {
-          "name": "Contour 01",
-          "image": "assets/images/tonos/bloomshell-014-1/contour-01.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+          "name": "Contour 01"
         },
         {
-          "name": "Bronzy 02",
-          "image": "assets/images/tonos/bloomshell-014-1/bronzy-02.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+          "name": "Bronzy 02"
         },
         {
-          "name": "Dark 03",
-          "image": "assets/images/tonos/bloomshell-014-1/dark-03.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+          "name": "Dark 03"
         }
       ],
       "shadesLabel": "Tono",
@@ -3598,7 +3578,29 @@
           "alt": "Magic Pen: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 29
+      "page": 29,
+      "shades": [
+        {
+          "name": "Latte"
+        },
+        {
+          "name": "Besos"
+        },
+        {
+          "name": "Canela"
+        },
+        {
+          "name": "Cafeina"
+        },
+        {
+          "name": "Cherrs"
+        },
+        {
+          "name": "Candy"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://www.majikalbeauty.com/products/magic-pen"
     },
     {
       "id": "majikal-029-3",
@@ -3619,7 +3621,32 @@
           "alt": "Shiny Lip Oil: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 29
+      "page": 29,
+      "shades": [
+        {
+          "name": "Peachy Baby"
+        },
+        {
+          "name": "Toffee"
+        },
+        {
+          "name": "Minty"
+        },
+        {
+          "name": "Goddess"
+        },
+        {
+          "name": "Coconut"
+        },
+        {
+          "name": "Berrys"
+        },
+        {
+          "name": "Bombón"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://www.majikalbeauty.com/products/lip-oil"
     },
     {
       "id": "atenea-030-1",
@@ -3651,7 +3678,74 @@
           "alt": "Base de maquillaje 1ST Scene: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 30
+      "page": 30,
+      "shades": [
+        {
+          "name": "Light",
+          "image": "assets/images/tonos/atenea-030-1/light.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_01.jpg"
+        },
+        {
+          "name": "Porcelain",
+          "image": "assets/images/tonos/atenea-030-1/porcelain.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_02.jpg"
+        },
+        {
+          "name": "Cream",
+          "image": "assets/images/tonos/atenea-030-1/cream.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_03.jpg"
+        },
+        {
+          "name": "Vainilla",
+          "image": "assets/images/tonos/atenea-030-1/vainilla.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_04.jpg"
+        },
+        {
+          "name": "Almond",
+          "image": "assets/images/tonos/atenea-030-1/almond.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_05.jpg"
+        },
+        {
+          "name": "Olive",
+          "image": "assets/images/tonos/atenea-030-1/olive.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_06.jpg"
+        },
+        {
+          "name": "Temple",
+          "image": "assets/images/tonos/atenea-030-1/temple.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_07.jpg"
+        },
+        {
+          "name": "Sand",
+          "image": "assets/images/tonos/atenea-030-1/sand.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_08.jpg"
+        },
+        {
+          "name": "Eboky",
+          "image": "assets/images/tonos/atenea-030-1/eboky.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_09.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/mini-base-liquida-1st-scene"
     },
     {
       "id": "atenea-030-2",
@@ -3725,7 +3819,23 @@
           "alt": "Rubor compacto 1ST Scene: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 32
+      "page": 32,
+      "shades": [
+        {
+          "name": "Dustyrose"
+        },
+        {
+          "name": "Salmon"
+        },
+        {
+          "name": "Peachmelba"
+        },
+        {
+          "name": "Pinkpearl"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/rubores-individuales-1st-scene"
     },
     {
       "id": "atenea-032-2",
@@ -3761,7 +3871,25 @@
           "alt": "Bronzer cremoso en barra: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 33
+      "page": 33,
+      "shades": [
+        {
+          "name": "Terranova",
+          "image": "assets/images/tonos/atenea-033-1/terranova.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/OT_00011025_ECATENEA_07374.jpg"
+        },
+        {
+          "name": "Tostedcoconut",
+          "image": "assets/images/tonos/atenea-033-1/tostedcoconut.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/OT_00011025_ECATENEA_07378.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/bronzer-cremoso"
     },
     {
       "id": "atenea-033-2",
@@ -3783,7 +3911,25 @@
           "alt": "Iluminador efecto húmedo Sublime: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 33
+      "page": 33,
+      "shades": [
+        {
+          "name": "SH001",
+          "image": "assets/images/tonos/atenea-033-2/sh001.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/AteneaEcommerceV27188.jpg"
+        },
+        {
+          "name": "SH002",
+          "image": "assets/images/tonos/atenea-033-2/sh002.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/iluminador-efecto-humedo-sublime"
     },
     {
       "id": "atenea-034-1",
@@ -3875,7 +4021,53 @@
           "alt": "Pigmento Soft Touch: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 37
+      "page": 37,
+      "shades": [
+        {
+          "name": "Tropicalb",
+          "image": "assets/images/tonos/atenea-037-1/tropicalb.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame18_57682578-4f80-4774-a89b-be9bc14941be.png"
+        },
+        {
+          "name": "Boreal",
+          "image": "assets/images/tonos/atenea-037-1/boreal.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/boreal_092b43f1-8ff7-4bfa-9654-44e72703ba34.png"
+        },
+        {
+          "name": "Lilo",
+          "image": "assets/images/tonos/atenea-037-1/lilo.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame16.png"
+        },
+        {
+          "name": "Lanai",
+          "image": "assets/images/tonos/atenea-037-1/lanai.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame19_341fd616-4a45-47af-93cb-42201a316cbf.png"
+        },
+        {
+          "name": "Nakedmind",
+          "image": "assets/images/tonos/atenea-037-1/nakedmind.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame20_09666e1f-cb1f-435b-a58e-043e1db30e7f.png"
+        },
+        {
+          "name": "Oki",
+          "image": "assets/images/tonos/atenea-037-1/oki.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame17_92d59099-099c-4d82-8696-491279b6228e.png"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/sombra-cremosa-individual"
     },
     {
       "id": "atenea-037-2",
@@ -3911,7 +4103,32 @@
           "alt": "Delineador de cejas: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 38
+      "page": 38,
+      "shades": [
+        {
+          "name": "Aublight",
+          "image": "assets/images/tonos/atenea-038-1/aublight.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/LAPICES1ST-COMPLEMENTARIAS_5.jpg"
+        },
+        {
+          "name": "Medium",
+          "image": "assets/images/tonos/atenea-038-1/medium.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/LAPICES1ST-COMPLEMENTARIAS_6.jpg"
+        },
+        {
+          "name": "Dark",
+          "image": "assets/images/tonos/atenea-038-1/dark.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/LAPICES1ST-COMPLEMENTARIAS_7.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene"
     },
     {
       "id": "atenea-039-1",
@@ -3933,7 +4150,32 @@
           "alt": "Lápiz delineador Color pencil: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 39
+      "page": 39,
+      "shades": [
+        {
+          "name": "Palepink"
+        },
+        {
+          "name": "Coolwood"
+        },
+        {
+          "name": "Nudedark"
+        },
+        {
+          "name": "Gojiberry"
+        },
+        {
+          "name": "Clearwine"
+        },
+        {
+          "name": "Darksand"
+        },
+        {
+          "name": "Sunrise"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/lapiz-delineador"
     },
     {
       "id": "atenea-039-2",
@@ -3955,7 +4197,25 @@
           "alt": "Lip Balm Mask: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 39
+      "page": 39,
+      "shades": [
+        {
+          "name": "Cherry",
+          "image": "assets/images/tonos/atenea-039-2/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Atenea_Ecommerce_Agosto0922.jpg"
+        },
+        {
+          "name": "Watermelon",
+          "image": "assets/images/tonos/atenea-039-2/watermelon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/IMAGENES-LIPMASK-1080X1080-04.webp"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://ateneaprofesional.com/products/lip-balm-mask"
     },
     {
       "id": "atenea-040-1",
