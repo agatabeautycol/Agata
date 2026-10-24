@@ -15,7 +15,7 @@ export function buildIndex(products) {
   const index = new Map();
   for (const product of products) {
     const parts = SEARCH_FIELDS.map((field) => product[field])
-      .concat(product.tags, product.variants.map((v) => v.label), Object.values(product.details ?? {}));
+      .concat(product.tags, product.variants.map((v) => v.label), product.shades.map((s) => s.name), Object.values(product.details ?? {}));
     index.set(product.id, normalizeText(parts.filter(Boolean).join(' ')));
   }
   return index;

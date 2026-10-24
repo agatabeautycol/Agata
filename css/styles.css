@@ -336,6 +336,31 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .detail-row dt { font-weight: 600; color: var(--color-section); }
 .detail-row dd { margin: 0; }
 .detail-gallery { margin: 0; display: grid; gap: var(--space-1); }
+
+/* Tonos: muestra en un círculo con el mismo anillo cobrizo de las fotos y el nombre debajo */
+.card-shades { margin: 0; font-size: 0.8rem; font-weight: 600; color: var(--color-section); }
+.detail-shades { display: grid; gap: var(--space-1); }
+.shades-title { margin: 0; font-size: 1rem; color: var(--color-section); }
+.shade-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 12px 8px; }
+.shade {
+  display: grid; justify-items: center; gap: 6px; padding: 4px; border: 0; border-radius: 12px;
+  background: none; color: var(--color-text); font: inherit; cursor: pointer;
+}
+.shade-swatch {
+  display: block; width: 60px; height: 60px; padding: 3px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-copper), var(--color-ring-dark));
+}
+.shade-swatch img, .shade-color {
+  display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--color-disc);
+}
+.shade-name { font-size: 0.75rem; line-height: 1.25; text-align: center; overflow-wrap: anywhere; }
+.shade:hover .shade-swatch { transform: scale(1.05); }
+.shade[aria-checked="true"] .shade-swatch { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+.shade[aria-checked="true"] .shade-name { font-weight: 700; }
+.shade-chosen { margin: 0; font-size: 0.875rem; color: var(--color-text-muted); }
+.shade-source { margin: 0; font-size: 0.75rem; color: var(--color-text-muted); }
+.shade-source a { color: var(--color-brown); }
+@media (prefers-reduced-motion: no-preference) { .shade-swatch { transition: transform 0.15s ease; } }
 .detail-gallery img { border-radius: var(--radius-card); background: var(--color-surface); }
 .detail-gallery figcaption { font-size: 0.8rem; color: var(--color-text-muted); }
 .detail-notice { font-size: 0.85rem; color: var(--color-text-muted); background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-card); padding: var(--space-3); }
