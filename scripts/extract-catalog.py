@@ -99,6 +99,7 @@ CATEGORY_MAP = {
 # "Marca|Nombre" (el nombre ya corregido), para que no dependa del número de página.
 CATEGORY_BY_PRODUCT = {
     'Atenea|Paleta de sombras multiusos Moccalush': 'Ojos y cejas',   # sección "Multiusos"; confirmado por Ágata Beauty
+    'Bioaqua|Mascarilla facial en velo': 'Cuidado facial',            # sección "Rostro"; confirmado por Ágata Beauty
     'Girly|Gel hidratante con aloe vera': 'Cuidado facial',
     'Girly|Girly TINT Labios y mejillas': 'Labios',
     'Girly|Polvo suelto': 'Rostro',

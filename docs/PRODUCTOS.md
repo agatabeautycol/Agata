@@ -137,7 +137,7 @@ Referencia: el catálogo no incluye códigos de referencia `[INFORMACIÓN PENDIE
 | `bioaqua-070-2` | Kit facial de ácido salicílico | Bioaqua | Cuidado facial | — | $37.500 | `bioaqua-070-2.webp` | 70 |
 | `bioaqua-071-1` | Kit facial con retinol | Bioaqua | Cuidado facial | — | $37.500 | `bioaqua-071-1.webp` | 71 |
 | `bioaqua-071-2` | Kit facial de ácido hialurónico | Bioaqua | Cuidado facial | — | $37.500 | `bioaqua-071-2.webp` | 71 |
-| `bioaqua-072-1` | Mascarilla facial en velo | Bioaqua | Rostro | — | $2.500 | `bioaqua-072-1.webp` | 72 |
+| `bioaqua-072-1` | Mascarilla facial en velo | Bioaqua | Cuidado facial | — | $2.500 | `bioaqua-072-1.webp` | 72 |
 | `bioaqua-073-1` | Jabón facial - ácido salicílico | Bioaqua | Cuidado facial | — | $10.500 | `bioaqua-073-1.webp` | 73 |
 | `bioaqua-073-2` | Espuma limpiadora de arroz | Bioaqua | Cuidado facial | — | $11.500 | `bioaqua-073-2.webp` | 73 |
 | `bioaqua-074-1` | Tónico de vitamina C | Bioaqua | Cuidado facial | — | $9.500 | `bioaqua-074-1.webp` | 74 |

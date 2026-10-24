@@ -68,18 +68,18 @@ El catálogo organiza cada página por **marca** y, debajo, por **sección**, pe
 
 | Categoría en la web | Productos | Secciones del catálogo que agrupa |
 | --- | ---: | --- |
-| Rostro | 41 | (sin sección), Rostro |
+| Rostro | 40 | (sin sección), Rostro |
 | Ojos y cejas | 36 | (sin sección), Cejas, Cejas y ojos, Gel fijador, Multiusos, Ojos, Ojos y cejas |
 | Labios | 16 | (sin sección), Labios |
 | Preparación y fijación | 5 | Fijación, Papel matificante, Primer |
 | Brochas, accesorios y kits | 17 | Accesorios, Herramientas, Kit |
-| Cuidado facial | 39 | (sin sección), Cuidado facial |
+| Cuidado facial | 40 | (sin sección), Cuidado facial, Rostro |
 | Cuidado capilar | 76 | Cuidado capilar, Gel fijador |
 | Cuidado corporal | 19 | (sin sección), Cuidado corporal |
 
 Asignaciones por producto (sin sección o con sección mixta), confirmadas por Ágata Beauty:
 
-- **Majikal Magic Pen** → Labios · **Nude Protector solar** → Cuidado facial · **Atenea Paleta multiusos Moccalush** → Ojos y cejas.
+- **Majikal Magic Pen** → Labios · **Nude Protector solar** → Cuidado facial · **Bioaqua Mascarilla facial en velo** → Cuidado facial · **Atenea Paleta multiusos Moccalush** → Ojos y cejas.
 - Girly: Gel hidratante → Cuidado facial, TINT → Labios, Polvo suelto → Rostro · Majikal Polvos sueltos → Rostro, Shiny Lip Oil → Labios.
 - Schwarzkopf Got2b: Gel fijador Glued → Cuidado capilar, Gel para cejas → Ojos y cejas · Nude Autobronceador → Cuidado corporal.
 - Maybelline y Ani-k (pestañinas, delineador) → Ojos y cejas · Nivea (cremas, desodorantes) y Fantiluna → Cuidado corporal.
