@@ -1641,7 +1641,67 @@
           "alt": "Base Glow Filter: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 3
+      "page": 3,
+      "shades": [
+        {
+          "name": "1.0 Light Glow Filter",
+          "image": "assets/images/tonos/montoc-003-1/1-0-light-glow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/glow_filter_montoc_pre_base_para_maquillaje.jpg"
+        },
+        {
+          "name": "1.5 Light neutral Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/1-5-light-neutral-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_1.5_04cf379d-9f06-47ed-b136-6fe2ef32934a.jpg"
+        },
+        {
+          "name": "2.0 Light sand Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/2-0-light-sand-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_2.0.jpg"
+        },
+        {
+          "name": "2.5 Light medium Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/2-5-light-medium-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_2.5.jpg"
+        },
+        {
+          "name": "3.0 Medium neutral Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/3-0-medium-neutral-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_3.0.jpg"
+        },
+        {
+          "name": "3.5 Medium olive Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/3-5-medium-olive-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_3.5.jpg"
+        },
+        {
+          "name": "4.0 Medium moyen Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/4-0-medium-moyen-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_4.0.jpg"
+        },
+        {
+          "name": "4.5 Sun tan Gow Filter",
+          "image": "assets/images/tonos/montoc-003-1/4-5-sun-tan-gow-filter.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/GLOW_FILTER_4.5.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/glow-filter",
+      "shadesLabel": "Tono"
     },
     {
       "id": "montoc-003-2",
@@ -1691,7 +1751,32 @@
           "alt": "Paleta Light Set: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 4
+      "page": 4,
+      "shades": [
+        {
+          "name": "Carlota",
+          "image": "assets/images/tonos/montoc-004-1/carlota.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Carlota-ecommerce-1_1_101209cc-e00c-4c14-b32c-9748a055f80b.jpg"
+        },
+        {
+          "name": "Aurora",
+          "image": "assets/images/tonos/montoc-004-1/aurora.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Aurora-ecommerce_1_c1220537-8668-4de1-b504-b34cf9708fef.jpg"
+        },
+        {
+          "name": "Leticia",
+          "image": "assets/images/tonos/montoc-004-1/leticia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Leticia-ecommerce_1_9a372c69-4bea-4fbe-94ee-933c05ad28ff.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/paleta-light-set-montoc",
+      "shadesLabel": "Tono"
     },
     {
       "id": "montoc-004-2",
@@ -1713,7 +1798,46 @@
           "alt": "Rubor líquido radiante Glow Filter: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 4
+      "page": 4,
+      "shades": [
+        {
+          "name": "Guayaba 1.0",
+          "image": "assets/images/tonos/montoc-004-2/guayaba-1-0.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/RUBOR_GUAYABA_jpg.jpg"
+        },
+        {
+          "name": "Durazno 1.5",
+          "image": "assets/images/tonos/montoc-004-2/durazno-1-5.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/RUBOR_DURAZNO_jpg.jpg"
+        },
+        {
+          "name": "Acai 2.0",
+          "image": "assets/images/tonos/montoc-004-2/acai-2-0.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/RUBOR_AKAI_jpg.jpg"
+        },
+        {
+          "name": "Tamarindo 2.5",
+          "image": "assets/images/tonos/montoc-004-2/tamarindo-2-5.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/RUBOR_TAMARINDO_jpg.jpg"
+        },
+        {
+          "name": "Pitaya 3.0",
+          "image": "assets/images/tonos/montoc-004-2/pitaya-3-0.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/RUBOR_PITAYA_jpg.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/rubor-liquido-radiante-glow-filter-con-particulas-de-brillorubor-liquido-radiante-glow-filter-con-particulas-de-brillo",
+      "shadesLabel": "Tono"
     },
     {
       "id": "montoc-005-1",
@@ -1735,7 +1859,25 @@
           "alt": "Bronzer Drops Light: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 5
+      "page": 5,
+      "shades": [
+        {
+          "name": "02 Tropical bronze",
+          "image": "assets/images/tonos/montoc-005-1/02-tropical-bronze.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
+        },
+        {
+          "name": "01 Golden sun",
+          "image": "assets/images/tonos/montoc-005-1/01-golden-sun.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/bronzer-drops-light-set-bronceador-liquido-profesional",
+      "shadesLabel": "Tono"
     },
     {
       "id": "montoc-005-2",
@@ -1757,7 +1899,25 @@
           "alt": "Bronzer luminoso en polvo + brocha Hello beach: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 5
+      "page": 5,
+      "shades": [
+        {
+          "name": "02 Macchiato",
+          "image": "assets/images/tonos/montoc-005-2/02-macchiato.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/SwashesWhite_jpg.jpg"
+        },
+        {
+          "name": "01 Bare Bronzer",
+          "image": "assets/images/tonos/montoc-005-2/01-bare-bronzer.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/SwashesWhite2_jpg.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/bronzer-luminoso-en-polvo-polvo-bronceador-para-todos-los-tonos-de-piel",
+      "shadesLabel": "Color"
     },
     {
       "id": "montoc-006-1",
@@ -1779,7 +1939,32 @@
           "alt": "Paleta Harmony x6: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 6
+      "page": 6,
+      "shades": [
+        {
+          "name": "Dalia",
+          "image": "assets/images/tonos/montoc-006-1/dalia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Harmony-Dalia-2.jpg"
+        },
+        {
+          "name": "Iris",
+          "image": "assets/images/tonos/montoc-006-1/iris.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Harmony-Iris-2.jpg"
+        },
+        {
+          "name": "Roset",
+          "image": "assets/images/tonos/montoc-006-1/roset.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Harmony-Roset-2.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/paleta-de-sombras-harmony-eyeshadow-palette",
+      "shadesLabel": "Color"
     },
     {
       "id": "montoc-006-2",
@@ -1815,7 +2000,46 @@
           "alt": "Lápiz delineador de labios: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 7
+      "page": 7,
+      "shades": [
+        {
+          "name": "Dore",
+          "image": "assets/images/tonos/montoc-007-1/dore.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONODORE195.png"
+        },
+        {
+          "name": "Baies",
+          "image": "assets/images/tonos/montoc-007-1/baies.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONOBAIES193.png"
+        },
+        {
+          "name": "Rouge",
+          "image": "assets/images/tonos/montoc-007-1/rouge.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONOROGUE192.png"
+        },
+        {
+          "name": "Brise",
+          "image": "assets/images/tonos/montoc-007-1/brise.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONOBRISE194.png"
+        },
+        {
+          "name": "Eclat",
+          "image": "assets/images/tonos/montoc-007-1/eclat.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONOECLAT191.png"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/lapiz-de-labios-montoc",
+      "shadesLabel": "Tono"
     },
     {
       "id": "montoc-007-2",
@@ -1837,7 +2061,67 @@
           "alt": "Hidratante de Labios Lippie Balm: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 7
+      "page": 7,
+      "shades": [
+        {
+          "name": "Frambuesa",
+          "image": "assets/images/tonos/montoc-007-2/frambuesa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/LIPPIE_BALM_FRAMBUESA.jpg"
+        },
+        {
+          "name": "Pitahaya",
+          "image": "assets/images/tonos/montoc-007-2/pitahaya.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/LIPPIE_PITAHAYA.jpg"
+        },
+        {
+          "name": "Coco",
+          "image": "assets/images/tonos/montoc-007-2/coco.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/LIPPIE_COCO_9800cc9a-b8a1-4a97-a0a1-f5bb320e828e.jpg"
+        },
+        {
+          "name": "Natural",
+          "image": "assets/images/tonos/montoc-007-2/natural.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/natural.jpg"
+        },
+        {
+          "name": "Menta",
+          "image": "assets/images/tonos/montoc-007-2/menta.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/LIPPIE_BALM_MENTA.jpg"
+        },
+        {
+          "name": "Cereza",
+          "image": "assets/images/tonos/montoc-007-2/cereza.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/products/4-1000x1000_c.jpg"
+        },
+        {
+          "name": "Fresa",
+          "image": "assets/images/tonos/montoc-007-2/fresa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/products/7-1000x1000_c-1-1.jpg"
+        },
+        {
+          "name": "Durazno",
+          "image": "assets/images/tonos/montoc-007-2/durazno.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/products/1-1-1000x1000_c-1.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/hidratante-de-labios-lippie-balm-natural",
+      "shadesLabel": "Sabor"
     },
     {
       "id": "montoc-008-1",
@@ -1906,7 +2190,46 @@
           "alt": "Kit de brochas de maquillaje Fluffy x 10: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 9
+      "page": 9,
+      "shades": [
+        {
+          "name": "lp670",
+          "image": "assets/images/tonos/montoc-009-2/lp670.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-LP670.jpg"
+        },
+        {
+          "name": "lp671",
+          "image": "assets/images/tonos/montoc-009-2/lp671.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP671.jpg"
+        },
+        {
+          "name": "lp667",
+          "image": "assets/images/tonos/montoc-009-2/lp667.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP667_2.jpg"
+        },
+        {
+          "name": "lp669",
+          "image": "assets/images/tonos/montoc-009-2/lp669.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-669_1.jpg"
+        },
+        {
+          "name": "lp668",
+          "image": "assets/images/tonos/montoc-009-2/lp668.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-LP668_1.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/kit-profesional-de-brochas-flofi-x-10-piezas",
+      "shadesLabel": "Color"
     },
     {
       "id": "montoc-010-1",
@@ -1945,7 +2268,46 @@
           "alt": "Brocha mini viajera: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 10
+      "page": 10,
+      "shades": [
+        {
+          "name": "Sulpting",
+          "image": "assets/images/tonos/montoc-010-2/sulpting.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/IMG_4187_JPG.jpg"
+        },
+        {
+          "name": "Concealer",
+          "image": "assets/images/tonos/montoc-010-2/concealer.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/IMG_4188_JPG.jpg"
+        },
+        {
+          "name": "Base",
+          "image": "assets/images/tonos/montoc-010-2/base.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/base_2_ff8f0471-05af-4bc6-b5b3-fd5d4f90ce44.jpg"
+        },
+        {
+          "name": "Polvo",
+          "image": "assets/images/tonos/montoc-010-2/polvo.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/polvo_9ff72936-8c48-4c8b-9ec3-e3099873b914.jpg"
+        },
+        {
+          "name": "Rubor",
+          "image": "assets/images/tonos/montoc-010-2/rubor.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/rubor_231b5bd8-ed81-4af9-b88d-5277abfc5172.jpg"
+        }
+      ],
+      "shadesSource": "https://montoccosmetictools.com/products/brochas-minimi",
+      "shadesLabel": "Estilo"
     },
     {
       "id": "bloomshell-011-1",

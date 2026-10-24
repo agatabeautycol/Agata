@@ -24,6 +24,13 @@ function el(tag, attrs = {}, children = []) {
   return node;
 }
 
+// "Tono" / "Tonos", "Sabor" / "Sabores"… según cómo llama la marca a las opciones.
+const PLURALS = { Tono: 'Tonos', Color: 'Colores', Sabor: 'Sabores', Estilo: 'Estilos', Aroma: 'Aromas' };
+function shadeWord(product, count = 1) {
+  const word = product.shadesLabel ?? 'Tono';
+  return count === 1 ? word : PLURALS[word] ?? `${word}s`;
+}
+
 const divider = () => el('span', { class: 'divider', 'aria-hidden': 'true' });
 
 /** "$57.000", igual que en el catálogo. */
@@ -96,7 +103,7 @@ function productCard(product, brand) {
       divider(),
       presentationIfNew(product) ? el('p', { class: 'card-meta', text: presentationIfNew(product) }) : null,
       product.reference ? el('p', { class: 'card-meta', text: `Ref. ${product.reference}` }) : null,
-      product.shades.length ? el('p', { class: 'card-shades', text: `${product.shades.length} ${product.shades.length === 1 ? 'tono' : 'tonos'}` }) : null,
+      product.shades.length ? el('p', { class: 'card-shades', text: `${product.shades.length} ${shadeWord(product, product.shades.length).toLowerCase()}` }) : null,
       single ? el('p', { class: 'card-price', text: single }) : variantList(product, brand, 'card-variants'),
       el('button', {
         type: 'button',
@@ -189,7 +196,8 @@ export function whatsappUrl(contact, text) {
 }
 
 export function buildOrderLink(product, contact, shade) {
-  const label = [product.name, product.brand].filter(Boolean).join(' – ') + (shade ? `, tono ${shade}` : '');
+  const label = [product.name, product.brand].filter(Boolean).join(' – ')
+    + (shade ? `, ${shadeWord(product).toLowerCase()} ${shade}` : '');
   const ref = product.reference ? ` (Ref. ${product.reference})` : '';
   const wa = whatsappUrl(contact, `Hola, quiero confirmar la disponibilidad de: ${label}${ref}`);
   if (wa) return { href: wa, channel: 'WhatsApp' };
@@ -208,7 +216,9 @@ export function buildOrderLink(product, contact, shade) {
  */
 function shadePicker(product, onChange) {
   if (!product.shades.length) return null;
-  const chosen = el('p', { class: 'shade-chosen', 'aria-live': 'polite', text: 'Elige un tono para incluirlo en tu pedido.' });
+  const word = shadeWord(product).toLowerCase();
+  const hint = `Elige un ${word} para incluirlo en tu pedido.`;
+  const chosen = el('p', { class: 'shade-chosen', 'aria-live': 'polite', text: hint });
   const buttons = product.shades.map((shade) => {
     const swatch = shade.image
       ? el('img', { src: shade.image, alt: '', width: shade.imageWidth ?? 96, height: shade.imageHeight ?? 96, loading: 'lazy', decoding: 'async' })
@@ -221,16 +231,16 @@ function shadePicker(product, onChange) {
       const wasChecked = button.getAttribute('aria-checked') === 'true';
       buttons.forEach((b) => b.setAttribute('aria-checked', 'false'));
       button.setAttribute('aria-checked', String(!wasChecked));
-      chosen.textContent = wasChecked ? 'Elige un tono para incluirlo en tu pedido.' : `Tono elegido: ${shade.name}`;
+      chosen.textContent = wasChecked ? hint : `${shadeWord(product)} elegido: ${shade.name}`;
       onChange(wasChecked ? null : shade.name);
     });
     return button;
   });
   return el('section', { class: 'detail-shades', 'aria-labelledby': 'shades-title' }, [
-    el('h3', { id: 'shades-title', class: 'shades-title', text: `Tonos (${product.shades.length})` }),
+    el('h3', { id: 'shades-title', class: 'shades-title', text: `${shadeWord(product, product.shades.length)} (${product.shades.length})` }),
     el('div', { class: 'shade-list', role: 'radiogroup', 'aria-labelledby': 'shades-title' }, buttons),
     chosen,
-    product.shadesSource ? el('p', { class: 'shade-source' }, ['Tonos según la ', el('a', { href: product.shadesSource, target: '_blank', rel: 'noopener', text: 'página oficial de la marca' }), '.']) : null,
+    product.shadesSource ? el('p', { class: 'shade-source' }, [`${shadeWord(product, 2)} según la `, el('a', { href: product.shadesSource, target: '_blank', rel: 'noopener', text: 'página oficial de la marca' }), '.']) : null,
   ]);
 }
 

@@ -54,7 +54,7 @@ LABEL_TITLES = {10: 'Indicada para', 52: 'Opciones', 92: 'Aromas'}
 
 # Datos que no vienen del PDF y se agregan a mano en data/products.json: al regenerar se conservan,
 # buscando el producto por "Marca|Nombre". Tonos: [{name, image, imageSource}] desde la página oficial.
-PRESERVE_FIELDS = ('shades', 'shadesSource')
+PRESERVE_FIELDS = ('shades', 'shadesLabel', 'shadesSource')
 
 # Correcciones manuales verificadas contra las páginas renderizadas.
 OVERRIDES = {}

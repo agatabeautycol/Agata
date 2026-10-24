@@ -39,8 +39,19 @@ SHADE_PAGES = {
     'Montoc|Brocha mini viajera': 'https://montoccosmetictools.com/products/brochas-minimi',
 }
 
+# Erratas en los nombres de la página oficial, corregidas solo con autorización de Ágata Beauty.
+SHADE_NAME_FIXES = {}
+
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
 SHADE_OPTIONS = re.compile(r'tono|color|colou?r|shade|tonalidad|matiz|referencia|modelo|aroma', re.I)
+
+
+# Cómo se llama la opción en la web ("Tonos", "Sabores"…), según el nombre que le da la tienda.
+LABELS = [(r'sabor', 'Sabor'), (r'estilo|modelo', 'Estilo'), (r'aroma', 'Aroma'), (r'^colou?r$', 'Color')]
+
+
+def option_label(option_name):
+    return next((label for rx, label in LABELS if re.search(rx, option_name, re.I)), 'Tono')
 
 
 def slug(text):
@@ -84,7 +95,7 @@ def shades_for(product, url):
     by_variant = {vid: img for img in data.get('images', []) for vid in img.get('variant_ids', [])}
     shades, seen = [], set()
     for v in data['variants']:
-        name = v.get(f'option{idx + 1}')
+        name = re.sub(r'\s+', ' ', v.get(f'option{idx + 1}') or '').strip()   # solo espacios dobles
         if not name or name in seen:
             continue
         seen.add(name)
@@ -99,7 +110,7 @@ def shades_for(product, url):
             pic.save(path, 'WEBP', quality=90, method=6)
             shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height, imageSource=src)
         shades.append(shade)
-    return shades, f"opción «{options[idx]['name']}»"
+    return shades, options[idx]['name']
 
 
 def main():
@@ -121,10 +132,11 @@ def main():
         if not shades:
             print(f'-- {key}: {note}')
             continue
-        product['shades'] = shades
+        product['shades'] = [{**s, 'name': SHADE_NAME_FIXES.get(s['name'], s['name'])} for s in shades]
+        product['shadesLabel'] = option_label(note)
         product['shadesSource'] = url
         sin_foto = sum(1 for s in shades if 'image' not in s)
-        print(f'ok {key}: {len(shades)} tonos ({note})' + (f', {sin_foto} sin foto' if sin_foto else ''))
+        print(f'ok {key}: {len(shades)} × {product["shadesLabel"]} (opción «{note}» en la tienda)' + (f', {sin_foto} sin foto' if sin_foto else ''))
         for s in shades:
             print(f"     · {s['name']}")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
