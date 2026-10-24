@@ -116,6 +116,23 @@ async function run(viewport, label) {
   await page.waitForTimeout(200);
   check(`[${label}] atrás del navegador cierra el detalle`, (await page.locator('dialog[open]').count()) === 0);
 
+  // Tonos: al elegir uno, su foto grande reemplaza la principal; al desmarcarlo vuelve la original
+  await page.goto(`${BASE}?producto=montoc-007-2`, { waitUntil: 'networkidle' });
+  const mainImg = page.locator('dialog[open] .detail-media img');
+  const original = await mainImg.getAttribute('src');
+  const shade = page.locator('dialog[open] .shade').nth(2);
+  await shade.click();
+  await page.waitForTimeout(300);
+  const swapped = await mainImg.getAttribute('src');
+  const loaded = await mainImg.evaluate((i) => i.complete && i.naturalWidth > 0);
+  check(`[${label}] tono: su foto reemplaza la principal`, swapped !== original && swapped.includes('tonos/') && loaded, swapped);
+  check(`[${label}] tono: nombre bajo la foto y en WhatsApp`, (await page.locator('dialog[open] .detail-media-caption').textContent()).includes('Sabor')
+    && decodeURIComponent(await page.locator('dialog[open] .btn-whatsapp').getAttribute('href')).includes('sabor'));
+  await shade.click();
+  await page.waitForTimeout(200);
+  check(`[${label}] tono: al desmarcar vuelve la foto del catálogo`, (await mainImg.getAttribute('src')) === original);
+  await page.keyboard.press('Escape');
+
   // Enlace directo
   await page.goto(`${BASE}?producto=anyeluz-093-1`, { waitUntil: 'networkidle' });
   check(`[${label}] enlace directo a producto`, await page.locator('dialog[open]').isVisible());

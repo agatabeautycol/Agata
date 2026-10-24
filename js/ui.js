@@ -234,7 +234,7 @@ function shadePicker(product, onChange) {
       buttons.forEach((b) => b.setAttribute('aria-checked', 'false'));
       button.setAttribute('aria-checked', String(!wasChecked));
       chosen.textContent = wasChecked ? hint : `${shadeWord(product)} elegido: ${shade.name}`;
-      onChange(wasChecked ? null : shade.name);
+      onChange(wasChecked ? null : shade);
     });
     return button;
   });
@@ -250,13 +250,45 @@ function shadePicker(product, onChange) {
   ]);
 }
 
+/**
+ * Al elegir un tono con foto, esa foto (en grande) ocupa el círculo de la foto principal; al desmarcarlo,
+ * o con un tono sin foto, vuelve la foto del catálogo.
+ */
+function showShadePhoto(container, product, shade) {
+  const img = $('.detail-media img', container);
+  const caption = $('.detail-media-caption', container);
+  if (!img) return;
+  img.dataset.originalSrc ??= img.getAttribute('src');
+  img.dataset.originalAlt ??= img.getAttribute('alt');
+  const src = shade?.imageLarge ?? shade?.image;
+  if (src) {
+    img.src = src;
+    img.alt = `${product.name}, ${shadeWord(product).toLowerCase()} ${shade.name} (foto de la página oficial)`;
+    caption.textContent = `${shadeWord(product)}: ${shade.name}`;
+    // En el celular la foto queda arriba, fuera de la pantalla: se sube hasta ella para que se vea el cambio.
+    const figure = img.closest('.detail-figure');
+    const { top, bottom } = figure.getBoundingClientRect();
+    if (top < 0 || bottom > window.innerHeight) {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      figure.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    }
+  } else {
+    img.src = img.dataset.originalSrc;
+    img.alt = img.dataset.originalAlt;
+    caption.textContent = '';
+  }
+}
+
 export function renderDetail(container, product, brand) {
   const order = buildOrderLink(product, brand.contact ?? {});
   const notice = brand.purchaseProcess?.notice;
   const extra = product.details && typeof product.details === 'object' ? Object.entries(product.details) : [];
 
   container.replaceChildren(
-    el('div', { class: 'detail-media' }, [productImage(product, { large: true })]),
+    el('figure', { class: 'detail-figure' }, [
+      el('div', { class: 'detail-media' }, [productImage(product, { large: true })]),
+      product.shades.length ? el('figcaption', { class: 'detail-media-caption', 'aria-live': 'polite' }) : null,
+    ]),
     el('div', { class: 'detail-info' }, [
       product.brand ? el('p', { class: 'detail-brand brand-title', text: product.brand }) : null,
       product.category ? el('p', { class: 'card-category', text: product.category }) : null,
@@ -276,8 +308,9 @@ export function renderDetail(container, product, brand) {
       ]),
       shadePicker(product, (shade) => {
         const link = $('.btn-whatsapp', container);
-        const next = buildOrderLink(product, brand.contact ?? {}, shade);
+        const next = buildOrderLink(product, brand.contact ?? {}, shade?.name);
         if (link && next) link.href = next.href;
+        showShadePhoto(container, product, shade);
       }),
       ...product.gallery.map((g) => el('figure', { class: 'detail-gallery' }, [
         el('img', { src: g.src, alt: g.alt ?? '', width: g.width, height: g.height, loading: 'lazy', decoding: 'async' }),
