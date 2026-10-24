@@ -104,6 +104,10 @@ También se puede editar `data/products.json` directamente, sin tocar HTML ni Ja
   "imageAlt": "Descripción de la foto",
   "imageSource": "De dónde salió la foto (catálogo de Canva, URL de la marca, archivo original)",
   "gallery": [{ "src": "assets/images/productos/montoc-003-2-variantes.webp", "width": 720, "height": 400, "alt": "…" }],
+  "shades": [
+    { "name": "Nombre exacto del tono", "image": "assets/images/tonos/montoc-003-2/nombre-del-tono.webp", "imageWidth": 160, "imageHeight": 160, "imageSource": "URL de la foto original" }
+  ],
+  "shadesSource": "URL de la página oficial de donde salen los tonos",
   "page": 3
 }
 ```
@@ -115,6 +119,7 @@ Reglas:
 - `price` es un número sin puntos ni símbolo y sirve para ordenar. Si hay `variants` (tamaños, tonos…), `price` es el menor y la tarjeta muestra la lista completa.
 - **Marcas y categorías se generan automáticamente** a partir de `brand` y `category`, en el orden en que aparecen en el catálogo. Al regenerar desde el PDF, la categoría sale de `CATEGORY_MAP`, `CATEGORY_BY_PRODUCT` y `CATEGORY_BY_BRAND` en el script (la sección original queda en `section`). Las erratas corregidas están en `TEXT_FIXES` y `BRAND_FIXES`.
 - `offer` marca el producto como oferta. El menú "Ofertas" solo aparece si existe al menos uno (el catálogo 2026 no tiene ofertas).
+- `shades` muestra en la ficha un selector de tonos (muestra en círculo + nombre). El tono elegido se agrega al mensaje de WhatsApp, y la tarjeta muestra "N tonos". Cada tono lleva `name` y `image` (foto de la página oficial, recortada y en WebP en `assets/images/tonos/{id}/`) o `color` (hexadecimal, solo si la página oficial lo da así). `shades` y `shadesSource` se conservan al regenerar desde el PDF (`PRESERVE_FIELDS` en el script).
 - `page` enlaza el producto con su página en la vista catálogo (botón "Ver en el catálogo original").
 - Para fotos nuevas: `npm run images -- carpeta-con-fotos assets/images/productos` (solo redimensiona y comprime; no altera el producto).
 

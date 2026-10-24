@@ -52,6 +52,10 @@ PAGE_WIDTH = 900
 # este es el rótulo con el que se muestran en la ficha.
 LABEL_TITLES = {10: 'Indicada para', 52: 'Opciones', 92: 'Aromas'}
 
+# Datos que no vienen del PDF y se agregan a mano en data/products.json: al regenerar se conservan,
+# buscando el producto por "Marca|Nombre". Tonos: [{name, image, imageSource}] desde la página oficial.
+PRESERVE_FIELDS = ('shades', 'shadesLabel', 'shadesSource')
+
 # Correcciones manuales verificadas contra las páginas renderizadas.
 OVERRIDES = {}
 
@@ -353,6 +357,10 @@ def save_page(page, pno, brand, page_ids, pages):
 def main():
     doc = pymupdf.open(PDF)
     products, pages = [], []
+    previous = {}
+    if OUT_DATA.exists():
+        for old in json.loads(OUT_DATA.read_text()).get('products', []):
+            previous[f"{old.get('brand')}|{old.get('name')}"] = old
     for folder in (OUT_PRODUCTS, OUT_PAGES):   # se regeneran completas: sin archivos huérfanos
         folder.mkdir(parents=True, exist_ok=True)
         for old in folder.glob('*.webp'):
@@ -455,6 +463,8 @@ def main():
                     product['gallery'] = [dict(src=f'assets/images/productos/{pid}-variantes.webp', width=gw, height=gh,
                                                alt=f'{name}: tonos y presentaciones según el catálogo')]
             product['page'] = pno
+            old = previous.get(f'{brand}|{name}', {})
+            product.update({k: old[k] for k in PRESERVE_FIELDS if k in old})
             product.update(OVERRIDES.get(pid, {}))
             products.append(product)
             page_ids.append(pid)

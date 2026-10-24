@@ -25,6 +25,8 @@ function normalizeProduct(raw, index) {
   if (isPresent(raw.brand)) product.brandSlug = slugify(raw.brand);
   product.variants = Array.isArray(raw.variants) ? raw.variants : [];
   product.gallery = Array.isArray(raw.gallery) ? raw.gallery : [];
+  // Tonos con nombre (tomados de la página oficial de la marca): [{ name, image?, color? }]
+  product.shades = Array.isArray(raw.shades) ? raw.shades.filter((s) => isPresent(s?.name)) : [];
   if (isPresent(raw.price)) {
     const price = Number(raw.price);
     if (Number.isFinite(price)) product.price = price;

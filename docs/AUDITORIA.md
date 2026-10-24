@@ -552,6 +552,31 @@ Se corrigen **en la web** (`TEXT_FIXES` y `BRAND_FIXES` en `scripts/extract-cata
 - **Pruebas (`scripts/test-ux.cjs`):** 74/74 correctas en celular (390×844) y computador (1280×900): búsqueda con y sin tildes y con varias palabras, filtros con contadores cruzados, agrupación (27 marcas / 8 categorías / sin agrupar), orden, detalle (Esc, "Volver", atrás del navegador), WhatsApp con producto y marca, enlaces directos, vista catálogo (132 páginas), estado sin resultados, todas las imágenes cargan, sin errores de JavaScript, sin scroll horizontal y 404 con la marca.
 - **Optimización:** fotos WebP a su resolución real (~5 MB los 249 productos, carga diferida), páginas del catálogo WebP de 900 px (~70 KB c/u, carga diferida), imagen JPG para compartir el enlace (`assets/og-portada.jpg`), Open Graph con la dirección definitiva, `canonical`, favicon, H1/H2/H3, foco visible y respeto de "reducir movimiento".
 
+## Tonos con nombre y foto (desde la página oficial)
+
+La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) con el nombre y la foto de la página oficial de la marca; el elegido se agrega al mensaje de WhatsApp. Decisión de Ágata Beauty: se muestran **todos** los tonos de la página oficial (con el aviso de confirmar disponibilidad). Los enlaces y los ajustes de nombres están en `scripts/fetch-shades.py` (`SHADE_PAGES`, `SHADE_NAME_FIXES`).
+
+**Total: 58 productos de 12 marcas, con 312 tonos, colores, sabores, estilos o aromas.**
+
+| Marca | Productos con tonos | Fuente |
+| --- | ---: | --- |
+| Montoc | 10 | montoccosmetictools.com |
+| Bloomshell | 5 | bloomshell.co (base y corrector: cada tono es un producto aparte); Cherry Blossom en girlymaquillaje.com, Trío de rubores (Velvet rubor x3) en mysticstore.com.co y Contorno Bloom define en kromaspace.com (tiendas que revenden la marca) |
+| Girly | 1 | cocopinkstore.com (tienda que revende la marca) |
+| Ani-k | 6 | anikmakeup.com |
+| Majikal | 2 | majikalbeauty.com (una misma foto para todos los tonos: se muestran solo los nombres) |
+| Atenea | 8 | ateneaprofesional.com (Rubor compacto sin fotos y Color pencil con una sola foto: solo nombres) |
+| Samy | 10 | samycosmetics.com (Polvo suelto 8 g y Paleta x9: cada tono es un producto aparte) |
+| Lula | 4 | lulabeauty.co |
+| Raquel | 1 | losestilistas.com.co (tienda que revende la marca; tiene las fotos cruzadas, se muestran solo los nombres) |
+| OG | 4 | ogmantra.co |
+| Milagros | 1 | milagrosbeauty.com (cada aroma es un producto aparte; incluye Gold, que no aparece en el catálogo) |
+| Fantiluna | 6 | fantiluna.com (cada aroma es un producto de su categoría; crema corporal: aromas de 120 ml) |
+
+Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
+
+Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Samy "Coffe Toffee" → Coffee Toffee; Lula "Magico" → Mágico, "Careza" → Cereza y "Colageno" → Colágeno; Raquel "Traslucidos" → Traslúcidos; OG "Coray" → Coral; Milagros "Bali" → Balí; Fantiluna "Exploción Tropical" → Explosión Tropical y "Seduccion" → Seducción; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
+
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 
 1. **Fotos en alta resolución** de los 249 productos (ver la lista por marca).
