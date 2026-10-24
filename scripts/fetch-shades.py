@@ -16,7 +16,7 @@ No inventa nada: si la página no tiene tonos (una sola variante), el producto q
 """
 import html, io, json, re, sys, unicodedata, urllib.request
 from pathlib import Path
-from urllib.parse import parse_qs, unquote, urlencode, urljoin, urlsplit
+from urllib.parse import parse_qs, quote, unquote, urlencode, urljoin, urlsplit
 
 from PIL import Image
 
@@ -67,7 +67,11 @@ SHADE_PAGES = {
     'Atenea|Delineador de cejas': 'https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene',
     'Atenea|Lápiz delineador Color pencil': 'https://ateneaprofesional.com/products/lapiz-delineador',
     'Atenea|Lip Balm Mask': 'https://ateneaprofesional.com/products/lip-balm-mask',
-    'Samy|Polvo suelto': 'https://www.samycosmetics.com/polvo%20suelto',
+    # Línea de polvos sueltos de 8 g (la del catálogo: Translúcido, Durazno/Peachy, Banana, Miel/Honey,
+    # Rosado/Blossom, Matificante/Blotting y Glowy); cada uno es un producto aparte en la tienda.
+    'Samy|Polvo suelto': {
+        'vtex': 'https://www.samycosmetics.com', 'ft': 'polvo suelto',
+        'title': r'^polvo suelto (?P<tono>.+?)\s+samy\s+8\s*g', 'source': 'https://www.samycosmetics.com/polvo%20suelto'},
     'Samy|Rubor en barra Velvet Glam': 'https://www.samycosmetics.com/rubor-en-barra-velvet-glam-s421/p',
     'Samy|Rubor Compacto Velvet Glam Samy': 'https://www.samycosmetics.com/rubor-compacto-velvet-glam-s422/p',
     'Samy|Rubor 2 en 1 Sunset Glam Samy': 'https://www.samycosmetics.com/rubor-2-en-1-sunset-glam-samy-s388-1/p',
@@ -76,7 +80,11 @@ SHADE_PAGES = {
     'Samy|Betún de cejas': 'https://www.samycosmetics.com/maquillaje-cremoso-de-cejas-perfect-brow-samy-s039/p',
     'Samy|Kit para cejas': 'https://www.samycosmetics.com/kit-para-cejas-perfect-brows-samy-s026/p',
     'Samy|Paleta de sombras x3': 'https://www.samycosmetics.com/-paleta-de-sombras-x-3-samy-s436/p',
-    'Samy|Paleta de sombras x9': 'https://www.samycosmetics.com/paleta-x-9-sombra-de-ojos-samy-20-moon-s439/p',
+    # Cada tono de la paleta x9 es un producto aparte ("Paleta X 9 Sombras De Ojos Samy # 20. Moon").
+    'Samy|Paleta de sombras x9': {
+        'vtex': 'https://www.samycosmetics.com', 'ft': 'paleta x 9',
+        'title': r'^paleta x 9 sombras de ojos samy # (?P<tono>.+)$',
+        'source': 'https://www.samycosmetics.com/paleta-x-9-sombra-de-ojos-samy-20-moon-s439/p'},
     'Lula|Lápiz delineador de ojos': 'https://lulabeauty.co/products/lapiz-delineador-para-ojos',
     'Lula|Aceite para labios con charm': 'https://lulabeauty.co/products/aceite-para-labios-con-charm',
     'Lula|Bálsamo de labios': 'https://lulabeauty.co/products/balsamo-de-labios',
@@ -208,7 +216,7 @@ def vtex_options(url):
     if path.endswith('/p'):
         api = f"{base}/api/catalog_system/pub/products/search{path}"
     else:   # búsqueda ("/polvo%20suelto"): primer producto que devuelve la tienda
-        api = f"{base}/api/catalog_system/pub/products/search?" + urlencode({'ft': unquote(path.strip('/'))})
+        api = f"{base}/api/catalog_system/pub/products/search?ft={quote(unquote(path.strip('/')))}&_from=0&_to=49"
     found = json.loads(get(api))
     if not found:
         return None, ['producto no encontrado'], url
@@ -224,6 +232,19 @@ def vtex_options(url):
         img = (item.get('images') or [{}])[0].get('imageUrl')
         out.append((name, img))
     return variation or 'Tono', out, url
+
+
+def vtex_by_title(base, ft, title, source):
+    """Tienda VTEX que publica cada tono como un producto aparte: busca `ft` y toma el tono del nombre."""
+    rx, items = re.compile(title, re.I), []
+    found = json.loads(get(f"{base}/api/catalog_system/pub/products/search?ft={quote(ft)}&_from=0&_to=49"))   # VTEX no acepta "+"
+
+    for product in found:
+        m = rx.match(re.sub(r'\s+', ' ', product['productName']).strip())
+        if m and product.get('items'):
+            img = (product['items'][0].get('images') or [{}])[0].get('imageUrl')
+            items.append((m.group('tono'), img))
+    return ('Tono' if items else None), items, source
 
 
 def woocommerce_options(url):
@@ -252,7 +273,9 @@ def woocommerce_options(url):
 
 
 def shades_for(product, url):
-    if isinstance(url, dict):
+    if isinstance(url, dict) and 'vtex' in url:
+        option, items, url = vtex_by_title(url['vtex'], url['ft'], url['title'], url['source'])
+    elif isinstance(url, dict):
         option, items, url = shopify_by_title(url['store'], url['title'], url['source'])
     elif '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search'):
         option, items, url = shopify_options(url)
@@ -267,9 +290,10 @@ def shades_for(product, url):
         # Solo formato: espacios dobles, "tono " repetido al inicio, guion tras el número y mayúscula inicial.
         name = re.sub(r'^tono\s+', '', re.sub(r'\s+', ' ', raw_name or '').strip(), flags=re.I)
         name = re.sub(r'^(\d+(?:\.\d+)?)\s*-\s*', r'\1 ', name)          # "00-Anne" -> "00 Anne"
+        name = re.sub(r'^(\d+)\.\s*(?=\D)', r'\1 ', name)                  # "01. AUTHENTIC" -> "01 AUTHENTIC"
         name = name.split(':')[0].strip()                                 # "Latte: café medio cálido" -> "Latte"
-        if name.isupper() and not re.search(r'\d', name):                 # "PORCELAIN" -> "Porcelain"
-            name = name.capitalize()
+        if name.isupper() and not re.fullmatch(r'[A-Z]+\d+', name):       # "ICONIC GIRL" -> "Iconic Girl" (no "SH001")
+            name = name.title()
 
         name = re.sub(r'^([^A-Za-zÁÉÍÓÚÑáéíóúñ]*)([a-záéíóúñ])', lambda m: m.group(1) + m.group(2).upper(), name)
         if not name or name in seen:

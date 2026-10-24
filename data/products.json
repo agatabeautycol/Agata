@@ -4495,7 +4495,60 @@
           "alt": "Polvo suelto: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 49
+      "page": 49,
+      "shades": [
+        {
+          "name": "Miel",
+          "image": "assets/images/tonos/samy-049-1/miel.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158538/POLVO-SUELTO--HONEY--1200-X-1200.jpg?v=639192266362600000"
+        },
+        {
+          "name": "Glowy",
+          "image": "assets/images/tonos/samy-049-1/glowy.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158549/POLVO-SUELTO--GLOWY-FILTER-EFFECT-1200-x-1200-.jpg?v=639192266363530000"
+        },
+        {
+          "name": "Durazno",
+          "image": "assets/images/tonos/samy-049-1/durazno.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158146/POLVO-SUELTO-PEACHY.jpg.jpg?v=639192266282330000"
+        },
+        {
+          "name": "Matificante",
+          "image": "assets/images/tonos/samy-049-1/matificante.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157804/POLVO-SUELTO-MATIFICANTE.jpg?v=639192266229570000"
+        },
+        {
+          "name": "Rosado",
+          "image": "assets/images/tonos/samy-049-1/rosado.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157871/POLVO-ROSADO-FONDO-BLANCO.jpg?v=639192266240800000"
+        },
+        {
+          "name": "Banana",
+          "image": "assets/images/tonos/samy-049-1/banana.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157653/POLVO-SUELTO-BANANA.jpg?v=639192266217400000"
+        },
+        {
+          "name": "Translúcido Matte Touch",
+          "image": "assets/images/tonos/samy-049-1/translucido-matte-touch.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158527/POLVO-SUELTO--TRANSLUCENT--1200-X-1200.jpg?v=639192266115830000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/polvo%20suelto"
     },
     {
       "id": "samy-049-2",
@@ -4517,7 +4570,46 @@
           "alt": "Rubor en barra Velvet Glam: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 49
+      "page": 49,
+      "shades": [
+        {
+          "name": "01 Authentic",
+          "image": "assets/images/tonos/samy-049-2/01-authentic.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158743/Rubor-en-barra--1.jpg?v=639192266368770000"
+        },
+        {
+          "name": "02 Lover",
+          "image": "assets/images/tonos/samy-049-2/02-lover.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158744/Rubor-en-barra--2.jpg?v=639192266369100000"
+        },
+        {
+          "name": "03 Dreamer",
+          "image": "assets/images/tonos/samy-049-2/03-dreamer.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158745/Rubor-en-barra--3.jpg?v=639192266369230000"
+        },
+        {
+          "name": "04 Sensational",
+          "image": "assets/images/tonos/samy-049-2/04-sensational.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158746/Rubor-en-barra--4.jpg?v=639192266369570000"
+        },
+        {
+          "name": "05 Savage",
+          "image": "assets/images/tonos/samy-049-2/05-savage.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158747/Rubor-en-barra--5r.jpg?v=639192266369700000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/rubor-en-barra-velvet-glam-s421/p"
     },
     {
       "id": "samy-050-1",
@@ -4539,7 +4631,46 @@
           "alt": "Rubor Compacto Velvet Glam Samy: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 50
+      "page": 50,
+      "shades": [
+        {
+          "name": "01 Velvet Rush",
+          "image": "assets/images/tonos/samy-050-1/01-velvet-rush.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158765/Rubor-compacto--1.jpg?v=639192266370500000"
+        },
+        {
+          "name": "02 Irresistible",
+          "image": "assets/images/tonos/samy-050-1/02-irresistible.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158768/Rubor-compacto--2.jpg?v=639192266370970000"
+        },
+        {
+          "name": "03 Iconic Girl",
+          "image": "assets/images/tonos/samy-050-1/03-iconic-girl.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158771/Rubor-compacto--3.jpg?v=639192266371270000"
+        },
+        {
+          "name": "04 No Rules",
+          "image": "assets/images/tonos/samy-050-1/04-no-rules.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158774/Rubor-compacto--4.jpg?v=639192266371730000"
+        },
+        {
+          "name": "05 Date Night",
+          "image": "assets/images/tonos/samy-050-1/05-date-night.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158777/Rubor-compacto--5.jpg?v=639192266372070000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/rubor-compacto-velvet-glam-s422/p"
     },
     {
       "id": "samy-050-2",
@@ -4561,7 +4692,39 @@
           "alt": "Rubor 2 en 1 Sunset Glam Samy: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 50
+      "page": 50,
+      "shades": [
+        {
+          "name": "01 Candy Dream",
+          "image": "assets/images/tonos/samy-050-2/01-candy-dream.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158413/RUBOR-2-EN-1-CERRADO--1---SUNSET-GLAM.jpg?v=639192266350430000"
+        },
+        {
+          "name": "02 Tea Rose",
+          "image": "assets/images/tonos/samy-050-2/02-tea-rose.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158415/RUBOR-2-EN-1-CERRADO--2---SUNSET-GLAM.jpg?v=639192266351370000"
+        },
+        {
+          "name": "03 Ginger Crush",
+          "image": "assets/images/tonos/samy-050-2/03-ginger-crush.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158417/RUBOR-2-EN-1-CERRADO--3---SUNSET-GLAM.jpg?v=639192266353000000"
+        },
+        {
+          "name": "04 Coffe Toffee",
+          "image": "assets/images/tonos/samy-050-2/04-coffe-toffee.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158419/RUBOR-2-EN-1-CERRADO--4---SUNSET-GLAM.jpg?v=639192266354270000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/rubor-2-en-1-sunset-glam-samy-s388-1/p"
     },
     {
       "id": "samy-051-1",
@@ -4583,7 +4746,74 @@
           "alt": "Tinta en crema Lip Blush: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 51
+      "page": 51,
+      "shades": [
+        {
+          "name": "01 Pinky Peach",
+          "image": "assets/images/tonos/samy-051-1/01-pinky-peach.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158326/TONO-1.jpg?v=639192266340600000"
+        },
+        {
+          "name": "02 Cake Pop",
+          "image": "assets/images/tonos/samy-051-1/02-cake-pop.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158329/TONO-2.jpg?v=639192266341670000"
+        },
+        {
+          "name": "03 Marshmallow",
+          "image": "assets/images/tonos/samy-051-1/03-marshmallow.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158332/TONO-3.jpg?v=639192266343530000"
+        },
+        {
+          "name": "04 Lollipop",
+          "image": "assets/images/tonos/samy-051-1/04-lollipop.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158335/TONO-4.jpg?v=639192266344370000"
+        },
+        {
+          "name": "05 Jelly",
+          "image": "assets/images/tonos/samy-051-1/05-jelly.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158338/TONO-5.jpg?v=639192266345270000"
+        },
+        {
+          "name": "06 Cherry",
+          "image": "assets/images/tonos/samy-051-1/06-cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158341/TONO-6.jpg?v=639192266345730000"
+        },
+        {
+          "name": "07 Cookie",
+          "image": "assets/images/tonos/samy-051-1/07-cookie.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158344/TONO-7.jpg?v=639192266346200000"
+        },
+        {
+          "name": "08 Chocolate",
+          "image": "assets/images/tonos/samy-051-1/08-chocolate.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158347/TONO-8.jpg?v=639192266347000000"
+        },
+        {
+          "name": "09 Brownie",
+          "image": "assets/images/tonos/samy-051-1/09-brownie.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158350/TONO-9.jpg?v=639192266347470000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/tinta-en-crema-samy-s383/p"
     },
     {
       "id": "samy-051-2",
@@ -4605,7 +4835,25 @@
           "alt": "Contorno en barra Velvet Glam: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 51
+      "page": 51,
+      "shades": [
+        {
+          "name": "01 Brave",
+          "image": "assets/images/tonos/samy-051-2/01-brave.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158755/Contorno-en-barra--1.jpg?v=639192266366600000"
+        },
+        {
+          "name": "02 Fierce",
+          "image": "assets/images/tonos/samy-051-2/02-fierce.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158756/Contorno-en-barra--2.jpg?v=639192266366730000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/contorno-en-barra-velvet-glam-s420/p"
     },
     {
       "id": "samy-052-1",
@@ -4627,7 +4875,32 @@
           "alt": "Betún de cejas: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 52
+      "page": 52,
+      "shades": [
+        {
+          "name": "01 Claro",
+          "image": "assets/images/tonos/samy-052-1/01-claro.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157213/MAQUILLAJE-CREMOSO-PARA-CEJAS-1-2023.jpg?v=639192266089400000"
+        },
+        {
+          "name": "02 Oscuro",
+          "image": "assets/images/tonos/samy-052-1/02-oscuro.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157214/MAQUILLAJE-CREMOSO-PARA-CEJAS-2-2023.jpg?v=639192266089700000"
+        },
+        {
+          "name": "03 Negro - Black",
+          "image": "assets/images/tonos/samy-052-1/03-negro-black.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157215/MAQUILLAJE-CREMOSO-PARA-CEJAS-3-2023.jpg?v=639192266089900000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/maquillaje-cremoso-de-cejas-perfect-brow-samy-s039/p"
     },
     {
       "id": "samy-052-2",
@@ -4652,7 +4925,25 @@
           "alt": "Kit para cejas: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 52
+      "page": 52,
+      "shades": [
+        {
+          "name": "01 Blonde",
+          "image": "assets/images/tonos/samy-052-2/01-blonde.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/156234/046004-1.jpg?v=639192266046700000"
+        },
+        {
+          "name": "02 Brunette",
+          "image": "assets/images/tonos/samy-052-2/02-brunette.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/156235/046005-1.jpg?v=639192266047300000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/kit-para-cejas-perfect-brows-samy-s026/p"
     },
     {
       "id": "samy-053-1",
@@ -4674,7 +4965,81 @@
           "alt": "Paleta de sombras x3: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 53
+      "page": 53,
+      "shades": [
+        {
+          "name": "01 Persian Sun",
+          "image": "assets/images/tonos/samy-053-1/01-persian-sun.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158895/TONO-01-PERSIAN-SUN.jpg?v=639222227672700000"
+        },
+        {
+          "name": "02 Arabian Night",
+          "image": "assets/images/tonos/samy-053-1/02-arabian-night.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158896/TONO-02-ARABIAN-NIGHT.jpg?v=639222227673330000"
+        },
+        {
+          "name": "03 Japanese Breeze",
+          "image": "assets/images/tonos/samy-053-1/03-japanese-breeze.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158897/TONO-03-JAPANESE-BREEZE.jpg?v=639222227673630000"
+        },
+        {
+          "name": "04 Champagne Toast",
+          "image": "assets/images/tonos/samy-053-1/04-champagne-toast.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158898/TONO-04-CHAMPAGNE-TOAST.jpg?v=639222227673800000"
+        },
+        {
+          "name": "05 Honey Cocoa",
+          "image": "assets/images/tonos/samy-053-1/05-honey-cocoa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158899/TONO-05-HONEY-COCOA.jpg?v=639222227673970000"
+        },
+        {
+          "name": "06 Classic Tiramisu",
+          "image": "assets/images/tonos/samy-053-1/06-classic-tiramisu.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158900/TONO-06-CLASSIC-TIRAMISU.jpg?v=639222227674270000"
+        },
+        {
+          "name": "07 Kenyan Safari",
+          "image": "assets/images/tonos/samy-053-1/07-kenyan-safari.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158901/TONO-07-KENYAN-SAFARI.jpg?v=639222227674430000"
+        },
+        {
+          "name": "08 Tea Room",
+          "image": "assets/images/tonos/samy-053-1/08-tea-room.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158902/TONO-08-TEA-TOOM.jpg?v=639222227674730000"
+        },
+        {
+          "name": "09 Radiant Orchid",
+          "image": "assets/images/tonos/samy-053-1/09-radiant-orchid.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158975/TONO-09-REDIANT-ORCHID.jpg?v=639222227675030000"
+        },
+        {
+          "name": "10 Soho Boulevard",
+          "image": "assets/images/tonos/samy-053-1/10-soho-boulevard.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158904/TONO-10-SOHO-VOULEVARD.jpg?v=639222227675200000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/-paleta-de-sombras-x-3-samy-s436/p"
     },
     {
       "id": "samy-053-2",
@@ -4696,7 +5061,88 @@
           "alt": "Paleta de sombras x9: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 53
+      "page": 53,
+      "shades": [
+        {
+          "name": "10 Glam",
+          "image": "assets/images/tonos/samy-053-2/10-glam.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157840/GLAM-Paletas.png?v=639192266233470000"
+        },
+        {
+          "name": "11 Terra",
+          "image": "assets/images/tonos/samy-053-2/11-terra.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157843/TERRA-Paletas.png?v=639192266233800000"
+        },
+        {
+          "name": "12 Coral",
+          "image": "assets/images/tonos/samy-053-2/12-coral.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157846/CORAL-Paletas.png?v=639192266235670000"
+        },
+        {
+          "name": "13 Golden",
+          "image": "assets/images/tonos/samy-053-2/13-golden.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/157850/GOLDEN-Paletas.png?v=639276875118330000"
+        },
+        {
+          "name": "14 Nude 2",
+          "image": "assets/images/tonos/samy-053-2/14-nude-2.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158147/14-Nude-2.jpg.jpg?v=639192266283130000"
+        },
+        {
+          "name": "15 Cosmo",
+          "image": "assets/images/tonos/samy-053-2/15-cosmo.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158148/15-COSMOS.jpg.jpg?v=639192266284700000"
+        },
+        {
+          "name": "16 Sunset",
+          "image": "assets/images/tonos/samy-053-2/16-sunset.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158149/16-SUNSET.jpg.jpg?v=639192266286700000"
+        },
+        {
+          "name": "17 Rose 2",
+          "image": "assets/images/tonos/samy-053-2/17-rose-2.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158150/ROSE-2.jpg.jpg?v=639192266289130000"
+        },
+        {
+          "name": "18 Bronze 2",
+          "image": "assets/images/tonos/samy-053-2/18-bronze-2.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158151/BRONZE-2.jpg.jpg?v=639192266296330000"
+        },
+        {
+          "name": "19 Nude 3",
+          "image": "assets/images/tonos/samy-053-2/19-nude-3.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158152/NUDE-3.jpg.jpg?v=639192266298770000"
+        },
+        {
+          "name": "20 Moon",
+          "image": "assets/images/tonos/samy-053-2/20-moon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://samycosmetics.vteximg.com.br/arquivos/ids/158984/Paletax9-MOON-1200x1200.jpg?v=639192266385300000"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.samycosmetics.com/paleta-x-9-sombra-de-ojos-samy-20-moon-s439/p"
     },
     {
       "id": "samy-054-1",
@@ -4746,7 +5192,42 @@
           "alt": "Lápiz delineador de ojos: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 55
+      "page": 55,
+      "shades": [
+        {
+          "name": "Equilibrio"
+        },
+        {
+          "name": "Magico",
+          "image": "assets/images/tonos/lula-055-1/magico.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/Mayo-swatches-13.jpg"
+        },
+        {
+          "name": "Intriga",
+          "image": "assets/images/tonos/lula-055-1/intriga.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/Mayo-swatches-5.jpg"
+        },
+        {
+          "name": "Vibra",
+          "image": "assets/images/tonos/lula-055-1/vibra.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/Mayo-swatches-7.jpg"
+        },
+        {
+          "name": "Radiante",
+          "image": "assets/images/tonos/lula-055-1/radiante.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/Mayo-swatches-9.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://lulabeauty.co/products/lapiz-delineador-para-ojos"
     },
     {
       "id": "lula-056-1",
@@ -4768,7 +5249,46 @@
           "alt": "Aceite para labios con charm: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 56
+      "page": 56,
+      "shades": [
+        {
+          "name": "Careza",
+          "image": "assets/images/tonos/lula-056-1/careza.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/aceitedelabios-7_72x-100.jpg"
+        },
+        {
+          "name": "Chicle",
+          "image": "assets/images/tonos/lula-056-1/chicle.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/aceitedelabios-16_72x-100.jpg"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/lula-056-1/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/aceitedelabios-5_72x-100.jpg"
+        },
+        {
+          "name": "Mango",
+          "image": "assets/images/tonos/lula-056-1/mango.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/aceitedelabios-11_72x-100.jpg"
+        },
+        {
+          "name": "Uva",
+          "image": "assets/images/tonos/lula-056-1/uva.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/aceitedelabios-9_72x-100.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://lulabeauty.co/products/aceite-para-labios-con-charm"
     },
     {
       "id": "lula-056-2",
@@ -4790,7 +5310,20 @@
           "alt": "Bálsamo de labios: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 56
+      "page": 56,
+      "shades": [
+        {
+          "name": "Pitaya"
+        },
+        {
+          "name": "Melón"
+        },
+        {
+          "name": "Frutos del bosque"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://lulabeauty.co/products/balsamo-de-labios"
     },
     {
       "id": "lula-057-1",
@@ -4840,7 +5373,32 @@
           "alt": "Toallas húmedas desmaquillantes: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 58
+      "page": 58,
+      "shades": [
+        {
+          "name": "Pepino",
+          "image": "assets/images/tonos/lula-058-1/pepino.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/PEPINO_1080X1080_ABIERTO.jpg"
+        },
+        {
+          "name": "Roses",
+          "image": "assets/images/tonos/lula-058-1/roses.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/ROSAS_Y_ALOE_VERA_1080X1080_ABIERTO.jpg"
+        },
+        {
+          "name": "Colageno",
+          "image": "assets/images/tonos/lula-058-1/colageno.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0570/3086/9078/files/COLAGENO_1080X1080_ABIERTO.jpg"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://lulabeauty.co/products/toallas-humedas-desmaquillante-pepino-lula"
     },
     {
       "id": "lula-058-2",

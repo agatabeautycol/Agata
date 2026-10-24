@@ -564,6 +564,8 @@ La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) 
 | Ani-k | 6 | anikmakeup.com |
 | Majikal | 2 | majikalbeauty.com (una misma foto para todos los tonos: se muestran solo los nombres) |
 | Atenea | 8 | ateneaprofesional.com (Rubor compacto sin fotos y Color pencil con una sola foto: solo nombres) |
+| Samy | 10 | samycosmetics.com (Polvo suelto 8 g y Paleta x9: cada tono es un producto aparte) |
+| Lula | 4 | lulabeauty.co |
 
 Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
 
