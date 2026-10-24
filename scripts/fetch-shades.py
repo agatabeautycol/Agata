@@ -117,6 +117,10 @@ SHADE_NAME_FIXES = {
     'Atenea|Base de maquillaje 1ST Scene': {'eboky': 'Ebony'},
     'Atenea|Bronzer cremoso en barra': {'tostedcoconut': 'Toasted Coconut'},
     'Majikal|Magic Pen': {'cafeina': 'Cafeína', 'cherrs': 'Cherry'},
+    'Samy|Rubor 2 en 1 Sunset Glam Samy': {'04 coffe toffee': '04 Coffee Toffee'},
+    'Lula|Lápiz delineador de ojos': {'magico': 'Mágico'},
+    'Lula|Aceite para labios con charm': {'careza': 'Cereza'},
+    'Lula|Toallas húmedas desmaquillantes': {'colageno': 'Colágeno'},
 }
 
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
