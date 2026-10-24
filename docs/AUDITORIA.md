@@ -560,6 +560,8 @@ La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) 
 | --- | ---: | --- |
 | Montoc | 10 | montoccosmetictools.com |
 | Bloomshell | 5 | bloomshell.co (base y corrector: cada tono es un producto aparte); Cherry Blossom en girlymaquillaje.com, Trío de rubores (Velvet rubor x3) en mysticstore.com.co y Contorno Bloom define en kromaspace.com (tiendas que revenden la marca) |
+| Girly | 1 | cocopinkstore.com (tienda que revende la marca) |
+| Ani-k | 6 | anikmakeup.com |
 
 Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
 

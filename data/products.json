@@ -3033,7 +3033,39 @@
           "alt": "Girly TINT Labios y mejillas: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 22
+      "page": 22,
+      "shades": [
+        {
+          "name": "Blood",
+          "image": "assets/images/tonos/girly-022-2/blood.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0717/0424/8458/files/PHOTO-2024-06-25-12-57-38.jpg"
+        },
+        {
+          "name": "Rose",
+          "image": "assets/images/tonos/girly-022-2/rose.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0717/0424/8458/files/PHOTO-2024-06-25-12-57-38-2.jpg"
+        },
+        {
+          "name": "Brown",
+          "image": "assets/images/tonos/girly-022-2/brown.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0717/0424/8458/files/Tinta_de_labios_tono_Brown_Girly.jpg"
+        },
+        {
+          "name": "Sugar",
+          "image": "assets/images/tonos/girly-022-2/sugar.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0717/0424/8458/files/Tinta_de_labios_tono_Sugar_Girly.jpg"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://cocopinkstore.com/products/tinta-de-labios-girly"
     },
     {
       "id": "girly-022-3",
@@ -3117,7 +3149,60 @@
           "alt": "2 en 1: base y corrector: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 24
+      "page": 24,
+      "shades": [
+        {
+          "name": "00 Anne",
+          "image": "assets/images/tonos/ani-k-024-1/00-anne.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_de_anik_00.jpg"
+        },
+        {
+          "name": "01 Katy",
+          "image": "assets/images/tonos/ani-k-024-1/01-katy.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_bonita_anik_tonos_1.jpg"
+        },
+        {
+          "name": "02 Taylor",
+          "image": "assets/images/tonos/ani-k-024-1/02-taylor.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_anik_tono_02.jpg"
+        },
+        {
+          "name": "03 Dua",
+          "image": "assets/images/tonos/ani-k-024-1/03-dua.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_anik_tono_3.jpg"
+        },
+        {
+          "name": "04 Selena",
+          "image": "assets/images/tonos/ani-k-024-1/04-selena.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_anik_tono_04.jpg"
+        },
+        {
+          "name": "05 Eva",
+          "image": "assets/images/tonos/ani-k-024-1/05-eva.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_anik_tono_05.jpg"
+        },
+        {
+          "name": "06 Naomi",
+          "image": "assets/images/tonos/ani-k-024-1/06-naomi.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/base_anik_tonos_6.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://anikmakeup.com/products/base-bonita"
     },
     {
       "id": "ani-k-024-2",
@@ -3139,7 +3224,39 @@
           "alt": "Loose powder Polvos sueltos: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 24
+      "page": 24,
+      "shades": [
+        {
+          "name": "01 Carlota",
+          "image": "assets/images/tonos/ani-k-024-2/01-carlota.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/polvo_traslucido_anik.jpg"
+        },
+        {
+          "name": "02 Scarlett",
+          "image": "assets/images/tonos/ani-k-024-2/02-scarlett.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/polvo_suelto_anik.jpg"
+        },
+        {
+          "name": "03 Confetti",
+          "image": "assets/images/tonos/ani-k-024-2/03-confetti.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/polvo_rosado_anik.jpg"
+        },
+        {
+          "name": "04 Cinnamon",
+          "image": "assets/images/tonos/ani-k-024-2/04-cinnamon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/polvo_cafe_anik.jpg"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://anikmakeup.com/products/polvo-suelto"
     },
     {
       "id": "ani-k-025-1",
@@ -3161,7 +3278,46 @@
           "alt": "Serum Flyshy Blushy: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 25
+      "page": 25,
+      "shades": [
+        {
+          "name": "01 Pink Lemonade",
+          "image": "assets/images/tonos/ani-k-025-1/01-pink-lemonade.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/01_serum_blush_pink_lemonade.jpg"
+        },
+        {
+          "name": "02 Tan Line",
+          "image": "assets/images/tonos/ani-k-025-1/02-tan-line.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/02_tan_line_dee492b9-3cac-44f7-96f9-eda416aa2015.jpg"
+        },
+        {
+          "name": "03 Toasty",
+          "image": "assets/images/tonos/ani-k-025-1/03-toasty.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/03_toasty_serum_blush_17b7ef6b-194c-411c-a502-fd98a9240a54.jpg"
+        },
+        {
+          "name": "04 That Girl",
+          "image": "assets/images/tonos/ani-k-025-1/04-that-girl.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/04_that_girl_flushy_blushy_d548ee76-6802-47a3-aea4-a6b2b7651b4c.jpg"
+        },
+        {
+          "name": "05 Berry Me",
+          "image": "assets/images/tonos/ani-k-025-1/05-berry-me.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/05_berry_me_000453cf-d7c9-4972-9286-91be20ac2c7b.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://anikmakeup.com/products/serum-blush-flushy-blushy"
     },
     {
       "id": "ani-k-025-2",
@@ -3183,7 +3339,60 @@
           "alt": "Rubor líquido Bonita: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 25
+      "page": 25,
+      "shades": [
+        {
+          "name": "01 Lily",
+          "image": "assets/images/tonos/ani-k-025-2/01-lily.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/RUBOR_LIQUIDO_TONO_1_1000X1000_92f4c77f-09cd-4b99-a0d6-22ae8e3bf9e9.jpg"
+        },
+        {
+          "name": "02 Ellie",
+          "image": "assets/images/tonos/ani-k-025-2/02-ellie.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/2_dfc4cbba-5bfa-472c-a7e3-cff62c2b653a.jpg"
+        },
+        {
+          "name": "03 Zoe",
+          "image": "assets/images/tonos/ani-k-025-2/03-zoe.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/RUBOR_LIQUIDO_TONO_3_1000X1000_884682bd-fbc0-49b4-8043-f29e398a9c78.jpg"
+        },
+        {
+          "name": "04 Rose",
+          "image": "assets/images/tonos/ani-k-025-2/04-rose.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/RUBOR_LIQUIDO_TONO_4_1000X1000_fdf14b12-6d9b-4e3d-9ca5-ac8ebc534650.jpg"
+        },
+        {
+          "name": "05 Pink Crush",
+          "image": "assets/images/tonos/ani-k-025-2/05-pink-crush.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/RUBOR_LIQUIDO_05_1000X1000_05cc79c6-0116-4736-995a-626f64b2760f.jpg"
+        },
+        {
+          "name": "06 Martini",
+          "image": "assets/images/tonos/ani-k-025-2/06-martini.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/RUBOR_LIQUIDO_06_1000X1000_f4f06f1d-0d52-47cc-bd9a-8af55a7e2ce2.jpg"
+        },
+        {
+          "name": "07 Sangria",
+          "image": "assets/images/tonos/ani-k-025-2/07-sangria.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/1_05b00889-8a57-4e97-95c6-0b59afc14822.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://anikmakeup.com/products/rubor-liquido-bonita"
     },
     {
       "id": "ani-k-026-1",
@@ -3205,7 +3414,53 @@
           "alt": "Rubor en polvo Bonita: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 26
+      "page": 26,
+      "shades": [
+        {
+          "name": "01 Taylor",
+          "image": "assets/images/tonos/ani-k-026-1/01-taylor.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/CA1485_01_a.jpg"
+        },
+        {
+          "name": "02 Dua",
+          "image": "assets/images/tonos/ani-k-026-1/02-dua.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/Rubor_Blush_02_1000_x_1000.jpg"
+        },
+        {
+          "name": "03 Selena",
+          "image": "assets/images/tonos/ani-k-026-1/03-selena.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/Rubor_Blush_03_1000_x_1000.jpg"
+        },
+        {
+          "name": "04 Katy",
+          "image": "assets/images/tonos/ani-k-026-1/04-katy.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/tono_04.jpg"
+        },
+        {
+          "name": "05 Kitty",
+          "image": "assets/images/tonos/ani-k-026-1/05-kitty.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/Rubor_Blush_05_1000_x_1000.jpg"
+        },
+        {
+          "name": "06 Becca",
+          "image": "assets/images/tonos/ani-k-026-1/06-becca.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/Rubor_Blush_06_1000_x_1000_834a7c8a-c4e9-4b19-82b6-82da1031a4a5.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://anikmakeup.com/products/rubor-bonita"
     },
     {
       "id": "ani-k-027-1",
@@ -3227,7 +3482,32 @@
           "alt": "Lip Gloss: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 27
+      "page": 27,
+      "shades": [
+        {
+          "name": "Kim",
+          "image": "assets/images/tonos/ani-k-027-1/kim.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/BRILLO_TONO_2_1000X1000_e60b241f-988f-42b1-a636-a8205540c77a.jpg"
+        },
+        {
+          "name": "Diva",
+          "image": "assets/images/tonos/ani-k-027-1/diva.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/BRILLO_TONO_1_1000X1000_0d6acff2-93ed-4df0-ab24-da0b355fa841.jpg"
+        },
+        {
+          "name": "Angel",
+          "image": "assets/images/tonos/ani-k-027-1/angel.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0746/7404/5236/files/BRILLO_TONO_3_1000X1000_6b4fc1fe-2fbc-40f6-ab98-cd91159bef45.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://anikmakeup.com/products/gloss-bonita"
     },
     {
       "id": "ani-k-028-1",

@@ -201,8 +201,10 @@ def shades_for(product, url):
         return None, f'sin tonos en la página ({items})', url
     shades, seen = [], set()
     for raw_name, src in items:
-        # Solo formato: espacios dobles, "tono " repetido al inicio y mayúscula inicial ("00 light" -> "00 Light").
+        # Solo formato: espacios dobles, "tono " repetido al inicio, guion tras el número y mayúscula inicial.
         name = re.sub(r'^tono\s+', '', re.sub(r'\s+', ' ', raw_name or '').strip(), flags=re.I)
+        name = re.sub(r'^(\d+(?:\.\d+)?)\s*-\s*', r'\1 ', name)          # "00-Anne" -> "00 Anne"
+
         name = re.sub(r'^([^A-Za-zÁÉÍÓÚÑáéíóúñ]*)([a-záéíóúñ])', lambda m: m.group(1) + m.group(2).upper(), name)
         if not name or name in seen:
             continue
