@@ -556,6 +556,8 @@ Se corrigen **en la web** (`TEXT_FIXES` y `BRAND_FIXES` en `scripts/extract-cata
 
 La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) con el nombre y la foto de la página oficial de la marca; el elegido se agrega al mensaje de WhatsApp. Decisión de Ágata Beauty: se muestran **todos** los tonos de la página oficial (con el aviso de confirmar disponibilidad). Los enlaces y los ajustes de nombres están en `scripts/fetch-shades.py` (`SHADE_PAGES`, `SHADE_NAME_FIXES`).
 
+**Total: 58 productos de 12 marcas, con 312 tonos, colores, sabores, estilos o aromas.**
+
 | Marca | Productos con tonos | Fuente |
 | --- | ---: | --- |
 | Montoc | 10 | montoccosmetictools.com |
@@ -573,7 +575,7 @@ La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) 
 
 Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
 
-Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Samy "Coffe Toffee" → Coffee Toffee; Lula "Magico" → Mágico, "Careza" → Cereza y "Colageno" → Colágeno; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
+Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Samy "Coffe Toffee" → Coffee Toffee; Lula "Magico" → Mágico, "Careza" → Cereza y "Colageno" → Colágeno; Raquel "Traslucidos" → Traslúcidos; OG "Coray" → Coral; Milagros "Bali" → Balí; Fantiluna "Exploción Tropical" → Explosión Tropical y "Seduccion" → Seducción; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
 
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 

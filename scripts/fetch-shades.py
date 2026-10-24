@@ -157,6 +157,11 @@ SHADE_NAME_FIXES = {
     'Lula|Lápiz delineador de ojos': {'magico': 'Mágico'},
     'Lula|Aceite para labios con charm': {'careza': 'Cereza'},
     'Lula|Toallas húmedas desmaquillantes': {'colageno': 'Colágeno'},
+    'Raquel|Polvo suelto traslúcido mate minerals con avena y trigo': {'1 traslucidos': '1 Traslúcidos'},
+    'OG|Rubor matte Daily': {'02 coray': '02 Coral'},
+    'Milagros|Perfume capilar y corporal': {'bali': 'Balí'},   # como lo escribe el catálogo
+    'Fantiluna|Exfoliante corporal x 220ml': {'exploción tropical': 'Explosión Tropical'},
+    'Fantiluna|Crema corporal': {'seduccion': 'Seducción'},
 }
 
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
