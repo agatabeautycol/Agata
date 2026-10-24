@@ -39,8 +39,14 @@ SHADE_PAGES = {
     'Montoc|Kit de brochas de maquillaje Fluffy x 10': 'https://montoccosmetictools.com/products/kit-profesional-de-brochas-flofi-x-10-piezas',
     'Montoc|Brocha mini viajera': 'https://montoccosmetictools.com/products/brochas-minimi',
     # Bloomshell: bloomshell.co es la tienda oficial; las otras son tiendas que revenden la marca.
-    'Bloomshell|Base líquida 2 en 1 My foundation': 'https://bloomshell.co/search?q=BASE+LIQUIDA+MY+FOUNDATION',
-    'Bloomshell|Corrector My concealer': 'https://bloomshell.co/search?q=Corrector+My+concealer',
+    # En bloomshell.co cada tono es un producto aparte: "My foundation 2 en 1 (base líquida)(vainilla)".
+    'Bloomshell|Base líquida 2 en 1 My foundation': {
+        'store': 'https://bloomshell.co', 'title': r'^my foundation 2 en 1 \(base l[ií]quida\)\((?P<tono>[^)]+)\)$',
+        'source': 'https://bloomshell.co/search?q=BASE+LIQUIDA+MY+FOUNDATION'},
+    # Tonos del tamaño 10 ml (los 9 del "big" de 20 ml / Jumbo están incluidos).
+    'Bloomshell|Corrector My concealer': {
+        'store': 'https://bloomshell.co', 'title': r'^(?:corrector )?my concealer new 10 ml \((?P<tono>[^)]+)\)$',
+        'source': 'https://bloomshell.co/search?q=Corrector+My+concealer'},
     'Bloomshell|Rubor en barra Cherry Blossom': 'https://www.girlymaquillaje.com/producto/rubor-cherry-blosson-bloomshell/',
     'Bloomshell|Trío de Rubores': 'https://mysticstore.com.co/producto/velvet-rubor-x3-bloomshell/',
     'Bloomshell|Contorno en barra Bloom define': 'https://kromaspace.com/producto/contorno-en-barra-bloom-define-bloomshell/',
@@ -102,6 +108,26 @@ def square(img):
     return canvas.convert('RGB')
 
 
+def shopify_by_title(store, title, source):
+    """Tienda Shopify que publica cada tono como un producto aparte: se recorren todos sus productos
+    (/products.json) y se toma el tono del título con la expresión `title` (grupo "tono")."""
+    rx = re.compile(title, re.I)
+    items, page = [], 1
+    while True:
+        batch = json.loads(get(f'{store}/products.json?limit=250&page={page}'))['products']
+        if not batch:
+            break
+        for p in batch:
+            m = rx.match(p['title'].strip())
+            if m:
+                tone = m.group('tono').replace('-', ' ').strip()
+                tone = tone.lower()                                  # "mÉdium deep" -> "médium deep"
+                items.append((tone, p['images'][0]['src'].split('?')[0] if p['images'] else None))
+        page += 1
+    items.sort(key=lambda t: t[0])
+    return ('Tono' if items else None), items, source
+
+
 def shopify_options(url):
     """Tienda Shopify: (nombre de la opción, [(tono, url de foto)], url del producto)."""
     parts = urlsplit(url)
@@ -157,13 +183,18 @@ def woocommerce_options(url):
 
 
 def shades_for(product, url):
-    shopify = '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search')
-    option, items, url = (shopify_options if shopify else woocommerce_options)(url)
+    if isinstance(url, dict):
+        option, items, url = shopify_by_title(url['store'], url['title'], url['source'])
+    else:
+        shopify = '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search')
+        option, items, url = (shopify_options if shopify else woocommerce_options)(url)
     if option is None:
         return None, f'sin tonos en la página ({items})', url
     shades, seen = [], set()
     for raw_name, src in items:
-        name = re.sub(r'\s+', ' ', raw_name or '').strip()   # solo espacios dobles
+        # Solo formato: espacios dobles, "tono " repetido al inicio y mayúscula inicial ("00 light" -> "00 Light").
+        name = re.sub(r'^tono\s+', '', re.sub(r'\s+', ' ', raw_name or '').strip(), flags=re.I)
+        name = re.sub(r'^([^A-Za-zÁÉÍÓÚÑáéíóúñ]*)([a-záéíóúñ])', lambda m: m.group(1) + m.group(2).upper(), name)
         if not name or name in seen:
             continue
         seen.add(name)
@@ -177,6 +208,10 @@ def shades_for(product, url):
             pic.save(path, 'WEBP', quality=90, method=6)
             shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height, imageSource=src)
         shades.append(shade)
+    # Si todos los tonos llevan número ("Pink 01", "02 Tropical bronze"), se ordenan por ese número.
+    nums = [re.search(r'\d+(?:\.\d+)?', s['name']) for s in shades]
+    if shades and all(nums):
+        shades = [s for _, s in sorted(zip((float(n.group()) for n in nums), shades), key=lambda t: t[0])]
     return shades, option, url
 
 
@@ -199,9 +234,13 @@ def main():
         if not shades:
             print(f'-- {key}: {note}')
             continue
-        fixes = SHADE_NAME_FIXES.get(key, {})
-        product['shades'] = [{**s, 'name': fixes.get(s['name'], s['name'])} for s in shades]
+        fixes = {k.lower(): v for k, v in SHADE_NAME_FIXES.get(key, {}).items()}
+        product['shades'] = [{**s, 'name': fixes.get(s['name'].lower(), s['name'])} for s in shades]
         product['shadesLabel'] = option_label(note)
+        used = {s.get('image') for s in product['shades']}
+        for old in (OUT / product['id']).glob('*.webp'):     # fotos de tonos que ya no existen
+            if str(old.relative_to(ROOT)) not in used:
+                old.unlink()
         product['shadesSource'] = page_url
         sin_foto = sum(1 for s in shades if 'image' not in s)
         print(f'ok {key}: {len(shades)} × {product["shadesLabel"]} (opción «{note}» en la tienda)' + (f', {sin_foto} sin foto' if sin_foto else ''))

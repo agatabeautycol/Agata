@@ -1862,15 +1862,15 @@
       "page": 5,
       "shades": [
         {
-          "name": "02 Tropical bronze",
-          "image": "assets/images/tonos/montoc-005-1/02-tropical-bronze.webp",
+          "name": "01 Golden sun",
+          "image": "assets/images/tonos/montoc-005-1/01-golden-sun.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
         },
         {
-          "name": "01 Golden sun",
-          "image": "assets/images/tonos/montoc-005-1/01-golden-sun.webp",
+          "name": "02 Tropical bronze",
+          "image": "assets/images/tonos/montoc-005-1/02-tropical-bronze.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/3_61bbb7b5-2587-4093-b4bb-597459fc3073.jpg"
@@ -1902,18 +1902,18 @@
       "page": 5,
       "shades": [
         {
-          "name": "02 Macchiato",
-          "image": "assets/images/tonos/montoc-005-2/02-macchiato.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/SwashesWhite_jpg.jpg"
-        },
-        {
           "name": "01 Bare Bronzer",
           "image": "assets/images/tonos/montoc-005-2/01-bare-bronzer.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/SwashesWhite2_jpg.jpg"
+        },
+        {
+          "name": "02 Macchiato",
+          "image": "assets/images/tonos/montoc-005-2/02-macchiato.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/SwashesWhite_jpg.jpg"
         }
       ],
       "shadesSource": "https://montoccosmetictools.com/products/bronzer-luminoso-en-polvo-polvo-bronceador-para-todos-los-tonos-de-piel",
@@ -2193,6 +2193,27 @@
       "page": 9,
       "shades": [
         {
+          "name": "Fucsia",
+          "image": "assets/images/tonos/montoc-009-2/lp667.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP667_2.jpg"
+        },
+        {
+          "name": "Rojo",
+          "image": "assets/images/tonos/montoc-009-2/lp668.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-LP668_1.jpg"
+        },
+        {
+          "name": "Lila",
+          "image": "assets/images/tonos/montoc-009-2/lp669.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-669_1.jpg"
+        },
+        {
           "name": "Vino",
           "image": "assets/images/tonos/montoc-009-2/lp670.webp",
           "imageWidth": 240,
@@ -2205,27 +2226,6 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP671.jpg"
-        },
-        {
-          "name": "Fucsia",
-          "image": "assets/images/tonos/montoc-009-2/lp667.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP667_2.jpg"
-        },
-        {
-          "name": "Lila",
-          "image": "assets/images/tonos/montoc-009-2/lp669.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-669_1.jpg"
-        },
-        {
-          "name": "Rojo",
-          "image": "assets/images/tonos/montoc-009-2/lp668.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-LP668_1.jpg"
         }
       ],
       "shadesSource": "https://montoccosmetictools.com/products/kit-profesional-de-brochas-flofi-x-10-piezas",
@@ -2329,7 +2329,88 @@
           "alt": "Base líquida 2 en 1 My foundation: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 11
+      "page": 11,
+      "shades": [
+        {
+          "name": "Almendra",
+          "image": "assets/images/tonos/bloomshell-011-1/almendra.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/35.png"
+        },
+        {
+          "name": "Capuchino",
+          "image": "assets/images/tonos/bloomshell-011-1/capuchino.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/55.png"
+        },
+        {
+          "name": "Cocoa",
+          "image": "assets/images/tonos/bloomshell-011-1/cocoa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/55-4.png"
+        },
+        {
+          "name": "Light",
+          "image": "assets/images/tonos/bloomshell-011-1/light.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/29-2.png"
+        },
+        {
+          "name": "Light neutral",
+          "image": "assets/images/tonos/bloomshell-011-1/light-neutral.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/33-2.png"
+        },
+        {
+          "name": "Medium beige",
+          "image": "assets/images/tonos/bloomshell-011-1/medium-beige.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/45-3.png"
+        },
+        {
+          "name": "Médium deep",
+          "image": "assets/images/tonos/bloomshell-011-1/medium-deep.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-1_a94c35b0-1cfc-450c-8b5d-06b8fc6b5799.png"
+        },
+        {
+          "name": "Neutral beige",
+          "image": "assets/images/tonos/bloomshell-011-1/neutral-beige.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/41-5.png"
+        },
+        {
+          "name": "Neutral médium",
+          "image": "assets/images/tonos/bloomshell-011-1/neutral-medium.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/40-2.png"
+        },
+        {
+          "name": "Nude",
+          "image": "assets/images/tonos/bloomshell-011-1/nude.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/35-2.png"
+        },
+        {
+          "name": "Vainilla",
+          "image": "assets/images/tonos/bloomshell-011-1/vainilla.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/43-4.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://bloomshell.co/search?q=BASE+LIQUIDA+MY+FOUNDATION"
     },
     {
       "id": "bloomshell-011-2",
@@ -2361,7 +2442,116 @@
           "alt": "Corrector My concealer: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 11
+      "page": 11,
+      "shades": [
+        {
+          "name": "00 Light",
+          "image": "assets/images/tonos/bloomshell-011-2/00-light.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/323-1-1.png"
+        },
+        {
+          "name": "01 Natural",
+          "image": "assets/images/tonos/bloomshell-011-2/01-natural.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/327-1.png"
+        },
+        {
+          "name": "02 Beige",
+          "image": "assets/images/tonos/bloomshell-011-2/02-beige.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/329.png"
+        },
+        {
+          "name": "03 Vainilla",
+          "image": "assets/images/tonos/bloomshell-011-2/03-vainilla.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/331.png"
+        },
+        {
+          "name": "04 Ivory",
+          "image": "assets/images/tonos/bloomshell-011-2/04-ivory.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/333.png"
+        },
+        {
+          "name": "05 Espresso",
+          "image": "assets/images/tonos/bloomshell-011-2/05-espresso.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/337.png"
+        },
+        {
+          "name": "5.5 Desert",
+          "image": "assets/images/tonos/bloomshell-011-2/5-5-desert.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/339-1.png"
+        },
+        {
+          "name": "06 Orange",
+          "image": "assets/images/tonos/bloomshell-011-2/06-orange.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/341.png"
+        },
+        {
+          "name": "08 Cocoa",
+          "image": "assets/images/tonos/bloomshell-011-2/08-cocoa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/345.png"
+        },
+        {
+          "name": "09 Lila",
+          "image": "assets/images/tonos/bloomshell-011-2/09-lila.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/347.png"
+        },
+        {
+          "name": "9.5 Caviar",
+          "image": "assets/images/tonos/bloomshell-011-2/9-5-caviar.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/PAGINAWEBDETALCONINFORMACIONLEGALSOLICITADA_91.png"
+        },
+        {
+          "name": "10 Yellow",
+          "image": "assets/images/tonos/bloomshell-011-2/10-yellow.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-2-90_69dd64a0-e63a-48aa-b12b-20667003424c.png"
+        },
+        {
+          "name": "11 Green",
+          "image": "assets/images/tonos/bloomshell-011-2/11-green.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-2-91.png"
+        },
+        {
+          "name": "12 Blue",
+          "image": "assets/images/tonos/bloomshell-011-2/12-blue.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-2-92.png"
+        },
+        {
+          "name": "13 White",
+          "image": "assets/images/tonos/bloomshell-011-2/13-white.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/PAGINAWEBDETALCONINFORMACIONLEGALSOLICITADA_90.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://bloomshell.co/search?q=Corrector+My+concealer"
     },
     {
       "id": "bloomshell-012-1",
@@ -2427,7 +2617,39 @@
           "alt": "Rubor en barra Cherry Blossom: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 13
+      "page": 13,
+      "shades": [
+        {
+          "name": "01",
+          "image": "assets/images/tonos/bloomshell-013-1/01.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://www.girlymaquillaje.com/wp-content/uploads/WhatsApp-Image-2026-02-24-at-16.04.03.jpeg"
+        },
+        {
+          "name": "02",
+          "image": "assets/images/tonos/bloomshell-013-1/02.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://www.girlymaquillaje.com/wp-content/uploads/WhatsApp-Image-2026-02-24-at-16.04.03-1.jpeg"
+        },
+        {
+          "name": "03",
+          "image": "assets/images/tonos/bloomshell-013-1/03.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://www.girlymaquillaje.com/wp-content/uploads/WhatsApp-Image-2026-02-24-at-16.04.04.jpeg"
+        },
+        {
+          "name": "04",
+          "image": "assets/images/tonos/bloomshell-013-1/04.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://www.girlymaquillaje.com/wp-content/uploads/WhatsApp-Image-2026-02-24-at-16.04.05.jpeg"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.girlymaquillaje.com/producto/rubor-cherry-blosson-bloomshell/"
     },
     {
       "id": "bloomshell-013-2",
@@ -2449,7 +2671,74 @@
           "alt": "Trío de Rubores: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 13
+      "page": 13,
+      "shades": [
+        {
+          "name": "Pink 01",
+          "image": "assets/images/tonos/bloomshell-013-2/pink-01.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-soft-pink-01.webp"
+        },
+        {
+          "name": "Peach 02",
+          "image": "assets/images/tonos/bloomshell-013-2/peach-02.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-peach-glow-02.webp"
+        },
+        {
+          "name": "Terracota 03",
+          "image": "assets/images/tonos/bloomshell-013-2/terracota-03.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-warm-terracota-03.webp"
+        },
+        {
+          "name": "Melon 04",
+          "image": "assets/images/tonos/bloomshell-013-2/melon-04.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-sweet-melon-04.webp"
+        },
+        {
+          "name": "Sandia 05",
+          "image": "assets/images/tonos/bloomshell-013-2/sandia-05.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-Crush-x3-Water-Melon-Blomshell.jpeg"
+        },
+        {
+          "name": "Cherry 06",
+          "image": "assets/images/tonos/bloomshell-013-2/cherry-06.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-x-3-Bloomshell-Cherry-.jpeg"
+        },
+        {
+          "name": "Purple 07",
+          "image": "assets/images/tonos/bloomshell-013-2/purple-07.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-Crush-x3-Lavanda-Blomshell.jpeg"
+        },
+        {
+          "name": "Magenta 08",
+          "image": "assets/images/tonos/bloomshell-013-2/magenta-08.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-x3-Bloomshell-magenta.jpeg"
+        },
+        {
+          "name": "Vino 09",
+          "image": "assets/images/tonos/bloomshell-013-2/vino-09.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-velvet-wine-09.webp"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://mysticstore.com.co/producto/velvet-rubor-x3-bloomshell/"
     },
     {
       "id": "bloomshell-014-1",
@@ -2471,7 +2760,32 @@
           "alt": "Contorno en barra Bloom define: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 14
+      "page": 14,
+      "shades": [
+        {
+          "name": "Contour 01",
+          "image": "assets/images/tonos/bloomshell-014-1/contour-01.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+        },
+        {
+          "name": "Bronzy 02",
+          "image": "assets/images/tonos/bloomshell-014-1/bronzy-02.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+        },
+        {
+          "name": "Dark 03",
+          "image": "assets/images/tonos/bloomshell-014-1/dark-03.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://kromaspace.com/wp-content/uploads/2026/02/CA-Contorno-en-barra-Bloom-define-Bloomshell-1.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://kromaspace.com/producto/contorno-en-barra-bloom-define-bloomshell/"
     },
     {
       "id": "bloomshell-014-2",
