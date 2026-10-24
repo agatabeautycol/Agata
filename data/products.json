@@ -3590,10 +3590,10 @@
           "name": "Canela"
         },
         {
-          "name": "Cafeina"
+          "name": "Cafeína"
         },
         {
-          "name": "Cherrs"
+          "name": "Cherry"
         },
         {
           "name": "Candy"
@@ -3737,7 +3737,7 @@
           "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_08.jpg"
         },
         {
-          "name": "Eboky",
+          "name": "Ebony",
           "image": "assets/images/tonos/atenea-030-1/eboky.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -3822,16 +3822,16 @@
       "page": 32,
       "shades": [
         {
-          "name": "Dustyrose"
+          "name": "Dusty Rose"
         },
         {
           "name": "Salmon"
         },
         {
-          "name": "Peachmelba"
+          "name": "Peach Melba"
         },
         {
-          "name": "Pinkpearl"
+          "name": "Pink Pearl"
         }
       ],
       "shadesLabel": "Color",
@@ -3881,7 +3881,7 @@
           "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/OT_00011025_ECATENEA_07374.jpg"
         },
         {
-          "name": "Tostedcoconut",
+          "name": "Toasted Coconut",
           "image": "assets/images/tonos/atenea-033-1/tostedcoconut.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -4024,7 +4024,7 @@
       "page": 37,
       "shades": [
         {
-          "name": "Tropicalb",
+          "name": "Tropical B",
           "image": "assets/images/tonos/atenea-037-1/tropicalb.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -4052,7 +4052,7 @@
           "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/Frame19_341fd616-4a45-47af-93cb-42201a316cbf.png"
         },
         {
-          "name": "Nakedmind",
+          "name": "Naked Mind",
           "image": "assets/images/tonos/atenea-037-1/nakedmind.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -4106,7 +4106,7 @@
       "page": 38,
       "shades": [
         {
-          "name": "Aublight",
+          "name": "Light",
           "image": "assets/images/tonos/atenea-038-1/aublight.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -4153,22 +4153,22 @@
       "page": 39,
       "shades": [
         {
-          "name": "Palepink"
+          "name": "Pale Pink"
         },
         {
-          "name": "Coolwood"
+          "name": "Cool Wood"
         },
         {
-          "name": "Nudedark"
+          "name": "Nude Dark"
         },
         {
-          "name": "Gojiberry"
+          "name": "Goji Berry"
         },
         {
-          "name": "Clearwine"
+          "name": "Clear Wine"
         },
         {
-          "name": "Darksand"
+          "name": "Dark Sand"
         },
         {
           "name": "Sunrise"

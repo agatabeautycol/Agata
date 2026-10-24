@@ -562,10 +562,12 @@ La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) 
 | Bloomshell | 5 | bloomshell.co (base y corrector: cada tono es un producto aparte); Cherry Blossom en girlymaquillaje.com, Trío de rubores (Velvet rubor x3) en mysticstore.com.co y Contorno Bloom define en kromaspace.com (tiendas que revenden la marca) |
 | Girly | 1 | cocopinkstore.com (tienda que revende la marca) |
 | Ani-k | 6 | anikmakeup.com |
+| Majikal | 2 | majikalbeauty.com (una misma foto para todos los tonos: se muestran solo los nombres) |
+| Atenea | 8 | ateneaprofesional.com (Rubor compacto sin fotos y Color pencil con una sola foto: solo nombres) |
 
 Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
 
-Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
+Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
 
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 

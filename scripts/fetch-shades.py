@@ -85,6 +85,16 @@ SHADE_NAME_FIXES = {
     'Montoc|Brocha mini viajera': {'Sulpting': 'Sculpting'},
     # La tienda escribe "mÉdium"; se deja sin tilde, igual que "Medium beige".
     'Bloomshell|Base líquida 2 en 1 My foundation': {'Médium deep': 'Medium deep', 'Neutral médium': 'Neutral medium'},
+    # Atenea escribe los tonos como códigos en mayúsculas y con las palabras pegadas.
+    'Atenea|Rubor compacto 1ST Scene': {'dustyrose': 'Dusty Rose', 'peachmelba': 'Peach Melba', 'pinkpearl': 'Pink Pearl'},
+    'Atenea|Pigmento Soft Touch': {'tropicalb': 'Tropical B', 'nakedmind': 'Naked Mind'},
+    'Atenea|Lápiz delineador Color pencil': {   # así los escribe la tienda en la descripción del producto
+        'palepink': 'Pale Pink', 'coolwood': 'Cool Wood', 'nudedark': 'Nude Dark', 'gojiberry': 'Goji Berry',
+        'clearwine': 'Clear Wine', 'darksand': 'Dark Sand'},
+    'Atenea|Delineador de cejas': {'aublight': 'Light'},   # la foto de la tienda dice "Light – café claro"
+    'Atenea|Base de maquillaje 1ST Scene': {'eboky': 'Ebony'},
+    'Atenea|Bronzer cremoso en barra': {'tostedcoconut': 'Toasted Coconut'},
+    'Majikal|Magic Pen': {'cafeina': 'Cafeína', 'cherrs': 'Cherry'},
 }
 
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
