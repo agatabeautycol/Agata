@@ -552,6 +552,16 @@ Se corrigen **en la web** (`TEXT_FIXES` y `BRAND_FIXES` en `scripts/extract-cata
 - **Pruebas (`scripts/test-ux.cjs`):** 74/74 correctas en celular (390×844) y computador (1280×900): búsqueda con y sin tildes y con varias palabras, filtros con contadores cruzados, agrupación (27 marcas / 8 categorías / sin agrupar), orden, detalle (Esc, "Volver", atrás del navegador), WhatsApp con producto y marca, enlaces directos, vista catálogo (132 páginas), estado sin resultados, todas las imágenes cargan, sin errores de JavaScript, sin scroll horizontal y 404 con la marca.
 - **Optimización:** fotos WebP a su resolución real (~5 MB los 249 productos, carga diferida), páginas del catálogo WebP de 900 px (~70 KB c/u, carga diferida), imagen JPG para compartir el enlace (`assets/og-portada.jpg`), Open Graph con la dirección definitiva, `canonical`, favicon, H1/H2/H3, foco visible y respeto de "reducir movimiento".
 
+## Tonos con nombre y foto (desde la página oficial)
+
+La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) con el nombre y la foto de la página oficial de la marca; el elegido se agrega al mensaje de WhatsApp. Decisión de Ágata Beauty: se muestran **todos** los tonos de la página oficial (con el aviso de confirmar disponibilidad). Los enlaces y los ajustes de nombres están en `scripts/fetch-shades.py` (`SHADE_PAGES`, `SHADE_NAME_FIXES`).
+
+| Marca | Productos con tonos | Fuente |
+| --- | ---: | --- |
+| Montoc | 10 | montoccosmetictools.com |
+
+Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
+
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 
 1. **Fotos en alta resolución** de los 249 productos (ver la lista por marca).

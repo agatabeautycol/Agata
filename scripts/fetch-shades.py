@@ -39,8 +39,21 @@ SHADE_PAGES = {
     'Montoc|Brocha mini viajera': 'https://montoccosmetictools.com/products/brochas-minimi',
 }
 
-# Erratas en los nombres de la página oficial, corregidas solo con autorización de Ágata Beauty.
-SHADE_NAME_FIXES = {}
+# Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
+SHADE_NAME_FIXES = {
+    # "Glow Filter" ya está en el nombre del producto (y la tienda escribe "Gow Filter" en 7 de 8).
+    'Montoc|Base Glow Filter': {
+        '1.0 Light Glow Filter': '1.0 Light', '1.5 Light neutral Gow Filter': '1.5 Light neutral',
+        '2.0 Light sand Gow Filter': '2.0 Light sand', '2.5 Light medium Gow Filter': '2.5 Light medium',
+        '3.0 Medium neutral Gow Filter': '3.0 Medium neutral', '3.5 Medium olive Gow Filter': '3.5 Medium olive',
+        '4.0 Medium moyen Gow Filter': '4.0 Medium moyen', '4.5 Sun tan Gow Filter': '4.5 Sun tan',
+    },
+    # La tienda usa códigos; se nombran por el color del círculo que marca cada kit en su foto.
+    'Montoc|Kit de brochas de maquillaje Fluffy x 10': {
+        'lp670': 'Vino', 'lp671': 'Rosa claro', 'lp667': 'Fucsia', 'lp669': 'Lila', 'lp668': 'Rojo',
+    },
+    'Montoc|Brocha mini viajera': {'Sulpting': 'Sculpting'},
+}
 
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
 SHADE_OPTIONS = re.compile(r'tono|color|colou?r|shade|tonalidad|matiz|referencia|modelo|aroma', re.I)
@@ -132,12 +145,13 @@ def main():
         if not shades:
             print(f'-- {key}: {note}')
             continue
-        product['shades'] = [{**s, 'name': SHADE_NAME_FIXES.get(s['name'], s['name'])} for s in shades]
+        fixes = SHADE_NAME_FIXES.get(key, {})
+        product['shades'] = [{**s, 'name': fixes.get(s['name'], s['name'])} for s in shades]
         product['shadesLabel'] = option_label(note)
         product['shadesSource'] = url
         sin_foto = sum(1 for s in shades if 'image' not in s)
         print(f'ok {key}: {len(shades)} × {product["shadesLabel"]} (opción «{note}» en la tienda)' + (f', {sin_foto} sin foto' if sin_foto else ''))
-        for s in shades:
+        for s in product['shades']:
             print(f"     · {s['name']}")
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 

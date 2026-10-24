@@ -1644,56 +1644,56 @@
       "page": 3,
       "shades": [
         {
-          "name": "1.0 Light Glow Filter",
+          "name": "1.0 Light",
           "image": "assets/images/tonos/montoc-003-1/1-0-light-glow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/glow_filter_montoc_pre_base_para_maquillaje.jpg"
         },
         {
-          "name": "1.5 Light neutral Gow Filter",
+          "name": "1.5 Light neutral",
           "image": "assets/images/tonos/montoc-003-1/1-5-light-neutral-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_1.5_04cf379d-9f06-47ed-b136-6fe2ef32934a.jpg"
         },
         {
-          "name": "2.0 Light sand Gow Filter",
+          "name": "2.0 Light sand",
           "image": "assets/images/tonos/montoc-003-1/2-0-light-sand-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_2.0.jpg"
         },
         {
-          "name": "2.5 Light medium Gow Filter",
+          "name": "2.5 Light medium",
           "image": "assets/images/tonos/montoc-003-1/2-5-light-medium-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_2.5.jpg"
         },
         {
-          "name": "3.0 Medium neutral Gow Filter",
+          "name": "3.0 Medium neutral",
           "image": "assets/images/tonos/montoc-003-1/3-0-medium-neutral-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_3.0.jpg"
         },
         {
-          "name": "3.5 Medium olive Gow Filter",
+          "name": "3.5 Medium olive",
           "image": "assets/images/tonos/montoc-003-1/3-5-medium-olive-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_3.5.jpg"
         },
         {
-          "name": "4.0 Medium moyen Gow Filter",
+          "name": "4.0 Medium moyen",
           "image": "assets/images/tonos/montoc-003-1/4-0-medium-moyen-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/TONO_4.0.jpg"
         },
         {
-          "name": "4.5 Sun tan Gow Filter",
+          "name": "4.5 Sun tan",
           "image": "assets/images/tonos/montoc-003-1/4-5-sun-tan-gow-filter.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -2193,35 +2193,35 @@
       "page": 9,
       "shades": [
         {
-          "name": "lp670",
+          "name": "Vino",
           "image": "assets/images/tonos/montoc-009-2/lp670.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-LP670.jpg"
         },
         {
-          "name": "lp671",
+          "name": "Rosa claro",
           "image": "assets/images/tonos/montoc-009-2/lp671.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP671.jpg"
         },
         {
-          "name": "lp667",
+          "name": "Fucsia",
           "image": "assets/images/tonos/montoc-009-2/lp667.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY_ECOMMERCE_LP667_2.jpg"
         },
         {
-          "name": "lp669",
+          "name": "Lila",
           "image": "assets/images/tonos/montoc-009-2/lp669.webp",
           "imageWidth": 240,
           "imageHeight": 240,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/FLUFFY-ECOMMERCE-669_1.jpg"
         },
         {
-          "name": "lp668",
+          "name": "Rojo",
           "image": "assets/images/tonos/montoc-009-2/lp668.webp",
           "imageWidth": 240,
           "imageHeight": 240,
@@ -2271,7 +2271,7 @@
       "page": 10,
       "shades": [
         {
-          "name": "Sulpting",
+          "name": "Sculpting",
           "image": "assets/images/tonos/montoc-010-2/sulpting.webp",
           "imageWidth": 240,
           "imageHeight": 240,
