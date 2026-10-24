@@ -50,6 +50,13 @@ SHADE_PAGES = {
     'Bloomshell|Rubor en barra Cherry Blossom': 'https://www.girlymaquillaje.com/producto/rubor-cherry-blosson-bloomshell/',
     'Bloomshell|Trío de Rubores': 'https://mysticstore.com.co/producto/velvet-rubor-x3-bloomshell/',
     'Bloomshell|Contorno en barra Bloom define': 'https://kromaspace.com/producto/contorno-en-barra-bloom-define-bloomshell/',
+    'Girly|Girly TINT Labios y mejillas': 'https://cocopinkstore.com/products/tinta-de-labios-girly',   # tienda que revende Girly
+    'Ani-k|2 en 1: base y corrector': 'https://anikmakeup.com/products/base-bonita',
+    'Ani-k|Loose powder Polvos sueltos': 'https://anikmakeup.com/products/polvo-suelto',
+    'Ani-k|Serum Flyshy Blushy': 'https://anikmakeup.com/products/serum-blush-flushy-blushy',
+    'Ani-k|Rubor líquido Bonita': 'https://anikmakeup.com/products/rubor-liquido-bonita',
+    'Ani-k|Rubor en polvo Bonita': 'https://anikmakeup.com/products/rubor-bonita',
+    'Ani-k|Lip Gloss': 'https://anikmakeup.com/products/gloss-bonita',
 }
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
@@ -66,6 +73,8 @@ SHADE_NAME_FIXES = {
         'lp670': 'Vino', 'lp671': 'Rosa claro', 'lp667': 'Fucsia', 'lp669': 'Lila', 'lp668': 'Rojo',
     },
     'Montoc|Brocha mini viajera': {'Sulpting': 'Sculpting'},
+    # La tienda escribe "mÉdium"; se deja sin tilde, igual que "Medium beige".
+    'Bloomshell|Base líquida 2 en 1 My foundation': {'Médium deep': 'Medium deep', 'Neutral médium': 'Neutral medium'},
 }
 
 # Nombres de opción que indican un tono o color (Shopify llama "Title" a la opción única).
