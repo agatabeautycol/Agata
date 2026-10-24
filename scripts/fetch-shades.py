@@ -89,6 +89,42 @@ SHADE_PAGES = {
     'Lula|Aceite para labios con charm': 'https://lulabeauty.co/products/aceite-para-labios-con-charm',
     'Lula|Bálsamo de labios': 'https://lulabeauty.co/products/balsamo-de-labios',
     'Lula|Toallas húmedas desmaquillantes': 'https://lulabeauty.co/products/toallas-humedas-desmaquillante-pepino-lula',
+    # Raquel en Los Estilistas (tienda que revende la marca): una página por tono. La tienda tiene las fotos
+    # cruzadas (la del "#3 Almendras" es "N2-Miel"), así que se toman solo los nombres.
+    'Raquel|Polvo suelto traslúcido mate minerals con avena y trigo': {
+        'pages': [f'https://losestilistas.com.co/raquel-polvo-suelto-{h}' for h in
+                  ('3-traslucidos', '1a-banana-traslucido', '2-traslucidos', '3-almendras', '4-beige')],
+        'title': r'#\s*(?P<tono>.+)$', 'photos': False,
+        'source': 'https://losestilistas.com.co/search?q=polvo+raquel'},
+    'OG|Base Aqua smooth': 'https://ogmantra.co/products/base-cobertura-media-og',
+    'OG|Base Stay matte': 'https://ogmantra.co/products/base-stay-matte-og',
+    'OG|Rubor mineralizado Daily': 'https://ogmantra.co/products/rubor-mineralizado-daily',
+    'OG|Rubor matte Daily': 'https://ogmantra.co/products/rubor-matte-daily',
+    # Milagros: cada aroma es un producto ("Perfume Capilar y Corporal Bali (Notas Dulces y Relajantes)").
+    'Milagros|Perfume capilar y corporal': {
+        'store': 'https://milagrosbeauty.com', 'title': r'^perfume capilar y corporal (?P<tono>\S+) \(', 'label': 'Aroma',
+        'source': 'https://milagrosbeauty.com/collections/perfumes-capilares'},
+    # Fantiluna (WooCommerce): cada aroma es un producto de la categoría.
+    'Fantiluna|Mantequilla corporal x 220 ml': {
+        'woo': 'https://fantiluna.com', 'category': 340, 'title': r'^mantequilla corporal (?P<tono>.+?)(?: 220 ?ml)?$',
+        'source': 'https://fantiluna.com/categoria-producto/mantequillas-corporales/'},
+    'Fantiluna|Exfoliante corporal x 220ml': {
+        'woo': 'https://fantiluna.com', 'category': 322, 'title': r'^exfoliante corporal (?:de )?(?P<tono>.+)$',
+        'source': 'https://fantiluna.com/categoria-producto/exfoliantes/'},
+    'Fantiluna|Splash corporal x 250 ml': {
+        'woo': 'https://fantiluna.com', 'category': 329, 'title': r'^splash (?:corporal )?(?P<tono>.+?)(?: 250 ?ml)?$',
+        'source': 'https://fantiluna.com/categoria-producto/splash/'},
+    'Fantiluna|Splash corporal x 105 ml': {
+        'woo': 'https://fantiluna.com', 'category': 331,
+        'title': r'^(?:splash mini|mini splash)(?: corporal)? (?P<tono>.+?)(?: 105 ?ml)?$',
+        'source': 'https://fantiluna.com/categoria-producto/splash-mini/'},
+    'Fantiluna|Iluminador corporal x 160 ml': {
+        'woo': 'https://fantiluna.com', 'category': 346, 'title': r'^iluminador corporal (?P<tono>.+)$', 'label': 'Color',
+        'source': 'https://fantiluna.com/categoria-producto/iluminadores-corporales/'},
+    # Crema corporal: aromas de la presentación de 120 ml (cada uno con su foto).
+    'Fantiluna|Crema corporal': {
+        'woo': 'https://fantiluna.com', 'category': 354, 'title': r'^mini crema corporal (?P<tono>.+?)(?: 120 ?ml)?$',
+        'source': 'https://fantiluna.com/cremas-corporales/'},
 }
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
@@ -251,6 +287,35 @@ def vtex_by_title(base, ft, title, source):
     return ('Tono' if items else None), items, source
 
 
+def woo_category(base, category, title, source):
+    """Tienda WooCommerce que publica cada tono como un producto de una categoría (API pública de la tienda)."""
+    rx, items = re.compile(title, re.I), []
+    found = json.loads(get(f'{base}/wp-json/wc/store/v1/products?category={category}&per_page=100'))
+    for product in found:
+        m = rx.match(html.unescape(product['name']).strip())
+        if m and product.get('type') == 'simple':      # los "al por mayor" son productos variables
+            items.append((m.group('tono'), product['images'][0]['src'] if product.get('images') else None))
+    return ('Aroma' if items else None), items, source
+
+
+def pages_ld_json(pages, title, source, photos=True):
+    """Una página por tono: toma el nombre (y la foto) de los datos de producto de cada página."""
+    rx, items = re.compile(title, re.I), []
+    for page in pages:
+        text = get(page).decode('utf-8', 'replace')
+        for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
+            try:
+                data = json.loads(block)
+            except ValueError:
+                continue
+            if data.get('@type') == 'Product':
+                m = rx.search(data['name'].strip())
+                if m:
+                    items.append((m.group('tono'), data.get('image') if photos else None))
+                break
+    return ('Tono' if items else None), items, source
+
+
 def woocommerce_options(url):
     """Tienda WooCommerce: lee las variaciones que la página trae en data-product_variations."""
     page = get(url).decode('utf-8', 'replace')
@@ -277,7 +342,11 @@ def woocommerce_options(url):
 
 
 def shades_for(product, url):
-    if isinstance(url, dict) and 'vtex' in url:
+    if isinstance(url, dict) and 'woo' in url:
+        option, items, url = woo_category(url['woo'], url['category'], url['title'], url['source'])
+    elif isinstance(url, dict) and 'pages' in url:
+        option, items, url = pages_ld_json(url['pages'], url['title'], url['source'], url.get('photos', True))
+    elif isinstance(url, dict) and 'vtex' in url:
         option, items, url = vtex_by_title(url['vtex'], url['ft'], url['title'], url['source'])
     elif isinstance(url, dict):
         option, items, url = shopify_by_title(url['store'], url['title'], url['source'])
@@ -347,7 +416,7 @@ def main():
             continue
         fixes = {k.lower(): v for k, v in SHADE_NAME_FIXES.get(key, {}).items()}
         product['shades'] = [{**s, 'name': fixes.get(s['name'].lower(), s['name'])} for s in shades]
-        product['shadesLabel'] = option_label(note)
+        product['shadesLabel'] = url.get('label') if isinstance(url, dict) and url.get('label') else option_label(note)
         used = {s.get('image') for s in product['shades']}
         for old in (OUT / product['id']).glob('*.webp'):     # fotos de tonos que ya no existen
             if str(old.relative_to(ROOT)) not in used:

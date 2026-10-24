@@ -5506,7 +5506,26 @@
           "alt": "Polvo suelto traslúcido mate minerals con avena y trigo: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 62
+      "page": 62,
+      "shades": [
+        {
+          "name": "1 Traslucidos"
+        },
+        {
+          "name": "1A Banana"
+        },
+        {
+          "name": "2 Miel"
+        },
+        {
+          "name": "3 Almendras"
+        },
+        {
+          "name": "4 Beige"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://losestilistas.com.co/search?q=polvo+raquel"
     },
     {
       "id": "og-063-1",
@@ -5528,7 +5547,60 @@
           "alt": "Base Aqua smooth: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 63
+      "page": 63,
+      "shades": [
+        {
+          "name": "N.2",
+          "image": "assets/images/tonos/og-063-1/n-2.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/1_768f5b00-70b9-4af7-93e1-f488e00bda82.png"
+        },
+        {
+          "name": "N.3",
+          "image": "assets/images/tonos/og-063-1/n-3.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/2_e0e5056f-e282-4913-9ae2-3b3dad739ab3.png"
+        },
+        {
+          "name": "N.4",
+          "image": "assets/images/tonos/og-063-1/n-4.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/5_7835dd41-c0de-417e-b4cf-21859a0d4f92.png"
+        },
+        {
+          "name": "N.4.5",
+          "image": "assets/images/tonos/og-063-1/n-4-5.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/3_6786c535-f2f9-4ef4-bc5c-f17b5457b18b.png"
+        },
+        {
+          "name": "N.5",
+          "image": "assets/images/tonos/og-063-1/n-5.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/6_a7f7fe67-974d-4482-9fc3-b3d9773a7b48.png"
+        },
+        {
+          "name": "N.6",
+          "image": "assets/images/tonos/og-063-1/n-6.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/4_f67e96d2-b533-480d-8421-e3b763f7bc79.png"
+        },
+        {
+          "name": "N.7",
+          "image": "assets/images/tonos/og-063-1/n-7.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/7.png"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ogmantra.co/products/base-cobertura-media-og"
     },
     {
       "id": "og-063-2",
@@ -5550,7 +5622,60 @@
           "alt": "Base Stay matte: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 63
+      "page": 63,
+      "shades": [
+        {
+          "name": "420",
+          "image": "assets/images/tonos/og-063-2/420.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/21.png"
+        },
+        {
+          "name": "425",
+          "image": "assets/images/tonos/og-063-2/425.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/22.png"
+        },
+        {
+          "name": "525",
+          "image": "assets/images/tonos/og-063-2/525.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/23.png"
+        },
+        {
+          "name": "620",
+          "image": "assets/images/tonos/og-063-2/620.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/25.png"
+        },
+        {
+          "name": "625",
+          "image": "assets/images/tonos/og-063-2/625.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/26.png"
+        },
+        {
+          "name": "630",
+          "image": "assets/images/tonos/og-063-2/630.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/27.png"
+        },
+        {
+          "name": "635",
+          "image": "assets/images/tonos/og-063-2/635.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/28.png"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ogmantra.co/products/base-stay-matte-og"
     },
     {
       "id": "og-064-1",
@@ -5572,7 +5697,32 @@
           "alt": "Rubor mineralizado Daily: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 64
+      "page": 64,
+      "shades": [
+        {
+          "name": "01 Doll",
+          "image": "assets/images/tonos/og-064-1/01-doll.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/0.7-DAILYBLUSHMINERALIZADO-DOLL-1.png"
+        },
+        {
+          "name": "02 Peach",
+          "image": "assets/images/tonos/og-064-1/02-peach.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/0.8-DAILYBLUSHMINERALIZADO-PEACH-2.png"
+        },
+        {
+          "name": "03 Prunelle",
+          "image": "assets/images/tonos/og-064-1/03-prunelle.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/0.9-DAILYBLUSHMINERALIZADO-PRUNELLE-3.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://ogmantra.co/products/rubor-mineralizado-daily"
     },
     {
       "id": "og-064-2",
@@ -5594,7 +5744,32 @@
           "alt": "Rubor matte Daily: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 64
+      "page": 64,
+      "shades": [
+        {
+          "name": "01 Crush",
+          "image": "assets/images/tonos/og-064-2/01-crush.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/14-DAILYBLUSHMATE-CRUSH-1.png"
+        },
+        {
+          "name": "02 Coray",
+          "image": "assets/images/tonos/og-064-2/02-coray.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/15-DAILYBLUSHMATE-CORAY-2.png"
+        },
+        {
+          "name": "03 Muse",
+          "image": "assets/images/tonos/og-064-2/03-muse.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0778/3166/8018/files/16-DAILYBLUSHMATE-MUSE-3.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://ogmantra.co/products/rubor-matte-daily"
     },
     {
       "id": "og-065-1",
@@ -6411,7 +6586,53 @@
           "alt": "Perfume capilar y corporal: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 92
+      "page": 92,
+      "shades": [
+        {
+          "name": "Bali",
+          "image": "assets/images/tonos/milagros-092-1/bali.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/bali_1.jpg"
+        },
+        {
+          "name": "Gold",
+          "image": "assets/images/tonos/milagros-092-1/gold.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/gold_1.jpg"
+        },
+        {
+          "name": "Irresistible",
+          "image": "assets/images/tonos/milagros-092-1/irresistible.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/irresistible_1.jpg"
+        },
+        {
+          "name": "Majestuosa",
+          "image": "assets/images/tonos/milagros-092-1/majestuosa.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/majestuosa_1.jpg"
+        },
+        {
+          "name": "Martina",
+          "image": "assets/images/tonos/milagros-092-1/martina.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/martina_1.jpg"
+        },
+        {
+          "name": "Sublime",
+          "image": "assets/images/tonos/milagros-092-1/sublime.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0707/3962/4152/files/sublime_1.jpg"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://milagrosbeauty.com/collections/perfumes-capilares"
     },
     {
       "id": "anyeluz-093-1",
@@ -7602,7 +7823,60 @@
           "alt": "Mantequilla corporal x 220 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 130
+      "page": 130,
+      "shades": [
+        {
+          "name": "Cherry",
+          "image": "assets/images/tonos/fantiluna-130-1/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2026/09/cherry-abierta.png"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/fantiluna-130-1/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/11/sandia2.jpg"
+        },
+        {
+          "name": "Chic",
+          "image": "assets/images/tonos/fantiluna-130-1/chic.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/08/chic1.jpg"
+        },
+        {
+          "name": "Seducción",
+          "image": "assets/images/tonos/fantiluna-130-1/seduccion.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/seduccionabierta.png"
+        },
+        {
+          "name": "Coco Nut",
+          "image": "assets/images/tonos/fantiluna-130-1/coco-nut.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/coco.jpg"
+        },
+        {
+          "name": "Blue Kiss",
+          "image": "assets/images/tonos/fantiluna-130-1/blue-kiss.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/bluekisss.jpg"
+        },
+        {
+          "name": "Bon Bon",
+          "image": "assets/images/tonos/fantiluna-130-1/bon-bon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/bon-bon2.jpg"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://fantiluna.com/categoria-producto/mantequillas-corporales/"
     },
     {
       "id": "fantiluna-130-2",
@@ -7624,7 +7898,39 @@
           "alt": "Exfoliante corporal x 220ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 130
+      "page": 130,
+      "shades": [
+        {
+          "name": "Capuchino",
+          "image": "assets/images/tonos/fantiluna-130-2/capuchino.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2026/01/exfoliante-capuchino.png"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/fantiluna-130-2/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/10/sandiaa.png"
+        },
+        {
+          "name": "Bon Bon",
+          "image": "assets/images/tonos/fantiluna-130-2/bon-bon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/10/bon-bon.png"
+        },
+        {
+          "name": "Exploción Tropical",
+          "image": "assets/images/tonos/fantiluna-130-2/explocion-tropical.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/10/explosio.png"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://fantiluna.com/categoria-producto/exfoliantes/"
     },
     {
       "id": "fantiluna-131-1",
@@ -7646,7 +7952,60 @@
           "alt": "Splash corporal x 250 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 131
+      "page": 131,
+      "shades": [
+        {
+          "name": "Cherry",
+          "image": "assets/images/tonos/fantiluna-131-1/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/s7.png"
+        },
+        {
+          "name": "Chic",
+          "image": "assets/images/tonos/fantiluna-131-1/chic.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/08/s6.png"
+        },
+        {
+          "name": "Blue Kiss",
+          "image": "assets/images/tonos/fantiluna-131-1/blue-kiss.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/sss.png"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/fantiluna-131-1/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/s3.png"
+        },
+        {
+          "name": "Coco Nut",
+          "image": "assets/images/tonos/fantiluna-131-1/coco-nut.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/s4.png"
+        },
+        {
+          "name": "Seducción",
+          "image": "assets/images/tonos/fantiluna-131-1/seduccion.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/s5.png"
+        },
+        {
+          "name": "Bon Bon",
+          "image": "assets/images/tonos/fantiluna-131-1/bon-bon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/04/s2.png"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://fantiluna.com/categoria-producto/splash/"
     },
     {
       "id": "fantiluna-131-2",
@@ -7668,7 +8027,60 @@
           "alt": "Splash corporal x 105 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 131
+      "page": 131,
+      "shades": [
+        {
+          "name": "Cherry",
+          "image": "assets/images/tonos/fantiluna-131-2/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/32.png"
+        },
+        {
+          "name": "Chic",
+          "image": "assets/images/tonos/fantiluna-131-2/chic.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/08/31.png"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/fantiluna-131-2/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/06/29.png"
+        },
+        {
+          "name": "Blue Kiss",
+          "image": "assets/images/tonos/fantiluna-131-2/blue-kiss.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/05/34.png"
+        },
+        {
+          "name": "Seducción",
+          "image": "assets/images/tonos/fantiluna-131-2/seduccion.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/05/28.png"
+        },
+        {
+          "name": "Coco Nut",
+          "image": "assets/images/tonos/fantiluna-131-2/coco-nut.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/05/30.png"
+        },
+        {
+          "name": "Bon Bon",
+          "image": "assets/images/tonos/fantiluna-131-2/bon-bon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/05/33.png"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://fantiluna.com/categoria-producto/splash-mini/"
     },
     {
       "id": "fantiluna-132-1",
@@ -7690,7 +8102,32 @@
           "alt": "Iluminador corporal x 160 ml: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 132
+      "page": 132,
+      "shades": [
+        {
+          "name": "Gold",
+          "image": "assets/images/tonos/fantiluna-132-1/gold.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/12/211.jpg"
+        },
+        {
+          "name": "Bronze",
+          "image": "assets/images/tonos/fantiluna-132-1/bronze.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/12/210.jpg"
+        },
+        {
+          "name": "Pink",
+          "image": "assets/images/tonos/fantiluna-132-1/pink.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2024/12/209.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://fantiluna.com/categoria-producto/iluminadores-corporales/"
     },
     {
       "id": "fantiluna-132-2",
@@ -7721,7 +8158,60 @@
           "alt": "Crema corporal: tonos y presentaciones según el catálogo"
         }
       ],
-      "page": 132
+      "page": 132,
+      "shades": [
+        {
+          "name": "Chic",
+          "image": "assets/images/tonos/fantiluna-132-2/chic.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/14.png"
+        },
+        {
+          "name": "Seduccion",
+          "image": "assets/images/tonos/fantiluna-132-2/seduccion.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/17.png"
+        },
+        {
+          "name": "Sandía",
+          "image": "assets/images/tonos/fantiluna-132-2/sandia.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/18.png"
+        },
+        {
+          "name": "Bon Bon",
+          "image": "assets/images/tonos/fantiluna-132-2/bon-bon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/19.png"
+        },
+        {
+          "name": "Blue Kiss",
+          "image": "assets/images/tonos/fantiluna-132-2/blue-kiss.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/16.png"
+        },
+        {
+          "name": "Coconut",
+          "image": "assets/images/tonos/fantiluna-132-2/coconut.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/15.png"
+        },
+        {
+          "name": "Cherry",
+          "image": "assets/images/tonos/fantiluna-132-2/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageSource": "https://fantiluna.com/wp-content/uploads/2025/11/20.png"
+        }
+      ],
+      "shadesLabel": "Aroma",
+      "shadesSource": "https://fantiluna.com/cremas-corporales/"
     }
   ]
 }

@@ -566,6 +566,10 @@ La ficha de cada producto puede mostrar sus tonos (o colores, sabores, estilos) 
 | Atenea | 8 | ateneaprofesional.com (Rubor compacto sin fotos y Color pencil con una sola foto: solo nombres) |
 | Samy | 10 | samycosmetics.com (Polvo suelto 8 g y Paleta x9: cada tono es un producto aparte) |
 | Lula | 4 | lulabeauty.co |
+| Raquel | 1 | losestilistas.com.co (tienda que revende la marca; tiene las fotos cruzadas, se muestran solo los nombres) |
+| OG | 4 | ogmantra.co |
+| Milagros | 1 | milagrosbeauty.com (cada aroma es un producto aparte; incluye Gold, que no aparece en el catálogo) |
+| Fantiluna | 6 | fantiluna.com (cada aroma es un producto de su categoría; crema corporal: aromas de 120 ml) |
 
 Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles, mayúscula inicial, sin la palabra "tono" repetida al inicio y orden por número cuando todos lo tienen.
 
