@@ -545,6 +545,13 @@ Se corrigen **en la web** (`TEXT_FIXES` y `BRAND_FIXES` en `scripts/extract-cata
 
 `data/products.json` es la única fuente de datos: `{ brand, pages, products }`. Cada producto tiene `id` (`marca-página-posición`), `name`, `brand`, `category`, `section` (la original), `price` (el menor), `variants`, `presentation`, `description`, `details`, `image`, `imageWidth`, `imageHeight`, `imageAlt`, `imageSource`, `gallery` y `page`; cada campo existe solo si el dato existe. La tabla completa está en [`PRODUCTOS.md`](PRODUCTOS.md), generada por el script.
 
+## Fases 3 a 7 — Arquitectura, implementación, validación y pruebas
+
+- **Arquitectura:** HTML5 + CSS3 + JavaScript (módulos ES), sin frameworks ni compilación. Se conserva la del proyecto base (ver README → Estructura); todo el contenido sale de `data/products.json`.
+- **Validación visual:** se compararon portada, tarjetas, detalle y vista catálogo con el PDF (colores, tipografías, círculo con anillo cobrizo, divisor con estrella, textos, nombres y precios; p. ej. Montoc p. 4 y Prosa pp. 47–48 verificadas contra la página renderizada).
+- **Pruebas (`scripts/test-ux.cjs`):** 74/74 correctas en celular (390×844) y computador (1280×900): búsqueda con y sin tildes y con varias palabras, filtros con contadores cruzados, agrupación (27 marcas / 8 categorías / sin agrupar), orden, detalle (Esc, "Volver", atrás del navegador), WhatsApp con producto y marca, enlaces directos, vista catálogo (132 páginas), estado sin resultados, todas las imágenes cargan, sin errores de JavaScript, sin scroll horizontal y 404 con la marca.
+- **Optimización:** fotos WebP a su resolución real (~5 MB los 249 productos, carga diferida), páginas del catálogo WebP de 900 px (~70 KB c/u, carga diferida), imagen JPG para compartir el enlace (`assets/og-portada.jpg`), Open Graph con la dirección definitiva, `canonical`, favicon, H1/H2/H3, foco visible y respeto de "reducir movimiento".
+
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 
 1. **Fotos en alta resolución** de los 249 productos (ver la lista por marca).

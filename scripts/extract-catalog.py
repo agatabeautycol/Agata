@@ -342,6 +342,9 @@ def save_page(page, pno, brand, page_ids, pages):
     pix = page.get_pixmap(dpi=150)
     pimg = Image.open(io.BytesIO(pix.tobytes('png'))).convert('RGB')
     pw, ph = save_webp(pimg, OUT_PAGES / f'pagina-{pno:03d}.webp', PAGE_WIDTH)
+    if pno == 1:   # imagen para compartir el enlace (WhatsApp y algunas redes no muestran WebP)
+        og = pimg.resize((PAGE_WIDTH, round(pimg.height * PAGE_WIDTH / pimg.width)), Image.LANCZOS)
+        og.save(ROOT / 'assets' / 'og-portada.jpg', 'JPEG', quality=85, optimize=True, progressive=True)
     pages.append(dict(number=pno, image=f'assets/catalog/pagina-{pno:03d}.webp', width=pw, height=ph,
                       alt=f'Página {pno} del catálogo Ágata Beauty' + (f': {brand}' if brand else ''),
                       **({'brand': brand} if brand else {}), products=page_ids))

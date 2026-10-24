@@ -23,6 +23,16 @@ npm start
 
 Abrir <http://localhost:8080>.
 
+### Pruebas automáticas
+
+Con el sitio servido en el puerto 8765 (`python3 -m http.server 8765`) y Playwright instalado:
+
+```bash
+node scripts/test-ux.cjs http://localhost:8765/ capturas
+```
+
+Prueba en celular (390×844) y computador (1280×900): búsqueda con y sin tildes, filtros y contadores, agrupación, orden, detalle (Esc, "Volver", botón atrás), enlaces directos, vista catálogo, estado sin resultados, que todas las imágenes carguen, sin errores de JavaScript y sin scroll horizontal. Deja capturas en la carpeta indicada.
+
 ## Estructura
 
 ```
@@ -44,6 +54,7 @@ assets/icons/               Favicon e íconos de Instagram / WhatsApp del catál
 catalogo-original/          Lugar del PDF de Canva (no se sube: pesa ~345 MB)
 scripts/extract-catalog.py  Genera productos, fotos y páginas a partir del PDF
 scripts/optimize-images.mjs Convierte fotos sueltas a WebP (para productos agregados a mano)
+scripts/test-ux.cjs         Pruebas automáticas de la web (Playwright)
 docs/                       Auditoría, tabla de productos (generada) e instrucciones para las fotos
 ```
 
