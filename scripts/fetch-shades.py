@@ -6,16 +6,17 @@ Agrega los tonos de cada producto (nombre + foto de referencia) desde su página
     python3 scripts/fetch-shades.py            # todos los productos de SHADE_PAGES
     python3 scripts/fetch-shades.py Montoc     # solo una marca
 
-Funciona con tiendas Shopify: lee /products/<handle>.json, toma la opción de tono/color de cada
+Funciona con tiendas Shopify (lee /products/<handle>.json; una página de búsqueda usa el primer
+resultado) y WooCommerce (lee las variaciones de la página): toma la opción de tono/color de cada
 variante y su foto. Las fotos solo se recortan a un cuadrado centrado, se reducen y se guardan en
 WebP (sin IA ni retoques) en assets/images/tonos/{id}/. Escribe en data/products.json los campos
 "shades" y "shadesSource", que scripts/extract-catalog.py conserva al regenerar desde el PDF.
 
 No inventa nada: si la página no tiene tonos (una sola variante), el producto queda igual y se avisa.
 """
-import io, json, re, sys, unicodedata, urllib.request
+import html, io, json, re, sys, unicodedata, urllib.request
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 
 from PIL import Image
 
@@ -37,6 +38,12 @@ SHADE_PAGES = {
     'Montoc|Hidratante de Labios Lippie Balm': 'https://montoccosmetictools.com/products/hidratante-de-labios-lippie-balm-natural',
     'Montoc|Kit de brochas de maquillaje Fluffy x 10': 'https://montoccosmetictools.com/products/kit-profesional-de-brochas-flofi-x-10-piezas',
     'Montoc|Brocha mini viajera': 'https://montoccosmetictools.com/products/brochas-minimi',
+    # Bloomshell: bloomshell.co es la tienda oficial; las otras son tiendas que revenden la marca.
+    'Bloomshell|Base líquida 2 en 1 My foundation': 'https://bloomshell.co/search?q=BASE+LIQUIDA+MY+FOUNDATION',
+    'Bloomshell|Corrector My concealer': 'https://bloomshell.co/search?q=Corrector+My+concealer',
+    'Bloomshell|Rubor en barra Cherry Blossom': 'https://www.girlymaquillaje.com/producto/rubor-cherry-blosson-bloomshell/',
+    'Bloomshell|Trío de Rubores': 'https://mysticstore.com.co/producto/velvet-rubor-x3-bloomshell/',
+    'Bloomshell|Contorno en barra Bloom define': 'https://kromaspace.com/producto/contorno-en-barra-bloom-define-bloomshell/',
 }
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
@@ -95,7 +102,18 @@ def square(img):
     return canvas.convert('RGB')
 
 
-def shades_for(product, url):
+def shopify_options(url):
+    """Tienda Shopify: (nombre de la opción, [(tono, url de foto)], url del producto)."""
+    parts = urlsplit(url)
+    if parts.path.rstrip('/').endswith('/search'):
+        # Página de búsqueda: se usa el primer producto que devuelve el buscador de la tienda.
+        q = parse_qs(parts.query).get('q', [''])[0]
+        found = json.loads(get(f'{parts.scheme}://{parts.netloc}/search/suggest.json?'
+                               + urlencode({'q': q, 'resources[type]': 'product', 'resources[limit]': 1})))
+        hits = found['resources']['results']['products']
+        if not hits:
+            return None, [], url
+        url = f"{parts.scheme}://{parts.netloc}{hits[0]['url'].split('?')[0]}"
     data = shopify_json(url)
     options = data.get('options', [])
     idx = next((i for i, o in enumerate(options) if SHADE_OPTIONS.search(o['name'])), None)
@@ -103,19 +121,55 @@ def shades_for(product, url):
         if len(data.get('variants', [])) > 1 and options and options[0]['name'].lower() != 'title':
             idx = 0     # una sola opción con varios valores: se toma como tono y se informa
         else:
-            return None, f"sin tonos en la página (opciones: {[o['name'] for o in options]})"
+            return None, [o['name'] for o in options], url
     images = {img['id']: img for img in data.get('images', [])}
     by_variant = {vid: img for img in data.get('images', []) for vid in img.get('variant_ids', [])}
-    shades, seen = [], set()
+    items = []
     for v in data['variants']:
-        name = re.sub(r'\s+', ' ', v.get(f'option{idx + 1}') or '').strip()   # solo espacios dobles
+        img = v.get('featured_image') or by_variant.get(v['id']) or images.get(v.get('image_id'))
+        items.append((v.get(f'option{idx + 1}'), img['src'].split('?')[0] if img else None))
+    return options[idx]['name'], items, url
+
+
+def woocommerce_options(url):
+    """Tienda WooCommerce: lee las variaciones que la página trae en data-product_variations."""
+    page = get(url).decode('utf-8', 'replace')
+    m = re.search(r'data-product_variations="([^"]*)"', page)
+    if not m or m.group(1) in ('', 'false'):
+        return None, ['sin variaciones en la página'], url
+    variations = json.loads(html.unescape(m.group(1)))
+    # Nombre visible de cada valor: <select name="attribute_pa_color"><option value="rosa">Rosa</option>
+    labels, names = {}, {}
+    for sel in re.finditer(r'<select[^>]*name="(attribute_[^"]+)"[^>]*>(.*?)</select>', page, re.S):
+        attr = sel.group(1)
+        labels[attr] = {html.unescape(v): html.unescape(re.sub('<[^>]+>', '', t)).strip()
+                        for v, t in re.findall(r'<option[^>]*value="([^"]+)"[^>]*>(.*?)</option>', sel.group(2), re.S)}
+        lab = re.search(rf'<label[^>]*for="{re.escape(attr.replace("attribute_", ""))}"[^>]*>(.*?)</label>', page, re.S)
+        names[attr] = html.unescape(re.sub('<[^>]+>', '', lab.group(1))).strip() if lab else attr.replace('attribute_pa_', '').replace('attribute_', '')
+    attrs = list(labels) or list(variations[0]['attributes'])
+    attr = next((a for a in attrs if SHADE_OPTIONS.search(names.get(a, a))), attrs[0])
+    items = []
+    for v in variations:
+        value = v['attributes'].get(attr)
+        img = (v.get('image') or {}).get('full_src') or (v.get('image') or {}).get('src')
+        items.append((labels.get(attr, {}).get(value, value), img))
+    return names.get(attr, attr), items, url
+
+
+def shades_for(product, url):
+    shopify = '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search')
+    option, items, url = (shopify_options if shopify else woocommerce_options)(url)
+    if option is None:
+        return None, f'sin tonos en la página ({items})', url
+    shades, seen = [], set()
+    for raw_name, src in items:
+        name = re.sub(r'\s+', ' ', raw_name or '').strip()   # solo espacios dobles
         if not name or name in seen:
             continue
         seen.add(name)
-        img = v.get('featured_image') or by_variant.get(v['id']) or images.get(v.get('image_id'))
         shade = {'name': name}
-        if img:
-            src = img['src'].split('?')[0]
+        if src:
+            src = urljoin(url, src)
             pic = square(Image.open(io.BytesIO(get(src))))
             pic = pic.resize((SWATCH, SWATCH), Image.LANCZOS) if pic.width > SWATCH else pic
             path = OUT / product['id'] / f'{slug(name)}.webp'
@@ -123,7 +177,7 @@ def shades_for(product, url):
             pic.save(path, 'WEBP', quality=90, method=6)
             shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height, imageSource=src)
         shades.append(shade)
-    return shades, options[idx]['name']
+    return shades, option, url
 
 
 def main():
@@ -138,7 +192,7 @@ def main():
             print(f'!! {key}: no está en data/products.json')
             continue
         try:
-            shades, note = shades_for(product, url)
+            shades, note, page_url = shades_for(product, url)
         except Exception as exc:   # red bloqueada, página movida…
             print(f'!! {key}: {exc}')
             continue
@@ -148,7 +202,7 @@ def main():
         fixes = SHADE_NAME_FIXES.get(key, {})
         product['shades'] = [{**s, 'name': fixes.get(s['name'], s['name'])} for s in shades]
         product['shadesLabel'] = option_label(note)
-        product['shadesSource'] = url
+        product['shadesSource'] = page_url
         sin_foto = sum(1 for s in shades if 'image' not in s)
         print(f'ok {key}: {len(shades)} × {product["shadesLabel"]} (opción «{note}» en la tienda)' + (f', {sin_foto} sin foto' if sin_foto else ''))
         for s in product['shades']:
