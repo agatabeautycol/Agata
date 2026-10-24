@@ -7,7 +7,7 @@ Agrega los tonos de cada producto (nombre + foto de referencia) desde su página
     python3 scripts/fetch-shades.py Montoc     # solo una marca
 
 Funciona con tiendas Shopify (lee /products/<handle>.json; una página de búsqueda usa el primer
-resultado) y WooCommerce (lee las variaciones de la página): toma la opción de tono/color de cada
+resultado), VTEX (Samy) y WooCommerce (lee las variaciones de la página): toma la opción de tono/color de cada
 variante y su foto. Las fotos solo se recortan a un cuadrado centrado, se reducen y se guardan en
 WebP (sin IA ni retoques) en assets/images/tonos/{id}/. Escribe en data/products.json los campos
 "shades" y "shadesSource", que scripts/extract-catalog.py conserva al regenerar desde el PDF.
@@ -16,7 +16,7 @@ No inventa nada: si la página no tiene tonos (una sola variante), el producto q
 """
 import html, io, json, re, sys, unicodedata, urllib.request
 from pathlib import Path
-from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
+from urllib.parse import parse_qs, unquote, urlencode, urljoin, urlsplit
 
 from PIL import Image
 
@@ -67,6 +67,20 @@ SHADE_PAGES = {
     'Atenea|Delineador de cejas': 'https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene',
     'Atenea|Lápiz delineador Color pencil': 'https://ateneaprofesional.com/products/lapiz-delineador',
     'Atenea|Lip Balm Mask': 'https://ateneaprofesional.com/products/lip-balm-mask',
+    'Samy|Polvo suelto': 'https://www.samycosmetics.com/polvo%20suelto',
+    'Samy|Rubor en barra Velvet Glam': 'https://www.samycosmetics.com/rubor-en-barra-velvet-glam-s421/p',
+    'Samy|Rubor Compacto Velvet Glam Samy': 'https://www.samycosmetics.com/rubor-compacto-velvet-glam-s422/p',
+    'Samy|Rubor 2 en 1 Sunset Glam Samy': 'https://www.samycosmetics.com/rubor-2-en-1-sunset-glam-samy-s388-1/p',
+    'Samy|Tinta en crema Lip Blush': 'https://www.samycosmetics.com/tinta-en-crema-samy-s383/p',
+    'Samy|Contorno en barra Velvet Glam': 'https://www.samycosmetics.com/contorno-en-barra-velvet-glam-s420/p',
+    'Samy|Betún de cejas': 'https://www.samycosmetics.com/maquillaje-cremoso-de-cejas-perfect-brow-samy-s039/p',
+    'Samy|Kit para cejas': 'https://www.samycosmetics.com/kit-para-cejas-perfect-brows-samy-s026/p',
+    'Samy|Paleta de sombras x3': 'https://www.samycosmetics.com/-paleta-de-sombras-x-3-samy-s436/p',
+    'Samy|Paleta de sombras x9': 'https://www.samycosmetics.com/paleta-x-9-sombra-de-ojos-samy-20-moon-s439/p',
+    'Lula|Lápiz delineador de ojos': 'https://lulabeauty.co/products/lapiz-delineador-para-ojos',
+    'Lula|Aceite para labios con charm': 'https://lulabeauty.co/products/aceite-para-labios-con-charm',
+    'Lula|Bálsamo de labios': 'https://lulabeauty.co/products/balsamo-de-labios',
+    'Lula|Toallas húmedas desmaquillantes': 'https://lulabeauty.co/products/toallas-humedas-desmaquillante-pepino-lula',
 }
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
@@ -186,6 +200,32 @@ def shopify_options(url):
     return options[idx]['name'], items, url
 
 
+def vtex_options(url):
+    """Tienda VTEX (dirección terminada en /p, o una búsqueda): cada SKU del producto es un tono."""
+    parts = urlsplit(url)
+    base = f'{parts.scheme}://{parts.netloc}'
+    path = parts.path.rstrip('/')
+    if path.endswith('/p'):
+        api = f"{base}/api/catalog_system/pub/products/search{path}"
+    else:   # búsqueda ("/polvo%20suelto"): primer producto que devuelve la tienda
+        api = f"{base}/api/catalog_system/pub/products/search?" + urlencode({'ft': unquote(path.strip('/'))})
+    found = json.loads(get(api))
+    if not found:
+        return None, ['producto no encontrado'], url
+    product = found[0]
+    url = f"{base}/{product['linkText']}/p"
+    items = product.get('items', [])
+    variation = next((v for v in (items[0].get('variations') or []) if SHADE_OPTIONS.search(v)), None) if items else None
+    if len(items) < 2 and not variation:
+        return None, [f"una sola presentación ({product['productName']})"], url
+    out = []
+    for item in items:
+        name = (item.get(variation) or [None])[0] if variation else item.get('name')
+        img = (item.get('images') or [{}])[0].get('imageUrl')
+        out.append((name, img))
+    return variation or 'Tono', out, url
+
+
 def woocommerce_options(url):
     """Tienda WooCommerce: lee las variaciones que la página trae en data-product_variations."""
     page = get(url).decode('utf-8', 'replace')
@@ -214,9 +254,12 @@ def woocommerce_options(url):
 def shades_for(product, url):
     if isinstance(url, dict):
         option, items, url = shopify_by_title(url['store'], url['title'], url['source'])
+    elif '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search'):
+        option, items, url = shopify_options(url)
+    elif urlsplit(url).netloc.endswith('samycosmetics.com'):
+        option, items, url = vtex_options(url)
     else:
-        shopify = '/products/' in url or urlsplit(url).path.rstrip('/').endswith('/search')
-        option, items, url = (shopify_options if shopify else woocommerce_options)(url)
+        option, items, url = woocommerce_options(url)
     if option is None:
         return None, f'sin tonos en la página ({items})', url
     shades, seen = [], set()
