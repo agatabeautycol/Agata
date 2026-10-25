@@ -64,6 +64,8 @@ SHADE_PAGES = {
     'Atenea|Rubor compacto 1ST Scene': 'https://ateneaprofesional.com/products/rubores-individuales-1st-scene',
     'Atenea|Bronzer cremoso en barra': 'https://ateneaprofesional.com/products/bronzer-cremoso',
     'Atenea|Iluminador efecto húmedo Sublime': 'https://ateneaprofesional.com/products/iluminador-efecto-humedo-sublime',
+    'Atenea|Serum Tinted 1ST Scene': 'https://ateneaprofesional.com/products/serum-tinted-foundation',
+    'Atenea|Rubor cremoso en barra': 'https://ateneaprofesional.com/products/rubor-en-barra-cremoso-atenea-collection',
     'Atenea|Pigmento Soft Touch': 'https://ateneaprofesional.com/products/sombra-cremosa-individual',
     'Atenea|Delineador de cejas': 'https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene',
     'Atenea|Lápiz delineador Color pencil': 'https://ateneaprofesional.com/products/lapiz-delineador',
@@ -119,6 +121,11 @@ SHADE_PAGES = {
     'Maybelline|Pestañina Surreal Lavable | A prueba de agua': {
         'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-falsies-surreal-black/p#2')],
         'label': 'Versión', 'sourceLabel': 'tiendas Medipiel (lavable) y Cromantic (a prueba de agua)', 'source': 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'},
+    # Nivea Lip care: los dos del catálogo (página 128), con el nombre del empaque.
+    'Nivea|Lip care - 24 horas de humectación': {
+        'items': [('Strawberry Shine', 'https://www.nivea.com.co/productos/protector-labial-strawberry-shine-40058088508390057.html'),
+                  ('Blackberry Shine', 'https://www.nivea.com.co/productos/protector-labial-blackberry-shine-40059007645460057.html')],
+        'label': 'Tono', 'source': 'https://www.nivea.com.co/productos/protector-labial-strawberry-shine-40058088508390057.html'},
     # Fantiluna (WooCommerce): cada aroma es un producto de la categoría.
     'Fantiluna|Mantequilla corporal x 220 ml': {
         'woo': 'https://fantiluna.com', 'category': 340, 'title': r'^mantequilla corporal (?P<tono>.+?)(?: 220 ?ml)?$',
@@ -168,6 +175,9 @@ SHADE_NAME_FIXES = {
         'clearwine': 'Clear Wine', 'darksand': 'Dark Sand'},
     'Atenea|Delineador de cejas': {'aublight': 'Light'},   # la foto de la tienda dice "Light – café claro"
     'Atenea|Base de maquillaje 1ST Scene': {'eboky': 'Ebony'},
+    'Atenea|Serum Tinted 1ST Scene': {'eboky': 'Ebony'},
+    # Nombres como en el catálogo (página 32).
+    'Atenea|Rubor cremoso en barra': {'pinkchai': 'Pink Chai', 'sugarplum': 'Sugar Plum', 'cherrypie': 'Cherry Pie', 'scarletfever': 'Scarlet Fever'},
     'Atenea|Bronzer cremoso en barra': {'tostedcoconut': 'Toasted Coconut'},
     'Majikal|Magic Pen': {'cafeina': 'Cafeína', 'cherrs': 'Cherry'},
     'Samy|Rubor 2 en 1 Sunset Glam Samy': {'04 coffe toffee': '04 Coffee Toffee'},
@@ -214,8 +224,16 @@ def shopify_json(url):
 # Productos cuyas fotos de tonos no se recortan (primeros planos de textura u ojos, o carteles con letras:
 # el recorte automático queda mal); conservan el fondo original de la tienda.
 KEEP_BACKGROUND = {
-    'Atenea|Iluminador efecto húmedo Sublime', 'Atenea|Delineador de cejas', 'Fantiluna|Iluminador corporal x 160 ml',
+    'Atenea|Delineador de cejas', 'Fantiluna|Iluminador corporal x 160 ml',
+    # El recorte borraba partes del producto (revisado por Ágata Beauty): se deja la foto de la tienda.
+    'Montoc|Base Glow Filter', 'Montoc|Kit de brochas de maquillaje Fluffy x 10', 'Bloomshell|Base líquida 2 en 1 My foundation',
+    'Bloomshell|Trío de Rubores', 'Samy|Paleta de sombras x9',
+    # Las fotos de cada tono traen una tarjeta blanca con íconos que el recorte no separa.
+    'Atenea|Rubor cremoso en barra',
 }
+
+# Tonos cuyas fotos de la tienda no muestran el producto (primer plano de textura, ambiente): solo nombres.
+NAMES_ONLY = {'Atenea|Iluminador efecto húmedo Sublime'}
 
 _SESSION = None
 MARGIN = 0.10         # aire mínimo alrededor del producto
@@ -410,16 +428,20 @@ def woocommerce_options(url):
 
 
 def fixed_items(items, source):
-    """Opciones con nombre fijo, cada una con su página de producto (VTEX, enlaces que terminan en /p)."""
+    """Opciones con nombre fijo, cada una con su página de producto (VTEX con /p, o datos estructurados)."""
     found = []
     for name, page in items:
         page, _, n = page.partition('#')                      # "#N": foto N de la página (sin letreros)
         n = int(n or 1) - 1
         parts = urlsplit(page)
-        data = json.loads(get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
-        images = data[0]['items'][0].get('images') if data and data[0].get('items') else None
-        found.append((name, images[n]['imageUrl'] if images and len(images) > n else None))
-    return 'Versión', found, source
+        if parts.path.endswith('/p'):                         # VTEX
+            data = json.loads(get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
+            images = data[0]['items'][0].get('images') if data and data[0].get('items') else None
+            found.append((name, images[n]['imageUrl'] if images and len(images) > n else None))
+        else:                                                 # datos estructurados de la página (Nivea)
+            m = re.search(r'"image":\["([^"]+)"', get(page).decode('utf-8', 'replace'))
+            found.append((name, m.group(1) if m else None))
+    return 'Opción', found, source
 
 
 def shades_for(product, url, keep_background=False):
@@ -510,6 +532,8 @@ def main():
         if not shades:
             print(f'-- {key}: {note}')
             continue
+        if key in NAMES_ONLY:
+            shades = [{'name': s['name']} for s in shades]
         fixes = {k.lower(): v for k, v in SHADE_NAME_FIXES.get(key, {}).items()}
         product['shades'] = [{**s, 'name': fixes.get(s['name'].lower(), s['name'])} for s in shades]
         product['shadesLabel'] = url.get('label') if isinstance(url, dict) and url.get('label') else option_label(note)

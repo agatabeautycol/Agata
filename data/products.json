@@ -1628,11 +1628,11 @@
       "category": "Rostro",
       "section": "Rostro",
       "price": 57000,
-      "imageWidth": 596,
-      "imageHeight": 596,
-      "image": "assets/images/productos-hd/montoc-003-1.webp",
-      "imageAlt": "Base Glow Filter de Montoc",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/Glow_Filter_Montoc.jpg",
+      "image": "assets/images/productos/montoc-003-1.webp",
+      "imageWidth": 315,
+      "imageHeight": 315,
+      "imageAlt": "Base Glow Filter de Montoc, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 3",
       "gallery": [
         {
           "src": "assets/images/productos/montoc-003-1-variantes.webp",
@@ -1649,8 +1649,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/montoc-003-1/1-0-light-glow-filter-grande.webp",
-          "imageLargeWidth": 590,
-          "imageLargeHeight": 590,
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
           "imageSource": "https://cdn.shopify.com/s/files/1/0726/7729/4370/files/glow_filter_montoc_pre_base_para_maquillaje.jpg"
         },
         {
@@ -2461,8 +2461,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/almendra-grande.webp",
-          "imageLargeWidth": 533,
-          "imageLargeHeight": 533,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/35.png"
         },
         {
@@ -2471,8 +2471,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/capuchino-grande.webp",
-          "imageLargeWidth": 541,
-          "imageLargeHeight": 541,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/55.png"
         },
         {
@@ -2481,8 +2481,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/cocoa-grande.webp",
-          "imageLargeWidth": 266,
-          "imageLargeHeight": 266,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/55-4.png"
         },
         {
@@ -2491,8 +2491,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/light-grande.webp",
-          "imageLargeWidth": 285,
-          "imageLargeHeight": 285,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/29-2.png"
         },
         {
@@ -2501,8 +2501,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/light-neutral-grande.webp",
-          "imageLargeWidth": 292,
-          "imageLargeHeight": 292,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/33-2.png"
         },
         {
@@ -2511,8 +2511,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/medium-beige-grande.webp",
-          "imageLargeWidth": 263,
-          "imageLargeHeight": 263,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/45-3.png"
         },
         {
@@ -2521,8 +2521,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/medium-deep-grande.webp",
-          "imageLargeWidth": 519,
-          "imageLargeHeight": 519,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-1_a94c35b0-1cfc-450c-8b5d-06b8fc6b5799.png"
         },
         {
@@ -2531,8 +2531,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/neutral-beige-grande.webp",
-          "imageLargeWidth": 253,
-          "imageLargeHeight": 253,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/41-5.png"
         },
         {
@@ -2541,8 +2541,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/neutral-medium-grande.webp",
-          "imageLargeWidth": 258,
-          "imageLargeHeight": 258,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/40-2.png"
         },
         {
@@ -2551,8 +2551,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/nude-grande.webp",
-          "imageLargeWidth": 265,
-          "imageLargeHeight": 265,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/35-2.png"
         },
         {
@@ -2561,8 +2561,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-011-1/vainilla-grande.webp",
-          "imageLargeWidth": 258,
-          "imageLargeHeight": 258,
+          "imageLargeWidth": 300,
+          "imageLargeHeight": 300,
           "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/43-4.png"
         }
       ],
@@ -2872,11 +2872,11 @@
       "category": "Rostro",
       "section": "Rostro",
       "price": 35500,
-      "imageWidth": 750,
-      "imageHeight": 750,
-      "image": "assets/images/productos-hd/bloomshell-013-2.webp",
-      "imageAlt": "Trío de Rubores de Bloomshell",
-      "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-soft-pink-01.webp",
+      "image": "assets/images/productos/bloomshell-013-2.webp",
+      "imageWidth": 288,
+      "imageHeight": 288,
+      "imageAlt": "Trío de Rubores de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 13",
       "gallery": [
         {
           "src": "assets/images/productos/bloomshell-013-2-variantes.webp",
@@ -2893,8 +2893,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-013-2/pink-01-grande.webp",
-          "imageLargeWidth": 750,
-          "imageLargeHeight": 750,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-soft-pink-01.webp"
         },
         {
@@ -2903,8 +2903,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-013-2/peach-02-grande.webp",
-          "imageLargeWidth": 672,
-          "imageLargeHeight": 672,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-peach-glow-02.webp"
         },
         {
@@ -2913,8 +2913,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-013-2/terracota-03-grande.webp",
-          "imageLargeWidth": 671,
-          "imageLargeHeight": 671,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-warm-terracota-03.webp"
         },
         {
@@ -2923,8 +2923,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-013-2/melon-04-grande.webp",
-          "imageLargeWidth": 671,
-          "imageLargeHeight": 671,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-sweet-melon-04.webp"
         },
         {
@@ -2973,8 +2973,8 @@
           "imageWidth": 240,
           "imageHeight": 240,
           "imageLarge": "assets/images/tonos/bloomshell-013-2/vino-09-grande.webp",
-          "imageLargeWidth": 681,
-          "imageLargeHeight": 681,
+          "imageLargeWidth": 600,
+          "imageLargeHeight": 600,
           "imageSource": "https://mysticstore.com.co/wp-content/uploads/2026/04/Velvet-rubor-x-3-velvet-wine-09.webp"
         }
       ],
@@ -3103,11 +3103,11 @@
       "category": "Preparación y fijación",
       "section": "Papel matificante",
       "price": 18500,
-      "imageWidth": 759,
-      "imageHeight": 759,
-      "image": "assets/images/productos-hd/bloomshell-017-1.webp",
-      "imageAlt": "Papel matificante Bloom powder paper de Bloomshell",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/Pagina-web-2-10.png",
+      "image": "assets/images/productos/bloomshell-017-1.webp",
+      "imageWidth": 240,
+      "imageHeight": 240,
+      "imageAlt": "Papel matificante Bloom powder paper de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 17",
       "page": 17
     },
     {
@@ -3184,11 +3184,11 @@
       "section": "Kit",
       "price": 105000,
       "description": "Son cuatro esenciales de maquillaje\nUn rubor 2 en 1\nUn gloss luminoso e hidratante\nUn polvo suelto rosado con malla y borla\nUna paleta de sombras con un iluminador rosado",
-      "imageWidth": 724,
-      "imageHeight": 724,
-      "image": "assets/images/productos-hd/bloomshell-020-1.webp",
-      "imageAlt": "Kit Kiss Love de Bloomshell",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0979/0685/2024/files/PAGINA-WEB-DETAL-CON-INFORMACION-LEGAL-SOLICITADA-64.png",
+      "image": "assets/images/productos/bloomshell-020-1.webp",
+      "imageWidth": 372,
+      "imageHeight": 372,
+      "imageAlt": "Kit Kiss Love de Bloomshell, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 20",
       "page": 20
     },
     {
@@ -4040,11 +4040,11 @@
       "brand": "Majikal",
       "category": "Labios",
       "price": 22000,
-      "imageWidth": 800,
-      "imageHeight": 800,
-      "image": "assets/images/productos-hd/majikal-029-3.webp",
-      "imageAlt": "Shiny Lip Oil de Majikal",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0770/0296/5144/files/Majikal-Beauty-258-Editar.png",
+      "image": "assets/images/productos/majikal-029-3.webp",
+      "imageWidth": 201,
+      "imageHeight": 201,
+      "imageAlt": "Shiny Lip Oil de Majikal, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 29",
       "gallery": [
         {
           "src": "assets/images/productos/majikal-029-3-variantes.webp",
@@ -4218,7 +4218,101 @@
       "image": "assets/images/productos-hd/atenea-030-2.webp",
       "imageAlt": "Serum Tinted 1ST Scene de Atenea",
       "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/PRODUCTO_f5841425-5f9b-42a1-a010-c5f744aeef19.jpg",
-      "page": 30
+      "page": 30,
+      "shades": [
+        {
+          "name": "Light",
+          "image": "assets/images/tonos/atenea-030-2/light.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/light-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/PRODUCTO_f5841425-5f9b-42a1-a010-c5f744aeef19.jpg"
+        },
+        {
+          "name": "Porcelain",
+          "image": "assets/images/tonos/atenea-030-2/porcelain.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/porcelain-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_2_f545ecec-8b7f-476b-8f4c-46d1196353ef.jpg"
+        },
+        {
+          "name": "Cream",
+          "image": "assets/images/tonos/atenea-030-2/cream.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/cream-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_3_2b0005a5-dd05-4cc8-a7fd-f1457e44166c.jpg"
+        },
+        {
+          "name": "Vainilla",
+          "image": "assets/images/tonos/atenea-030-2/vainilla.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/vainilla-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_4_f481ba09-5c61-48c6-b7ea-8179bec216f8.jpg"
+        },
+        {
+          "name": "Almond",
+          "image": "assets/images/tonos/atenea-030-2/almond.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/almond-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_5_30aca75c-406d-47ea-a296-b77a633b8cfb.jpg"
+        },
+        {
+          "name": "Olive",
+          "image": "assets/images/tonos/atenea-030-2/olive.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/olive-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_6_660047f7-7594-41b3-a48f-0344989a8d38.jpg"
+        },
+        {
+          "name": "Temple",
+          "image": "assets/images/tonos/atenea-030-2/temple.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/temple-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_7.jpg"
+        },
+        {
+          "name": "Sand",
+          "image": "assets/images/tonos/atenea-030-2/sand.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/sand-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_8_92e8ef24-dc68-4f09-bd2c-7f20e8512e2c.jpg"
+        },
+        {
+          "name": "Ebony",
+          "image": "assets/images/tonos/atenea-030-2/eboky.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-030-2/eboky-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/TONO_9.jpg"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/serum-tinted-foundation"
     },
     {
       "id": "atenea-031-1",
@@ -4227,11 +4321,11 @@
       "category": "Rostro",
       "section": "Rostro",
       "price": 43000,
-      "imageWidth": 800,
-      "imageHeight": 800,
-      "image": "assets/images/productos-hd/atenea-031-1.webp",
-      "imageAlt": "Polvo en gel matificante Matterpowder de Atenea",
-      "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/AteneaEC_Mayo_06211.jpg",
+      "image": "assets/images/productos/atenea-031-1.webp",
+      "imageWidth": 273,
+      "imageHeight": 273,
+      "imageAlt": "Polvo en gel matificante Matterpowder de Atenea, fotografía del catálogo",
+      "imageSource": "Catálogo de Canva (PDF), página 31",
       "page": 31
     },
     {
@@ -4308,7 +4402,51 @@
       "image": "assets/images/productos-hd/atenea-032-2.webp",
       "imageAlt": "Rubor cremoso en barra de Atenea",
       "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/OT_00011025_ECATENEA_07393.jpg",
-      "page": 32
+      "page": 32,
+      "shades": [
+        {
+          "name": "Pink Chai",
+          "image": "assets/images/tonos/atenea-032-2/pinkchai.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-2/pinkchai-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/PINK_CHAI_TONO.webp"
+        },
+        {
+          "name": "Sugar Plum",
+          "image": "assets/images/tonos/atenea-032-2/sugarplum.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-2/sugarplum-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SUGAR_PLUM_TONO.webp"
+        },
+        {
+          "name": "Cherry Pie",
+          "image": "assets/images/tonos/atenea-032-2/cherrypie.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-2/cherrypie-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/CHERRY_PIE_TONO.webp"
+        },
+        {
+          "name": "Scarlet Fever",
+          "image": "assets/images/tonos/atenea-032-2/scarletfever.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-2/scarletfever-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SCARLETFEVER_TONO.webp"
+        }
+      ],
+      "shadesLabel": "Color",
+      "shadesSource": "https://ateneaprofesional.com/products/rubor-en-barra-cremoso-atenea-collection"
     },
     {
       "id": "atenea-033-1",
@@ -4379,24 +4517,10 @@
       "page": 33,
       "shades": [
         {
-          "name": "SH001",
-          "image": "assets/images/tonos/atenea-033-2/sh001.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageLarge": "assets/images/tonos/atenea-033-2/sh001-grande.webp",
-          "imageLargeWidth": 800,
-          "imageLargeHeight": 800,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/AteneaEcommerceV27188.jpg"
+          "name": "SH001"
         },
         {
-          "name": "SH002",
-          "image": "assets/images/tonos/atenea-033-2/sh002.webp",
-          "imageWidth": 240,
-          "imageHeight": 240,
-          "imageLarge": "assets/images/tonos/atenea-033-2/sh002-grande.webp",
-          "imageLargeWidth": 800,
-          "imageLargeHeight": 800,
-          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp"
+          "name": "SH002"
         }
       ],
       "shadesLabel": "Color",
@@ -8578,7 +8702,31 @@
       "imageHeight": 345,
       "imageAlt": "Lip care - 24 horas de humectación de Nivea, fotografía del catálogo",
       "imageSource": "Catálogo de Canva (PDF), página 128",
-      "page": 128
+      "page": 128,
+      "shades": [
+        {
+          "name": "Strawberry Shine",
+          "image": "assets/images/tonos/nivea-128-1/strawberry-shine.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/nivea-128-1/strawberry-shine-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://img.nivea.com/-/media/miscellaneous/media-center-items/e/d/3/1cfbb0acce42455fb4d9abad9d15e1aa-online_1180_png.png"
+        },
+        {
+          "name": "Blackberry Shine",
+          "image": "assets/images/tonos/nivea-128-1/blackberry-shine.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/nivea-128-1/blackberry-shine-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://img.nivea.com/-/media/miscellaneous/media-center-items/5/3/2/52e70c2b92ab416ebb90453f6e2d62ea-web_1010x1180_transparent_png.png"
+        }
+      ],
+      "shadesLabel": "Tono",
+      "shadesSource": "https://www.nivea.com.co/productos/protector-labial-strawberry-shine-40058088508390057.html"
     },
     {
       "id": "chap-stick-129-1",
