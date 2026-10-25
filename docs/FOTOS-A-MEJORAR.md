@@ -1,6 +1,6 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **168 ya tienen foto en alta resolución** (página oficial) y **81 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **167 ya tienen foto en alta resolución** (página oficial) y **82 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
@@ -8,7 +8,7 @@ De los 249 productos, **168 ya tienen foto en alta resolución** (página oficia
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
 | **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 18 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 60 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 61 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 3 |
 
 ## Qué se necesita
@@ -24,7 +24,7 @@ De los 249 productos, **168 ya tienen foto en alta resolución** (página oficia
 | Bloomshell | 15 | 5 | 10 | 0 | bloomshell.co |
 | Girly | 1 | 1 | 0 | 0 | cocopinkstore.com (revendedor) |
 | Majikal | 2 | 1 | 1 | 0 | majikalbeauty.com |
-| Atenea | 1 | 1 | 0 | 0 | ateneaprofesional.com |
+| Atenea | 2 | 1 | 1 | 0 | ateneaprofesional.com |
 | Prosa | 3 | 0 | 2 | 1 | — |
 | Samy | 2 | 0 | 2 | 0 | samycosmetics.com |
 | Raquel | 1 | 0 | 1 | 0 | losestilistas.com.co (revendedor) |
@@ -95,6 +95,7 @@ De los 249 productos, **168 ya tienen foto en alta resolución** (página oficia
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
 | `atenea-031-1` | Polvo en gel matificante Matterpowder | 31 | 273 px | Alta | — |
+| `atenea-034-1` | Paleta de sombras multiusos Moccalush | 34 | 381 px | Media | — |
 
 ### Prosa
 
