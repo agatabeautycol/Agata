@@ -43,7 +43,7 @@ DIVIDER_RATIO = 6.5                # línea con estrella bajo el nombre (ancho /
 INFO_PAGES = {1, 2}                # portada y proceso de compra: sin productos, pero se muestran en la vista catálogo
 SKIP_PAGES = {133}                 # contraportada vacía
 # Las fotos se recortan a su resolución nativa dentro del PDF (sin ampliar ni reducir dos veces).
-MIN_DPI, MAX_DPI = 96, 300
+DEFAULT_DPI, MAX_DPI = 96, 300     # DEFAULT_DPI solo si en el recuadro no hay ninguna foto
 RING_INNER = 0.92                  # el anillo cobrizo ocupa el 6,4 % exterior del radio (+ margen para su borde suavizado); la web lo dibuja en CSS
 GALLERY_WIDTH = 720
 PAGE_WIDTH = 900
@@ -240,7 +240,8 @@ def native_dpi(images, rect, decor):
             if im['xref'] and (im['width'], im['height']) not in decor
             and not (is_ring(im) or is_frame(im) or is_divider(im))
             and inside(center(im['bbox']), rect) and im['bbox'][2] > im['bbox'][0]]
-    return round(min(MAX_DPI, max([MIN_DPI] + dpis)))
+    # La foto más detallada del recuadro manda; nunca se sube a un mínimo (eso ampliaba las fotos ~10-15 %).
+    return round(min(MAX_DPI, max(dpis))) if dpis else DEFAULT_DPI
 
 
 def circle_crop(page, rect, dpi):
@@ -443,8 +444,9 @@ def main():
                 product['imageWidth'], product['imageHeight'] = iw, ih
                 product['imageAlt'] = f'{name} de {brand}, fotografía del catálogo'
                 product['imageSource'] = f'Catálogo de Canva (PDF), página {pno}'
-
-                # Fotos de tonos / variantes: imágenes de la tarjeta fuera del círculo.
+            if ring and pid not in PHOTO_PENDING:
+                # Fotos de tonos / variantes: imágenes de la tarjeta fuera del círculo (también cuando la
+                # foto principal viene de productos-hd).
                 extra = [pymupdf.Rect(im['bbox']) & pymupdf.Rect(fb) for im in images
                          if im['xref'] and inside(center(im['bbox']), fb)
                          and (im['width'], im['height']) not in decor_sizes(doc)
