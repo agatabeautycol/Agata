@@ -183,6 +183,7 @@ def slug(text):
 
 
 def get(url):
+    url = url.replace(' ', '%20')            # algunas tiendas (VTEX) dejan espacios en los nombres de archivo
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (catalogo Agata Beauty)'})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
