@@ -25,7 +25,7 @@ function el(tag, attrs = {}, children = []) {
 }
 
 // "Tono" / "Tonos", "Sabor" / "Sabores"… según cómo llama la marca a las opciones.
-const PLURALS = { Tono: 'Tonos', Color: 'Colores', Sabor: 'Sabores', Estilo: 'Estilos', Aroma: 'Aromas' };
+const PLURALS = { Tono: 'Tonos', Color: 'Colores', Sabor: 'Sabores', Estilo: 'Estilos', Aroma: 'Aromas', 'Versión': 'Versiones' };
 function shadeWord(product, count = 1) {
   const word = product.shadesLabel ?? 'Tono';
   return count === 1 ? word : PLURALS[word] ?? `${word}s`;

@@ -191,12 +191,22 @@ PHOTO_PAGES = {
     "Johnson's|Shampoo - Fuerza y vitamina": 'https://www.exito.com/johnsons-baby-shampoo-fuerza-y-vitamina-x-750-ml-350597/p#2',
     "Johnson's|Baño líquido - Avena": 'https://www.exito.com/johnsons-baby-jab-n-l-quido-avena-x-400-ml-795218/p#2',
     "Johnson's|Baño líquido - Antes de dormir": 'https://www.exito.com/jabon-liquido-antes-de-dormir-865694/p#2',
+    'Lehit|Tratamiento aceite de aguacate x30 gr': 'https://tiendalehit.com/products/tratamiento-aceite-de-aguacate',
+    'Lehit|Tratamiento complejo biológico con queratina x30gr': 'https://tiendalehit.com/products/tratamiento-complejo-biologico',
+    'Lehit|Tratamiento cebolla y jengibre x30 gr': 'https://tiendalehit.com/products/sobre-tratamiento-cebolla',
+    'Lehit|Tratamiento capullo de gusano de seda x30gr': 'https://tiendalehit.com/products/tratamiento-gusano-de-seda',
+    "Johnson's|Shampoo baby - Cabello oscuro": 'https://www.larebajavirtual.com/champu-bebe-johnson-s-cabello-oscuro-129840/p',
+    "Johnson's|Shampoo baby - amarillo": 'https://www.larebajavirtual.com/champu-bebe-johnson-s-original-130677/p',
 }
 
 # Productos cuyos tonos están publicados como productos separados: la foto de un tono no representa
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    'Lehit|Tratamiento aceite de aguacate x30 gr': 'la foto trae hojas decorativas que quedan sueltas al quitar el fondo',
+    'Lehit|Tratamiento cebolla y jengibre x30 gr': 'la foto trae una cebolla decorativa que queda pegada al quitar el fondo',
+    "Johnson's|Shampoo baby - Cabello oscuro": 'en la tienda es frasco con tapa; en el catálogo es con dosificador',
+    "Johnson's|Shampoo baby - amarillo": 'en la tienda es frasco con tapa; en el catálogo es con dosificador',
     "Johnson's|Baño líquido - Avena": 'la tienda muestra otra versión de la etiqueta',
     "Johnson's|Baño líquido - Antes de dormir": 'la tienda muestra otra versión de la etiqueta',
     'Garnier|Agua micelar pure active x 400 ml': 'todas las fotos de la tienda traen letreros o son de uso (no hay foto limpia del producto)',
