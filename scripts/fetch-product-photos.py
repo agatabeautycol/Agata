@@ -213,6 +213,7 @@ EXCLUDE = {
     'Bloomshell|Papel matificante Bloom powder paper': 'el recorte borraba partes del producto',
     'Bloomshell|Kit Kiss Love': 'el recorte borraba partes del producto',
     'Majikal|Shiny Lip Oil': 'la foto de la tienda es de ambiente y el recorte borraba partes',
+    'Atenea|Paleta de sombras multiusos Moccalush': 'Ágata Beauty prefiere la foto del catálogo',
     'Atenea|Polvo en gel matificante Matterpowder': 'el recorte borraba partes del producto',
     "Johnson's|Crema líquida - Avena": 'la tienda muestra otra versión de la etiqueta',
     'Garnier|Agua micelar con vitamina C x 400 ml': 'las fotos de la tienda traen letreros o una mano; ninguna sirve para quitar el fondo',
