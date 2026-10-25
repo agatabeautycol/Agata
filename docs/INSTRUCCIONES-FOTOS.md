@@ -116,7 +116,9 @@ SIN alterar el producto.
 ## Reglas obligatorias
 1. Nunca uses imágenes generadas o modificadas por IA, ni "mejores" la nitidez artificialmente.
    Solo se permite: recortar, redimensionar, centrar en un lienzo cuadrado, convertir a WebP y comprimir.
-   No quites fondos con IA.
+   Excepción autorizada por Ágata Beauty: quitar SOLO el fondo con el recortador automático de
+   scripts/fetch-product-photos.py (los píxeles del producto no se modifican), para que todas las fotos
+   queden sobre el mismo disco beige del catálogo.
 2. Cada foto nueva debe ser EXACTAMENTE el mismo producto del catálogo: misma marca, mismo envase,
    mismo tamaño/presentación (p. ej. "x 450 ml" vs "x 100 ml"), mismo tono o versión.
    Compárala visualmente con la foto actual (assets/images/productos/{id}.webp) y con el nombre en
@@ -134,20 +136,15 @@ C. Enlaces de páginas de marcas/tiendas que pegue al final de este mensaje. Si 
    Guarda la URL de origen de cada foto.
 
 ## Cómo procesar cada foto
-1. Guarda el original sin tocar en catalogo-original/fotos/ (si no estaba ahí).
-2. Genera assets/images/productos-hd/{id}.webp:
-   - lienzo cuadrado de 800 × 800 px;
-   - producto centrado, completo, con un margen de ~10 % para que no lo corte el círculo;
-   - fondo del lienzo: si la foto tiene fondo transparente, usa el beige del disco #d9d3c3; si tiene fondo
-     de color sólido (p. ej. blanco), extiende ese mismo color;
-   - WebP calidad 90. Nunca agrandes una foto que mide menos de 800 px: en ese caso usa su tamaño
-     original y avísame que es de baja resolución.
-3. En data/products.json, para ese producto: `image` = "assets/images/productos-hd/{id}.webp",
-   `imageWidth`/`imageHeight` con el tamaño real, elimina `imageSmall` si existe, y agrega
-   `imageSource` con la URL o el nombre del archivo de origen. Conserva `imageAlt`.
-4. scripts/extract-catalog.py ya respeta las fotos nuevas: si existe assets/images/productos-hd/{id}.webp
-   la usa en vez del recorte del PDF. Anota el origen de cada foto en
-   assets/images/productos-hd/fuentes.json ({"id": "URL o archivo de origen"}).
+1. Guarda el original sin tocar en catalogo-original/fotos/{id}.png (o .jpg/.webp), con el ID del producto.
+   Para fotos de páginas oficiales, agrega el enlace en PHOTO_PAGES de scripts/fetch-product-photos.py.
+2. Ejecuta `python3 scripts/fetch-product-photos.py` (requiere `pip install "rembg[cpu]" pillow`). Genera
+   assets/images/productos-hd/{id}.webp: quita solo el fondo (si la foto ya es PNG transparente no la toca),
+   centra el producto en un lienzo cuadrado transparente para que el círculo no lo corte y lo reduce a
+   800 px si es más grande (nunca amplía). El origen queda en assets/images/productos-hd/fuentes.json.
+3. Revisa cada foto contra la del catálogo (mismo producto y presentación, bordes bien recortados).
+4. Regenera con `python3 scripts/extract-catalog.py catalogo-original/catalogo.pdf`: usa
+   assets/images/productos-hd/{id}.webp en vez del recorte del PDF, y luego `python3 scripts/photo-report.py`.
 
 ## Verificación antes de subir
 1. Sirve el sitio localmente (python3 -m http.server 8080) y revísalo con Playwright/Chromium en

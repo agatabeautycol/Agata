@@ -577,9 +577,18 @@ Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles
 
 Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Samy "Coffe Toffee" → Coffee Toffee; Lula "Magico" → Mágico, "Careza" → Cereza y "Colageno" → Colágeno; Raquel "Traslucidos" → Traslúcidos; OG "Coray" → Coral; Milagros "Bali" → Balí; Fantiluna "Exploción Tropical" → Explosión Tropical y "Seduccion" → Seducción; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
 
+## Fotos principales en alta resolución
+
+- **Cambio de regla autorizado por Ágata Beauty:** se permite quitar **solo el fondo** de las fotos con un recortador automático (rembg, modelo isnet-general-use), sin modificar el producto (colores, letras y forma intactos; sin "mejorar" la nitidez). Así todas las fotos quedan sobre el mismo disco beige del catálogo. Una primera versión con el fondo blanco o de color de las tiendas se revirtió porque rompía esa uniformidad.
+- **45 productos** usan la foto principal oficial (1080–2250 px en la tienda), sin fondo y guardada a 800 px con el producto centrado para que el círculo no lo corte. Se tomaron con `scripts/fetch-product-photos.py` de las mismas páginas de los tonos y se compararon con la foto del catálogo; su origen está en `assets/images/productos-hd/fuentes.json`.
+- **Kit de brochas Fluffy (Montoc):** su foto oficial es la caja con letras y el recorte dejaba letras sueltas: sigue con la foto del catálogo.
+- **12 productos con tonos** (base y corrector Bloomshell, polvo suelto y paleta x9 Samy, Raquel, perfume Milagros y los 6 de Fantiluna) publican cada tono como producto aparte: su foto principal sigue pendiente.
+- **Corrección:** el recorte de las fotos del PDF tenía un mínimo de 96 ppp que ampliaba ~10-15 % las fotos de ~85 ppp; ahora cada foto se recorta a su resolución real.
+- Las fotos originales que entregue Ágata Beauty van en `catalogo-original/fotos/{id}.png` y tienen prioridad. La lista de lo que falta está en [`LISTA-FOTOS-ORIGINALES.md`](LISTA-FOTOS-ORIGINALES.md) y [`FOTOS-A-MEJORAR.md`](FOTOS-A-MEJORAR.md).
+
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 
-1. **Fotos en alta resolución** de los 249 productos (ver la lista por marca).
+1. **Fotos en alta resolución** de los productos que siguen con la foto del PDF (ver FOTOS-A-MEJORAR.md).
 2. **Indicativo del WhatsApp.** El catálogo muestra 3135496268; el enlace usa **+57** (Colombia), deducido del número y de los precios en pesos.
 3. **Referencias.** El proceso de compra dice "Guarda las referencias de los productos", pero el catálogo no tiene códigos. El mensaje de WhatsApp envía el nombre y la marca.
 4. **Ofertas.** No hay en el catálogo 2026; el menú aparece solo cuando un producto tiene `offer`.
