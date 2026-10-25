@@ -1,15 +1,15 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial) y **151 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **149 ya tienen foto en alta resolución** (página oficial) y **100 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
 
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
-| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 29 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 110 |
-| **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 12 |
+| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 19 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 77 |
+| **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 4 |
 
 ## Qué se necesita
 
@@ -31,15 +31,14 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 | OG | 2 | 2 | 0 | 0 | ogmantra.co |
 | Schwarzkopf | 2 | 0 | 2 | 0 | — |
 | Tocobo | 2 | 1 | 1 | 0 | — |
-| Skin 1004 | 2 | 1 | 1 | 0 | — |
-| Bioaqua | 23 | 1 | 22 | 0 | — |
+| Skin 1004 | 1 | 1 | 0 | 0 | — |
+| Bioaqua | 15 | 1 | 14 | 0 | — |
 | Garnier | 4 | 0 | 4 | 0 | — |
 | Milagros | 2 | 1 | 1 | 0 | milagrosbeauty.com |
-| Anyeluz | 14 | 0 | 6 | 8 | — |
+| Anyeluz | 1 | 0 | 1 | 0 | — |
 | Lehit | 4 | 0 | 4 | 0 | — |
-| Leche pal pelo | 22 | 2 | 20 | 0 | — |
-| Olé | 12 | 9 | 3 | 0 | — |
-| Nude | 2 | 0 | 2 | 0 | — |
+| Leche pal pelo | 5 | 0 | 5 | 0 | — |
+| Olé | 2 | 1 | 1 | 0 | — |
 | Johnson's | 8 | 1 | 7 | 0 | — |
 | Nivea | 9 | 2 | 7 | 0 | — |
 | Chap Stick | 1 | 0 | 1 | 0 | — |
@@ -151,7 +150,6 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
 | `skin-1004-068-2` | Centella Poremizing Deep Cleansing Foam Limpiador 125 ml | 68 | 220 px | Alta | — |
-| `skin-1004-068-1` | Madagascar Centella Ampoule Foam Limpiador 125 ml | 68 | 234 px | Media | — |
 
 ### Bioaqua
 
@@ -165,20 +163,12 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 | `bioaqua-071-1` | Kit facial con retinol | 71 | 285 px | Media | — |
 | `bioaqua-071-2` | Kit facial de ácido hialurónico | 71 | 273 px | Media | — |
 | `bioaqua-072-1` | Mascarilla facial en velo | 72 | 360 px | Media | — |
-| `bioaqua-073-1` | Jabón facial - ácido salicílico | 73 | 249 px | Media | — |
 | `bioaqua-074-1` | Tónico de vitamina C | 74 | 297 px | Media | — |
 | `bioaqua-074-2` | Tónico de centella asiática | 74 | 207 px | Media | — |
 | `bioaqua-075-1` | Tónico de arroz | 75 | 267 px | Media | — |
 | `bioaqua-075-2` | Tónico de ácido hialurónico | 75 | 258 px | Media | — |
-| `bioaqua-076-1` | Serum de vitamina C | 76 | 246 px | Media | — |
 | `bioaqua-076-2` | Serum de centella asiática | 76 | 199 px | Media | — |
-| `bioaqua-077-1` | Esencia de arroz | 77 | 283 px | Media | — |
-| `bioaqua-077-2` | Serum de ácido hialurónico | 77 | 243 px | Media | — |
-| `bioaqua-078-1` | Serum de retinol | 78 | 258 px | Media | — |
-| `bioaqua-078-2` | Serum pure skin | 78 | 183 px | Media | — |
-| `bioaqua-079-1` | Crema hidratante con vitamina C | 79 | 246 px | Media | — |
 | `bioaqua-079-2` | Crema hidratante con centella asiática | 79 | 234 px | Media | — |
-| `bioaqua-080-1` | Crema hidratante de arroz | 80 | 273 px | Media | — |
 | `bioaqua-080-2` | Crema hidratante con ácido hialurónico | 80 | 220 px | Media | — |
 
 ### Garnier
@@ -201,20 +191,7 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `anyeluz-096-1` | Shampoo con aloe vera x 500 ml | 96 | 381 px | Media | — |
-| `anyeluz-096-2` | Acondicionador con argán y aloe vera x 500 ml | 96 | 396 px | Media | — |
-| `anyeluz-097-1` | Shampoo liso en casa x 800 ml - línea profesional | 97 | 390 px | Media | — |
 | `anyeluz-098-2` | Tratamiento reparación, restauración y brillo - línea profesional | 98 | 324 px | Media | — |
-| `anyeluz-099-1` | Tratamiento capilar de crecimiento | 99 | 285 px | Media | — |
-| `anyeluz-099-2` | Tratamiento con romero y bioelixir | 99 | 372 px | Media | — |
-| `anyeluz-093-1` | Shampoo de cebolla x 500 ml | 93 | 452 px | Baja | — |
-| `anyeluz-093-2` | Acondicionador de cebolla x 500 ml | 93 | 446 px | Baja | — |
-| `anyeluz-094-1` | Shampoo con romero x 500 ml | 94 | 408 px | Baja | — |
-| `anyeluz-094-2` | Acondicionador con romero x 500 ml | 94 | 423 px | Baja | — |
-| `anyeluz-095-1` | Shampoo con ginseng x 500 ml | 95 | 429 px | Baja | — |
-| `anyeluz-095-2` | Acondicionador con ginseng x 500 ml | 95 | 405 px | Baja | — |
-| `anyeluz-097-2` | Acondicionador liso en casa x 800 ml - línea profesional | 97 | 440 px | Baja | — |
-| `anyeluz-098-1` | Tratamiento liso en casa - línea profesional | 98 | 405 px | Baja | — |
 
 ### Lehit
 
@@ -229,26 +206,9 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `leche-pal-pelo-102-2` | Shampoo Protección Plus x 440 ml | 102 | 267 px | Alta | — |
-| `leche-pal-pelo-106-2` | Mascarilla hidrosellante x 440 ml | 106 | 270 px | Alta | — |
-| `leche-pal-pelo-102-1` | Shampoo tradicional x 440 ml | 102 | 276 px | Media | — |
-| `leche-pal-pelo-103-1` | Shampoo especializado x 440 ml | 103 | 273 px | Media | — |
-| `leche-pal-pelo-103-2` | Shampoo nutritivo para niños x 440 ml | 103 | 270 px | Media | — |
-| `leche-pal-pelo-104-1` | Shampoo + Acondicionador para niños x 440 ml | 104 | 261 px | Media | — |
-| `leche-pal-pelo-104-2` | Shampoo hidratante rizos para niños x 440 ml | 104 | 273 px | Media | — |
-| `leche-pal-pelo-105-1` | Acondicionador para niños x 440 ml | 105 | 271 px | Media | — |
-| `leche-pal-pelo-105-2` | Acondicionador Co-wash rizos y afro x 440 ml | 105 | 267 px | Media | — |
-| `leche-pal-pelo-106-1` | Mascarilla nutritiva rizos y ondas x 440 ml | 106 | 276 px | Media | — |
-| `leche-pal-pelo-107-1` | Mascarilla Regenerador Intenso 7 Oleos x 800 ml | 107 | 283 px | Media | — |
-| `leche-pal-pelo-107-2` | Mascarilla WOW x 800 ml | 107 | 285 px | Media | — |
 | `leche-pal-pelo-108-1` | Mascarilla Regenerador Intenso 7 Oleos x 40 ml | 108 | 288 px | Media | — |
 | `leche-pal-pelo-108-2` | Mascarilla WOW x 40 ml | 108 | 360 px | Media | — |
-| `leche-pal-pelo-109-1` | Termoprotector líquido X 250 ml | 109 | 309 px | Media | — |
-| `leche-pal-pelo-109-2` | Termoprotector tradicional x 440 ml | 109 | 276 px | Media | — |
-| `leche-pal-pelo-110-1` | Termoprotector protección plus x 440 ml | 110 | 285 px | Media | — |
 | `leche-pal-pelo-110-2` | Termoprotector rizos y ondas x 440 ml | 110 | 282 px | Media | — |
-| `leche-pal-pelo-111-1` | Gelatina slime definidora x 600 ml | 111 | 283 px | Media | — |
-| `leche-pal-pelo-111-2` | Definidor de rizos y ondas x 440 ml | 111 | 291 px | Media | — |
 | `leche-pal-pelo-112-1` | Tratamiento capilar reconstructor instantáneo x 30 ml | 112 | 261 px | Media | — |
 | `leche-pal-pelo-112-2` | Termoprotector tradicional x 30 ml | 112 | 220 px | Media | — |
 
@@ -257,24 +217,7 @@ De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
 | `ole-113-2` | Shampoo hidratación y nutrición x 500 ml | 113 | 237 px | Alta | — |
-| `ole-114-1` | Shampoo control grasa x 500 ml | 114 | 240 px | Alta | — |
-| `ole-115-1` | Shampoo + Acondicionador control frizz x 500 ml | 115 | 303 px | Alta | — |
-| `ole-115-2` | Acondicionador hidratación y crecimiento x 500 ml | 115 | 273 px | Alta | — |
-| `ole-116-1` | Acondicionador hidratación y suavidad x 500 ml | 116 | 306 px | Alta | — |
-| `ole-116-2` | Acondicionador protección long lasting x 500 ml | 116 | 312 px | Alta | — |
-| `ole-117-1` | Acondicionador purificante anti-grasa x 500 ml | 117 | 357 px | Alta | — |
-| `ole-117-2` | Termoprotector desenredante | 117 | 276 px | Alta | — |
-| `ole-118-1` | Óleo capilar de uchuva Hidratante de puntas | 118 | 249 px | Alta | — |
-| `ole-113-1` | Shampoo protección y reparación x 500 ml | 113 | 249 px | Media | — |
-| `ole-114-2` | Shampoo fortalecimiento y crecimiento x 500 ml | 114 | 300 px | Media | — |
 | `ole-118-2` | Spray antihumedad - antifrizz | 118 | 273 px | Media | — |
-
-### Nude
-
-| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
-| --- | --- | ---: | ---: | --- | --- |
-| `nude-119-1` | Protector solar Spf30 40 ml | 119 | 249 px | Media | — |
-| `nude-119-2` | Autobronceador Doypack 200ml | 119 | 249 px | Media | — |
 
 ### Johnson's
 
