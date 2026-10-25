@@ -26,6 +26,7 @@ function el(tag, attrs = {}, children = []) {
 
 // "Tono" / "Tonos", "Sabor" / "Sabores"… según cómo llama la marca a las opciones.
 const PLURALS = { Tono: 'Tonos', Color: 'Colores', Sabor: 'Sabores', Estilo: 'Estilos', Aroma: 'Aromas', 'Versión': 'Versiones' };
+const FEMININE = new Set(['Versión']);   // "Elige una versión…"
 function shadeWord(product, count = 1) {
   const word = product.shadesLabel ?? 'Tono';
   return count === 1 ? word : PLURALS[word] ?? `${word}s`;
@@ -217,7 +218,8 @@ export function buildOrderLink(product, contact, shade) {
 function shadePicker(product, onChange) {
   if (!product.shades.length) return null;
   const word = shadeWord(product).toLowerCase();
-  const hint = `Elige un ${word} para incluirlo en tu pedido.`;
+  const fem = FEMININE.has(product.shadesLabel);
+  const hint = `Elige ${fem ? 'una' : 'un'} ${word} para ${fem ? 'incluirla' : 'incluirlo'} en tu pedido.`;
   const chosen = el('p', { class: 'shade-chosen', 'aria-live': 'polite', text: hint });
   const buttons = product.shades.map((shade) => {
     const color = /^#[0-9a-f]{3,8}$/i.test(shade.color ?? '') ? shade.color : null;
@@ -233,7 +235,7 @@ function shadePicker(product, onChange) {
       const wasChecked = button.getAttribute('aria-checked') === 'true';
       buttons.forEach((b) => b.setAttribute('aria-checked', 'false'));
       button.setAttribute('aria-checked', String(!wasChecked));
-      chosen.textContent = wasChecked ? hint : `${shadeWord(product)} elegido: ${shade.name}`;
+      chosen.textContent = wasChecked ? hint : `${shadeWord(product)} ${fem ? 'elegida' : 'elegido'}: ${shade.name}`;
       onChange(wasChecked ? null : shade);
     });
     return button;
@@ -246,7 +248,7 @@ function shadePicker(product, onChange) {
       'aria-labelledby': 'shades-title',
     }, buttons),
     chosen,
-    product.shadesSource ? el('p', { class: 'shade-source' }, [`${shadeWord(product, 2)} según la `, el('a', { href: product.shadesSource, target: '_blank', rel: 'noopener', text: 'página oficial de la marca' }), '.']) : null,
+    product.shadesSource ? el('p', { class: 'shade-source' }, [`${shadeWord(product, 2)} según ${product.shadesSourceLabel ? 'las ' : 'la '}`, el('a', { href: product.shadesSource, target: '_blank', rel: 'noopener', text: product.shadesSourceLabel ?? 'página oficial de la marca' }), '.']) : null,
   ]);
 }
 

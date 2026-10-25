@@ -1,6 +1,6 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **171 ya tienen foto en alta resolución** (página oficial) y **78 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **174 ya tienen foto en alta resolución** (página oficial) y **75 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
@@ -8,7 +8,7 @@ De los 249 productos, **171 ya tienen foto en alta resolución** (página oficia
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
 | **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 15 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 60 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 57 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 3 |
 
 ## Qué se necesita
@@ -31,13 +31,13 @@ De los 249 productos, **171 ya tienen foto en alta resolución** (página oficia
 | Schwarzkopf | 2 | 0 | 2 | 0 | — |
 | Skin 1004 | 1 | 1 | 0 | 0 | — |
 | Bioaqua | 15 | 1 | 14 | 0 | — |
-| Garnier | 3 | 0 | 3 | 0 | — |
+| Garnier | 2 | 0 | 2 | 0 | — |
 | Milagros | 2 | 1 | 1 | 0 | milagrosbeauty.com |
 | Anyeluz | 1 | 0 | 1 | 0 | — |
 | Lehit | 2 | 0 | 2 | 0 | — |
 | Leche pal pelo | 4 | 0 | 4 | 0 | — |
 | Olé | 2 | 1 | 1 | 0 | — |
-| Johnson's | 7 | 1 | 6 | 0 | — |
+| Johnson's | 5 | 1 | 4 | 0 | — |
 | Nivea | 6 | 1 | 5 | 0 | — |
 | Chap Stick | 1 | 0 | 1 | 0 | — |
 | Fantiluna | 6 | 0 | 5 | 1 | fantiluna.com |
@@ -149,7 +149,6 @@ De los 249 productos, **171 ya tienen foto en alta resolución** (página oficia
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `garnier-081-2` | Agua micelar todo en 1 Rosada x 100 ml | 81 | 261 px | Media | — |
 | `garnier-082-1` | Agua micelar pure active x 400 ml | 82 | 252 px | Media | — |
 | `garnier-082-2` | Agua micelar con vitamina C x 400 ml | 82 | 312 px | Media | — |
 
@@ -195,10 +194,8 @@ De los 249 productos, **171 ya tienen foto en alta resolución** (página oficia
 | --- | --- | ---: | ---: | --- | --- |
 | `johnsons-122-2` | Baño líquido - Antes de dormir | 122 | 273 px | Alta | — |
 | `johnsons-120-1` | Shampoo baby - Cabello oscuro | 120 | 234 px | Media | — |
-| `johnsons-120-2` | Shampoo baby - Cabello claro | 120 | 282 px | Media | — |
 | `johnsons-121-2` | Shampoo baby - amarillo | 121 | 279 px | Media | — |
 | `johnsons-122-1` | Baño líquido - Avena | 122 | 273 px | Media | — |
-| `johnsons-123-1` | Crema líquida baby | 123 | 246 px | Media | — |
 | `johnsons-123-2` | Crema líquida - Avena | 123 | 282 px | Media | — |
 
 ### Nivea

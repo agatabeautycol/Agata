@@ -112,13 +112,13 @@ SHADE_PAGES = {
     # Maybelline: cada versión (lavable / a prueba de agua) en la tienda que indicó Ágata Beauty.
     'Maybelline|Pestañina Sky High Lavable | A prueba de agua': {
         'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-lash-sensational-sky-high/p#2')],
-        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p'},
+        'label': 'Versión', 'sourceLabel': 'tiendas Medipiel (lavable) y Cromantic (a prueba de agua)', 'source': 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p'},
     'Maybelline|Pestañina Colossal Lavable | A prueba de agua': {
         'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-colossal-50938/p')],
-        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p'},
+        'label': 'Versión', 'sourceLabel': 'tiendas Medipiel (lavable) y Cromantic (a prueba de agua)', 'source': 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p'},
     'Maybelline|Pestañina Surreal Lavable | A prueba de agua': {
         'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-falsies-surreal-black/p#2')],
-        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'},
+        'label': 'Versión', 'sourceLabel': 'tiendas Medipiel (lavable) y Cromantic (a prueba de agua)', 'source': 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'},
     # Fantiluna (WooCommerce): cada aroma es un producto de la categoría.
     'Fantiluna|Mantequilla corporal x 220 ml': {
         'woo': 'https://fantiluna.com', 'category': 340, 'title': r'^mantequilla corporal (?P<tono>.+?)(?: 220 ?ml)?$',
@@ -518,6 +518,8 @@ def main():
             if str(old.relative_to(ROOT)) not in used:
                 old.unlink()
         product['shadesSource'] = page_url
+        if isinstance(url, dict) and url.get('sourceLabel'):
+            product['shadesSourceLabel'] = url['sourceLabel']
         sin_foto = sum(1 for s in shades if 'image' not in s)
         print(f'ok {key}: {len(shades)} × {product["shadesLabel"]} (opción «{note}» en la tienda)' + (f', {sin_foto} sin foto' if sin_foto else ''))
         for s in product['shades']:
