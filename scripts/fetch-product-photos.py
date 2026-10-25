@@ -207,6 +207,13 @@ PHOTO_PAGES = {
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    # Revisadas por Ágata Beauty: el recorte borraba partes del producto.
+    'Montoc|Base Glow Filter': 'el recorte borraba partes del producto',
+    'Bloomshell|Trío de Rubores': 'el recorte borraba partes del producto',
+    'Bloomshell|Papel matificante Bloom powder paper': 'el recorte borraba partes del producto',
+    'Bloomshell|Kit Kiss Love': 'el recorte borraba partes del producto',
+    'Majikal|Shiny Lip Oil': 'la foto de la tienda es de ambiente y el recorte borraba partes',
+    'Atenea|Polvo en gel matificante Matterpowder': 'el recorte borraba partes del producto',
     "Johnson's|Crema líquida - Avena": 'la tienda muestra otra versión de la etiqueta',
     'Garnier|Agua micelar con vitamina C x 400 ml': 'las fotos de la tienda traen letreros o una mano; ninguna sirve para quitar el fondo',
     'Lehit|Tratamiento aceite de aguacate x30 gr': 'la foto trae hojas decorativas que quedan sueltas al quitar el fondo',

@@ -1,14 +1,14 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **174 ya tienen foto en alta resolución** (página oficial) y **75 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **168 ya tienen foto en alta resolución** (página oficial) y **81 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
 
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
-| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 15 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 57 |
+| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 18 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 60 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 3 |
 
 ## Qué se necesita
@@ -20,10 +20,11 @@ De los 249 productos, **174 ya tienen foto en alta resolución** (página oficia
 
 | Marca | Pendientes | Alta | Media | Baja | Tienda que ya se puede leer |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Montoc | 4 | 2 | 1 | 1 | montoccosmetictools.com |
-| Bloomshell | 12 | 4 | 8 | 0 | bloomshell.co |
+| Montoc | 5 | 2 | 2 | 1 | montoccosmetictools.com |
+| Bloomshell | 15 | 5 | 10 | 0 | bloomshell.co |
 | Girly | 1 | 1 | 0 | 0 | cocopinkstore.com (revendedor) |
-| Majikal | 1 | 0 | 1 | 0 | majikalbeauty.com |
+| Majikal | 2 | 1 | 1 | 0 | majikalbeauty.com |
+| Atenea | 1 | 1 | 0 | 0 | ateneaprofesional.com |
 | Prosa | 3 | 0 | 2 | 1 | — |
 | Samy | 2 | 0 | 2 | 0 | samycosmetics.com |
 | Raquel | 1 | 0 | 1 | 0 | losestilistas.com.co (revendedor) |
@@ -52,6 +53,7 @@ De los 249 productos, **174 ya tienen foto en alta resolución** (página oficia
 | --- | --- | ---: | ---: | --- | --- |
 | `montoc-003-2` | Polvos Translúcidos | 3 | 315 px | Alta | — |
 | `montoc-009-1` | Set de Borlas | 9 | 339 px | Alta | — |
+| `montoc-003-1` | Base Glow Filter | 3 | 315 px | Media | sí |
 | `montoc-008-1` | Fijador de maquillaje Dixy Fix | 8 | 258 px | Media | — |
 | `montoc-009-2` | Kit de brochas de maquillaje Fluffy x 10 | 9 | 429 px | Baja | sí |
 
@@ -62,15 +64,18 @@ De los 249 productos, **174 ya tienen foto en alta resolución** (página oficia
 | `bloomshell-011-1` | Base líquida 2 en 1 My foundation | 11 | 327 px | Alta | sí |
 | `bloomshell-012-2` | Polvos sueltos 4 tonos | 12 | 267 px | Alta | — |
 | `bloomshell-016-1` | Llavero Mimosa Tinta + Gloss | 16 | 217 px | Alta | — |
+| `bloomshell-017-1` | Papel matificante Bloom powder paper | 17 | 240 px | Alta | — |
 | `bloomshell-017-2` | Papel matificante Bloom Oil Stop | 17 | 312 px | Alta | — |
 | `bloomshell-011-2` | Corrector My concealer | 11 | 318 px | Media | sí |
 | `bloomshell-012-1` | Polvos sueltos | 12 | 294 px | Media | — |
+| `bloomshell-013-2` | Trío de Rubores | 13 | 288 px | Media | sí |
 | `bloomshell-014-2` | Iluminador Bloom Dazlee | 14 | 243 px | Media | — |
 | `bloomshell-015-1` | Laminador de cejas | 15 | 330 px | Media | — |
 | `bloomshell-015-2` | Paleta de sombras Bloom Vibes | 15 | 300 px | Media | — |
 | `bloomshell-016-2` | Brillo labial - Bombón | 16 | 267 px | Media | — |
 | `bloomshell-019-1` | Bloom Termo | 19 | 271 px | Media | — |
 | `bloomshell-019-2` | Bloom porta cosméticos | 19 | 261 px | Media | — |
+| `bloomshell-020-1` | Kit Kiss Love | 20 | 372 px | Media | — |
 
 ### Girly
 
@@ -82,7 +87,14 @@ De los 249 productos, **174 ya tienen foto en alta resolución** (página oficia
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
+| `majikal-029-3` | Shiny Lip Oil | 29 | 201 px | Alta | sí |
 | `majikal-029-1` | Polvos sueltos - 4 tonos | 29 | 319 px | Media | — |
+
+### Atenea
+
+| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
+| --- | --- | ---: | ---: | --- | --- |
+| `atenea-031-1` | Polvo en gel matificante Matterpowder | 31 | 273 px | Alta | — |
 
 ### Prosa
 
@@ -207,7 +219,7 @@ De los 249 productos, **174 ya tienen foto en alta resolución** (página oficia
 | `nivea-126-1` | Desodorante aclarado natural Classic Touch x 50ml | 126 | 264 px | Media | — |
 | `nivea-126-2` | Desodorante tono natural mujer satín spray x 150 ml | 126 | 306 px | Media | — |
 | `nivea-127-2` | Desodorante dama Invisible Black & White x 50ml | 127 | 327 px | Media | — |
-| `nivea-128-1` | Lip care - 24 horas de humectación | 128 | 345 px | Media | — |
+| `nivea-128-1` | Lip care - 24 horas de humectación | 128 | 345 px | Media | sí |
 
 ### Chap Stick
 
