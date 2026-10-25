@@ -40,6 +40,7 @@ _spec.loader.exec_module(shades)
 
 # Productos sin tonos (o cuyo enlace de tonos no sirve para la foto principal): "Marca|Nombre": url.
 # Coincidencias buscadas en la tienda de cada marca y revisadas contra la foto del catálogo.
+# "#N" al final del enlace usa la foto N de la página (cuando la primera es de una modelo, no del producto).
 PHOTO_PAGES = {
     'Montoc|Polvos Translúcidos': 'https://montoccosmetictools.com/products/polvo-suelto-soft-powder',
     'Montoc|Brow Wax Ultra Fijador de cejas': 'https://montoccosmetictools.com/products/brow-wax-ultra',
@@ -103,12 +104,97 @@ PHOTO_PAGES = {
     'Milagros|Tónico revitalizante capilar milagro herbal (tónico con romero)': 'https://milagrosbeauty.com/products/tonico-revitalizante',
     'Samy|Esponja de maquillaje': 'https://www.samycosmetics.com/esponja-de-maquillaje-x1-und-s235/p',
     'Samy|Brocha retráctil': 'https://www.samycosmetics.com/brocha-retractil-para-rostro-f7-samy-s442/p',
+    'Leche pal pelo|Shampoo tradicional x 440 ml': 'https://lechepalpelo.com/products/tratamiento-shampoo',
+    'Leche pal pelo|Shampoo Protección Plus x 440 ml': 'https://lechepalpelo.com/products/shampoo-proteccion-plus',
+    'Leche pal pelo|Shampoo especializado x 440 ml': 'https://lechepalpelo.com/products/shampoo-especializado-1',
+    'Leche pal pelo|Shampoo nutritivo para niños x 440 ml': 'https://lechepalpelo.com/products/shampoo-nutritivo',
+    'Leche pal pelo|Shampoo + Acondicionador para niños x 440 ml': 'https://lechepalpelo.com/products/shampoo-acondicionador',
+    'Leche pal pelo|Shampoo hidratante rizos para niños x 440 ml': 'https://lechepalpelo.com/products/shampoo-hidratante',
+    'Leche pal pelo|Acondicionador para niños x 440 ml': 'https://lechepalpelo.com/products/acondicionador-linea-kids',
+    'Leche pal pelo|Acondicionador Co-wash rizos y afro x 440 ml': 'https://lechepalpelo.com/products/co-wash',
+    'Leche pal pelo|Mascarilla nutritiva rizos y ondas x 440 ml': 'https://lechepalpelo.com/products/mascarilla-nutritiva-1',
+    'Leche pal pelo|Mascarilla hidrosellante x 440 ml': 'https://lechepalpelo.com/products/mascarilla-hidrosellante-1',
+    'Leche pal pelo|Mascarilla Regenerador Intenso 7 Oleos x 800 ml': 'https://lechepalpelo.com/products/mascarilla-7-oleos-regenerador-intenso',
+    'Leche pal pelo|Mascarilla WOW x 800 ml': 'https://lechepalpelo.com/products/mascarilla-wow',
+    'Leche pal pelo|Termoprotector líquido X 250 ml': 'https://lechepalpelo.com/products/termoprotector-liquido',
+    'Leche pal pelo|Termoprotector tradicional x 440 ml': 'https://lechepalpelo.com/products/linea-tradicional-termoprotector',
+    'Leche pal pelo|Termoprotector protección plus x 440 ml': 'https://lechepalpelo.com/products/linea-proteccion-plus-termoprotector',
+    'Leche pal pelo|Termoprotector rizos y ondas x 440 ml': 'https://lechepalpelo.com/products/linea-rizos-ondas-termoprotector',
+    'Leche pal pelo|Gelatina slime definidora x 600 ml': 'https://lechepalpelo.com/products/gelatina-slime-definidora',
+    'Leche pal pelo|Definidor de rizos y ondas x 440 ml': 'https://lechepalpelo.com/products/definidor-rizos-ondas',
+    'Anyeluz|Shampoo de cebolla x 500 ml': 'https://www.anyeluz.com/products/shampoo-de-cebolla',
+    'Anyeluz|Acondicionador de cebolla x 500 ml': 'https://www.anyeluz.com/products/acondicionador-de-cebolla',
+    'Anyeluz|Shampoo con romero x 500 ml': 'https://www.anyeluz.com/products/shampoo-de-romero',
+    'Anyeluz|Acondicionador con romero x 500 ml': 'https://www.anyeluz.com/products/acondicionador-con-romero-anyeluz',
+    'Anyeluz|Shampoo con ginseng x 500 ml': 'https://www.anyeluz.com/products/shampoo-ginseng',
+    'Anyeluz|Acondicionador con ginseng x 500 ml': 'https://www.anyeluz.com/products/acondicionador-ginseng',
+    'Anyeluz|Shampoo con aloe vera x 500 ml': 'https://www.anyeluz.com/products/shampoo-aloe-vera',
+    'Anyeluz|Acondicionador con argán y aloe vera x 500 ml': 'https://www.anyeluz.com/products/acondicionador-ginseng-aloe',
+    'Anyeluz|Shampoo liso en casa x 800 ml - línea profesional': 'https://www.anyeluz.com/products/shampoo-antifrizz-profesional',
+    'Anyeluz|Acondicionador liso en casa x 800 ml - línea profesional': 'https://www.anyeluz.com/products/acondicionador-antifrizz-profesional',
+    'Anyeluz|Tratamiento liso en casa - línea profesional': 'https://www.anyeluz.com/products/tratamiento-liso-casa-linea-profesional',
+    'Anyeluz|Tratamiento reparación, restauración y brillo - línea profesional': 'https://www.anyeluz.com/products/tratamiento-reparacion-restauracion-y-brillo-linea-profesional',
+    'Anyeluz|Tratamiento capilar de crecimiento': 'https://www.anyeluz.com/products/terapia-capilar-de-crecimiento-anyeluz',
+    'Anyeluz|Tratamiento con romero y bioelixir': 'https://www.anyeluz.com/products/bioterapia-capilar-con-romero-y-bioelixir-anyeluz',
+    'Olé|Shampoo protección y reparación x 500 ml': 'https://olecapilar.com/products/shampoo-antioxidante-mix-de-frutas',
+    'Olé|Shampoo hidratación y nutrición x 500 ml': 'https://olecapilar.com/products/shampoo-hidratacion-coco-canela-miel',
+    'Olé|Shampoo control grasa x 500 ml': 'https://olecapilar.com/products/shampoo-antigrasa-cebolla-jengibre',
+    'Olé|Shampoo fortalecimiento y crecimiento x 500 ml': 'https://olecapilar.com/products/shampoo-crecimiento-revitalizante-de-arroz',
+    'Olé|Shampoo + Acondicionador control frizz x 500 ml': 'https://olecapilar.com/products/shampoo-acondicionador-capilar-vinagre-de-manzana-control-frizz',
+    'Olé|Acondicionador hidratación y crecimiento x 500 ml': 'https://olecapilar.com/products/acondicionador-capilar-proteina-de-arroz-hidratacion-y-crecimiento',
+    'Olé|Acondicionador hidratación y suavidad x 500 ml': 'https://olecapilar.com/products/acondicionador-suavidad-algodon-coco',
+    'Olé|Acondicionador protección long lasting x 500 ml': 'https://olecapilar.com/products/acondicionador-long-lasting-jarabe-de-mango',
+    'Olé|Acondicionador purificante anti-grasa x 500 ml': 'https://olecapilar.com/products/acondicionador-capilar-extracto-natural-de-jengibre-purificante-anti-grasa',
+    'Olé|Termoprotector desenredante': 'https://olecapilar.com/products/termoprotector-desenredante-aceite-de-acai',
+    'Olé|Óleo capilar de uchuva Hidratante de puntas': 'https://olecapilar.com/products/oleo-capilar-de-uchuva-reparador-de-puntas',
+    'Olé|Spray antihumedad - antifrizz': 'https://olecapilar.com/products/spray-anti-humedad-anti-frizz-con-restart-pro',
+    'Skin 1004|Madagascar Centella Ampoule Foam Limpiador 125 ml': 'https://www.skin1004.com/products/skin1004-madagascar-centella-ampoule-foam#3',
+    'Bioaqua|Kit facial de rosas': 'https://bioaqua.com.co/producto/20713/',
+    'Bioaqua|Kit facial de arroz': 'https://bioaqua.com.co/producto/kit-arroz-blanco/',
+    'Bioaqua|Kit facial de centella asiática': 'https://bioaqua.com.co/producto/kit-centella-asiatica-2/',
+    'Bioaqua|Kit facial de ácido salicílico': 'https://bioaqua.com.co/producto/kit-acido-salicilico/',
+    'Bioaqua|Kit facial con retinol': 'https://bioaqua.com.co/producto/kit-facial-retinol-bioaqua/',
+    'Bioaqua|Kit facial de ácido hialurónico': 'https://bioaqua.com.co/producto/kit-hidratacion-intensiva/',
+    'Bioaqua|Jabón facial - ácido salicílico': 'https://bioaqua.com.co/producto/jabon-facial-de-acido-salicilico/',
+    'Bioaqua|Espuma limpiadora de arroz': 'https://bioaqua.com.co/producto/jabon-facial-de-arroz-blanco/',
+    'Bioaqua|Serum de vitamina C': 'https://bioaqua.com.co/producto/suero-vc-bioaqua-30-ml/',
+    'Bioaqua|Esencia de arroz': 'https://bioaqua.com.co/producto/esencia-de-arroz-y-ha/',
+    'Bioaqua|Serum de ácido hialurónico': 'https://bioaqua.com.co/producto/suero-hidratacion-intensiva-ha-bioaqua/',
+    'Bioaqua|Serum de retinol': 'https://bioaqua.com.co/producto/suero-retinol-bioaqua/',
+    'Bioaqua|Serum pure skin': 'https://bioaqua.com.co/producto/suero-pure-skin/',
+    'Bioaqua|Crema hidratante con vitamina C': 'https://bioaqua.com.co/producto/crema-vc-bioaqua/',
+    'Bioaqua|Crema hidratante de arroz': 'https://bioaqua.com.co/producto/crema-de-arroz-blanco/',
+    'Nude|Protector solar Spf30 40 ml': 'https://nude.com.co/producto/protector-spf30-nude-40ml/',
+    'Nude|Autobronceador Doypack 200ml': 'https://nude.com.co/producto/autobronceador-doypack-nude-200ml/',
+    'Prosa|Pestañina Profesional Silicon': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-profesional-silic%C3%B3n',
+    'Prosa|Pestañina Maxivolumen': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-maxi-volumen',
+    'Prosa|Pestañina Microfibra': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-con-micro-fibras-prosa',
+    'Prosa|Pestañina Maxivolumen Silicon': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-maxi-volumen-silic%C3%B3n',
+    'Prosa|Pestañina Profesional Silicon - Café': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-profesional-silic%C3%B3n-caf%C3%A9',
+    'Prosa|Pestañina Sensual Love': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-sensual-love-prosa',
+    'Prosa|Pestañina con aceite de mamey': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-con-aceite-de-mamey-prosa',
+    'Prosa|Pestañina con aceite de aguacate': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-aguacate-prosa',
+    'Prosa|Pestañina red passion': 'https://www.prosacolombia.com.co/product-page/pesta%C3%B1ina-red-passion',
+    'Prosa|Pestañina maxivolumen Borgoña': 'https://www.prosacolombia.com.co/product-page/maxi-volumen-borgo%C3%B1a',
+    'Prosa|Tratamiento en máscara para pestañas y cejas': 'https://www.prosacolombia.com.co/product-page/crystal-protein-gel-prosa',
+    'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'https://www.prosacolombia.com.co/product-page/got2b-glued-spiking-gel-water-resistant-35-g',
 }
 
 # Productos cuyos tonos están publicados como productos separados: la foto de un tono no representa
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    'Bioaqua|Kit facial de rosas': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Kit facial de arroz': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Kit facial de centella asiática': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Kit facial de ácido salicílico': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Kit facial de ácido hialurónico': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Kit facial con retinol': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
+    'Bioaqua|Espuma limpiadora de arroz': 'en la tienda es un tubo; en el catálogo es un frasco con cepillo',
+    'Leche pal pelo|Termoprotector rizos y ondas x 440 ml': 'la foto del catálogo es otro frasco (Tradicional); pendiente confirmar con Ágata Beauty',
+    'Anyeluz|Tratamiento reparación, restauración y brillo - línea profesional': 'frasco blanco sobre fondo blanco: el recorte se come partes del frasco',
+    'Olé|Shampoo hidratación y nutrición x 500 ml': 'el color del frasco en la tienda no coincide con el del catálogo',
+    'Olé|Spray antihumedad - antifrizz': 'la etiqueta de la tienda es distinta a la del catálogo',
     'Montoc|Kit de brochas de maquillaje Fluffy x 10': 'la foto oficial es la caja con letras: el recorte deja letras sueltas',
     'Montoc|Polvos Translúcidos': 'la foto de la tienda muestra otro empaque (caja dorada)',
     'Montoc|Fijador de maquillaje Dixy Fix': 'el envase de la tienda se ve distinto al del catálogo',
@@ -133,10 +219,12 @@ SKIP = {
 
 def main_photo(url):
     """URL de la foto principal del producto en la página oficial."""
+    url, _, n = url.partition('#')
+    n = int(n or 1) - 1
     parts = urlsplit(url)
     if '/products/' in parts.path:                                  # Shopify
         images = shades.shopify_json(url).get('images', [])
-        return images[0]['src'].split('?')[0] if images else None
+        return images[n]['src'].split('?')[0] if len(images) > n else None
     if parts.netloc.endswith('samycosmetics.com'):                  # VTEX
         found = json.loads(shades.get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
         items = found[0].get('items', []) if found else []
@@ -144,7 +232,9 @@ def main_photo(url):
     page = shades.get(url).decode('utf-8', 'replace')               # WooCommerce y otras
     m = (re.search(r'data-large_image="([^"]+)"', page)
          or re.search(r'<meta property="og:image" content="([^"]+)"', page))
-    return m.group(1) if m else None
+    if not m:
+        return None
+    return re.sub(r'(wixstatic\.com/media/[^/]+)/v1/.*', r'\1', m.group(1))   # Wix: foto original, sin reducir
 
 
 def framed(img):
