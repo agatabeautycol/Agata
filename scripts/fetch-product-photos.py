@@ -178,12 +178,20 @@ PHOTO_PAGES = {
     'Prosa|Pestañina maxivolumen Borgoña': 'https://www.prosacolombia.com.co/product-page/maxi-volumen-borgo%C3%B1a',
     'Prosa|Tratamiento en máscara para pestañas y cejas': 'https://www.prosacolombia.com.co/product-page/crystal-protein-gel-prosa',
     'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'https://www.prosacolombia.com.co/product-page/got2b-glued-spiking-gel-water-resistant-35-g',
+    'Tocobo|Bloqueador en barra Cotton Soft SPF50': 'https://kalonskinbar.com/products/cotton-soft-sun-stick',
+    'Tocobo|Dúo de limpieza': 'https://kalonskinbar.com/products/mini-duo-doble-limpieza-tocobo',
+    'Nivea|Crema corporal Nivea reafirmante Q10 + vitamina C x 1000 Ml': 'https://www.nivea.com.co/productos/crema-corporal-reafirmante-q10-(1000ml)-40059004910600057.html',
+    'Nivea|Crema corporal Nivea milk nutritiva - Piel Seca x 400 ml': 'https://www.nivea.com.co/productos/crema-corporal-milk-nutritiva-(400ml)-40058083196950057.html',
+    'Nivea|Desodorante men Invisible Black & White x 50ml': 'https://www.nivea.com.co/productos/black-and-white-invisible-roll-on-40059000367590057.html',
 }
 
 # Productos cuyos tonos están publicados como productos separados: la foto de un tono no representa
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    'Prosa|Tratamiento en máscara para pestañas y cejas': 'en el catálogo el tubo es transparente; en la tienda tiene otra etiqueta',
+    'Prosa|Pestañina Profesional Silicon - Café': 'en la tienda el tubo es dorado; en el catálogo es café oscuro',
+    'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'la tienda muestra otra versión del empaque (letras distintas)',
     'Bioaqua|Kit facial de rosas': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
     'Bioaqua|Kit facial de arroz': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
     'Bioaqua|Kit facial de centella asiática': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
@@ -231,6 +239,7 @@ def main_photo(url):
         return (items[0].get('images') or [{}])[0].get('imageUrl') if items else None
     page = shades.get(url).decode('utf-8', 'replace')               # WooCommerce y otras
     m = (re.search(r'data-large_image="([^"]+)"', page)
+         or re.search(r'"image":\["([^"]+)"', page)                  # datos estructurados (Nivea)
          or re.search(r'<meta property="og:image" content="([^"]+)"', page))
     if not m:
         return None
