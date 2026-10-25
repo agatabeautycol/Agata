@@ -1,14 +1,14 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **149 ya tienen foto en alta resolución** (página oficial) y **100 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **163 ya tienen foto en alta resolución** (página oficial) y **86 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
 
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
-| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 19 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 77 |
+| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 15 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 67 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 4 |
 
 ## Qué se necesita
@@ -25,12 +25,11 @@ De los 249 productos, **149 ya tienen foto en alta resolución** (página oficia
 | Girly | 1 | 1 | 0 | 0 | cocopinkstore.com (revendedor) |
 | Maybelline | 3 | 0 | 2 | 1 | — |
 | Majikal | 1 | 0 | 1 | 0 | majikalbeauty.com |
-| Prosa | 12 | 2 | 9 | 1 | — |
+| Prosa | 3 | 0 | 2 | 1 | — |
 | Samy | 2 | 0 | 2 | 0 | samycosmetics.com |
 | Raquel | 1 | 0 | 1 | 0 | losestilistas.com.co (revendedor) |
 | OG | 2 | 2 | 0 | 0 | ogmantra.co |
 | Schwarzkopf | 2 | 0 | 2 | 0 | — |
-| Tocobo | 2 | 1 | 1 | 0 | — |
 | Skin 1004 | 1 | 1 | 0 | 0 | — |
 | Bioaqua | 15 | 1 | 14 | 0 | — |
 | Garnier | 4 | 0 | 4 | 0 | — |
@@ -40,7 +39,7 @@ De los 249 productos, **149 ya tienen foto en alta resolución** (página oficia
 | Leche pal pelo | 5 | 0 | 5 | 0 | — |
 | Olé | 2 | 1 | 1 | 0 | — |
 | Johnson's | 8 | 1 | 7 | 0 | — |
-| Nivea | 9 | 2 | 7 | 0 | — |
+| Nivea | 6 | 1 | 5 | 0 | — |
 | Chap Stick | 1 | 0 | 1 | 0 | — |
 | Fantiluna | 6 | 0 | 5 | 1 | fantiluna.com |
 
@@ -98,17 +97,8 @@ De los 249 productos, **149 ya tienen foto en alta resolución** (página oficia
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `prosa-043-1` | Pestañina Profesional Silicon | 43 | 204 px | Alta | — |
-| `prosa-044-2` | Pestañina Maxivolumen Silicon | 44 | 199 px | Alta | — |
-| `prosa-043-2` | Pestañina Maxivolumen | 43 | 321 px | Media | — |
-| `prosa-044-1` | Pestañina Microfibra | 44 | 297 px | Media | — |
 | `prosa-045-1` | Pestañina Profesional Silicon - Café | 45 | 303 px | Media | — |
-| `prosa-045-2` | Pestañina Sensual Love | 45 | 247 px | Media | — |
-| `prosa-046-1` | Pestañina con aceite de mamey | 46 | 208 px | Media | — |
-| `prosa-046-2` | Pestañina con aceite de aguacate | 46 | 252 px | Media | — |
-| `prosa-047-1` | Pestañina red passion | 47 | 234 px | Media | — |
 | `prosa-047-2` | Aceite para pestañas | 47 | 199 px | Media | — |
-| `prosa-048-1` | Pestañina maxivolumen Borgoña | 48 | 312 px | Media | — |
 | `prosa-048-2` | Tratamiento en máscara para pestañas y cejas | 48 | 596 px | Baja | — |
 
 ### Samy
@@ -137,13 +127,6 @@ De los 249 productos, **149 ya tienen foto en alta resolución** (página oficia
 | --- | --- | ---: | ---: | --- | --- |
 | `schwarzkopf-066-1` | Gel fijador Glued Got2b amarillo | 66 | 192 px | Media | — |
 | `schwarzkopf-066-2` | Gel para cejas Got2b amarillo | 66 | 247 px | Media | — |
-
-### Tocobo
-
-| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
-| --- | --- | ---: | ---: | --- | --- |
-| `tocobo-067-1` | Bloqueador en barra Cotton Soft SPF50 | 67 | 222 px | Alta | — |
-| `tocobo-067-2` | Dúo de limpieza | 67 | 192 px | Media | — |
 
 ### Skin 1004
 
@@ -236,13 +219,10 @@ De los 249 productos, **149 ya tienen foto en alta resolución** (página oficia
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `nivea-124-2` | Crema corporal Nivea reafirmante Q10 + vitamina C x 1000 Ml | 124 | 249 px | Alta | — |
 | `nivea-125-1` | Crema Nivea Corporal Reafirmante Q10 Creatina x 400 ml | 125 | 283 px | Alta | — |
 | `nivea-124-1` | Crema hidratante | 124 | 306 px | Media | — |
-| `nivea-125-2` | Crema corporal Nivea milk nutritiva - Piel Seca x 400 ml | 125 | 264 px | Media | — |
 | `nivea-126-1` | Desodorante aclarado natural Classic Touch x 50ml | 126 | 264 px | Media | — |
 | `nivea-126-2` | Desodorante tono natural mujer satín spray x 150 ml | 126 | 306 px | Media | — |
-| `nivea-127-1` | Desodorante men Invisible Black & White x 50ml | 127 | 271 px | Media | — |
 | `nivea-127-2` | Desodorante dama Invisible Black & White x 50ml | 127 | 327 px | Media | — |
 | `nivea-128-1` | Lip care - 24 horas de humectación | 128 | 345 px | Media | — |
 
