@@ -577,16 +577,9 @@ Formato aplicado a todos los nombres (sin cambiar su contenido): espacios dobles
 
 Ajustes de nombres autorizados: Base Glow Filter sin el sufijo "Glow Filter" (la tienda escribe "Gow Filter"); Brocha mini "Sulpting" → "Sculpting"; Bloomshell My foundation "Médium deep" / "Neutral médium" → sin tilde; Atenea: nombres en mayúsculas y pegados separados en palabras (Dusty Rose, Peach Melba, Pink Pearl, Tropical B, Naked Mind, Pale Pink, Cool Wood, Nude Dark, Goji Berry, Clear Wine, Dark Sand; Delineador "AUBLIGHT" → Light), "Eboky" → Ebony y "Tosted Coconut" → Toasted Coconut; Majikal Magic Pen sin la descripción del color, "Cafeina" → Cafeína y "Cherrs" → Cherry; Samy "Coffe Toffee" → Coffee Toffee; Lula "Magico" → Mágico, "Careza" → Cereza y "Colageno" → Colágeno; Raquel "Traslucidos" → Traslúcidos; OG "Coray" → Coral; Milagros "Bali" → Balí; Fantiluna "Exploción Tropical" → Explosión Tropical y "Seduccion" → Seducción; Kit Fluffy: los códigos lp670, lp671, lp667, lp669 y lp668 se nombran por el color con que la tienda marca cada kit (Vino, Rosa claro, Fucsia, Lila, Rojo).
 
-## Fotos principales en alta resolución
-
-- **46 productos** ya usan la foto principal oficial (1080–2250 px en la tienda, guardada a 800 px con el producto centrado y margen para el círculo; sin retoques ni IA). Se tomaron con `scripts/fetch-product-photos.py` de las mismas páginas de los tonos y se compararon con la foto del catálogo. Su origen está en `assets/images/productos-hd/fuentes.json`. Algunas tienen otra composición (p. ej. el frasco en lugar de la caja) y fondo blanco o de color en vez del beige del catálogo: cambiar el fondo exigiría retocar la foto.
-- **12 productos con tonos** (base y corrector Bloomshell, polvo suelto y paleta x9 Samy, Raquel, perfume Milagros y los 6 de Fantiluna) publican cada tono como producto aparte: la foto de un tono no representa al producto completo, así que su foto principal sigue pendiente.
-- **Corrección:** el recorte de las fotos del PDF tenía un mínimo de 96 ppp que ampliaba ~10-15 % las fotos de ~85 ppp. Ahora cada foto se recorta exactamente a su resolución real.
-- Lo que falta está en [`FOTOS-A-MEJORAR.md`](FOTOS-A-MEJORAR.md) (generado por `scripts/photo-report.py`).
-
 ## Información pendiente `[INFORMACIÓN PENDIENTE]`
 
-1. **Fotos en alta resolución** de los 203 productos que siguen con la foto del PDF (ver FOTOS-A-MEJORAR.md).
+1. **Fotos en alta resolución** de los 249 productos (ver la lista por marca).
 2. **Indicativo del WhatsApp.** El catálogo muestra 3135496268; el enlace usa **+57** (Colombia), deducido del número y de los precios en pesos.
 3. **Referencias.** El proceso de compra dice "Guarda las referencias de los productos", pero el catálogo no tiene códigos. El mensaje de WhatsApp envía el nombre y la marca.
 4. **Ofertas.** No hay en el catálogo 2026; el menú aparece solo cuando un producto tiene `offer`.

@@ -55,9 +55,6 @@ catalogo-original/          Lugar del PDF de Canva (no se sube: pesa ~345 MB)
 scripts/extract-catalog.py  Genera productos, fotos y páginas a partir del PDF
 scripts/optimize-images.mjs Convierte fotos sueltas a WebP (para productos agregados a mano)
 scripts/test-ux.cjs         Pruebas automáticas de la web (Playwright)
-scripts/fetch-shades.py     Tonos (nombre + foto) desde la página oficial de cada producto
-scripts/fetch-product-photos.py  Foto principal en alta resolución desde la página oficial
-scripts/photo-report.py     Genera docs/FOTOS-A-MEJORAR.md (fotos que siguen en baja resolución)
 docs/                       Auditoría, tabla de productos (generada) e instrucciones para las fotos
 ```
 
