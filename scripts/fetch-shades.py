@@ -18,7 +18,8 @@ import html, io, json, re, sys, unicodedata, urllib.request
 from pathlib import Path
 from urllib.parse import parse_qs, quote, unquote, urlencode, urljoin, urlsplit
 
-from PIL import Image
+import numpy as np
+from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data' / 'products.json'
@@ -63,7 +64,10 @@ SHADE_PAGES = {
     'Atenea|Base de maquillaje 1ST Scene': 'https://ateneaprofesional.com/products/mini-base-liquida-1st-scene',
     'Atenea|Rubor compacto 1ST Scene': 'https://ateneaprofesional.com/products/rubores-individuales-1st-scene',
     'Atenea|Bronzer cremoso en barra': 'https://ateneaprofesional.com/products/bronzer-cremoso',
-    'Atenea|Iluminador efecto húmedo Sublime': 'https://ateneaprofesional.com/products/iluminador-efecto-humedo-sublime',
+    # Sublime: las dos muestras de textura de la foto de la tienda ("TONO 01" arriba, "TONO 02" abajo), recortadas.
+    'Atenea|Iluminador efecto húmedo Sublime': {
+        'items': [('SH001', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp#crop=0,0,0.5,0.5'), ('SH002', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp#crop=0,0.5,0.5,1')],
+        'label': 'Color', 'source': 'https://ateneaprofesional.com/products/iluminador-efecto-humedo-sublime'},
     'Atenea|Serum Tinted 1ST Scene': 'https://ateneaprofesional.com/products/serum-tinted-foundation',
     'Atenea|Rubor cremoso en barra': 'https://ateneaprofesional.com/products/rubor-en-barra-cremoso-atenea-collection',
     'Atenea|Pigmento Soft Touch': 'https://ateneaprofesional.com/products/sombra-cremosa-individual',
@@ -230,10 +234,33 @@ KEEP_BACKGROUND = {
     'Bloomshell|Trío de Rubores', 'Samy|Paleta de sombras x9',
     # Las fotos de cada tono traen una tarjeta blanca con íconos que el recorte no separa.
     'Atenea|Rubor cremoso en barra',
+    # Muestras de textura recortadas y empaque de Nivea, que el recorte cortaba.
+    'Atenea|Iluminador efecto húmedo Sublime',
 }
+# Fotos con fondo que deben verse completas dentro del círculo (empaques que llegan al borde de la foto).
+FIT_IN_CIRCLE = set()
+# Fondo blanco liso: se vuelve transparente solo el blanco conectado con los bordes de la foto (sin
+# recortador automático, que aquí borraba partes del empaque). El producto no se toca.
+WHITE_BACKGROUND = {'Nivea|Lip care - 24 horas de humectación'}
+
+
+def white_to_alpha(img, tolerance=12):
+    """Transparente el blanco liso que toca los bordes (relleno desde los bordes, no dentro del producto)."""
+    work = img.convert('RGB')
+    w, h = work.size
+    marker = (1, 254, 3)                                  # color que no aparece en la foto
+    edges = [(x, y) for x in range(0, w, max(1, w // 40)) for y in (0, h - 1)] \
+        + [(x, y) for y in range(0, h, max(1, h // 40)) for x in (0, w - 1)]
+    for xy in edges:
+        if all(c >= 255 - tolerance for c in work.getpixel(xy)):
+            ImageDraw.floodfill(work, xy, marker, thresh=tolerance)
+    background = np.all(np.array(work) == marker, axis=2)
+    out = np.array(img.convert('RGBA'))
+    out[background, 3] = 0
+    return Image.fromarray(out)
 
 # Tonos cuyas fotos de la tienda no muestran el producto (primer plano de textura, ambiente): solo nombres.
-NAMES_ONLY = {'Atenea|Iluminador efecto húmedo Sublime'}
+NAMES_ONLY = set()
 
 _SESSION = None
 MARGIN = 0.10         # aire mínimo alrededor del producto
@@ -274,10 +301,13 @@ def frame_product(img, size):
     return canvas.resize((size, size), Image.LANCZOS) if side > size else canvas
 
 
-def square(img):
-    """Lienzo cuadrado con la foto centrada y completa (relleno con el color de la esquina)."""
+def square(img, fit=False):
+    """Lienzo cuadrado con la foto centrada y completa (relleno con el color de la esquina).
+    Con fit=True el lienzo crece hasta que las esquinas de la foto caben en el círculo de la web."""
     img = img.convert('RGBA')
     side = max(img.size)
+    if fit:
+        side = round(max(side, (img.width ** 2 + img.height ** 2) ** 0.5 / DISC))
     corner = img.getpixel((0, 0))
     bg = corner if corner[3] > 0 else (217, 211, 195, 255)   # beige del disco si es transparente
     canvas = Image.new('RGBA', (side, side), bg)
@@ -428,9 +458,12 @@ def woocommerce_options(url):
 
 
 def fixed_items(items, source):
-    """Opciones con nombre fijo, cada una con su página de producto (VTEX con /p, o datos estructurados)."""
+    """Opciones con nombre fijo, cada una con su página de producto (VTEX con /p, datos estructurados) o su foto."""
     found = []
     for name, page in items:
+        if re.search(r'\.(jpe?g|png|webp)(#crop=[\d.,]+)?$', page, re.I):   # foto directa, con su "#crop=" si lo trae
+            found.append((name, page))
+            continue
         page, _, n = page.partition('#')                      # "#N": foto N de la página (sin letreros)
         n = int(n or 1) - 1
         parts = urlsplit(page)
@@ -444,7 +477,7 @@ def fixed_items(items, source):
     return 'Opción', found, source
 
 
-def shades_for(product, url, keep_background=False):
+def shades_for(product, url, keep_background=False, fit=False, white_bg=False):
     if isinstance(url, dict) and 'items' in url:
         option, items, url = fixed_items(url['items'], url['source'])
     elif isinstance(url, dict) and 'woo' in url:
@@ -480,14 +513,22 @@ def shades_for(product, url, keep_background=False):
         shade = {'name': name}
         if src:
             src = urljoin(url, src)
+            src, _, crop = src.partition('#crop=')               # "#crop=x0,y0,x1,y1": recorte (fracciones de la foto)
             original = Image.open(io.BytesIO(get(src)))
+            if white_bg and not has_transparency(original):
+                original = white_to_alpha(original)
+            if crop:
+                x0, y0, x1, y1 = (float(v) for v in crop.split(','))
+                w, h = original.size
+                original = original.crop((round(x0 * w), round(y0 * h), round(x1 * w), round(y1 * h)))
+                src = f'{src}#crop={crop}'
             path = OUT / product['id'] / f'{slug(name)}.webp'
             path.parent.mkdir(parents=True, exist_ok=True)
             if src in seen_src:                       # misma foto para otro tono: no se recorta dos veces
                 big = seen_src[src]
             else:
                 if keep_background:
-                    big = square(original)
+                    big = square(original, fit=fit)
                     big = big.resize((LARGE, LARGE), Image.LANCZOS) if big.width > LARGE else big
                 else:
                     big = frame_product(original, LARGE)   # sin fondo, sobre el beige de la web
@@ -525,7 +566,7 @@ def main():
             print(f'!! {key}: no está en data/products.json')
             continue
         try:
-            shades, note, page_url = shades_for(product, url, key in KEEP_BACKGROUND)
+            shades, note, page_url = shades_for(product, url, key in KEEP_BACKGROUND, key in FIT_IN_CIRCLE, key in WHITE_BACKGROUND)
         except Exception as exc:   # red bloqueada, página movida…
             print(f'!! {key}: {exc}')
             continue
