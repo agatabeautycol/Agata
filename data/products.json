@@ -3342,7 +3342,31 @@
       "image": "assets/images/productos-hd/maybelline-023-1.webp",
       "imageAlt": "Pestañina Sky High Lavable | A prueba de agua de Maybelline",
       "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/2166365/41554590500-1.png?v=638947476379600000",
-      "page": 23
+      "page": 23,
+      "shades": [
+        {
+          "name": "Lavable",
+          "image": "assets/images/tonos/maybelline-023-1/lavable.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-1/lavable-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/2166365/41554590500-1.png?v=638947476379600000"
+        },
+        {
+          "name": "A prueba de agua",
+          "image": "assets/images/tonos/maybelline-023-1/a-prueba-de-agua.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-1/a-prueba-de-agua-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cromantic.vteximg.com.br/arquivos/ids/186129/41554590913_2.png?v=638871580742700000"
+        }
+      ],
+      "shadesLabel": "Versión",
+      "shadesSource": "https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p"
     },
     {
       "id": "maybelline-023-2",
@@ -3355,7 +3379,31 @@
       "image": "assets/images/productos-hd/maybelline-023-2.webp",
       "imageAlt": "Pestañina Colossal Lavable | A prueba de agua de Maybelline",
       "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223177/pestanina-the-colossal-volum-express-lavable-maybelline--1-.png.png?v=638750559967530000",
-      "page": 23
+      "page": 23,
+      "shades": [
+        {
+          "name": "Lavable",
+          "image": "assets/images/tonos/maybelline-023-2/lavable.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-2/lavable-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223177/pestanina-the-colossal-volum-express-lavable-maybelline--1-.png.png?v=638750559967530000"
+        },
+        {
+          "name": "A prueba de agua",
+          "image": "assets/images/tonos/maybelline-023-2/a-prueba-de-agua.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-2/a-prueba-de-agua-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cromantic.vteximg.com.br/arquivos/ids/179902/41554197044_1_PEST-MYB-VOLUM-EXPRESS-COLOSSAL.png?v=638115551821630000"
+        }
+      ],
+      "shadesLabel": "Versión",
+      "shadesSource": "https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p"
     },
     {
       "id": "maybelline-023-3",
@@ -3368,7 +3416,31 @@
       "image": "assets/images/productos-hd/maybelline-023-3.webp",
       "imageAlt": "Pestañina Surreal Lavable | A prueba de agua de Maybelline",
       "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223112/pestanina-falsies-surreal-very-black-lavable-maybelline--1-.png.png?v=638750551233800000",
-      "page": 23
+      "page": 23,
+      "shades": [
+        {
+          "name": "Lavable",
+          "image": "assets/images/tonos/maybelline-023-3/lavable.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-3/lavable-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223112/pestanina-falsies-surreal-very-black-lavable-maybelline--1-.png.png?v=638750551233800000"
+        },
+        {
+          "name": "A prueba de agua",
+          "image": "assets/images/tonos/maybelline-023-3/a-prueba-de-agua.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/maybelline-023-3/a-prueba-de-agua-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cromantic.vteximg.com.br/arquivos/ids/186136/41554079821_2.png?v=638588216353030000"
+        }
+      ],
+      "shadesLabel": "Versión",
+      "shadesSource": "https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p"
     },
     {
       "id": "ani-k-024-1",
@@ -7580,11 +7652,11 @@
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-100-2.webp",
-      "imageWidth": 339,
-      "imageHeight": 339,
-      "imageAlt": "Tratamiento complejo biológico con queratina x30gr de Lehit, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 100",
+      "imageWidth": 674,
+      "imageHeight": 674,
+      "image": "assets/images/productos-hd/lehit-100-2.webp",
+      "imageAlt": "Tratamiento complejo biológico con queratina x30gr de Lehit",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0288/2725/4866/products/Capturadepantallacomplex.png",
       "page": 100
     },
     {
@@ -7610,11 +7682,11 @@
       "section": "Cuidado capilar",
       "price": 4000,
       "presentation": "30 gr",
-      "image": "assets/images/productos/lehit-101-2.webp",
-      "imageWidth": 390,
-      "imageHeight": 390,
-      "imageAlt": "Tratamiento capullo de gusano de seda x30gr de Lehit, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 101",
+      "imageWidth": 731,
+      "imageHeight": 731,
+      "image": "assets/images/productos-hd/lehit-101-2.webp",
+      "imageAlt": "Tratamiento capullo de gusano de seda x30gr de Lehit",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0288/2725/4866/products/D008TTOGUSANODESEDADISP20USACHET_SACHET.jpg",
       "page": 101
     },
     {

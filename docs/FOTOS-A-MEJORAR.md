@@ -1,6 +1,6 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **169 ya tienen foto en alta resolución** (página oficial) y **80 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **171 ya tienen foto en alta resolución** (página oficial) y **78 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
@@ -8,7 +8,7 @@ De los 249 productos, **169 ya tienen foto en alta resolución** (página oficia
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
 | **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 15 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 62 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 60 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 3 |
 
 ## Qué se necesita
@@ -34,7 +34,7 @@ De los 249 productos, **169 ya tienen foto en alta resolución** (página oficia
 | Garnier | 3 | 0 | 3 | 0 | — |
 | Milagros | 2 | 1 | 1 | 0 | milagrosbeauty.com |
 | Anyeluz | 1 | 0 | 1 | 0 | — |
-| Lehit | 4 | 0 | 4 | 0 | — |
+| Lehit | 2 | 0 | 2 | 0 | — |
 | Leche pal pelo | 4 | 0 | 4 | 0 | — |
 | Olé | 2 | 1 | 1 | 0 | — |
 | Johnson's | 7 | 1 | 6 | 0 | — |
@@ -171,9 +171,7 @@ De los 249 productos, **169 ya tienen foto en alta resolución** (página oficia
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
 | `lehit-100-1` | Tratamiento aceite de aguacate x30 gr | 100 | 273 px | Media | — |
-| `lehit-100-2` | Tratamiento complejo biológico con queratina x30gr | 100 | 339 px | Media | — |
 | `lehit-101-1` | Tratamiento cebolla y jengibre x30 gr | 101 | 276 px | Media | — |
-| `lehit-101-2` | Tratamiento capullo de gusano de seda x30gr | 101 | 390 px | Media | — |
 
 ### Leche pal pelo
 

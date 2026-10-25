@@ -109,6 +109,16 @@ SHADE_PAGES = {
     'Chap Stick|Protector labial': {
         'store': 'https://chapstick.com.co', 'title': r'^chapstick (?P<tono>strawberry|cherry|mint|med)$', 'label': 'Sabor',
         'source': 'https://chapstick.com.co/'},
+    # Maybelline: cada versión (lavable / a prueba de agua) en la tienda que indicó Ágata Beauty.
+    'Maybelline|Pestañina Sky High Lavable | A prueba de agua': {
+        'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-lash-sensational-sky-high/p#2')],
+        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p'},
+    'Maybelline|Pestañina Colossal Lavable | A prueba de agua': {
+        'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-colossal-50938/p')],
+        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p'},
+    'Maybelline|Pestañina Surreal Lavable | A prueba de agua': {
+        'items': [('Lavable', 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'), ('A prueba de agua', 'https://www.cromantic.com/pestanina-maybelline-falsies-surreal-black/p#2')],
+        'label': 'Versión', 'source': 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p'},
     # Fantiluna (WooCommerce): cada aroma es un producto de la categoría.
     'Fantiluna|Mantequilla corporal x 220 ml': {
         'woo': 'https://fantiluna.com', 'category': 340, 'title': r'^mantequilla corporal (?P<tono>.+?)(?: 220 ?ml)?$',
@@ -399,8 +409,23 @@ def woocommerce_options(url):
     return names.get(attr, attr), items, url
 
 
+def fixed_items(items, source):
+    """Opciones con nombre fijo, cada una con su página de producto (VTEX, enlaces que terminan en /p)."""
+    found = []
+    for name, page in items:
+        page, _, n = page.partition('#')                      # "#N": foto N de la página (sin letreros)
+        n = int(n or 1) - 1
+        parts = urlsplit(page)
+        data = json.loads(get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
+        images = data[0]['items'][0].get('images') if data and data[0].get('items') else None
+        found.append((name, images[n]['imageUrl'] if images and len(images) > n else None))
+    return 'Versión', found, source
+
+
 def shades_for(product, url, keep_background=False):
-    if isinstance(url, dict) and 'woo' in url:
+    if isinstance(url, dict) and 'items' in url:
+        option, items, url = fixed_items(url['items'], url['source'])
+    elif isinstance(url, dict) and 'woo' in url:
         option, items, url = woo_category(url['woo'], url['category'], url['title'], url['source'])
     elif isinstance(url, dict) and 'pages' in url:
         option, items, url = pages_ld_json(url['pages'], url['title'], url['source'], url.get('photos', True))
