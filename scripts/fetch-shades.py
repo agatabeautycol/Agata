@@ -62,7 +62,15 @@ SHADE_PAGES = {
     'Majikal|Magic Pen': 'https://www.majikalbeauty.com/products/magic-pen',
     'Majikal|Shiny Lip Oil': 'https://www.majikalbeauty.com/products/lip-oil',
     'Atenea|Base de maquillaje 1ST Scene': 'https://ateneaprofesional.com/products/mini-base-liquida-1st-scene',
-    'Atenea|Rubor compacto 1ST Scene': 'https://ateneaprofesional.com/products/rubores-individuales-1st-scene',
+    # Rubor compacto: la tienda no asigna foto a cada tono; se recortan de la foto que los rotula
+    # (de izquierda a derecha: Salmon, Peach Melba, Dusty Rose, Pink Pearl).
+    'Atenea|Rubor compacto 1ST Scene': {
+        'items': [
+                  ('Salmon', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.035,0.40,0.275,0.615'),
+                  ('Peach Melba', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.270,0.40,0.510,0.615'),
+                  ('Dusty Rose', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.505,0.40,0.745,0.615'),
+                  ('Pink Pearl', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.740,0.40,0.980,0.615')],
+        'label': 'Color', 'source': 'https://ateneaprofesional.com/products/rubores-individuales-1st-scene'},
     'Atenea|Bronzer cremoso en barra': 'https://ateneaprofesional.com/products/bronzer-cremoso',
     # Sublime: las dos muestras de textura de la foto de la tienda ("TONO 01" arriba, "TONO 02" abajo), recortadas.
     'Atenea|Iluminador efecto húmedo Sublime': {
@@ -72,7 +80,18 @@ SHADE_PAGES = {
     'Atenea|Rubor cremoso en barra': 'https://ateneaprofesional.com/products/rubor-en-barra-cremoso-atenea-collection',
     'Atenea|Pigmento Soft Touch': 'https://ateneaprofesional.com/products/sombra-cremosa-individual',
     'Atenea|Delineador de cejas': 'https://ateneaprofesional.com/products/delineador-de-cejas-1st-scene',
-    'Atenea|Lápiz delineador Color pencil': 'https://ateneaprofesional.com/products/lapiz-delineador',
+    # Color pencil: la tienda usa la misma foto para los 7 tonos; cada tono se recorta de la foto
+    # que rotula los 7 lápices (de izquierda a derecha: Cool wood … Sunrise).
+    'Atenea|Lápiz delineador Color pencil': {
+        'items': [
+                  ('Cool Wood', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.073,0.345,0.193,0.705'),
+                  ('Nude Dark', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.184,0.345,0.304,0.705'),
+                  ('Goji Berry', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.307,0.345,0.427,0.705'),
+                  ('Clear Wine', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.436,0.345,0.556,0.705'),
+                  ('Dark Sand', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.555,0.345,0.675,0.705'),
+                  ('Pale Pink', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.670,0.345,0.790,0.705'),
+                  ('Sunrise', 'https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.792,0.345,0.912,0.705')],
+        'label': 'Color', 'source': 'https://ateneaprofesional.com/products/lapiz-delineador'},
     'Atenea|Lip Balm Mask': 'https://ateneaprofesional.com/products/lip-balm-mask',
     # Línea de polvos sueltos de 8 g (la del catálogo: Translúcido, Durazno/Peachy, Banana, Miel/Honey,
     # Rosado/Blossom, Matificante/Blotting y Glowy); cada uno es un producto aparte en la tienda.
@@ -235,10 +254,11 @@ KEEP_BACKGROUND = {
     # Las fotos de cada tono traen una tarjeta blanca con íconos que el recorte no separa.
     'Atenea|Rubor cremoso en barra',
     # Muestras de textura recortadas y empaque de Nivea, que el recorte cortaba.
-    'Atenea|Iluminador efecto húmedo Sublime',
+    'Atenea|Iluminador efecto húmedo Sublime', 'Atenea|Lápiz delineador Color pencil', 'Atenea|Rubor compacto 1ST Scene',
+    'Atenea|Pigmento Soft Touch',   # el recorte cortaba las fotos (revisado por Ágata Beauty)
 }
 # Fotos con fondo que deben verse completas dentro del círculo (empaques que llegan al borde de la foto).
-FIT_IN_CIRCLE = set()
+FIT_IN_CIRCLE = {'Atenea|Rubor compacto 1ST Scene'}
 # Fondo blanco liso: se vuelve transparente solo el blanco conectado con los bordes de la foto (sin
 # recortador automático, que aquí borraba partes del empaque). El producto no se toca.
 WHITE_BACKGROUND = {'Nivea|Lip care - 24 horas de humectación'}

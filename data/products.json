@@ -4375,16 +4375,44 @@
       "page": 32,
       "shades": [
         {
-          "name": "Dusty Rose"
+          "name": "Salmon",
+          "image": "assets/images/tonos/atenea-032-1/salmon.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-1/salmon-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.035,0.40,0.275,0.615"
         },
         {
-          "name": "Salmon"
+          "name": "Peach Melba",
+          "image": "assets/images/tonos/atenea-032-1/peach-melba.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-1/peach-melba-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.270,0.40,0.510,0.615"
         },
         {
-          "name": "Peach Melba"
+          "name": "Dusty Rose",
+          "image": "assets/images/tonos/atenea-032-1/dusty-rose.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-1/dusty-rose-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.505,0.40,0.745,0.615"
         },
         {
-          "name": "Pink Pearl"
+          "name": "Pink Pearl",
+          "image": "assets/images/tonos/atenea-032-1/pink-pearl.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-032-1/pink-pearl-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/RUBORES_1ST_SCENE_Mesa_de_trabajo_1_copia_2.webp#crop=0.740,0.40,0.980,0.615"
         }
       ],
       "shadesLabel": "Color",
@@ -4789,25 +4817,74 @@
       "page": 39,
       "shades": [
         {
-          "name": "Pale Pink"
+          "name": "Cool Wood",
+          "image": "assets/images/tonos/atenea-039-1/cool-wood.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/cool-wood-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.073,0.345,0.193,0.705"
         },
         {
-          "name": "Cool Wood"
+          "name": "Nude Dark",
+          "image": "assets/images/tonos/atenea-039-1/nude-dark.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/nude-dark-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.184,0.345,0.304,0.705"
         },
         {
-          "name": "Nude Dark"
+          "name": "Goji Berry",
+          "image": "assets/images/tonos/atenea-039-1/goji-berry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/goji-berry-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.307,0.345,0.427,0.705"
         },
         {
-          "name": "Goji Berry"
+          "name": "Clear Wine",
+          "image": "assets/images/tonos/atenea-039-1/clear-wine.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/clear-wine-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.436,0.345,0.556,0.705"
         },
         {
-          "name": "Clear Wine"
+          "name": "Dark Sand",
+          "image": "assets/images/tonos/atenea-039-1/dark-sand.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/dark-sand-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.555,0.345,0.675,0.705"
         },
         {
-          "name": "Dark Sand"
+          "name": "Pale Pink",
+          "image": "assets/images/tonos/atenea-039-1/pale-pink.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/pale-pink-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.670,0.345,0.790,0.705"
         },
         {
-          "name": "Sunrise"
+          "name": "Sunrise",
+          "image": "assets/images/tonos/atenea-039-1/sunrise.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-039-1/sunrise-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/SWATCHES_LIP_GLOSS-COLOR_PENCIL-SOMBRA_CREMOSA_2.jpg#crop=0.792,0.345,0.912,0.705"
         }
       ],
       "shadesLabel": "Color",
