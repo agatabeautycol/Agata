@@ -1,15 +1,15 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial) y **204 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **98 ya tienen foto en alta resolución** (página oficial) y **151 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
 
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
-| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 52 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 139 |
-| **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 13 |
+| **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 29 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 110 |
+| **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 12 |
 
 ## Qué se necesita
 
@@ -20,16 +20,13 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 
 | Marca | Pendientes | Alta | Media | Baja | Tienda que ya se puede leer |
 | --- | ---: | ---: | ---: | ---: | --- |
-| Montoc | 6 | 2 | 3 | 1 | montoccosmetictools.com |
-| Bloomshell | 17 | 5 | 12 | 0 | bloomshell.co |
-| Girly | 2 | 2 | 0 | 0 | cocopinkstore.com (revendedor) |
+| Montoc | 4 | 2 | 1 | 1 | montoccosmetictools.com |
+| Bloomshell | 12 | 4 | 8 | 0 | bloomshell.co |
+| Girly | 1 | 1 | 0 | 0 | cocopinkstore.com (revendedor) |
 | Maybelline | 3 | 0 | 2 | 1 | — |
-| Ani-k | 3 | 0 | 2 | 1 | anikmakeup.com |
 | Majikal | 1 | 0 | 1 | 0 | majikalbeauty.com |
-| Atenea | 15 | 4 | 11 | 0 | ateneaprofesional.com |
 | Prosa | 12 | 2 | 9 | 1 | — |
-| Samy | 4 | 0 | 4 | 0 | samycosmetics.com |
-| Lula | 8 | 6 | 2 | 0 | lulabeauty.co |
+| Samy | 2 | 0 | 2 | 0 | samycosmetics.com |
 | Raquel | 1 | 0 | 1 | 0 | losestilistas.com.co (revendedor) |
 | OG | 2 | 2 | 0 | 0 | ogmantra.co |
 | Schwarzkopf | 2 | 0 | 2 | 0 | — |
@@ -37,7 +34,7 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | Skin 1004 | 2 | 1 | 1 | 0 | — |
 | Bioaqua | 23 | 1 | 22 | 0 | — |
 | Garnier | 4 | 0 | 4 | 0 | — |
-| Milagros | 19 | 12 | 7 | 0 | milagrosbeauty.com |
+| Milagros | 2 | 1 | 1 | 0 | milagrosbeauty.com |
 | Anyeluz | 14 | 0 | 6 | 8 | — |
 | Lehit | 4 | 0 | 4 | 0 | — |
 | Leche pal pelo | 22 | 2 | 20 | 0 | — |
@@ -58,9 +55,7 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | --- | --- | ---: | ---: | --- | --- |
 | `montoc-003-2` | Polvos Translúcidos | 3 | 315 px | Alta | — |
 | `montoc-009-1` | Set de Borlas | 9 | 339 px | Alta | — |
-| `montoc-006-2` | Brow Wax Ultra Fijador de cejas | 6 | 291 px | Media | — |
 | `montoc-008-1` | Fijador de maquillaje Dixy Fix | 8 | 258 px | Media | — |
-| `montoc-010-1` | Esponja mini para difuminar maquillaje | 10 | 315 px | Media | — |
 | `montoc-009-2` | Kit de brochas de maquillaje Fluffy x 10 | 9 | 429 px | Baja | sí |
 
 ### Bloomshell
@@ -70,7 +65,6 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | `bloomshell-011-1` | Base líquida 2 en 1 My foundation | 11 | 327 px | Alta | sí |
 | `bloomshell-012-2` | Polvos sueltos 4 tonos | 12 | 267 px | Alta | — |
 | `bloomshell-016-1` | Llavero Mimosa Tinta + Gloss | 16 | 217 px | Alta | — |
-| `bloomshell-017-1` | Papel matificante Bloom powder paper | 17 | 240 px | Alta | — |
 | `bloomshell-017-2` | Papel matificante Bloom Oil Stop | 17 | 312 px | Alta | — |
 | `bloomshell-011-2` | Corrector My concealer | 11 | 318 px | Media | sí |
 | `bloomshell-012-1` | Polvos sueltos | 12 | 294 px | Media | — |
@@ -78,18 +72,13 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | `bloomshell-015-1` | Laminador de cejas | 15 | 330 px | Media | — |
 | `bloomshell-015-2` | Paleta de sombras Bloom Vibes | 15 | 300 px | Media | — |
 | `bloomshell-016-2` | Brillo labial - Bombón | 16 | 267 px | Media | — |
-| `bloomshell-018-1` | Fijador de maquillaje Bloom Fix | 18 | 300 px | Media | — |
 | `bloomshell-019-1` | Bloom Termo | 19 | 271 px | Media | — |
 | `bloomshell-019-2` | Bloom porta cosméticos | 19 | 261 px | Media | — |
-| `bloomshell-020-1` | Kit Kiss Love | 20 | 372 px | Media | — |
-| `bloomshell-021-1` | Beauty Blender Xl | 21 | 285 px | Media | — |
-| `bloomshell-021-2` | Bloom Blender Bliss | 21 | 318 px | Media | — |
 
 ### Girly
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `girly-022-1` | Gel hidratante con aloe vera | 22 | 245 px | Alta | — |
 | `girly-022-3` | Polvo suelto | 22 | 226 px | Alta | — |
 
 ### Maybelline
@@ -100,39 +89,11 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | `maybelline-023-3` | Pestañina Surreal Lavable | A prueba de agua | 23 | 234 px | Media | — |
 | `maybelline-023-2` | Pestañina Colossal Lavable | A prueba de agua | 23 | 582 px | Baja | — |
 
-### Ani-k
-
-| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
-| --- | --- | ---: | ---: | --- | --- |
-| `ani-k-028-1` | Delineador radiante Tono negro | 28 | 287 px | Media | — |
-| `ani-k-028-3` | Pestañina Brown Paradise - A prueba de agua | 28 | 261 px | Media | — |
-| `ani-k-028-2` | Pestañina eternal lash | 28 | 582 px | Baja | — |
-
 ### Majikal
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
 | `majikal-029-1` | Polvos sueltos - 4 tonos | 29 | 319 px | Media | — |
-
-### Atenea
-
-| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
-| --- | --- | ---: | ---: | --- | --- |
-| `atenea-031-1` | Polvo en gel matificante Matterpowder | 31 | 273 px | Alta | — |
-| `atenea-040-1` | Primer Gummy | 40 | 264 px | Alta | — |
-| `atenea-041-1` | Brocha duo Base y productos en crema | 41 | 294 px | Alta | — |
-| `atenea-041-2` | Beauty sponge | 41 | 258 px | Alta | — |
-| `atenea-030-2` | Serum Tinted 1ST Scene | 30 | 252 px | Media | — |
-| `atenea-031-2` | Polvo suelto- Banana 1ST Scene | 31 | 249 px | Media | — |
-| `atenea-032-2` | Rubor cremoso en barra | 32 | 303 px | Media | — |
-| `atenea-034-1` | Paleta de sombras multiusos Moccalush | 34 | 381 px | Media | — |
-| `atenea-035-1` | Paleta de sombras 18 tonos - Art Deco | 35 | 240 px | Media | — |
-| `atenea-035-2` | Paleta de sombras Majestic | 35 | 279 px | Media | — |
-| `atenea-036-1` | Paleta de sombras 12 tonos - 1ST SCENE | 36 | 318 px | Media | — |
-| `atenea-036-2` | Paleta de sombras 12 tonos - Rose sublime | 36 | 345 px | Media | — |
-| `atenea-037-2` | Gel fijador de cejas | 37 | 291 px | Media | — |
-| `atenea-042-1` | Encrespador Focus | 42 | 216 px | Media | — |
-| `atenea-042-2` | Mini beauty sponge trio | 42 | 318 px | Media | — |
 
 ### Prosa
 
@@ -157,21 +118,6 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 | --- | --- | ---: | ---: | --- | --- |
 | `samy-049-1` | Polvo suelto | 49 | 348 px | Media | sí |
 | `samy-053-2` | Paleta de sombras x9 | 53 | 366 px | Media | sí |
-| `samy-054-1` | Esponja de maquillaje | 54 | 279 px | Media | — |
-| `samy-054-2` | Brocha retráctil | 54 | 285 px | Media | — |
-
-### Lula
-
-| ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
-| --- | --- | ---: | ---: | --- | --- |
-| `lula-057-1` | Bálsamo desmaquillante | 57 | 162 px | Alta | — |
-| `lula-057-2` | Contorno de ojos Aloe Vera | 57 | 216 px | Alta | — |
-| `lula-058-2` | Parches de puntos negros x 8 Unidades | 58 | 324 px | Alta | — |
-| `lula-059-1` | Hidratante facial de noche con ceramidas | 59 | 267 px | Alta | — |
-| `lula-059-2` | Hidratante facial de día con ceramidas | 59 | 276 px | Alta | — |
-| `lula-060-1` | Tónico de Rosas | 60 | 225 px | Alta | — |
-| `lula-061-1` | Kit de brochas Marshmallow X 13pcs | 61 | 396 px | Media | — |
-| `lula-061-2` | Kit de brochas Uva X 14pcs | 61 | 288 px | Media | — |
 
 ### Raquel
 
@@ -248,25 +194,8 @@ De los 249 productos, **45 ya tienen foto en alta resolución** (página oficial
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `milagros-083-1` | Shampoo herbal x 500 ml (con romero y jengibre) | 83 | 246 px | Alta | — |
-| `milagros-084-1` | Shampoo magia x 450 ml (ácido hialurónico) | 84 | 283 px | Alta | — |
-| `milagros-084-2` | Shampoo anticaspa x 450 ml | 84 | 258 px | Alta | — |
-| `milagros-085-1` | Acondicionador ultra nutritivo x 450 ml | 85 | 276 px | Alta | — |
-| `milagros-085-2` | Acondicionador milagro herbal x 450 ml | 85 | 243 px | Alta | — |
-| `milagros-086-2` | Acondicionador milagro herbal x100 ml | 86 | 222 px | Alta | — |
-| `milagros-087-1` | Tratamiento Emergencia Capilar x450 ml | 87 | 258 px | Alta | — |
-| `milagros-087-2` | Tratamiento nutrición y crecimiento x 450 ml | 87 | 201 px | Alta | — |
-| `milagros-088-1` | Tratamiento capilar a base de frutas x450 ml | 88 | 225 px | Alta | — |
-| `milagros-090-1` | Tratamiento bio - repolarizador capilar x100 ml | 90 | 196 px | Alta | — |
-| `milagros-091-1` | Gotas Mágicas Capilares | 91 | 256 px | Alta | — |
 | `milagros-092-1` | Perfume capilar y corporal | 92 | 273 px | Alta | sí |
-| `milagros-083-2` | Shampoo con cebolla x450 ml (con péptidos) | 83 | 228 px | Media | — |
-| `milagros-086-1` | Acondicionador ultra nutritivo x100 ml | 86 | 312 px | Media | — |
 | `milagros-088-2` | Doypack tratamiento capilar a base de frutas x100 ml | 88 | 276 px | Media | — |
-| `milagros-089-1` | Doypack bio - repolarizador capilar x100 gr | 89 | 240 px | Media | — |
-| `milagros-089-2` | Doypack tratamiento emergencia capilar x100 gr | 89 | 264 px | Media | — |
-| `milagros-090-2` | Tratamiento a base de frutas x100 ml | 90 | 234 px | Media | — |
-| `milagros-091-2` | Tónico revitalizante capilar milagro herbal (tónico con romero) | 91 | 282 px | Media | — |
 
 ### Anyeluz
 
