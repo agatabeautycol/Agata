@@ -105,6 +105,10 @@ SHADE_PAGES = {
     'Milagros|Perfume capilar y corporal': {
         'store': 'https://milagrosbeauty.com', 'title': r'^perfume capilar y corporal (?P<tono>\S+) \(', 'label': 'Aroma',
         'source': 'https://milagrosbeauty.com/collections/perfumes-capilares'},
+    # Chap Stick: cada sabor es un producto ("Chapstick Cherry"); los 4 sabores del catálogo.
+    'Chap Stick|Protector labial': {
+        'store': 'https://chapstick.com.co', 'title': r'^chapstick (?P<tono>strawberry|cherry|mint|med)$', 'label': 'Sabor',
+        'source': 'https://chapstick.com.co/'},
     # Fantiluna (WooCommerce): cada aroma es un producto de la categoría.
     'Fantiluna|Mantequilla corporal x 220 ml': {
         'woo': 'https://fantiluna.com', 'category': 340, 'title': r'^mantequilla corporal (?P<tono>.+?)(?: 220 ?ml)?$',
@@ -130,6 +134,8 @@ SHADE_PAGES = {
 
 # Nombres de la página oficial ajustados con autorización de Ágata Beauty, por producto.
 SHADE_NAME_FIXES = {
+    # Sabores con los nombres del catálogo ("Fresa, cereza, menta y medicado").
+    'Chap Stick|Protector labial': {'Strawberry': 'Fresa', 'Cherry': 'Cereza', 'Mint': 'Menta', 'Med': 'Medicado'},
     # "Glow Filter" ya está en el nombre del producto (y la tienda escribe "Gow Filter" en 7 de 8).
     'Montoc|Base Glow Filter': {
         '1.0 Light Glow Filter': '1.0 Light', '1.5 Light neutral Gow Filter': '1.5 Light neutral',

@@ -1,6 +1,6 @@
 # Fotos del catálogo que deben mejorar
 
-De los 249 productos, **163 ya tienen foto en alta resolución** (página oficial) y **86 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
+De los 249 productos, **164 ya tienen foto en alta resolución** (página oficial) y **85 siguen con la foto del PDF de Canva**, que se subió en baja resolución. Este archivo lo genera `scripts/photo-report.py`.
 
 - **Tamaño:** la ficha muestra la foto a 320 px y en celulares necesita unos **640 px** (ideal: 800 px). Las fotos del PDF miden entre 160 y 600 px, a su resolución real (sin ampliar).
 - **Nitidez:** se midió el detalle de cada foto; las borrosas o con "cuadritos" de compresión van primero.
@@ -8,7 +8,7 @@ De los 249 productos, **163 ya tienen foto en alta resolución** (página oficia
 | Prioridad | Qué significa | Fotos |
 | --- | --- | ---: |
 | **Alta** | Borrosa o con compresión visible: se nota aun en las tarjetas | 15 |
-| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 67 |
+| **Media** | Pequeña (menos de 400 px): se ve suave en la ficha | 66 |
 | **Baja** | Algo más grande o nítida, pero aún por debajo de 640 px | 4 |
 
 ## Qué se necesita
@@ -36,7 +36,7 @@ De los 249 productos, **163 ya tienen foto en alta resolución** (página oficia
 | Milagros | 2 | 1 | 1 | 0 | milagrosbeauty.com |
 | Anyeluz | 1 | 0 | 1 | 0 | — |
 | Lehit | 4 | 0 | 4 | 0 | — |
-| Leche pal pelo | 5 | 0 | 5 | 0 | — |
+| Leche pal pelo | 4 | 0 | 4 | 0 | — |
 | Olé | 2 | 1 | 1 | 0 | — |
 | Johnson's | 8 | 1 | 7 | 0 | — |
 | Nivea | 6 | 1 | 5 | 0 | — |
@@ -191,7 +191,6 @@ De los 249 productos, **163 ya tienen foto en alta resolución** (página oficia
 | --- | --- | ---: | ---: | --- | --- |
 | `leche-pal-pelo-108-1` | Mascarilla Regenerador Intenso 7 Oleos x 40 ml | 108 | 288 px | Media | — |
 | `leche-pal-pelo-108-2` | Mascarilla WOW x 40 ml | 108 | 360 px | Media | — |
-| `leche-pal-pelo-110-2` | Termoprotector rizos y ondas x 440 ml | 110 | 282 px | Media | — |
 | `leche-pal-pelo-112-1` | Tratamiento capilar reconstructor instantáneo x 30 ml | 112 | 261 px | Media | — |
 | `leche-pal-pelo-112-2` | Termoprotector tradicional x 30 ml | 112 | 220 px | Media | — |
 
@@ -230,7 +229,7 @@ De los 249 productos, **163 ya tienen foto en alta resolución** (página oficia
 
 | ID | Producto | Pág. | Tamaño | Prioridad | Enlace |
 | --- | --- | ---: | ---: | --- | --- |
-| `chap-stick-129-1` | Protector labial | 129 | 333 px | Media | — |
+| `chap-stick-129-1` | Protector labial | 129 | 333 px | Media | sí |
 
 ### Fantiluna
 
