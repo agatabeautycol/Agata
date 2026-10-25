@@ -199,7 +199,6 @@ EXCLUDE = {
     'Bioaqua|Kit facial de ácido hialurónico': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
     'Bioaqua|Kit facial con retinol': 'la foto de la tienda trae el aviso "Envío Gratis" y un producto de regalo',
     'Bioaqua|Espuma limpiadora de arroz': 'en la tienda es un tubo; en el catálogo es un frasco con cepillo',
-    'Leche pal pelo|Termoprotector rizos y ondas x 440 ml': 'la foto del catálogo es otro frasco (Tradicional); pendiente confirmar con Ágata Beauty',
     'Anyeluz|Tratamiento reparación, restauración y brillo - línea profesional': 'frasco blanco sobre fondo blanco: el recorte se come partes del frasco',
     'Olé|Shampoo hidratación y nutrición x 500 ml': 'el color del frasco en la tienda no coincide con el del catálogo',
     'Olé|Spray antihumedad - antifrizz': 'la etiqueta de la tienda es distinta a la del catálogo',

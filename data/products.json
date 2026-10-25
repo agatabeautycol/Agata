@@ -7880,11 +7880,11 @@
       "section": "Cuidado capilar",
       "price": 33500,
       "presentation": "440 ml",
-      "image": "assets/images/productos/leche-pal-pelo-110-2.webp",
-      "imageWidth": 282,
-      "imageHeight": 282,
-      "imageAlt": "Termoprotector rizos y ondas x 440 ml de Leche pal pelo, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 110",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/leche-pal-pelo-110-2.webp",
+      "imageAlt": "Termoprotector rizos y ondas x 440 ml de Leche pal pelo",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0575/8933/4187/files/TERMOPROTECTORFRONTAL.png",
       "page": 110
     },
     {
@@ -8518,7 +8518,51 @@
       "imageHeight": 333,
       "imageAlt": "Protector labial de Chap Stick, fotografía del catálogo",
       "imageSource": "Catálogo de Canva (PDF), página 129",
-      "page": 129
+      "page": 129,
+      "shades": [
+        {
+          "name": "Cereza",
+          "image": "assets/images/tonos/chap-stick-129-1/cherry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/chap-stick-129-1/cherry-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0602/0497/4189/files/cherry.png"
+        },
+        {
+          "name": "Medicado",
+          "image": "assets/images/tonos/chap-stick-129-1/med.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/chap-stick-129-1/med-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0602/0497/4189/files/med.png"
+        },
+        {
+          "name": "Menta",
+          "image": "assets/images/tonos/chap-stick-129-1/mint.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/chap-stick-129-1/mint-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0602/0497/4189/files/mint.png"
+        },
+        {
+          "name": "Fresa",
+          "image": "assets/images/tonos/chap-stick-129-1/strawberry.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/chap-stick-129-1/strawberry-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0602/0497/4189/files/sb.png"
+        }
+      ],
+      "shadesLabel": "Sabor",
+      "shadesSource": "https://chapstick.com.co/"
     },
     {
       "id": "fantiluna-130-1",
