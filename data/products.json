@@ -3337,11 +3337,11 @@
       "brand": "Maybelline",
       "category": "Ojos y cejas",
       "price": 57000,
-      "image": "assets/images/productos/maybelline-023-1.webp",
-      "imageWidth": 287,
-      "imageHeight": 287,
-      "imageAlt": "Pestañina Sky High Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 23",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/maybelline-023-1.webp",
+      "imageAlt": "Pestañina Sky High Lavable | A prueba de agua de Maybelline",
+      "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/2166365/41554590500-1.png?v=638947476379600000",
       "page": 23
     },
     {
@@ -3350,11 +3350,11 @@
       "brand": "Maybelline",
       "category": "Ojos y cejas",
       "price": 37000,
-      "image": "assets/images/productos/maybelline-023-2.webp",
-      "imageWidth": 582,
-      "imageHeight": 582,
-      "imageAlt": "Pestañina Colossal Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 23",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/maybelline-023-2.webp",
+      "imageAlt": "Pestañina Colossal Lavable | A prueba de agua de Maybelline",
+      "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223177/pestanina-the-colossal-volum-express-lavable-maybelline--1-.png.png?v=638750559967530000",
       "page": 23
     },
     {
@@ -3363,11 +3363,11 @@
       "brand": "Maybelline",
       "category": "Ojos y cejas",
       "price": 56000,
-      "image": "assets/images/productos/maybelline-023-3.webp",
-      "imageWidth": 234,
-      "imageHeight": 234,
-      "imageAlt": "Pestañina Surreal Lavable | A prueba de agua de Maybelline, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 23",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/maybelline-023-3.webp",
+      "imageAlt": "Pestañina Surreal Lavable | A prueba de agua de Maybelline",
+      "imageSource": "https://medipielsa.vteximg.com.br/arquivos/ids/223112/pestanina-falsies-surreal-very-black-lavable-maybelline--1-.png.png?v=638750551233800000",
       "page": 23
     },
     {
@@ -6941,11 +6941,11 @@
       "section": "Cuidado facial",
       "price": 29000,
       "presentation": "400 ml",
-      "image": "assets/images/productos/garnier-081-1.webp",
-      "imageWidth": 256,
-      "imageHeight": 256,
-      "imageAlt": "Agua micelar todo en 1 Rosada x 400 ml de Garnier, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 81",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/garnier-081-1.webp",
+      "imageAlt": "Agua micelar todo en 1 Rosada x 400 ml de Garnier",
+      "imageSource": "https://cromantic.vteximg.com.br/arquivos/ids/189289/7509552455557_1.png?v=638631800060570000",
       "page": 81
     },
     {
@@ -8231,11 +8231,11 @@
           "price": 35000
         }
       ],
-      "image": "assets/images/productos/johnsons-121-1.webp",
-      "imageWidth": 273,
-      "imageHeight": 273,
-      "imageAlt": "Shampoo - Fuerza y vitamina de Johnson's, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 121",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/johnsons-121-1.webp",
+      "imageAlt": "Shampoo - Fuerza y vitamina de Johnson's",
+      "imageSource": "https://exitocol.vteximg.com.br/arquivos/ids/35260833/Johnsons-Baby-Shampoo-Fuerza-Y-Vitamina-X-750-ml-1472461_b.jpg?v=639250116404300000",
       "page": 121
     },
     {

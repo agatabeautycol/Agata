@@ -183,12 +183,23 @@ PHOTO_PAGES = {
     'Nivea|Crema corporal Nivea reafirmante Q10 + vitamina C x 1000 Ml': 'https://www.nivea.com.co/productos/crema-corporal-reafirmante-q10-(1000ml)-40059004910600057.html',
     'Nivea|Crema corporal Nivea milk nutritiva - Piel Seca x 400 ml': 'https://www.nivea.com.co/productos/crema-corporal-milk-nutritiva-(400ml)-40058083196950057.html',
     'Nivea|Desodorante men Invisible Black & White x 50ml': 'https://www.nivea.com.co/productos/black-and-white-invisible-roll-on-40059000367590057.html',
+    'Maybelline|Pestañina Sky High Lavable | A prueba de agua': 'https://www.medipiel.com.co/pestanina-sky-high-negra-lavable-maybelline/p',
+    'Maybelline|Pestañina Colossal Lavable | A prueba de agua': 'https://www.medipiel.com.co/pestanina-the-colossal-volum-express-lavable-maybelline/p',
+    'Maybelline|Pestañina Surreal Lavable | A prueba de agua': 'https://www.medipiel.com.co/pestanina-falsies-surreal-very-black-lavable-maybelline/p',
+    'Garnier|Agua micelar todo en 1 Rosada x 400 ml': 'https://www.cromantic.com/agua-micelar-garnier-1-skinactive-76409/p',
+    'Garnier|Agua micelar pure active x 400 ml': 'https://www.exito.com/agua-micelar-pure-active-884326/p',
+    "Johnson's|Shampoo - Fuerza y vitamina": 'https://www.exito.com/johnsons-baby-shampoo-fuerza-y-vitamina-x-750-ml-350597/p#2',
+    "Johnson's|Baño líquido - Avena": 'https://www.exito.com/johnsons-baby-jab-n-l-quido-avena-x-400-ml-795218/p#2',
+    "Johnson's|Baño líquido - Antes de dormir": 'https://www.exito.com/jabon-liquido-antes-de-dormir-865694/p#2',
 }
 
 # Productos cuyos tonos están publicados como productos separados: la foto de un tono no representa
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    "Johnson's|Baño líquido - Avena": 'la tienda muestra otra versión de la etiqueta',
+    "Johnson's|Baño líquido - Antes de dormir": 'la tienda muestra otra versión de la etiqueta',
+    'Garnier|Agua micelar pure active x 400 ml': 'todas las fotos de la tienda traen letreros o son de uso (no hay foto limpia del producto)',
     'Prosa|Tratamiento en máscara para pestañas y cejas': 'en el catálogo el tubo es transparente; en la tienda tiene otra etiqueta',
     'Prosa|Pestañina Profesional Silicon - Café': 'en la tienda el tubo es dorado; en el catálogo es café oscuro',
     'Schwarzkopf|Gel fijador Glued Got2b amarillo': 'la tienda muestra otra versión del empaque (letras distintas)',
@@ -232,11 +243,18 @@ def main_photo(url):
     if '/products/' in parts.path:                                  # Shopify
         images = shades.shopify_json(url).get('images', [])
         return images[n]['src'].split('?')[0] if len(images) > n else None
-    if parts.netloc.endswith('samycosmetics.com'):                  # VTEX
-        found = json.loads(shades.get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
+    if parts.netloc.endswith('samycosmetics.com') or parts.path.endswith('/p'):   # VTEX
+        try:
+            found = json.loads(shades.get(f"{parts.scheme}://{parts.netloc}/api/catalog_system/pub/products/search{parts.path.rstrip('/')}"))
+        except Exception:
+            found = None                                            # algunas tiendas cierran la API: se usa og:image
         items = found[0].get('items', []) if found else []
-        return (items[0].get('images') or [{}])[0].get('imageUrl') if items else None
+        if items and len(items[0].get('images') or []) > n:
+            return items[0]['images'][n]['imageUrl']
     page = shades.get(url).decode('utf-8', 'replace')               # WooCommerce y otras
+    if n:                                                           # foto N de la página (og:image en orden)
+        found = re.findall(r'<meta property="og:image" content="([^"]+)"', page)
+        return found[n] if len(found) > n else None
     m = (re.search(r'data-large_image="([^"]+)"', page)
          or re.search(r'"image":\["([^"]+)"', page)                  # datos estructurados (Nivea)
          or re.search(r'<meta property="og:image" content="([^"]+)"', page))
