@@ -7031,11 +7031,11 @@
       "section": "Cuidado facial",
       "price": 13500,
       "presentation": "100 ml",
-      "image": "assets/images/productos/garnier-081-2.webp",
-      "imageWidth": 261,
-      "imageHeight": 261,
-      "imageAlt": "Agua micelar todo en 1 Rosada x 100 ml de Garnier, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 81",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/garnier-081-2.webp",
+      "imageAlt": "Agua micelar todo en 1 Rosada x 100 ml de Garnier",
+      "imageSource": "https://exitocol.vteximg.com.br/arquivos/ids/33573183/AGUA-MICELAR-VIAJERA-1624657_b.jpg?v=639156679048730000",
       "page": 81
     },
     {
@@ -8278,11 +8278,11 @@
           "price": 35000
         }
       ],
-      "image": "assets/images/productos/johnsons-120-2.webp",
-      "imageWidth": 282,
-      "imageHeight": 282,
-      "imageAlt": "Shampoo baby - Cabello claro de Johnson's, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 120",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/johnsons-120-2.webp",
+      "imageAlt": "Shampoo baby - Cabello claro de Johnson's",
+      "imageSource": "https://exitocol.vteximg.com.br/arquivos/ids/34389812/Johnsons-Baby-Shampoo-Manzanilla-X-200-ml-1472451_b.jpg?v=639211384547670000",
       "page": 120
     },
     {
@@ -8410,11 +8410,11 @@
           "price": 45000
         }
       ],
-      "image": "assets/images/productos/johnsons-123-1.webp",
-      "imageWidth": 246,
-      "imageHeight": 246,
-      "imageAlt": "Crema líquida baby de Johnson's, fotografía del catálogo",
-      "imageSource": "Catálogo de Canva (PDF), página 123",
+      "imageWidth": 800,
+      "imageHeight": 800,
+      "image": "assets/images/productos-hd/johnsons-123-1.webp",
+      "imageAlt": "Crema líquida baby de Johnson's",
+      "imageSource": "https://exitocol.vteximg.com.br/arquivos/ids/35889854/Crema-Hidratante-Lquida-Johnsons-Baby-Original-X-798-ml-6044_b.jpg?v=639269884147700000",
       "page": 123
     },
     {

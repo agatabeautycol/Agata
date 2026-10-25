@@ -197,12 +197,18 @@ PHOTO_PAGES = {
     'Lehit|Tratamiento capullo de gusano de seda x30gr': 'https://tiendalehit.com/products/tratamiento-gusano-de-seda',
     "Johnson's|Shampoo baby - Cabello oscuro": 'https://www.larebajavirtual.com/champu-bebe-johnson-s-cabello-oscuro-129840/p',
     "Johnson's|Shampoo baby - amarillo": 'https://www.larebajavirtual.com/champu-bebe-johnson-s-original-130677/p',
+    'Garnier|Agua micelar todo en 1 Rosada x 100 ml': 'https://www.exito.com/agua-micelar-viajera-31008/p#2',
+    "Johnson's|Shampoo baby - Cabello claro": 'https://www.exito.com/johnsons-baby-shampoo-manzanilla-x-200-ml-347355/p#2',
+    "Johnson's|Crema líquida baby": 'https://www.exito.com/crema-hidratante-lquida-johnsons-baby-original-x-798-ml-268227/p#2',
+    "Johnson's|Crema líquida - Avena": 'https://www.exito.com/johnsons-baby-crema-hidratante-avena-x-800-ml-190550/p#2',
 }
 
 # Productos cuyos tonos están publicados como productos separados: la foto de un tono no representa
 # al producto completo, así que no se reemplaza automáticamente.
 # Fotos oficiales que no sirven para recortar el fondo (se queda la foto del catálogo).
 EXCLUDE = {
+    "Johnson's|Crema líquida - Avena": 'la tienda muestra otra versión de la etiqueta',
+    'Garnier|Agua micelar con vitamina C x 400 ml': 'las fotos de la tienda traen letreros o una mano; ninguna sirve para quitar el fondo',
     'Lehit|Tratamiento aceite de aguacate x30 gr': 'la foto trae hojas decorativas que quedan sueltas al quitar el fondo',
     'Lehit|Tratamiento cebolla y jengibre x30 gr': 'la foto trae una cebolla decorativa que queda pegada al quitar el fondo',
     "Johnson's|Shampoo baby - Cabello oscuro": 'en la tienda es frasco con tapa; en el catálogo es con dosificador',
