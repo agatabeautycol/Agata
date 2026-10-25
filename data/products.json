@@ -4517,10 +4517,24 @@
       "page": 33,
       "shades": [
         {
-          "name": "SH001"
+          "name": "SH001",
+          "image": "assets/images/tonos/atenea-033-2/sh001.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-033-2/sh001-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp#crop=0,0,0.5,0.5"
         },
         {
-          "name": "SH002"
+          "name": "SH002",
+          "image": "assets/images/tonos/atenea-033-2/sh002.webp",
+          "imageWidth": 240,
+          "imageHeight": 240,
+          "imageLarge": "assets/images/tonos/atenea-033-2/sh002-grande.webp",
+          "imageLargeWidth": 800,
+          "imageLargeHeight": 800,
+          "imageSource": "https://cdn.shopify.com/s/files/1/0741/6132/4314/files/ILUMINADOR_EFECTO_HUMEDO-03.webp#crop=0,0.5,0.5,1"
         }
       ],
       "shadesLabel": "Color",
