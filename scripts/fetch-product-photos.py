@@ -74,39 +74,9 @@ def main_photo(url):
     return m.group(1) if m else None
 
 
-_SESSION = None
-
-
-def cutout(img):
-    """Quita solo el fondo: el recortador calcula una máscara y se aplica como transparencia sobre los
-    píxeles originales (el color del producto no se toca)."""
-    global _SESSION
-    from rembg import new_session, remove
-    if _SESSION is None:
-        _SESSION = new_session('isnet-general-use')
-    rgb = img.convert('RGB')
-    mask = remove(rgb, session=_SESSION, only_mask=True, post_process_mask=True)
-    out = rgb.convert('RGBA')
-    out.putalpha(mask.convert('L'))
-    return out
-
-
-def has_transparency(img):
-    return img.mode in ('RGBA', 'LA', 'PA') or (img.mode == 'P' and 'transparency' in img.info)
-
-
 def framed(img):
-    """Producto sin fondo, centrado en un lienzo cuadrado transparente con margen para el círculo.
-    Si la foto ya trae fondo transparente (PNG original), no se recorta."""
-    img = img.convert('RGBA') if has_transparency(img) and img.getchannel('A').getextrema()[0] < 250 else cutout(img)
-    box = img.getchannel('A').point(lambda a: 255 if a > 8 else 0).getbbox() or (0, 0, *img.size)
-    img = img.crop(box)
-    w, h = img.size
-    # Lado del lienzo: que la diagonal del producto quepa dentro del círculo (los productos anchos no se cortan).
-    side = round(max(max(w, h) * (1 + 2 * MARGIN), (w * w + h * h) ** 0.5 / DISC))
-    canvas = Image.new('RGBA', (side, side), (0, 0, 0, 0))
-    canvas.paste(img, ((side - img.width) // 2, (side - img.height) // 2), img)
-    return canvas.resize((SIZE, SIZE), Image.LANCZOS) if side > SIZE else canvas
+    """Producto sin fondo, centrado en un lienzo cuadrado transparente, reducido a SIZE (nunca ampliado)."""
+    return shades.frame_product(img, SIZE)
 
 
 def main():

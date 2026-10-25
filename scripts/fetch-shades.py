@@ -194,6 +194,51 @@ def shopify_json(url):
     return json.loads(get(f'{parts.scheme}://{parts.netloc}{path}.json'))['product']
 
 
+# Productos cuyas fotos de tonos no se recortan (primeros planos de textura u ojos, o carteles con letras:
+# el recorte automático queda mal); conservan el fondo original de la tienda.
+KEEP_BACKGROUND = {
+    'Atenea|Iluminador efecto húmedo Sublime', 'Atenea|Delineador de cejas', 'Fantiluna|Iluminador corporal x 160 ml',
+}
+
+_SESSION = None
+MARGIN = 0.10         # aire mínimo alrededor del producto
+DISC = 0.88           # el producto (incluidas sus esquinas) cabe en este % del círculo
+
+
+def cutout(img):
+    """Quita solo el fondo (autorizado por Ágata Beauty): el recortador automático (rembg,
+    isnet-general-use) calcula una máscara que se aplica como transparencia sobre los píxeles
+    originales; el color del producto no se toca."""
+    global _SESSION
+    from rembg import new_session, remove
+    if _SESSION is None:
+        _SESSION = new_session('isnet-general-use')
+    rgb = img.convert('RGB')
+    mask = remove(rgb, session=_SESSION, only_mask=True, post_process_mask=True)
+    out = rgb.convert('RGBA')
+    out.putalpha(mask.convert('L'))
+    return out
+
+
+def has_transparency(img):
+    return (img.mode in ('RGBA', 'LA', 'PA') or (img.mode == 'P' and 'transparency' in img.info)) \
+        and img.convert('RGBA').getchannel('A').getextrema()[0] < 250
+
+
+def frame_product(img, size):
+    """Producto sin fondo (si la foto ya es PNG transparente no se recorta), centrado en un lienzo
+    cuadrado transparente donde su diagonal cabe en el círculo, y reducido a `size` (nunca ampliado).
+    En la web la transparencia deja ver el disco beige del catálogo (#d9d3c3)."""
+    img = img.convert('RGBA') if has_transparency(img) else cutout(img)
+    box = img.getchannel('A').point(lambda a: 255 if a > 8 else 0).getbbox() or (0, 0, *img.size)
+    img = img.crop(box)
+    w, h = img.size
+    side = round(max(max(w, h) * (1 + 2 * MARGIN), (w * w + h * h) ** 0.5 / DISC))
+    canvas = Image.new('RGBA', (side, side), (0, 0, 0, 0))
+    canvas.paste(img, ((side - w) // 2, (side - h) // 2), img)
+    return canvas.resize((size, size), Image.LANCZOS) if side > size else canvas
+
+
 def square(img):
     """Lienzo cuadrado con la foto centrada y completa (relleno con el color de la esquina)."""
     img = img.convert('RGBA')
@@ -347,7 +392,7 @@ def woocommerce_options(url):
     return names.get(attr, attr), items, url
 
 
-def shades_for(product, url):
+def shades_for(product, url, keep_background=False):
     if isinstance(url, dict) and 'woo' in url:
         option, items, url = woo_category(url['woo'], url['category'], url['title'], url['source'])
     elif isinstance(url, dict) and 'pages' in url:
@@ -364,7 +409,7 @@ def shades_for(product, url):
         option, items, url = woocommerce_options(url)
     if option is None:
         return None, f'sin tonos en la página ({items})', url
-    shades, seen = [], set()
+    shades, seen, seen_src = [], set(), {}
     for raw_name, src in items:
         # Solo formato: espacios dobles, "tono " repetido al inicio, guion tras el número y mayúscula inicial.
         name = re.sub(r'^tono\s+', '', re.sub(r'\s+', ' ', raw_name or '').strip(), flags=re.I)
@@ -381,14 +426,22 @@ def shades_for(product, url):
         shade = {'name': name}
         if src:
             src = urljoin(url, src)
-            full = square(Image.open(io.BytesIO(get(src))))
+            original = Image.open(io.BytesIO(get(src)))
             path = OUT / product['id'] / f'{slug(name)}.webp'
             path.parent.mkdir(parents=True, exist_ok=True)
-            pic = full.resize((SWATCH, SWATCH), Image.LANCZOS) if full.width > SWATCH else full
-            pic.save(path, 'WEBP', quality=90, method=6)
-            big = full.resize((LARGE, LARGE), Image.LANCZOS) if full.width > LARGE else full
+            if src in seen_src:                       # misma foto para otro tono: no se recorta dos veces
+                big = seen_src[src]
+            else:
+                if keep_background:
+                    big = square(original)
+                    big = big.resize((LARGE, LARGE), Image.LANCZOS) if big.width > LARGE else big
+                else:
+                    big = frame_product(original, LARGE)   # sin fondo, sobre el beige de la web
+                seen_src[src] = big
+            pic = big.resize((SWATCH, SWATCH), Image.LANCZOS) if big.width > SWATCH else big
+            pic.save(path, 'WEBP', quality=90, alpha_quality=100, method=6)
             big_path = path.with_name(f'{slug(name)}-grande.webp')
-            big.save(big_path, 'WEBP', quality=88, method=6)
+            big.save(big_path, 'WEBP', quality=88, alpha_quality=100, method=6)
             shade.update(image=str(path.relative_to(ROOT)), imageWidth=pic.width, imageHeight=pic.height,
                          imageLarge=str(big_path.relative_to(ROOT)), imageLargeWidth=big.width, imageLargeHeight=big.height,
                          imageSource=src)
@@ -418,7 +471,7 @@ def main():
             print(f'!! {key}: no está en data/products.json')
             continue
         try:
-            shades, note, page_url = shades_for(product, url)
+            shades, note, page_url = shades_for(product, url, key in KEEP_BACKGROUND)
         except Exception as exc:   # red bloqueada, página movida…
             print(f'!! {key}: {exc}')
             continue
